@@ -13,8 +13,8 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+$base-font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
+$second-font-family: "Arial", "Helvetica", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
@@ -24,6 +24,7 @@ body {
 // フォントウェイト
 $regular: 300;
 $normal: 400;
+$medium: 500;
 $bold: 700;
 
 ////////////////////
@@ -33,3 +34,16 @@ $bold: 700;
 //色指定（共通性のあるものは出来る限り指定すると良い）
 $black: #111;
 $white: #fff;
+
+// カウンセリングサイト用の色設定
+$primary-blue: #1e3a8a; // 深い青
+$secondary-blue: #3b82f6; // 中間の青
+$light-blue: #dbeafe; // 薄い青
+$gradient-start: #1e40af; // グラデーション開始色
+$gradient-end: #f0f9ff; // グラデーション終了色
+$cta-blue: #60a5fa; // CTAボタンの青
+$text-white: #ffffff;
+$text-light: #f8fafc;
+
+// グラデーション
+$main-gradient: linear-gradient(180deg, $gradient-start 0%, $gradient-end 100%);

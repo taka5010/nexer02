@@ -1,0 +1,368 @@
+@use "global" as *;
+
+// メイン背景とレイアウト
+body {
+  background: $main-gradient;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+// 星空効果の背景
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    radial-gradient(2px 2px at 20px 30px, $white, transparent),
+    radial-gradient(2px 2px at 40px 70px, $white, transparent),
+    radial-gradient(1px 1px at 90px 40px, $white, transparent),
+    radial-gradient(1px 1px at 130px 80px, $white, transparent),
+    radial-gradient(2px 2px at 160px 30px, $white, transparent),
+    radial-gradient(1px 1px at 200px 60px, $white, transparent),
+    radial-gradient(1px 1px at 240px 20px, $white, transparent),
+    radial-gradient(2px 2px at 280px 50px, $white, transparent),
+    radial-gradient(1px 1px at 320px 80px, $white, transparent),
+    radial-gradient(1px 1px at 360px 30px, $white, transparent),
+    radial-gradient(2px 2px at 400px 70px, $white, transparent),
+    radial-gradient(1px 1px at 440px 40px, $white, transparent),
+    radial-gradient(1px 1px at 480px 10px, $white, transparent),
+    radial-gradient(2px 2px at 520px 60px, $white, transparent),
+    radial-gradient(1px 1px at 560px 90px, $white, transparent),
+    radial-gradient(1px 1px at 600px 20px, $white, transparent),
+    radial-gradient(2px 2px at 640px 50px, $white, transparent),
+    radial-gradient(1px 1px at 680px 80px, $white, transparent),
+    radial-gradient(1px 1px at 720px 30px, $white, transparent),
+    radial-gradient(2px 2px at 760px 70px, $white, transparent);
+  background-repeat: repeat;
+  background-size: 800px 100px;
+  opacity: 0.8;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// ヘッダー
+.header {
+  position: relative;
+  z-index: 10;
+  padding: 20px 0;
+  
+  &__inner {
+    max-width: $inner;
+    margin: 0 auto;
+    padding: 0 $padding-pc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    @include mq("md") {
+      padding: 0 $padding-sp;
+      flex-direction: column;
+      gap: 15px;
+    }
+  }
+  
+  &__logo {
+    flex-shrink: 0;
+  }
+  
+  &__nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    
+    @include mq("md") {
+      order: 3;
+      width: 100%;
+    }
+  }
+  
+  &__contact {
+    flex-shrink: 0;
+    
+    @include mq("md") {
+      order: 2;
+    }
+  }
+}
+
+// ロゴ
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  
+  &__text {
+    font-size: rem(24);
+    font-weight: $bold;
+    color: $text-white;
+    letter-spacing: 0.05em;
+    position: relative;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 8px;
+      width: 4px;
+      height: 4px;
+      background: $text-white;
+      border-radius: 50%;
+    }
+  }
+  
+  &__subtitle {
+    font-size: rem(12);
+    color: $text-white;
+    margin-top: 2px;
+    letter-spacing: 0.02em;
+  }
+}
+
+// ナビゲーション
+.nav-list {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  @include mq("md") {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  &__item {
+    // スタイルなし
+  }
+  
+  &__link {
+    color: $text-white;
+    text-decoration: none;
+    font-size: rem(14);
+    font-weight: $normal;
+    transition: opacity 0.3s ease;
+    
+    &:hover {
+      opacity: 0.8;
+    }
+    
+    @include mq("md") {
+      font-size: rem(12);
+    }
+  }
+}
+
+// 連絡先情報
+.contact-info {
+  background: rgba($white, 0.1);
+  border-radius: 8px;
+  padding: 12px 16px;
+  backdrop-filter: blur(10px);
+  
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 4px;
+  }
+  
+  &__icon {
+    font-size: rem(16);
+  }
+  
+  &__number {
+    color: $text-white;
+    font-size: rem(16);
+    font-weight: $bold;
+  }
+  
+  &__hours {
+    color: $text-white;
+    font-size: rem(11);
+    opacity: 0.9;
+  }
+}
+
+// メインコンテンツ
+.main {
+  position: relative;
+  z-index: 5;
+  min-height: calc(100vh - 120px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  max-width: $inner;
+  margin: 0 auto;
+  padding: 0 $padding-pc;
+  text-align: center;
+  position: relative;
+  
+  @include mq("md") {
+    padding: 0 $padding-sp;
+  }
+  
+  &__content {
+    margin-bottom: 60px;
+    
+    @include mq("md") {
+      margin-bottom: 40px;
+    }
+  }
+  
+  &__title {
+    font-size: rem(48);
+    font-weight: $bold;
+    color: $text-white;
+    line-height: 1.4;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 4px rgba($black, 0.3);
+    
+    @include mq("md") {
+      font-size: rem(28);
+      margin-bottom: 30px;
+    }
+    
+    &-line {
+      display: block;
+      
+      &:not(:last-child) {
+        margin-bottom: 8px;
+      }
+    }
+  }
+  
+  &__illustration {
+    margin: 40px 0;
+    
+    @include mq("md") {
+      margin: 30px 0;
+    }
+  }
+  
+  &__subtitle {
+    font-size: rem(18);
+    color: $text-white;
+    font-weight: $normal;
+    opacity: 0.9;
+    
+    @include mq("md") {
+      font-size: rem(16);
+    }
+  }
+  
+  &__cta {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    
+    @include mq("md") {
+      position: static;
+      margin-top: 40px;
+    }
+  }
+}
+
+// 手のイラスト
+.hands-illustration {
+  width: 200px;
+  height: 120px;
+  margin: 0 auto;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 180px;
+    height: 100px;
+    border: 2px solid rgba($white, 0.6);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: transparent;
+  }
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 160px;
+    height: 80px;
+    border: 1px solid rgba($white, 0.4);
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    background: transparent;
+  }
+  
+  @include mq("md") {
+    width: 150px;
+    height: 90px;
+    
+    &::before {
+      width: 130px;
+      height: 75px;
+    }
+    
+    &::after {
+      width: 110px;
+      height: 60px;
+    }
+  }
+}
+
+// CTAボタン
+.cta-button {
+  display: inline-block;
+  background: $cta-blue;
+  color: $text-white;
+  text-decoration: none;
+  padding: 16px 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba($black, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 200px;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba($black, 0.3);
+    background: lighten($cta-blue, 5%);
+  }
+  
+  &__text {
+    display: block;
+    font-size: rem(14);
+    font-weight: $medium;
+    margin-bottom: 4px;
+  }
+  
+  &__phone {
+    display: block;
+    font-size: rem(16);
+    font-weight: $bold;
+  }
+  
+  @include mq("md") {
+    min-width: 180px;
+    padding: 14px 20px;
+    
+    &__text {
+      font-size: rem(13);
+    }
+    
+    &__phone {
+      font-size: rem(15);
+    }
+  }
+}
