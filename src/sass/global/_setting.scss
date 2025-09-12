@@ -13,12 +13,12 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", "Meiryo", sans-serif;
-$second-font-family: "Arial", "Helvetica", sans-serif;
+$ja-font-family: "Zen Kaku Gothic New", sans-serif;
+$en-font-family: "Nunito", sans-serif;
 // ※検証ツールでしっかり反映されているか確認する
 
 body {
-  font-family: $base-font-family;
+  font-family: $ja-font-family;
 }
 
 // フォントウェイト
@@ -31,19 +31,41 @@ $bold: 700;
 // 色の指定
 ////////////////////
 
-//色指定（共通性のあるものは出来る限り指定すると良い）
+// ベース
 $black: #111;
 $white: #fff;
 
-// カウンセリングサイト用の色設定
-$primary-blue: #1e3a8a; // 深い青
-$secondary-blue: #3b82f6; // 中間の青
-$light-blue: #dbeafe; // 薄い青
-$gradient-start: #1e40af; // グラデーション開始色
-$gradient-end: #f0f9ff; // グラデーション終了色
-$cta-blue: #60a5fa; // CTAボタンの青
-$text-white: #ffffff;
-$text-light: #f8fafc;
+// メインカラー（参考画像に準拠）
+$primary-01: #248CC0; // メイン濃色
+$primary-02: #1C9BDB; // メイン
+$primary-03: #33B5E1; // メイン明色
+$primary-04: #85D3ED; // メイン淡色
+
+// 補助カラー（グラデーション）
+$gradient-start: #38CDC3; // 参考: 緑みのシアン
+// NOTE: 終了色は画像の文字が判別困難なため仮値を使用
+// 必要に応じて調整してください（例: #29DDD6 など）
+$gradient-end: #29DDD6;
+
+// 背景色（参考画像）
+$bg-01: #F4FBFF;
+$bg-02: #F4FCFF;
+
+// テキスト色（参考画像）
+$text-black: #333333; // 本文
+$text-gray: #7A7A7A;  // 補足
+$text-white: #FFFFFF;
+$text-light: #F8FAFC;
+
+// ライン色（参考画像）
+$line-01: #75B0CE;
+$line-02: #BCCDD5;
+
+// 既存スタイルで使用される代表色のマッピング
+$primary-blue: $primary-02;
+$secondary-blue: $primary-03;
+$light-blue: $primary-04;
+$cta-blue: $primary-02;
 
 // グラデーション
-$main-gradient: linear-gradient(180deg, $gradient-start 0%, $gradient-end 100%);
+$main-gradient: linear-gradient(270deg, $gradient-start 0%, $gradient-end 100%);

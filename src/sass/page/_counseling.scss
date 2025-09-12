@@ -49,45 +49,104 @@ body::before {
   position: relative;
   z-index: 10;
   padding: 20px 0;
-  
-  &__inner {
-    max-width: $inner;
-    margin: 0 auto;
-    padding: 0 $padding-pc;
-    display: flex;
+  background: $white;
+  box-shadow: 0 2px 4px rgba($black, 0.1);
+}
+
+.header__inner {
+  max-width: $inner;
+  margin: 0 auto;
+  padding: 0 $padding-pc;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+
+  @include mq("md") {
+    padding: 0 $padding-sp;
+    flex-direction: column;
+    gap: 15px;
     align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    
-    @include mq("md") {
-      padding: 0 $padding-sp;
-      flex-direction: column;
-      gap: 15px;
-    }
   }
-  
-  &__logo {
-    flex-shrink: 0;
+}
+
+.hero__cta {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+@include mq("md") {
+  .hero__cta {
+    position: static;
+    margin-top: 40px;
   }
-  
-  &__nav {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    
-    @include mq("md") {
-      order: 3;
-      width: 100%;
-    }
+}
+.hero__subtitle {
+  font-size: rem(18);
+  color: $text-white;
+  font-weight: $normal;
+  opacity: 0.9;
+}
+
+@include mq("md") {
+  .hero__subtitle {
+    font-size: rem(16);
   }
-  
-  &__contact {
-    flex-shrink: 0;
-    
-    @include mq("md") {
-      order: 2;
-    }
+}
+.hero__illustration {
+  margin: 40px 0;
+}
+
+@include mq("md") {
+  .hero__illustration {
+    margin: 30px 0;
+  }
+}
+.hero__title {
+  font-size: rem(48);
+  font-weight: $bold;
+  color: $text-white;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  text-shadow: 0 2px 4px rgba($black, 0.3);
+}
+
+@include mq("md") {
+  .hero__title {
+    font-size: rem(28);
+    margin-bottom: 30px;
+  }
+}
+
+.hero__title-line {
+  display: block;
+}
+
+.hero__title-line:not(:last-child) {
+  margin-bottom: 8px;
+}
+.header__logo {
+  flex-shrink: 0;
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  @include mq("md") {
+    order: 3;
+    width: 100%;
+  }
+}
+
+.header__contact {
+  flex-shrink: 0;
+
+  @include mq("md") {
+    order: 2;
   }
 }
 
@@ -96,32 +155,40 @@ body::before {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  
-  &__text {
-    font-size: rem(24);
-    font-weight: $bold;
-    color: $text-white;
-    letter-spacing: 0.05em;
-    position: relative;
-    
-    &::before {
-      content: '';
-      position: absolute;
-      top: -8px;
-      left: 8px;
-      width: 4px;
-      height: 4px;
-      background: $text-white;
-      border-radius: 50%;
-    }
-  }
-  
-  &__subtitle {
-    font-size: rem(12);
-    color: $text-white;
-    margin-top: 2px;
-    letter-spacing: 0.02em;
-  }
+  background: $primary-02;
+  padding: 12px 16px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.logo__text {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $text-white;
+  letter-spacing: 0.05em;
+  position: relative;
+  font-family: $en-font-family;
+}
+
+.logo__text::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: 4px;
+  width: 20px;
+  height: 8px;
+  background: transparent;
+  border: 2px solid $text-white;
+  border-bottom: none;
+  border-radius: 20px 20px 0 0;
+}
+
+.logo__subtitle {
+  font-size: rem(10);
+  color: $text-white;
+  margin-top: 2px;
+  letter-spacing: 0.02em;
+  font-family: $en-font-family;
 }
 
 // ナビゲーション
@@ -131,63 +198,68 @@ body::before {
   list-style: none;
   margin: 0;
   padding: 0;
-  
-  @include mq("md") {
+}
+
+@include mq("md") {
+  .nav-list {
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+    margin-top: 10px;
   }
-  
-  &__item {
-    // スタイルなし
-  }
-  
-  &__link {
-    color: $text-white;
-    text-decoration: none;
-    font-size: rem(14);
-    font-weight: $normal;
-    transition: opacity 0.3s ease;
-    
-    &:hover {
-      opacity: 0.8;
-    }
-    
-    @include mq("md") {
-      font-size: rem(12);
-    }
+}
+
+
+.nav-list__link {
+  color: $text-black;
+  text-decoration: none;
+  font-size: rem(14);
+  font-weight: $normal;
+  transition: color 0.3s ease;
+  font-family: $ja-font-family;
+}
+
+.nav-list__link:hover {
+  color: $primary-02;
+}
+
+@include mq("md") {
+  .nav-list__link {
+    font-size: rem(12);
   }
 }
 
 // 連絡先情報
 .contact-info {
-  background: rgba($white, 0.1);
+  background: $primary-02;
   border-radius: 8px;
   padding: 12px 16px;
-  backdrop-filter: blur(10px);
-  
-  &__phone {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
-  }
-  
-  &__icon {
-    font-size: rem(16);
-  }
-  
-  &__number {
-    color: $text-white;
-    font-size: rem(16);
-    font-weight: $bold;
-  }
-  
-  &__hours {
-    color: $text-white;
-    font-size: rem(11);
-    opacity: 0.9;
-  }
+  text-align: center;
+}
+
+.contact-info__phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.contact-info__icon {
+  font-size: rem(16);
+  color: $text-white;
+}
+
+.contact-info__number {
+  color: $text-white;
+  font-size: rem(16);
+  font-weight: $bold;
+}
+
+.contact-info__hours {
+  color: $text-gray;
+  font-size: rem(11);
+  opacity: 0.9;
 }
 
 // メインコンテンツ
@@ -211,64 +283,21 @@ body::before {
     padding: 0 $padding-sp;
   }
   
-  &__content {
-    margin-bottom: 60px;
-    
-    @include mq("md") {
-      margin-bottom: 40px;
-    }
-  }
   
-  &__title {
-    font-size: rem(48);
-    font-weight: $bold;
-    color: $text-white;
-    line-height: 1.4;
+  
+  
+  
+  
+  
+  
+  
+}
+
+.hero__content {
+  margin-bottom: 60px;
+
+  @include mq("md") {
     margin-bottom: 40px;
-    text-shadow: 0 2px 4px rgba($black, 0.3);
-    
-    @include mq("md") {
-      font-size: rem(28);
-      margin-bottom: 30px;
-    }
-    
-    &-line {
-      display: block;
-      
-      &:not(:last-child) {
-        margin-bottom: 8px;
-      }
-    }
-  }
-  
-  &__illustration {
-    margin: 40px 0;
-    
-    @include mq("md") {
-      margin: 30px 0;
-    }
-  }
-  
-  &__subtitle {
-    font-size: rem(18);
-    color: $text-white;
-    font-weight: $normal;
-    opacity: 0.9;
-    
-    @include mq("md") {
-      font-size: rem(16);
-    }
-  }
-  
-  &__cta {
-    position: absolute;
-    bottom: 40px;
-    right: 40px;
-    
-    @include mq("md") {
-      position: static;
-      margin-top: 40px;
-    }
   }
 }
 
@@ -279,45 +308,51 @@ body::before {
   margin: 0 auto;
   position: relative;
   
-  &::before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 180px;
-    height: 100px;
-    border: 2px solid rgba($white, 0.6);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background: transparent;
-  }
-  
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 160px;
-    height: 80px;
-    border: 1px solid rgba($white, 0.4);
-    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
-    background: transparent;
-  }
   
   @include mq("md") {
     width: 150px;
     height: 90px;
     
-    &::before {
-      width: 130px;
-      height: 75px;
-    }
-    
-    &::after {
-      width: 110px;
-      height: 60px;
-    }
+  }
+}
+
+.hands-illustration::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 180px;
+  height: 100px;
+  border: 2px solid rgba($white, 0.6);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: transparent;
+}
+
+.hands-illustration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  height: 80px;
+  border: 1px solid rgba($white, 0.4);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  background: transparent;
+}
+
+@include mq("md") {
+  .hands-illustration::before {
+    width: 130px;
+    height: 75px;
+  }
+}
+
+@include mq("md") {
+  .hands-illustration::after {
+    width: 110px;
+    height: 60px;
   }
 }
 
@@ -333,36 +368,42 @@ body::before {
   transition: all 0.3s ease;
   text-align: center;
   min-width: 200px;
-  
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba($black, 0.3);
-    background: lighten($cta-blue, 5%);
-  }
-  
-  &__text {
-    display: block;
-    font-size: rem(14);
-    font-weight: $medium;
-    margin-bottom: 4px;
-  }
-  
-  &__phone {
-    display: block;
-    font-size: rem(16);
-    font-weight: $bold;
-  }
-  
-  @include mq("md") {
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba($black, 0.3);
+  background: lighten($cta-blue, 5%);
+}
+
+.cta-button__text {
+  display: block;
+  font-size: rem(14);
+  font-weight: $medium;
+  margin-bottom: 4px;
+}
+
+.cta-button__phone {
+  display: block;
+  font-size: rem(16);
+  font-weight: $bold;
+}
+
+@include mq("md") {
+  .cta-button {
     min-width: 180px;
     padding: 14px 20px;
-    
-    &__text {
-      font-size: rem(13);
-    }
-    
-    &__phone {
-      font-size: rem(15);
-    }
+  }
+}
+
+@include mq("md") {
+  .cta-button__text {
+    font-size: rem(13);
+  }
+}
+
+@include mq("md") {
+  .cta-button__phone {
+    font-size: rem(15);
   }
 }
