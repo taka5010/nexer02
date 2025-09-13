@@ -32,15 +32,20 @@
   <header class="header">
     <div class="header__inner">
       <div class="header__logo">
-        <div class="logo">
-          <span class="logo__text">insight</span>
-          <span class="logo__subtitle">counseling corporation</span>
-        </div>
+        <img src="./assets/images/common/header_logo.svg" alt="insight counseling corporation" class="logo__img">
       </div>
       <nav class="header__nav">
         <ul class="nav-list">
-          <li class="nav-list__item">
-            <a href="#" class="nav-list__link">心理カウンセリング</a>
+          <li class="nav-list__item nav-list__item--has-submenu">
+            <a href="#" class="nav-list__link js-dropdown-toggle" aria-expanded="false" aria-controls="submenu-counseling">心理カウンセリング</a>
+            <ul class="dropdown" id="submenu-counseling" role="menu" aria-label="心理カウンセリングのメニュー">
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">FAP療法®について</a>
+              </li>
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">催眠スクリプト</a>
+              </li>
+            </ul>
           </li>
           <li class="nav-list__item">
             <a href="#" class="nav-list__link">トラウマカウンセリング</a>
@@ -62,7 +67,7 @@
       <div class="header__contact">
         <div class="contact-info">
           <div class="contact-info__phone">
-            <span class="contact-info__icon">📞</span>
+            <span class="contact-info__icon"><img src="./assets/images/common/tel_icon.svg" alt="phone" class="contact-info__icon-img"></span>
             <span class="contact-info__number">03-3433-2721</span>
           </div>
           <div class="contact-info__hours">
@@ -73,26 +78,30 @@
     </div>
   </header>
   <main class="main">
-    <div class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">
-          <span class="hero__title-line">心の傷を癒す</span>
-          <span class="hero__title-line">専門家によるカウンセリングを</span>
-          <span class="hero__title-line">今すぐ体験してみませんか?</span>
-        </h1>
-        <div class="hero__illustration">
-          <div class="hands-illustration"></div>
+    <section class="mv">
+      <div class="mv__inner">
+        <div class="mv__content">
+          <h1 class="mv__title">
+            <span class="mv__title-line">心の傷を癒す</span>
+            <span class="mv__title-line">専門家によるカウンセリングを</span>
+            <span class="mv__title-line">今すぐ体験してみませんか?</span>
+          </h1>
+          <div class="mv__illustration">
+            <div class="hands-illustration"></div>
+          </div>
+          <p class="mv__subtitle">Specialized counseling to heal emotional wounds.</p>
         </div>
-        <p class="hero__subtitle">Specialized counseling to heal emotional wounds.</p>
       </div>
-      <div class="hero__cta">
+      <div class="mv__cta">
         <a href="tel:03-3433-2721" class="cta-button">
           <span class="cta-button__text">お問合せ・ご予約はこちら</span>
           <span class="cta-button__phone">📞 03-3433-2721</span>
         </a>
       </div>
-    </div>
+    </section>
   </main>
+  
+
   
   <footer class="footer">
     <!-- Footer content will be added later -->

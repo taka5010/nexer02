@@ -1,0 +1,45 @@
+@use "global" as *;
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap; // mobile: wrap
+  justify-content: center;
+  gap: 15px; // mobile gap
+  margin-top: 10px;
+}
+
+@include mq("md") {
+  .nav-list {
+    flex-wrap: nowrap;
+    gap: 30px; // larger gap on desktop
+    margin-top: 0;
+  }
+}
+
+
+.nav-list__link {
+  color: $text-white;
+  text-decoration: none;
+  font-size: rem(12); // mobile-first smaller
+  font-weight: $normal;
+  transition: color 0.3s ease;
+  font-family: $ja-font-family;
+}
+
+.nav-list__link:hover {
+  color: $primary-02;
+}
+
+@include mq("md") {
+  .nav-list__link {
+    font-size: rem(14);
+  }
+}
+
+// Dropdown (mobile-first: hidden; desktop: show on hover)
+.nav-list__item {
+  position: relative;
+}

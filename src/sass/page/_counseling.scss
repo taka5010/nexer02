@@ -1,90 +1,67 @@
 @use "global" as *;
 
 // メイン背景とレイアウト
-body {
-  background: $main-gradient;
-  min-height: 100vh;
-  position: relative;
-  overflow-x: hidden;
-}
+// body {
+//   background: $main-gradient;
+//   min-height: 100vh;
+//   position: relative;
+//   overflow-x: hidden;
+// }
 
 // 星空効果の背景
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: 
-    radial-gradient(2px 2px at 20px 30px, $white, transparent),
-    radial-gradient(2px 2px at 40px 70px, $white, transparent),
-    radial-gradient(1px 1px at 90px 40px, $white, transparent),
-    radial-gradient(1px 1px at 130px 80px, $white, transparent),
-    radial-gradient(2px 2px at 160px 30px, $white, transparent),
-    radial-gradient(1px 1px at 200px 60px, $white, transparent),
-    radial-gradient(1px 1px at 240px 20px, $white, transparent),
-    radial-gradient(2px 2px at 280px 50px, $white, transparent),
-    radial-gradient(1px 1px at 320px 80px, $white, transparent),
-    radial-gradient(1px 1px at 360px 30px, $white, transparent),
-    radial-gradient(2px 2px at 400px 70px, $white, transparent),
-    radial-gradient(1px 1px at 440px 40px, $white, transparent),
-    radial-gradient(1px 1px at 480px 10px, $white, transparent),
-    radial-gradient(2px 2px at 520px 60px, $white, transparent),
-    radial-gradient(1px 1px at 560px 90px, $white, transparent),
-    radial-gradient(1px 1px at 600px 20px, $white, transparent),
-    radial-gradient(2px 2px at 640px 50px, $white, transparent),
-    radial-gradient(1px 1px at 680px 80px, $white, transparent),
-    radial-gradient(1px 1px at 720px 30px, $white, transparent),
-    radial-gradient(2px 2px at 760px 70px, $white, transparent);
-  background-repeat: repeat;
-  background-size: 800px 100px;
-  opacity: 0.8;
-  z-index: 1;
-  pointer-events: none;
-}
+// body::before {
+//   content: '';
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   background-image: 
+//     radial-gradient(2px 2px at 20px 30px, $white, transparent),
+//     radial-gradient(2px 2px at 40px 70px, $white, transparent),
+//     radial-gradient(1px 1px at 90px 40px, $white, transparent),
+//     radial-gradient(1px 1px at 130px 80px, $white, transparent),
+//     radial-gradient(2px 2px at 160px 30px, $white, transparent),
+//     radial-gradient(1px 1px at 200px 60px, $white, transparent),
+//     radial-gradient(1px 1px at 240px 20px, $white, transparent),
+//     radial-gradient(2px 2px at 280px 50px, $white, transparent),
+//     radial-gradient(1px 1px at 320px 80px, $white, transparent),
+//     radial-gradient(1px 1px at 360px 30px, $white, transparent),
+//     radial-gradient(2px 2px at 400px 70px, $white, transparent),
+//     radial-gradient(1px 1px at 440px 40px, $white, transparent),
+//     radial-gradient(1px 1px at 480px 10px, $white, transparent),
+//     radial-gradient(2px 2px at 520px 60px, $white, transparent),
+//     radial-gradient(1px 1px at 560px 90px, $white, transparent),
+//     radial-gradient(1px 1px at 600px 20px, $white, transparent),
+//     radial-gradient(2px 2px at 640px 50px, $white, transparent),
+//     radial-gradient(1px 1px at 680px 80px, $white, transparent),
+//     radial-gradient(1px 1px at 720px 30px, $white, transparent),
+//     radial-gradient(2px 2px at 760px 70px, $white, transparent);
+//   background-repeat: repeat;
+//   background-size: 800px 100px;
+//   opacity: 0.8;
+//   z-index: 1;
+//   pointer-events: none;
+// }
 
 // ヘッダー
-.header {
-  position: relative;
-  z-index: 10;
-  padding: 20px 0;
-  background: $white;
-  box-shadow: 0 2px 4px rgba($black, 0.1);
-}
 
-.header__inner {
-  max-width: $inner;
-  margin: 0 auto;
-  padding: 0 $padding-pc;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 20px;
-
-  @include mq("md") {
-    padding: 0 $padding-sp;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-  }
-}
 
 .hero__cta {
-  position: absolute;
-  bottom: 40px;
-  right: 40px;
+  position: static; // mobile-first: flow layout
+  margin-top: 24px;
 }
 
 @include mq("md") {
   .hero__cta {
-    position: static;
-    margin-top: 40px;
+    position: absolute; // desktop: overlay bottom-right
+    bottom: 40px;
+    right: 40px;
+    margin-top: 0;
   }
 }
 .hero__subtitle {
-  font-size: rem(18);
+  font-size: rem(16); // mobile-first smaller
   color: $text-white;
   font-weight: $normal;
   opacity: 0.9;
@@ -92,31 +69,31 @@ body::before {
 
 @include mq("md") {
   .hero__subtitle {
-    font-size: rem(16);
+    font-size: rem(18);
   }
 }
 .hero__illustration {
-  margin: 40px 0;
+  margin: 30px 0; // mobile-first smaller
 }
 
 @include mq("md") {
   .hero__illustration {
-    margin: 30px 0;
+    margin: 40px 0;
   }
 }
 .hero__title {
-  font-size: rem(48);
+  font-size: rem(28); // mobile-first smaller
   font-weight: $bold;
   color: $text-white;
   line-height: 1.4;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   text-shadow: 0 2px 4px rgba($black, 0.3);
 }
 
 @include mq("md") {
   .hero__title {
-    font-size: rem(28);
-    margin-bottom: 30px;
+    font-size: rem(48);
+    margin-bottom: 40px;
   }
 }
 
@@ -135,97 +112,69 @@ body::before {
   flex: 1;
   display: flex;
   justify-content: center;
+  order: 3; // mobile: show last
+  width: 100%;
 
   @include mq("md") {
-    order: 3;
-    width: 100%;
+    order: 0; // reset ordering on desktop
+    width: auto;
   }
 }
 
 .header__contact {
   flex-shrink: 0;
+  order: 2; // mobile: show second
 
   @include mq("md") {
-    order: 2;
+    order: 0; // reset on desktop
   }
 }
 
 // ロゴ
-.logo {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  background: $primary-02;
-  padding: 12px 16px;
-  border-radius: 8px;
-  position: relative;
-}
 
-.logo__text {
-  font-size: rem(20);
-  font-weight: $bold;
-  color: $text-white;
-  letter-spacing: 0.05em;
-  position: relative;
-  font-family: $en-font-family;
-}
 
-.logo__text::before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  left: 4px;
-  width: 20px;
-  height: 8px;
-  background: transparent;
-  border: 2px solid $text-white;
-  border-bottom: none;
-  border-radius: 20px 20px 0 0;
-}
-
-.logo__subtitle {
-  font-size: rem(10);
-  color: $text-white;
-  margin-top: 2px;
-  letter-spacing: 0.02em;
-  font-family: $en-font-family;
-}
 
 // ナビゲーション
-.nav-list {
-  display: flex;
-  gap: 30px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-@include mq("md") {
-  .nav-list {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 10px;
-  }
-}
 
 
-.nav-list__link {
+.dropdown {
+  display: none; // base hidden
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: rgba($white, 0.95);
   color: $text-black;
-  text-decoration: none;
-  font-size: rem(14);
-  font-weight: $normal;
-  transition: color 0.3s ease;
-  font-family: $ja-font-family;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba($black, 0.15);
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
 }
 
-.nav-list__link:hover {
+.dropdown__item {
+  list-style: none;
+}
+
+.dropdown__link {
+  display: block;
+  padding: 10px 16px 10px 22px;
+  text-decoration: none;
+  color: $text-black;
+  font-size: rem(14);
+}
+
+.dropdown__link:hover {
+  background: $bg-01;
   color: $primary-02;
 }
 
+// show on hover/focus for desktop and keyboard users
 @include mq("md") {
-  .nav-list__link {
-    font-size: rem(12);
+  .nav-list__item--has-submenu:hover .dropdown,
+  .nav-list__item--has-submenu:focus-within .dropdown {
+    display: block;
   }
 }
 
@@ -275,44 +224,33 @@ body::before {
 .hero {
   max-width: $inner;
   margin: 0 auto;
-  padding: 0 $padding-pc;
+  padding: 0 $padding-sp; // mobile-first padding
   text-align: center;
   position: relative;
-  
+
   @include mq("md") {
-    padding: 0 $padding-sp;
+    padding: 0 $padding-pc; // larger padding on desktop
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
 }
 
 .hero__content {
-  margin-bottom: 60px;
+  margin-bottom: 40px; // mobile-first smaller spacing
 
   @include mq("md") {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
   }
 }
 
 // 手のイラスト
 .hands-illustration {
-  width: 200px;
-  height: 120px;
+  width: 150px; // mobile-first smaller
+  height: 90px;
   margin: 0 auto;
   position: relative;
-  
-  
+
   @include mq("md") {
-    width: 150px;
-    height: 90px;
-    
+    width: 200px; // larger on desktop
+    height: 120px;
   }
 }
 
@@ -342,17 +280,27 @@ body::before {
   background: transparent;
 }
 
+.hands-illustration::before {
+  width: 130px; // mobile-first smaller
+  height: 75px;
+}
+
+.hands-illustration::after {
+  width: 110px; // mobile-first smaller
+  height: 60px;
+}
+
 @include mq("md") {
   .hands-illustration::before {
-    width: 130px;
-    height: 75px;
+    width: 180px;
+    height: 100px;
   }
 }
 
 @include mq("md") {
   .hands-illustration::after {
-    width: 110px;
-    height: 60px;
+    width: 160px;
+    height: 80px;
   }
 }
 
@@ -362,12 +310,12 @@ body::before {
   background: $cta-blue;
   color: $text-white;
   text-decoration: none;
-  padding: 16px 24px;
+  padding: 14px 20px; // mobile-first smaller
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba($black, 0.2);
   transition: all 0.3s ease;
   text-align: center;
-  min-width: 200px;
+  min-width: 180px; // mobile-first
 }
 
 .cta-button:hover {
@@ -378,32 +326,32 @@ body::before {
 
 .cta-button__text {
   display: block;
-  font-size: rem(14);
+  font-size: rem(13); // mobile-first smaller
   font-weight: $medium;
   margin-bottom: 4px;
 }
 
 .cta-button__phone {
   display: block;
-  font-size: rem(16);
+  font-size: rem(15); // mobile-first smaller
   font-weight: $bold;
 }
 
 @include mq("md") {
   .cta-button {
-    min-width: 180px;
-    padding: 14px 20px;
+    min-width: 200px;
+    padding: 16px 24px;
   }
 }
 
 @include mq("md") {
   .cta-button__text {
-    font-size: rem(13);
+    font-size: rem(14);
   }
 }
 
 @include mq("md") {
   .cta-button__phone {
-    font-size: rem(15);
+    font-size: rem(16);
   }
 }
