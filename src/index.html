@@ -68,7 +68,7 @@
     </div>
   </header> -->
   <header class="header">
-    <div class="header__inner">
+    <div class="header__inner inner">
       <h1 class="header__logo">
         <a href="#">
           <img src="./assets/images/common/header_logo-sp.svg" alt="">
@@ -84,17 +84,25 @@
           <nav class="header-drawer__nav">
             <ul class="header-drawer__list">
               <li class="header-drawer__item header-drawer__item--has-submenu">
-                <button class="header-drawer__toggle">心理カウンセリング</button>
+                <button class="header-drawer__toggle js-drawer-toggle">心理カウンセリング</button>
                 <ul class="header-drawer__submenu">
                   <li class="header-drawer__submenu-item"><a href="/fap">FAP療法®について</a></li>
                   <li class="header-drawer__submenu-item"><a href="/sleep-script">催眠スクリプト</a></li>
                 </ul>
               </li>
-              <li class="header-drawer__item">
-                <a href="#">トラウマカウンセリング</a>
+              <li class="header-drawer__item header-drawer__item--has-submenu">
+                <button class="header-drawer__toggle js-drawer-toggle">トラウマカウンセリング</button>
+                <ul class="header-drawer__submenu">
+                  <li class="header-drawer__submenu-item"><a href="/fap">FAP療法®について</a></li>
+                  <li class="header-drawer__submenu-item"><a href="/sleep-script">催眠スクリプト</a></li>
+                </ul>
               </li>
-              <li class="header-drawer__item">
-                <a href="#">その他のサービス</a>
+              <li class="header-drawer__item header-drawer__item--has-submenu">
+                <button class="header-drawer__toggle js-drawer-toggle">その他のサービス</button>
+                <ul class="header-drawer__submenu">
+                  <li class="header-drawer__submenu-item"><a href="/fap">GeneSwitch</a></li>
+                  <li class="header-drawer__submenu-item"><a href="/sleep-script">無意識の旅オンライン講座</a></li>
+                </ul>
               </li>
               <li class="header-drawer__item">
                 <a href="#">ブログ</a>
@@ -110,7 +118,7 @@
           <div class="header__contact nav-list__cta header-drawer__cta">
             <div class="contact-info">
               <div class="contact-info__phone">
-                <span class="contact-info__icon"><img src="./assets/images/common/tel_icon.svg" alt="phone" class="contact-info__icon-img"></span>
+                <span class="contact-info__icon"><img src="./assets/images/common/tel_icon-blue.svg" alt="phone" class="contact-info__icon-img"></span>
                 <span class="contact-info__number">03-3433-2721</span>
               </div>
               <div class="contact-info__hours">

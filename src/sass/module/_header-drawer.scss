@@ -6,7 +6,7 @@
 }
 
 .header-drawer {
-  padding: 200px 0;
+  padding-top: rem(110);
   display: none;
   position: absolute;
   top: 0;
@@ -14,6 +14,7 @@
   width: 100%;
   height: 100vh;
   background-color: rgba(242, 251, 255, 0.8);
+  background-color: rgba(242, 251, 255, 1);
   overflow-y: scroll;
   scrollbar-width: none;
 }
@@ -33,20 +34,23 @@
 }
 
 .header-drawer__item a {
-  padding: 15px 0;
+  padding-top: rem(25);
+  padding-bottom: rem(18);
   display: block;
-  font-size: 20px;
   font-weight: bold;
   line-height: 1;
   color: $text-black;
-  text-align: center;
+  text-align: left;
+  font-size: rem(15);
   text-transform: uppercase;
   text-decoration: none;
 }
 
 .header-drawer__toggle {
   width: 100%;
-  padding: 15px 0;
+  padding-top: rem(25);
+  padding-bottom: rem(18);
+  padding-left: rem(0);
   background: none;
   border: none;
   font-size: rem(15);
@@ -89,13 +93,20 @@
   overflow: hidden;
   opacity: 0;
   transform: translateY(-10px);
+  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-drawer__submenu:not(.open) {
   transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition-delay: 0s;
 }
 
 .header-drawer__submenu.open {
   max-height: 200px;
   opacity: 1;
   transform: translateY(0);
+  margin-top: rem(-6);
+  padding-bottom: rem(10);
 }
 
 .header-drawer__submenu-item {
@@ -132,8 +143,18 @@
   transition-delay: 0.3s;
 }
 
+// 閉じる時の遅延設定（逆順で消える）
+.header-drawer__submenu:not(.open) .header-drawer__submenu-item:nth-child(2) {
+  transition-delay: 0s;
+}
+
+.header-drawer__submenu:not(.open) .header-drawer__submenu-item:nth-child(1) {
+  transition-delay: 0.05s;
+}
+
 .header-drawer__submenu-item a {
   padding: 12px 0;
+  padding: rem(9) 0;
   font-size: rem(14);
   font-weight: normal;
   text-transform: none;
@@ -141,7 +162,7 @@
   text-decoration: none;
   display: block;
   text-align: left;
-  transition: all 0.2s ease;
+  transition: all 0.5s ease;
 }
 
 .header-drawer__submenu-item a:hover {

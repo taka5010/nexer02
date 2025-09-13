@@ -2,7 +2,7 @@
 
 .contact-info {
   border-radius: 8px;
-  padding: 12px 16px;
+  padding-top: rem(30);
   text-align: center;
 }
 
@@ -11,10 +11,14 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: rem(4);
-  border: solid 1px $text-white;
-  border-radius: rem(20);
-  padding: rem(4) rem(8);
+  border: solid 1px $primary-01;
+  border-radius: rem(40);
+  padding-top: rem(10);
+  padding-bottom: rem(10);
+  background-color: $text-white;
+  width: 100%;
+  max-width: calc(250 / 335 * 100%);
+  margin: 0 auto;
 }
 
 .contact-info__icon {
@@ -23,13 +27,15 @@
 }
 
 .contact-info__number {
-  color: $text-white;
-  font-size: rem(16);
+  font-family: $en-font-family;
+  color: $primary-01;
+  font-size: rem(20);
   font-weight: $bold;
 }
 
 .contact-info__hours {
-  color: $text-white;
-  font-size: rem(11);
-  opacity: 0.9;
+  margin-top: rem(8);
+  color: $text-black;
+  font-size: rem(14);
+  // opacity: 0.9;
 }
