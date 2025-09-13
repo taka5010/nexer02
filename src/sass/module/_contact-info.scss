@@ -11,7 +11,10 @@
   align-items: center;
   justify-content: center;
   gap: 8px;
-  margin-bottom: 4px;
+  margin-bottom: rem(4);
+  border: solid 1px $text-white;
+  border-radius: rem(20);
+  padding: rem(4) rem(8);
 }
 
 .contact-info__icon {
@@ -26,7 +29,7 @@
 }
 
 .contact-info__hours {
-  color: $text-gray;
+  color: $text-white;
   font-size: rem(11);
   opacity: 0.9;
 }

@@ -1,1 +1,17 @@
 @use "global" as *;
+
+.submenu {
+  display: none;
+  padding-left: 1em;
+}
+.submenu.open {
+  display: block;
+}
+.menu-toggle {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 1rem;
+  padding: 0.8em 0;
+}
