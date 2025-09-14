@@ -76,11 +76,12 @@ const cssSass = () => {
       )
       // CSSプロパティをアルファベット順にソートし、未来のCSS構文を使用可能に
       .pipe(
-        postcss([cssdeclsort({
-          order: "alphabetical"
-        })]
-        ),
-        postcssPresetEnv({ browsers: 'last 2 versions' })
+        postcss([
+          cssdeclsort({
+            order: "alphabetical"
+          }),
+          postcssPresetEnv({ browsers: 'last 2 versions' })
+        ])
       )
       // メディアクエリを統合
       .pipe(mmq())

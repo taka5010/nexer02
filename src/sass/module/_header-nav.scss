@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.header-nav__list{
+  @include mq("md") {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: rem(24);
+  align-items: center;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  }
+}
+
+.header-nav__item {
+  @include mq("md") {
+  position: relative;
+  flex-shrink: 0;
+  }
+}
+
+.header-nav__link {
+  @include mq("md") {
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: rem(14);
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  padding: rem(8) rem(10);
+  border-radius: rem(6);
+  transition: all 0.3s ease;
+  position: relative;
+  white-space: nowrap;
+  }
+}
+
+.header-nav__link:hover {
+  @include mq("md") {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-1px);
+  }
+}
+.header-nav__link::after {
+  @include mq("md") {
+  content: '';
+  position: absolute;
+  bottom: rem(2);
+  left: 50%;
+  width: 0;
+  height: rem(2);
+  background: white;
+  border-radius: rem(1);
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  }
+}
+.header-nav__link:hover::after {
+  @include mq("md") {
+  width: 80%;
+}
+}
+
+// ドロップダウンメニュー
+.header-nav__item--has-submenu {
+  @include mq("md") {
+  position: relative;
+  }
+}
+
+.header-nav__item--has-submenu:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+

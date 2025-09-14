@@ -19,6 +19,12 @@
   width: 100%;
   max-width: calc(250 / 335 * 100%);
   margin: 0 auto;
+  @include mq("md") {
+    max-width: calc(250 / 335 * 100%);
+    background-color: transparent;
+    border: solid 1px $text-white;
+    max-width: initial;
+  }
 }
 
 .contact-info__icon {
@@ -31,11 +37,22 @@
   color: $primary-01;
   font-size: rem(20);
   font-weight: $bold;
+  white-space: nowrap;
+  @include mq("md") {
+    font-size: rem(20);
+    font-weight: $bold;
+    font-family: $en-font-family;
+    color: $text-white;
+  }
 }
 
 .contact-info__hours {
   margin-top: rem(8);
   color: $text-black;
   font-size: rem(14);
-  // opacity: 0.9;
+  @include mq("md") {
+    font-size: rem(14);
+    color: $text-white;
+    text-align: center;
+  }
 }
