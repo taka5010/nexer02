@@ -18,6 +18,32 @@
 
 .dropdown__item {
   list-style: none;
+  position: relative; // 擬似要素の基準点を設定
+}
+
+.dropdown__item:hover {
+  background: $bg-01;
+  color: $primary-02;
+}
+
+.dropdown__item::before {
+  content: '';
+  position: absolute;
+  // right: rem(10);
+  left: rem(20);
+  top: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  color: $primary-01;
+  line-height: 1;
+  width: rem(7);
+  height: rem(7);
+  border: 2px solid currentColor;
+  border-left: 0;
+  border-bottom: 0;
+  box-sizing: border-box;
+  transform: translateY(-50%) rotate(45deg);
+  transition: transform 0.3s ease;
 }
 
 .dropdown__link {
@@ -31,7 +57,7 @@
   transition: all 0.2s ease;
 
   display: block;
-  padding: 10px 16px 10px 22px;
+  padding: rem(10) rem(16) rem(10) rem(40);
   text-decoration: none;
   color: $text-black;
   font-size: rem(14);
@@ -41,3 +67,4 @@
   background: $bg-01;
   color: $primary-02;
 }
+
