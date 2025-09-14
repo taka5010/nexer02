@@ -38,27 +38,39 @@
 
 .header-nav__link:hover {
   @include mq("md") {
-  background: rgba(255, 255, 255, 0.1);
+  // background: rgba(255, 255, 255, 0.1);
   transform: translateY(-1px);
   }
 }
 .header-nav__link::after {
   @include mq("md") {
+  // content: '';
+  // position: absolute;
+  // bottom: rem(2);
+  // left: 50%;
+  // width: 0;
+  // height: rem(2);
+  // background: white;
+  // border-radius: rem(1);
+  // transform: translateX(-50%);
+  // transition: width 0.3s ease;
+  // left: 0;                // 左基点に変更
+  // width: 0;    
   content: '';
   position: absolute;
   bottom: rem(2);
-  left: 50%;
+  left: 0;
   width: 0;
-  height: rem(2);
-  background: white;
+  height: rem(1);
+  background: $text-white;
   border-radius: rem(1);
-  transform: translateX(-50%);
   transition: width 0.3s ease;
   }
 }
 .header-nav__link:hover::after {
   @include mq("md") {
-  width: 80%;
+  // width: 80%;
+  width: 100%;
 }
 }
 

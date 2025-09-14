@@ -238,6 +238,7 @@
   line-height: 1.6;
   padding-top: rem(7);
   padding-bottom: rem(8);
+  
   @include mq("md") {
     font-size: rem(16);
     padding: rem(8) 0;
@@ -248,6 +249,22 @@
     font-size: rem(13);
     padding: rem(6) rem(8);
   }
+}
+
+.footer__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: rem(2);
+  left: 0;
+  width: 0;
+  height: rem(2);
+  background: $primary-01;
+  border-radius: rem(1);
+  transition: width 0.3s ease;
+}
+
+.footer__nav-link:hover::after {
+  width: 100%;
 }
 
 // .footer__nav-link:hover {
