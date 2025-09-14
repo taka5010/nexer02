@@ -6,7 +6,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: rem(24);
+  gap: rem(10);
   align-items: center;
   flex-wrap: nowrap;
   white-space: nowrap;
@@ -23,7 +23,7 @@
 .header-nav__link {
   @include mq("md") {
   font-family: 'Zen Kaku Gothic New', sans-serif;
-  font-size: rem(14);
+  font-size: rem(15);
   font-weight: 500;
   color: white;
   text-decoration: none;
@@ -32,6 +32,7 @@
   transition: all 0.3s ease;
   position: relative;
   white-space: nowrap;
+  line-height: 1.6;
   }
 }
 
@@ -61,16 +62,14 @@
 }
 }
 
-// ドロップダウンメニュー
 .header-nav__item--has-submenu {
   @include mq("md") {
   position: relative;
   }
 }
 
-.header-nav__item--has-submenu:hover .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+.header-nav__item--has-submenu:hover .dropdown,
+.header-nav__item--has-submenu:focus-within .dropdown {
+  display: block;
 }
 

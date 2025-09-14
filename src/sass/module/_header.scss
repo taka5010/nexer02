@@ -1,57 +1,6 @@
 @use "global" as *;
 
 
-// PC版ナビゲーション（改行防止）
-
-
-
-
-// PC版連絡先情報
-.header--pc .header__contact {
-  @include mq("md") {
-      flex-shrink: 0;
-  }
-  min-width: rem(200);
-}
-
-
-.header--pc .contact-info__phone {
-  @include mq("md") {
-  display: flex;
-  align-items: center;
-  gap: rem(8);
-  margin-bottom: rem(4);
-  }
-}
-
-
-.header--pc .contact-info__icon {
-  @include mq("md") {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: rem(20);
-  height: rem(20);
-  
-  .contact-info__icon-img {
-    width: 100%;
-    height: 100%;
-    filter: brightness(0) invert(1);
-  }
-  }
-}
-
-
-// モバイル版ヘッダー
-.header--mobile {
-  display: block;
-  
-  @include mq("md") {
-    display: none;
-  }
-}
-
-
 .header {
   position: fixed;
   top: 0;
@@ -72,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   @include mq("md") {
-  max-width: rem(1340);
+  max-width: rem(1390);
   margin: 0 auto;
   padding: 0 $padding-pc;
   height: 100%;
@@ -83,7 +32,6 @@
   z-index: 2;
   gap: rem(20);
   }
-
 }
 
 .header__logo {
@@ -256,68 +204,25 @@
 
 
 .header__nav {
-  @include mq("md") {
   flex: 1;
   display: flex;
-  justify-content: center;
-  min-width: 0; // フレックスアイテムの縮小を許可
-  margin: 0 rem(20);
+  justify-content: flex-end;
+  order: 3;
+  width: 100%;
+  @include mq("md") {
+  min-width: 0;
+  order: 0;
+  width: auto;
   }
 }
 
-
-
-.dropdown {
-  @include mq("md") {
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%) translateY(rem(10));
-  background: white;
-  border-radius: rem(8);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  padding: rem(8) 0;
+.header__contact {
   min-width: rem(200);
-  opacity: 1;
-  visibility: hidden;
-  transition: all 0.3s ease;
-  z-index: 1001;
-  
-  &::before {
-    content: '';
-    position: absolute;
-    top: rem(-6);
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 0;
-    border-left: rem(6) solid transparent;
-    border-right: rem(6) solid transparent;
-    border-bottom: rem(6) solid white;
-  }
-  }
-}
-
-.dropdown__item {
   @include mq("md") {
-      list-style: none;
+      flex-shrink: 0;
   }
 }
 
-.dropdown__link {
-  @include mq("md") {
-  display: block;
-  padding: rem(12) rem(16);
-  font-family: 'Zen Kaku Gothic New', sans-serif;
-  font-size: rem(14);
-  font-weight: 400;
-  color: #374151;
-  text-decoration: none;
-  transition: all 0.2s ease;
 
-  &:hover {
-    background: #f3f4f6;
-    color: #1d4ed8;
-    }
-  }
-}
+
+

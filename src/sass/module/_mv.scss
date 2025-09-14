@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.main {
-  // padding-topを削除
-}
-
 .mv {
   background-image: url(../images/common/fv-pc.png);
   background-size: cover;
@@ -11,8 +7,7 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  // margin-top: -80px; // ヘッダーの高さ分だけ上に移動
-  padding-top: 80px; // コンテンツがヘッダーの下に隠れないようにパディング
+  padding-top: 80px;
 }
 
 .mv__inner {

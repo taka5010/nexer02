@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.cta-button {
+  display: inline-block;
+  background: $cta-blue;
+  color: $text-white;
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba($black, 0.2);
+  transition: all 0.3s ease;
+  text-align: center;
+  min-width: 180px;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba($black, 0.3);
+  background: lighten($cta-blue, 5%);
+}
+
+.cta-button__text {
+  display: block;
+  font-size: rem(13);
+  font-weight: $medium;
+  margin-bottom: 4px;
+}
+
+.cta-button__phone {
+  display: block;
+  font-size: rem(15);
+  font-weight: $bold;
+}
+
+@include mq("md") {
+  .cta-button {
+    min-width: 200px;
+    padding: 16px 24px;
+  }
+}
+
+@include mq("md") {
+  .cta-button__text {
+    font-size: rem(14);
+  }
+}
+
+@include mq("md") {
+  .cta-button__phone {
+    font-size: rem(16);
+  }
+}

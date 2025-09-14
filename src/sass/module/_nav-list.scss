@@ -5,25 +5,24 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap; // mobile: wrap
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 15px; // mobile gap
+  gap: 15px;
   margin-top: 10px;
 }
 
 @include mq("md") {
   .nav-list {
     flex-wrap: nowrap;
-    gap: 30px; // larger gap on desktop
+    gap: 30px;
     margin-top: 0;
   }
 }
 
-
 .nav-list__link {
   color: $text-white;
   text-decoration: none;
-  font-size: rem(12); // mobile-first smaller
+  font-size: rem(12);
   font-weight: $normal;
   transition: color 0.3s ease;
   font-family: $ja-font-family;
@@ -39,7 +38,6 @@
   }
 }
 
-// Dropdown (mobile-first: hidden; desktop: show on hover)
 .nav-list__item {
   position: relative;
 }

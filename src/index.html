@@ -30,7 +30,7 @@
 </head>
 <body>
   <!-- PC版ヘッダー -->
-  <header class="header header--pc u-desktop">
+  <header class="header u-desktop">
     <div class="header__inner">
       <h1 class="header__logo">
         <a href="#">
@@ -41,7 +41,7 @@
         <ul class="header-nav__list">
           <li class="header-nav__item header-nav__item--has-submenu">
             <a href="#" class="header-nav__link js-dropdown-toggle" aria-expanded="false" aria-controls="submenu-counseling">心理カウンセリング</a>
-            <ul class="dropdown" id="submenu-counseling" role="menu" aria-label="心理カウンセリングのメニュー">
+            <ul class="dropdown" id="submenu-counseling1" role="menu" aria-label="心理カウンセリングのメニュー">
               <li class="dropdown__item" role="none">
                 <a class="dropdown__link" href="#" role="menuitem">FAP療法®について</a>
               </li>
@@ -50,11 +50,27 @@
               </li>
             </ul>
           </li>
-          <li class="header-nav__item">
+          <li class="header-nav__item header-nav__item--has-submenu">
             <a href="#" class="header-nav__link">トラウマカウンセリング</a>
+            <ul class="dropdown" id="submenu-counseling2" role="menu" aria-label="心理カウンセリングのメニュー">
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">FAP療法®について</a>
+              </li>
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">催眠スクリプト</a>
+              </li>
+            </ul>
           </li>
-          <li class="header-nav__item">
+          <li class="header-nav__item header-nav__item--has-submenu">
             <a href="#" class="header-nav__link">その他のサービス</a>
+            <ul class="dropdown" id="submenu-counseling3" role="menu" aria-label="心理カウンセリングのメニュー">
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">GeneSwitch</a>
+              </li>
+              <li class="dropdown__item" role="none">
+                <a class="dropdown__link" href="#" role="menuitem">無意識の旅オンライン講座</a>
+              </li>
+            </ul>
           </li>
           <li class="header-nav__item">
             <a href="#" class="header-nav__link">ブログ</a>
@@ -69,7 +85,7 @@
       </nav>
       <div class="header__contact">
         <div class="contact-info">
-          <div class="contact-info__phone">
+          <div class="contact-info__phone contact-info__phone--pc">
             <span class="contact-info__icon">
               <img src="./assets/images/common/tel_icon.svg" alt="phone" class="contact-info__icon-img">
             </span>

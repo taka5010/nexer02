@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.dropdown {
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: calc(100% + 10px);
+  transform: translateX(-50%);
+  min-width: 220px;
+  background: rgba($white, 0.95);
+  color: $text-black;
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba($black, 0.15);
+  padding: 10px 0;
+  z-index: 1000;
+  backdrop-filter: blur(6px);
+}
+
+.dropdown__item {
+  list-style: none;
+}
+
+.dropdown__link {
+  display: block;
+  padding: rem(12) rem(16);
+  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-size: rem(14);
+  font-weight: 400;
+  color: #374151;
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  display: block;
+  padding: 10px 16px 10px 22px;
+  text-decoration: none;
+  color: $text-black;
+  font-size: rem(14);
+}
+
+.dropdown__link:hover {
+  background: $bg-01;
+  color: $primary-02;
+}
