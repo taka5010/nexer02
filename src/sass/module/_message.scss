@@ -11,6 +11,15 @@
   }
 }
 
+.message__inner.inner {
+  @include mq("md") {
+    display: flex;
+    max-width: rem(1080);
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
 .message__title {
   margin-top: rem(40);
 }
@@ -23,7 +32,8 @@
   margin-top: rem(40);
   font-weight: $medium;
   @include mq("md") {
-    font-size: rem(38);
+    font-size: rem(26);
+    margin-top: rem(60);
   }
 }
 
@@ -36,4 +46,20 @@
   display: inline-block;
   margin-top: rem(10);
   margin-bottom: rem(10);
+}
+
+.message__image {
+  @include mq("md") {
+    max-width: rem(420);
+    width: 100%;
+  }
+}
+
+.message__content {
+  @include mq("md") {
+    // width: calc(100% - rem(420));
+    max-width: rem(580);
+    width: 100%;
+    margin: 0 auto;
+  }
 }
