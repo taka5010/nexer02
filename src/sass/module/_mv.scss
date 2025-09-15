@@ -1,56 +1,64 @@
 @use "global" as *;
 
 .mv {
-  background-image: url(../images/common/fv-pc.png);
+  background-image: url(../images/common/fv_bg-sp.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  padding-top: 80px;
+  color: #ffffff;
+  text-align: center;
+  @include mq("md") {
+    background-image: url(../images/common/fv_bg-pc.png);
+    background-position: top;
+  }
 }
 
 .mv__inner {
-
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transform: translateY(-35px);
+  @include mq("md") {
+    transform: translateY(60px);
+  }
 }
 
-.mv__content {
-
+.mv__maintitle {
+  font-size: rem(24);
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  font-family: $ja-font-family;
+  @include mq("md") {
+    font-size: rem(38);
+  }
 }
 
-.mv__title {
-
-}
-
-.mv__title-line {
-
-}
-
-.mv__illustration {
-
-}
-
-.hands-illustration {
-
+.mv__divider {
+  display: block;
+  width: rem(1);
+  height: rem(40);
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: rem(20);
+  @include mq("md") {
+    height: rem(60);
+    margin-top: rem(40);
+  }
 }
 
 .mv__subtitle {
-
+  font-size: rem(14);
+  line-height: 1.5;
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  margin-top: rem(10);
+  font-family: $en-font-family;
+  @include mq("md") {
+    font-size: rem(18);
+  }
 }
-
-.mv__cta {
-
-}
-
-.cta-button {
-
-}
-
-.cta-button__text {
-
-}
-
-.cta-button__phone {
-
-}
-
