@@ -32,12 +32,22 @@
   color: $primary-02;
 }
 
+// ヘッダー追従時のメニュー色
+.is-scrolled .nav-list__link {
+  color: $text-black !important;
+}
+
+.header.is-scrolled .nav-list__link:hover {
+  color: $primary-01 !important;
+}
+
 @include mq("md") {
   .nav-list__link {
     font-size: rem(14);
   }
+  
 }
 
-.nav-list__item {
+.header-nav__link {
   position: relative;
 }

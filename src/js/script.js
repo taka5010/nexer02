@@ -29,6 +29,23 @@ jQuery(function ($) {
             $submenu.toggleClass("open");
         }
     });
+
+    // ヘッダーのスクロール追従
+    const $header = $(".header");
+    const $telIcon = $(".contact-info__icon-img");
+    const originalIconSrc = "./assets/images/common/tel_icon.svg";
+    const scrolledIconSrc = "./assets/images/common/tel_icon-blue.svg";
+    
+    $(window).on("scroll", function() {
+        const scrollTop = $(this).scrollTop();
+        if (scrollTop > 100) {
+            $header.addClass("is-scrolled");
+            $telIcon.attr("src", scrolledIconSrc);
+        } else {
+            $header.removeClass("is-scrolled");
+            $telIcon.attr("src", originalIconSrc);
+        }
+    });
 });
 
 

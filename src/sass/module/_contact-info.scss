@@ -36,6 +36,11 @@
   }
 }
 
+.is-scrolled .contact-info__phone {
+  border: solid 1px $primary-01;
+  color: $primary-01;
+}
+
 .contact-info__phone.contact-info__phone--pc{
 width: rem(210);
   }
@@ -56,7 +61,7 @@ width: rem(210);
 .contact-info__icon-img {
   width: 100%;
   height: 100%;
-  filter: brightness(0) invert(1);
+  // filter: brightness(0) invert(1);
 }
 
 .contact-info__number {
@@ -73,6 +78,9 @@ width: rem(210);
   }
 }
 
+.is-scrolled .contact-info__number {
+  color: $primary-01;
+}
 
 .contact-info__hours {
   margin-top: rem(8);
@@ -84,4 +92,8 @@ width: rem(210);
     text-align: center;
     margin-top: rem(0);
   }
+}
+
+.is-scrolled .contact-info__hours {
+  color: $text-black;
 }
