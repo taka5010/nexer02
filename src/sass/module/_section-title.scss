@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.section-title {
+  text-align: center;
+}
+
+.section-title.section-title--left {
+  text-align: left;
+}
+
+
+.section-title__en {
+  font-size: rem(30);
+  color: $primary-01;
+  font-weight: bold;
+  font-family: $en-font-family;
+  font-weight: $bold;
+  letter-spacing: 0.03em;
+  line-height: 1.6;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title--left  .section-title__en::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: rem(80);
+    height: rem(1);
+    background-color: #248CC0;
+    margin-left: rem(8);
+    left: 100%;
+}
+
+.section-title__ja {
+  font-size: rem(14);
+  color: $text-black;
+  font-family: $ja-font-family;
+  font-weight: $bold;
+  line-height: 1.6;
+}
+
+// .section-title__en::after {
+//   content: "";
+//   position: absolute;
+//   top: 50%;
+//   // left: 100%;
+//   transform: translateY(-50%);
+//   width: rem(80);
+//   height: rem(1);
+//   background-color: #248CC0;
