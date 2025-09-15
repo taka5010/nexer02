@@ -19,6 +19,10 @@
   line-height: 1.6;
   position: relative;
   display: inline-block;
+  @include mq("md") {
+    font-size: rem(36);
+    letter-spacing: 0.05em;
+  }
 }
 
 .section-title--left  .section-title__en::after {
@@ -39,6 +43,9 @@
   font-family: $ja-font-family;
   font-weight: $bold;
   line-height: 1.6;
+  @include mq("md") {
+    font-size: rem(16);
+  }
 }
 
 // .section-title__en::after {
