@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.counseling-cards {
+  display: flex;
+  flex-direction: column;
+  gap: rem(40);
+  @include mq("md") {
+    flex-direction: row;
+    gap: rem(60);
+  }
+}
