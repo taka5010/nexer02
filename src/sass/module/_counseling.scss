@@ -1,10 +1,9 @@
 @use "global" as *;
 
 .counseling {
-  margin-top: rem(60);
-  padding: rem(60) 0;
+  margin-top: rem(80);
   background-color: #fff;
-  
+  padding-bottom: rem(80);
   @include mq("md") {
     margin-top: rem(120);
     padding: rem(120) 0;

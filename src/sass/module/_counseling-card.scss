@@ -5,6 +5,9 @@
   overflow: hidden;
   box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: rem(400);
+  width: 100%;
+  margin: 0 auto;
   @include mq("md") {
     flex: 1;
   }
@@ -17,7 +20,7 @@
 
 .counseling-card__image {
   width: 100%;
-  height: rem(200);
+  height: rem(210);
   overflow: hidden;
   @include mq("md") {
     height: rem(250);

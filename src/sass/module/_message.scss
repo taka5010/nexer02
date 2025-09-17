@@ -6,6 +6,7 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+  padding-bottom: rem(80);
   @include mq("md") {
     background-image: url(../images/common/message_bg-pc.png);
     margin-top: rem(200);
