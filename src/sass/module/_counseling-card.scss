@@ -37,40 +37,41 @@
 
 
 .counseling-card__content {
-  padding: rem(30) rem(25);
+  padding: rem(20) rem(10);
   @include mq("md") {
     padding: rem(40) rem(30);
   }
 }
 
 .counseling-card__title {
-  font-size: rem(20);
+  font-size: rem(22);
   font-weight: $bold;
   color: $primary-01;
   margin-bottom: rem(15);
   position: relative;
+  line-height: 1.6;
   @include mq("md") {
     font-size: rem(24);
     margin-bottom: rem(20);
   }
 }
 
-.counseling-card__line {
-  display: block;
-  width: rem(40);
-  height: rem(2);
-  background-color: $primary-01;
-  margin-top: rem(8);
+.counseling-card__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: rem(60);
+  height: rem(1);
+  background-color: #248CC0;
+  margin-left: rem(8);
 }
 
 .counseling-card__text {
-  font-size: rem(14);
-  line-height: 1.7;
+  font-size: rem(16);
+  line-height: 1.6;
   color: $text-black;
-  margin-bottom: rem(25);
   @include mq("md") {
     font-size: rem(16);
-    margin-bottom: rem(30);
   }
 }
 
@@ -78,9 +79,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: rem(12);
+  gap: rem(20);
   cursor: pointer;
   transition: opacity 0.3s ease;
+  margin-top: rem(30);
 }
 
 .counseling-card__button:hover {
@@ -89,11 +91,13 @@
 
 
 .counseling-card__button-text {
-  font-size: rem(14);
-  font-weight: $medium;
+  font-size: rem(16);
+  font-weight: $regular;
   color: $text-black;
+  line-height: 1.6;
   @include mq("md") {
     font-size: rem(16);
+    line-height: 1.6;
   }
 }
 
@@ -106,6 +110,14 @@
   align-items: center;
   justify-content: center;
   transition: background-color 0.3s ease;
+}
+
+.counseling-card__button-icon .arrow-white {
+  display: inline-block;
+  width: rem(10);
+  height: rem(12);
+  background: #ffffff;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
 }
 
 .counseling-card__button:hover .counseling-card__button-icon {
