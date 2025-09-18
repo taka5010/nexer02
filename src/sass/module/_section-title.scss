@@ -45,6 +45,7 @@
   line-height: 1.6;
   @include mq("md") {
     font-size: rem(16);
+    padding-top: rem(9);
   }
 }
 
