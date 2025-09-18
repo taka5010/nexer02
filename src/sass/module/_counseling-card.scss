@@ -8,6 +8,8 @@
   max-width: rem(400);
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   @include mq("md") {
     flex: 1;
     max-width: rem(520);
@@ -42,6 +44,9 @@
 
 .counseling-card__content {
   padding: rem(20) rem(10);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
   @include mq("md") {
     padding: rem(20) rem(30);
     padding-top: rem(28);
@@ -80,6 +85,7 @@
   line-height: 1.6;
   color: $text-black;
   margin-top: rem(15);
+  flex-grow: 1;
   @include mq("md") {
     font-size: rem(16);
   }
@@ -87,7 +93,7 @@
 
 .counseling-card__button {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   gap: rem(20);
   cursor: pointer;
