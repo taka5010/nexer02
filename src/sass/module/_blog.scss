@@ -2,47 +2,59 @@
 
 
 .blog {
-
+  background-image: url(../images/common/blog_bg-sp.jpg);
+  background-position: rem(-35) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-inline: auto;
   @include mq("md") {
-    margin-top: rem(120);
-    padding: rem(120) 0;
+    margin-top: rem(10);
+    background-position: rem(-50) center;
   }
 }
 
 .blog__inner.inner {
-  background-image: url(../images/common/blog_bg-sp.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-inline: auto;
   margin-right: rem(20);
   width: inherit;
   padding-top: rem(80);
   padding-bottom: rem(80);
   @include mq("md") {
-    padding: 0 rem(40);
+    display: grid;
+    grid-template-columns: minmax(rem(260), 1fr) 3fr;
+    grid-auto-rows: auto;
+    column-gap: rem(40);
+    align-items: start;
+    padding: rem(120) rem(40);
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: rem(140);
   }
 }
 
 .blog__title {
   text-align: center;
-  @include mq("md") {
-    margin-bottom: rem(80);
+  padding-left: rem(20);
+  @include mq("md"){
+    grid-column: 1;
+    grid-row: 1;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 15px;
+    }
   }
-}
 
 .blog__title.section-title {
-  padding-left: rem(20);
   @include mq("md") {
-    margin-bottom: rem(80);
   }
 }
 
 .blog__list {
   padding-top: rem(25);
-  // padding-bottom: rem(40);
   @include mq("md") {
-    margin-bottom: rem(60);
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    padding-top: 0;
+    // margin-bottom: rem(60);
   }
 }
 
@@ -57,6 +69,7 @@
   transition: opacity 0.3s ease;
   @include mq("md") {
     padding: rem(30) 0;
+    padding-bottom: rem(20);
   }
 }
 
@@ -73,7 +86,6 @@
   display: flex;
   align-items: center;
   gap: rem(10);
-  // margin-bottom: rem(10);
 }
 
 .blog__date {
@@ -110,6 +122,7 @@
   margin-top: rem(13);
   @include mq("md") {
     font-size: rem(18);
+    margin-top: rem(7);
   }
 }
 
@@ -151,7 +164,6 @@
   transform: rotate(-45deg);
 }
 
-
 .blog__button {
   display: flex;
   align-items: center;
@@ -161,6 +173,15 @@
   margin-left: rem(20);
   cursor: pointer;
   transition: opacity 0.3s ease;
+  @include mq("md") {
+    grid-column: 1;
+    grid-row: 2;
+    align-self: start;
+    margin-top: rem(160);
+    margin-left: 0;
+    justify-content: flex-start;
+    gap: rem(5);
+  }
 }
 
 .blog__button:hover {
@@ -176,6 +197,9 @@
   }
 }
 
-.blog__button-icon {
-  // button-icon--blue クラスのスタイルを使用
-}
+/* --- Gridの配置指定（PC） --- */
+// @include mq("md") {
+//   .blog__title   { grid-column: 1; grid-row: 1; }
+//   .blog__list    { grid-column: 2; grid-row: 1 / span 2; padding-top: 0; margin-bottom: rem(60); }
+//   .blog__button  { grid-column: 1; grid-row: 2; align-self: start; margin-top: rem(24); margin-left: 0; }
+// }

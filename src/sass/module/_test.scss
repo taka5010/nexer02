@@ -1,54 +1,12 @@
 @use "global" as *;
 
-.blog__inner.inner {
-  background-image: url(../images/common/blog_bg-sp.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-inline: auto;
-  margin-right: rem(20);
-  width: inherit;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
 
-  // PCだけ2カラムに
-  @include mq("md") {
-    display: grid;
-    grid-template-columns: minmax(rem(260), 1fr) 2fr; // 左：タイトル+ボタン / 右：リスト
-    grid-auto-rows: auto;
-    column-gap: rem(40);
-    align-items: start;
-    padding: rem(120) rem(40);
-  }
-}
 
-/* --- Gridの配置指定（PC） --- */
-@include mq("md") {
-  .blog__title   { grid-column: 1; grid-row: 1; }
-  .blog__list    { grid-column: 2; grid-row: 1 / span 2; padding-top: 0; margin-bottom: rem(60); }
-  .blog__button  { grid-column: 1; grid-row: 2; align-self: start; margin-top: rem(24); margin-left: 0; }
-}
+
 
 /* 既存の細かい調整はほぼそのまま。必要なら微調整 */
-.blog__title {
-  text-align: center;
-  @include mq("md"){ 
-    text-align: left; margin-bottom: rem(20); } }
 
-.blog__list { padding-top: rem(25); }
 
-.blog__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: rem(20);
-  margin-top: rem(35);
-  margin-left: rem(20);
-  cursor: pointer;
-  transition: opacity .3s;
 
-  @include mq("md") {
-    justify-content: flex-start; // 左列に置いたとき左寄せ
-    margin-left: 0;
-  }
-}
+
+
