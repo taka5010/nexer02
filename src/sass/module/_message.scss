@@ -75,3 +75,53 @@
     margin-top: rem(115);
   }
 }
+
+.message__item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.message__item-list li {
+  position: relative;
+  padding-left: rem(12);
+  font-size: rem(15);
+  line-height: 1.6;
+  color: $text-black;
+  // margin-top: rem(8);
+  @include mq("md") {
+    padding-left: rem(15);
+
+  }
+}
+
+.message__item-list li:first-child {
+  margin-top: 0;
+}
+
+.message__item-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: rem(8);
+  width: rem(6);
+  height: rem(6);
+  background-color: #BCCDD5;
+  border-radius: 50%;
+  
+  @include mq("md") {
+    top: rem(9);
+  }
+}
+
+.message__item-list li:last-child {
+  margin-bottom: 0;
+}
+
+.message__item-list--mt0 {
+  margin-top: 0;
+}
