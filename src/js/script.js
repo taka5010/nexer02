@@ -35,7 +35,6 @@ jQuery(function ($) {
     const $telIcon = $(".contact-info__icon-img");
     const originalIconSrc = "./assets/images/common/tel_icon.svg";
     const scrolledIconSrc = "./assets/images/common/tel_icon-blue.svg";
-    
     $(window).on("scroll", function() {
         const scrollTop = $(this).scrollTop();
         if (scrollTop > 100) {
@@ -48,44 +47,39 @@ jQuery(function ($) {
     });
 
     // FAQアコーディオン
-    // $(".faq__question").on("click", function() {
-    //     const $item = $(this).parent(".faq__item");
-    //     const $answer = $item.find(".faq__answer");
-        
-    //     if ($item.hasClass("faq__item--active")) {
-    //         // 閉じる
-    //         $item.removeClass("faq__item--active");
-    //         $answer.css("max-height", "0");
-    //     } else {
-    //         // 他のアイテムを閉じる
-    //         $(".faq__item").removeClass("faq__item--active");
-    //         $(".faq__answer").css("max-height", "0");
-            
-    //         // このアイテムを開く
-    //         $item.addClass("faq__item--active");
-    //         const scrollHeight = $answer[0].scrollHeight;
-    //         $answer.css("max-height", scrollHeight + "px");
-    //     }
-    // });
-
-    $('.js-faq-question').on('click', function () {
-        const $this = $(this);
-        const $answer = $this.next('.faq-list__item-answer-wrapper');
-        const isOpen = $this.hasClass('is-open');
-        
-        if (isOpen) {
-            // 閉じる時：アニメーションで閉じる
-            $answer.slideUp(400, function() {
-                $this.removeClass('is-open');
-            });
-        } else {
-            // 開く時：アニメーションで開く
-            $answer.slideDown(400, function() {
-                $this.addClass('is-open');
-            });
-        }
+    $('.js-faq-question.is-open').each((_, el) => {
+        const $wrapper = $(el).next('.faq-list__item-answer-wrapper');
+        $wrapper.css('height', 'auto');
     });
-    
+    $('.js-faq-question').on('click', function () {
+        const $question = $(this);
+        const $answerWrapper = $question.next('.faq-list__item-answer-wrapper');
+        const isOpen = $question.hasClass('is-open');
+        const setHeight = (height) => {
+            requestAnimationFrame(() => {
+                $answerWrapper.css('height', `${height}px`);
+            });
+        };
+        if (isOpen) {
+            $question.removeClass('is-open');
+            const currentHeight = $answerWrapper[0].scrollHeight;
+            $answerWrapper.css('height', currentHeight);
+            setHeight(0);
+        } else {
+            $question.addClass('is-open');
+            $answerWrapper.css('height', 0);
+            const targetHeight = $answerWrapper[0].scrollHeight;
+            setHeight(targetHeight);
+        }
+        $answerWrapper.off('transitionend').on('transitionend', (e) => {
+            if (e.originalEvent.propertyName !== 'height') return;
+            if ($question.hasClass('is-open')) {
+                $answerWrapper.css('height', 'auto');
+            }
+        });
+    });
 });
+
+
 
 
