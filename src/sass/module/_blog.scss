@@ -3,10 +3,12 @@
 
 .blog {
   background-image: url(../images/common/blog_bg-sp.jpg);
-  background-position: rem(-35) center;
+  background-position: rem(-20) center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-inline: auto;
+  padding-top: rem(80);
+  padding-bottom: rem(80);
   @include mq("md") {
     margin-top: rem(10);
     background-position: rem(-50) center;
@@ -16,8 +18,6 @@
 .blog__inner.inner {
   margin-right: rem(20);
   width: inherit;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
   @include mq("md") {
     display: grid;
     grid-template-columns: minmax(rem(260), 1fr) 3fr;

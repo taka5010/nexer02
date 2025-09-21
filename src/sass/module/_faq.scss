@@ -11,8 +11,8 @@
   background-size: contain;
   @include mq(md) {
     background-image: url(../images/common/bg_faq-pc.png);
-    margin-top: rem(120);
-    padding: rem(120) 0;
+    margin-top: rem(0);
+    padding: rem(130) 0;
   }
 }
 
@@ -30,20 +30,24 @@
 }
 
 
-.faq__inner {
+.faq__inner.inner {
   margin: auto;
   padding: 0 rem(20);
   max-width: rem(600);
   width: 100%;
   @include mq(md) {
-    max-width: rem(1200);
-    padding: 0 rem(25);
-    max-width: rem(1200);
+    max-width: rem(1080);
+    padding: 0 rem(80);
   }
 }
 
 .faq-list  {
   margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+    max-width: rem(850);
+    width: 100%;
+  }
 }
 
 .faq-list__item {
@@ -71,7 +75,7 @@
   display: flex;
   align-items: center;
   @include mq(md) {
-    padding: rem(30) rem(25);
+    padding: rem(25) rem(25);
     font-size: rem(18);
   }
 }
@@ -140,8 +144,9 @@
   color: $text-black;
   padding: rem(8) 0 rem(17) 0;
   @include mq(md) {
-      padding: rem(25) rem(25) rem(30) rem(25);
+      padding: rem(25);
       font-size: rem(16);
+      align-items: center;
   }
 }
 
@@ -189,7 +194,7 @@
   transition: opacity 0.3s ease;
   margin-top: rem(40);
   @include mq("md") {
-    margin-top: rem(50);
+    margin-top: rem(60);
   }
 }
 

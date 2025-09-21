@@ -182,8 +182,10 @@
       <div class="message__inner inner">
         <div class="message__header">
           <div class="message__image">
-            <img src="./assets/images/common/message_img-sp.jpg" alt="メッセージを送る男性の写真" loading="lazy">
-            <img src="./assets/images/common/message_img-pc.jpg" alt="メッセージを送る男性の写真" loading="lazy">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/common/message_img-pc.jpg">
+              <img src="./assets/images/common/message_img-sp.jpg" alt="メッセージを送る男性の写真" loading="lazy">
+            </picture>
           </div>
           <h2 class="message__title section-title section-title--left">
             <p class="section-title__en">MESSAGE</p>

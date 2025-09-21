@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .message {
-  margin-top: rem(60);
+  padding-top: rem(60);
   background-image: url(../images/common/message_bg-sp.png);
   background-position: top;
   background-repeat: no-repeat;
@@ -80,7 +80,7 @@
   @include mq("md") {
     max-width: rem(200);
     width: 100%;
-    margin-top: 27px;
+    margin-top: rem(20);
   }
 }
 
