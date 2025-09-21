@@ -69,8 +69,21 @@ jQuery(function ($) {
     // });
 
     $('.js-faq-question').on('click', function () {
-        $(this).next().slideToggle();
-        $(this).toggleClass('is-open');
+        const $this = $(this);
+        const $answer = $this.next('.faq-list__item-answer-wrapper');
+        const isOpen = $this.hasClass('is-open');
+        
+        if (isOpen) {
+            // 閉じる時：アニメーションで閉じる
+            $answer.slideUp(400, function() {
+                $this.removeClass('is-open');
+            });
+        } else {
+            // 開く時：アニメーションで開く
+            $answer.slideDown(400, function() {
+                $this.addClass('is-open');
+            });
+        }
     });
     
 });
