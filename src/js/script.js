@@ -48,24 +48,29 @@ jQuery(function ($) {
     });
 
     // FAQアコーディオン
-    $(".faq__question").on("click", function() {
-        const $item = $(this).parent(".faq__item");
-        const $answer = $item.find(".faq__answer");
+    // $(".faq__question").on("click", function() {
+    //     const $item = $(this).parent(".faq__item");
+    //     const $answer = $item.find(".faq__answer");
         
-        if ($item.hasClass("faq__item--active")) {
-            // 閉じる
-            $item.removeClass("faq__item--active");
-            $answer.css("max-height", "0");
-        } else {
-            // 他のアイテムを閉じる
-            $(".faq__item").removeClass("faq__item--active");
-            $(".faq__answer").css("max-height", "0");
+    //     if ($item.hasClass("faq__item--active")) {
+    //         // 閉じる
+    //         $item.removeClass("faq__item--active");
+    //         $answer.css("max-height", "0");
+    //     } else {
+    //         // 他のアイテムを閉じる
+    //         $(".faq__item").removeClass("faq__item--active");
+    //         $(".faq__answer").css("max-height", "0");
             
-            // このアイテムを開く
-            $item.addClass("faq__item--active");
-            const scrollHeight = $answer[0].scrollHeight;
-            $answer.css("max-height", scrollHeight + "px");
-        }
+    //         // このアイテムを開く
+    //         $item.addClass("faq__item--active");
+    //         const scrollHeight = $answer[0].scrollHeight;
+    //         $answer.css("max-height", scrollHeight + "px");
+    //     }
+    // });
+
+    $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-open');
     });
     
 });
