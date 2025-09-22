@@ -165,13 +165,10 @@
 }
 
 .blog__button {
-  display: flex;
-  align-items: center;
+
   justify-content: center;
-  gap: rem(20);
   margin-top: rem(35);
   margin-left: rem(20);
-  cursor: pointer;
   transition: opacity 0.3s ease;
   @include mq("md") {
     grid-column: 1;
@@ -180,22 +177,21 @@
     margin-top: rem(160);
     margin-left: 0;
     justify-content: flex-start;
-    gap: rem(5);
   }
 }
 
-.blog__button:hover {
-  opacity: 0.8;
-}
+// .blog__button:hover {
+//   opacity: 0.8;
+// }
 
-.blog__button-text {
-  font-size: rem(16);
-  font-weight: $medium;
-  color: $text-black;
-  @include mq("md") {
-    font-size: rem(18);
-  }
-}
+// .blog__button-text {
+//   font-size: rem(16);
+//   font-weight: $medium;
+//   color: $text-black;
+//   @include mq("md") {
+//     font-size: rem(18);
+//   }
+// }
 
 /* --- Gridの配置指定（PC） --- */
 // @include mq("md") {

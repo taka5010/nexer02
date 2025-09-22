@@ -92,11 +92,7 @@
 }
 
 .counseling-card__button {
-  display: flex;
-  align-items: flex-end;
   justify-content: flex-end;
-  gap: rem(20);
-  cursor: pointer;
   transition: opacity 0.3s ease;
   margin-top: rem(30);
   @include mq("md") {

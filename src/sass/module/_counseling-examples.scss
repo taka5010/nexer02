@@ -138,34 +138,9 @@ display: block;
 }
 
 .counseling-examples__button {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  gap: rem(12);
-  cursor: pointer;
   margin-top: rem(32);
-  transition: opacity 0.3s ease;
   @include mq("md") {
-    justify-content: center;
-    font-size: rem(16);
     margin-top: rem(60);
-    gap: rem(20);
   }
-}
-
-.counseling-examples__button:hover {
-  opacity: 0.8;
-}
-
-.counseling-examples__button-text {
-  font-size: rem(16);
-  font-weight: $medium;
-  color: $text-black;
-  @include mq("md") {
-
-  }
-}
-
-.counseling-examples__button-icon {
-  // button-icon--blue クラスのスタイルを使用
 }

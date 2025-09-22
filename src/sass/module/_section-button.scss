@@ -1,0 +1,46 @@
+@use "global" as *;
+
+
+.section-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.section-button:hover {
+  opacity: 0.8;
+}
+
+.section-button__text {
+  font-size: rem(16);
+  font-weight: $medium;
+  color: $text-black;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
+.section-button__icon {
+  width: rem(32);
+  height: rem(32);
+  background-color: $primary-01;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+  margin-left: rem(20);
+}
+
+.section-button__icon span {
+  display: inline-block;
+  width: rem(10);
+  height: rem(10);
+  background: #ffffff;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+  margin-left: rem(2);
+}
+
+
+
