@@ -161,36 +161,49 @@
 
 
 .about__access-title {
-  font-size: rem(20);
+  font-size: rem(22);
   font-weight: $bold;
-  color: $text-black;
+  color: $primary-01;
   margin-top: rem(20);
+  display: flex;
+  align-items: center;
+  gap: rem(8);
   @include mq(md) {
     font-size: rem(24);
     margin-top: rem(30);
   }
 }
 
+.about__access-icon {
+  width: rem(24);
+  height: rem(24);
+  margin-right: rem(8);
+  vertical-align: middle;
+}
 
-.about__map {
-  margin-bottom: rem(20);
-  border-radius: rem(8);
-  overflow: hidden;
-  box-shadow: 0 rem(4) rem(20) rgba(0, 0, 0, 0.1);
-  @include mq(md) {
-    margin-bottom: rem(30);
+@include mq(md) {
+  .about__access-icon {
+    width: rem(20);
+    height: rem(20);
+    margin-right: rem(10);
   }
 }
 
+.about__map {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    padding-top: calc( 180 / 335 * 100%);
+    /* 16:9のアスペクト比 */
+    height: 0;
+}
 
 .about__map iframe {
-  width: 100%;
-  // height: rem(200);
-  // border: none;
-  
-  @include mq(md) {
-    // height: rem(250);
-  }
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .about__access-list ul {
@@ -213,16 +226,27 @@
 }
 
 
+// .about__access-list li::before {
+//   content: "•";
+//   color: $primary-01;
+//   font-weight: $bold;
+//   position: absolute;
+//   left: 0;
+//   top: rem(8);
+//   @include mq(md) {
+//     top: rem(10);
+//   }
+// }
+
 .about__access-list li::before {
-  content: "•";
-  color: $primary-01;
-  font-weight: $bold;
-  position: absolute;
+  color: $line-01;
+  border-radius: 50%;
+  content: "";
+  height: 0.375rem;
   left: 0;
-  top: rem(8);
-  @include mq(md) {
-    top: rem(10);
-  }
+  position: absolute;
+  top: 0.5rem;
+  width: 0.375rem;
 }
 
 
