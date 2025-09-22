@@ -225,28 +225,22 @@
   }
 }
 
-
-// .about__access-list li::before {
-//   content: "•";
-//   color: $primary-01;
-//   font-weight: $bold;
-//   position: absolute;
-//   left: 0;
-//   top: rem(8);
-//   @include mq(md) {
-//     top: rem(10);
-//   }
-// }
-
 .about__access-list li::before {
-  color: $line-01;
+  background-color: $line-01;
   border-radius: 50%;
   content: "";
   height: 0.375rem;
   left: 0;
   position: absolute;
-  top: 0.5rem;
+  top: 50%;
   width: 0.375rem;
+}
+
+.about__access-list li {
+  background-image: repeating-linear-gradient(90deg, #bccdd5, #bccdd5 6px, transparent 6px, transparent 12px);
+  background-position: left bottom;
+  background-repeat: repeat-x;
+  background-size: 100% 1px;
 }
 
 
