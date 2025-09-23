@@ -81,6 +81,22 @@ jQuery(function ($) {
             }
         });
     });
+
+    // カード02の高さを揃える
+    function equalizeHeights() {
+        var $contents = $('.card02__content');
+        var maxHeight = 0;
+        $contents.css('height', 'auto');
+        $contents.each(function() {
+            var h = $(this).outerHeight();
+            if (h > maxHeight) maxHeight = h;
+        });
+        $contents.css('height', maxHeight);
+        }
+        equalizeHeights();
+        $(window).on('resize', function() {
+        equalizeHeights();
+        });
 });
 
 
