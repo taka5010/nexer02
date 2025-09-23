@@ -1,7 +1,6 @@
 @use "global" as *;
 
 .faq {
-  margin-top: rem(80);
   padding: rem(80) 0;
   // background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
   position: relative;
@@ -11,7 +10,6 @@
   background-size: contain;
   @include mq(md) {
     background-image: url(../images/common/bg_faq-pc.png);
-    margin-top: rem(0);
     padding: rem(130) 0;
   }
 }
