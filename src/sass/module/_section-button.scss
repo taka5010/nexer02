@@ -14,20 +14,20 @@
   transition: opacity 0.3s ease;
 }
 
-.section-button__wrapper::after {
-  content: "";
-  position: absolute;
-  bottom: rem(-4);
-  left: 0;
-  width: 0;
-  height: rem(2);
-  background-color: $primary-01;
-  transition: width 0.3s ease;
-}
+// .section-button__wrapper::after {
+//   content: "";
+//   position: absolute;
+//   bottom: rem(-4);
+//   left: 0;
+//   width: 0;
+//   height: rem(2);
+//   background-color: $primary-01;
+//   transition: width 0.3s ease;
+// }
 
-.section-button__wrapper:hover::after {
-  width: 100%;
-}
+// .section-button__wrapper:hover::after {
+//   width: 100%;
+// }
 
 .counseling__card:hover .section-button__wrapper::after {
   width: 100%;
@@ -71,5 +71,27 @@
   margin-left: rem(2);
 }
 
+
+/* 1) テキストに疑似要素を付与 */
+.section-button__text {
+  position: relative;
+  display: inline-block;
+}
+
+.section-button__text::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: rem(-4);
+  width: 0;
+  height: rem(2);
+  background-color: $primary-01;
+  transition: width 0.3s ease;
+}
+
+/* 2) ホバー時にテキスト幅分だけ伸ばす */
+.section-button__wrapper:hover .section-button__text::after {
+  width: 100%;
+}
 
 
