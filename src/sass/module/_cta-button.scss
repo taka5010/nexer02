@@ -1,8 +1,12 @@
 @use "global" as *;
 
+.cta {
+  text-align: center;
+}
+
 .cta-button {
   display: inline-block;
-  background: $cta-blue;
+  background: linear-gradient(to right, #2D9DD6, #38CDC3);
   color: $text-white;
   text-decoration: none;
   padding: 14px 20px;
@@ -26,10 +30,25 @@
   margin-bottom: 4px;
 }
 
+.cta-button__icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(8);
+}
+
+.cta-button__icon {
+  display: inline-block;
+  width: rem(18);
+  height: rem(20);
+}
+
 .cta-button__phone {
   display: block;
-  font-size: rem(15);
+  font-size: rem(22);
+  line-height: 1.5;
   font-weight: $bold;
+  font-family: $en-font-family;
 }
 
 @include mq("md") {
