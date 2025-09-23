@@ -3,7 +3,7 @@
 
 .section-button {
   display: inline-block;
-
+  display: flex;
 }
 
 .section-button__wrapper {
@@ -89,9 +89,11 @@
   transition: width 0.3s ease;
 }
 
-/* 2) ホバー時にテキスト幅分だけ伸ばす */
-.section-button__wrapper:hover .section-button__text::after {
+.section-button__wrapper:hover .section-button__text::after,
+.counseling__card:hover .section-button__text::after {
   width: 100%;
 }
+
+
 
 

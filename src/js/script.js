@@ -32,6 +32,7 @@ jQuery(function ($) {
 
     // ヘッダーのスクロール追従
     const $header = $(".header");
+    const $hamburgerblack = $(".header__hamburger");
     const $telIcon = $(".contact-info__icon-img");
     const originalIconSrc = "./assets/images/common/tel_icon.svg";
     const scrolledIconSrc = "./assets/images/common/tel_icon-blue.svg";
@@ -39,9 +40,11 @@ jQuery(function ($) {
         const scrollTop = $(this).scrollTop();
         if (scrollTop > 100) {
             $header.addClass("is-scrolled");
+            $hamburgerblack.addClass("is-scrolled");
             $telIcon.attr("src", scrolledIconSrc);
         } else {
             $header.removeClass("is-scrolled");
+            $hamburgerblack.removeClass("is-scrolled");
             $telIcon.attr("src", originalIconSrc);
         }
     });

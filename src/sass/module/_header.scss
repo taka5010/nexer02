@@ -112,6 +112,10 @@
   transition: opacity 0.6s, background-color 0.6s;
 }
 
+.header__hamburger.is-scrolled span {
+  background-color: $text-black;
+}
+
 .header__hamburger span:nth-of-type(1) {
   top: rem(-8);
 }
