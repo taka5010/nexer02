@@ -1,0 +1,29 @@
+@use "global" as *;
+
+
+.section-title02 {
+  text-align: center;
+  position: relative;
+}
+
+.section-title02__text {
+  font-size: rem(20);
+  font-weight: $bold;
+  font-family: $ja-font-family;
+  color: $text-black;
+  @include mq("md") {
+    font-size: rem(30);
+  }
+}
+
+.section-title02::before {
+  content: "";
+  display: inline-block;
+  width: 150px;
+  height: 2px;
+  background-color: $line-01;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: rem(-20);
+}

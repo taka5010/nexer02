@@ -1,0 +1,74 @@
+@use "global" as *;
+
+.card02 {
+  position: relative;
+  width: 100%;
+  max-width: 345px;
+  overflow: hidden;
+}
+
+.card02__image {
+  position: relative;
+  width: 100%;
+  padding-top: 117.68%; /* 高さ406 ÷ 幅345 × 100 ≒ 117.68% */
+  // background-image: url("../images/common/psychological__img01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.card02__image.psychological__image--01 {
+  background-image: url("../images/common/psychological__img01.jpg");
+}
+
+.card02__image.psychological__image--02 {
+  background-image: url("../images/common/psychological__img02.jpg");
+}
+
+.card02__image.psychological__image--03 {
+  background-image: url("../images/common/psychological__img03.jpg");
+}
+
+.card02__image.psychological__image--04 {
+  background-image: url("../images/common/psychological__img04.jpg");
+}
+
+.card02__image.psychological__image--05 {
+  background-image: url("../images/common/psychological__img05.jpg");
+}
+
+.card02__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  // height: 170px;
+  // background: linear-gradient(to top, rgba(255, 255, 255, 0.96), rgba(255, 255, 255, 0.7));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: rem(20) rem(15);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.card02__title {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $primary-02;
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+.card02__text {
+  font-size: rem(16);
+  color: $text-black;
+  line-height: 1.6;
+  margin-top: rem(15);
+}
+
+
+
+
+
+
