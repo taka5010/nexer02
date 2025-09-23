@@ -1,0 +1,85 @@
+@use "global" as *;
+
+.mv-under {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  color: #ffffff;
+  text-align: center;
+  @include mq("md") {
+    background-position: top;
+    height: 85vh;
+  }
+}
+.mv-under.mv-under--psychological {
+  background-image: url(../images/common/fv_bg-sp.png);
+  @include mq("md") {
+    background-image: url(../images/common/psychological_fv-pc.jpg);
+  }
+}
+
+
+
+.mv-under__inner {
+  margin: 0 auto;
+  display: flex;
+  // justify-content: center;
+  align-items: center;
+  height: inherit;
+  transform: translateY(-20px);
+  @include mq("md") {
+    transform: translateY(100px);
+  }
+}
+
+.mv-under__content {
+  @include mq("md") {
+    margin-left: rem(100);
+  }
+}
+
+.mv-under__maintitle {
+  color: $primary-01;
+  font-size: rem(24);
+  line-height: 1.5;
+  font-weight: $bold;
+  letter-spacing: 0.03em;
+  font-family: $ja-font-family;
+  @include mq("md") {
+    font-size: rem(38);
+  }
+}
+.mv-under__subtitle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: rem(10);
+  @include mq("md") {
+  }
+}
+
+.mv-under__divider {
+  display: block;
+  width: rem(80);
+  height: rem(1);
+  background-color: $primary-03;
+  // margin: 0 auto;
+  @include mq("md") {
+    height: rem(1);
+    width: rem(80);
+  }
+}
+
+.mv-under__subtitle {
+  color: $primary-03;
+  font-size: rem(14);
+  line-height: 1.5;
+  font-weight: $medium;
+  letter-spacing: 0.03em;
+  font-family: $en-font-family;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
