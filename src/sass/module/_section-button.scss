@@ -29,6 +29,14 @@
   width: 100%;
 }
 
+.counseling__card:hover .section-button__wrapper::after {
+  width: 100%;
+}
+
+.counseling__card:hover .section-button__icon {
+  background-color: $primary-02;
+}
+
 .section-button__text {
   font-size: rem(16);
   font-weight: $medium;
