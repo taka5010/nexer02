@@ -2,14 +2,31 @@
 
 
 .section-button {
+  display: inline-block;
+
+}
+
+.section-button__wrapper {
   display: flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
   transition: opacity 0.3s ease;
 }
 
-.section-button:hover {
-  opacity: 0.8;
+.section-button__wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: rem(-4);
+  left: 0;
+  width: 0;
+  height: rem(2);
+  background-color: $primary-01;
+  transition: width 0.3s ease;
+}
+
+.section-button__wrapper:hover::after {
+  width: 100%;
 }
 
 .section-button__text {
@@ -31,7 +48,10 @@
   justify-content: center;
   transition: background-color 0.3s ease;
   margin-left: rem(20);
-  margin-left: rem(20);
+}
+
+.section-button:hover .section-button__icon {
+  background-color: $primary-02;
 }
 
 .section-button__icon span {

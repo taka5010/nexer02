@@ -1,18 +1,43 @@
 @use "global" as *;
 
 .cta {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
   text-align: center;
+  padding: rem(10) rem(20) rem(10) rem(20);
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 rem(-4) rem(20) rgba(0, 0, 0, 0.1);
+}
+
+@include mq("md") {
+  .cta {
+    bottom: rem(24);
+    left: auto;
+    right: rem(24);
+    width: auto;
+    padding: 0;
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
+    text-align: right;
+  }
 }
 
 .cta-button {
   display: inline-block;
-  background: linear-gradient(to right, #2D9DD6, #38CDC3);
+  background: linear-gradient(90deg, #2D9DD6 0%, #38CDC3 50%, #2D9DD6 100%);
+  background-size: 200% 100%;
+  background-position: 0% 50%;
   color: $text-white;
   text-decoration: none;
-  padding: 14px 20px;
+  padding: 10px 45px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba($black, 0.2);
-  transition: all 0.3s ease;
+  transition: all 0.5s ease, background-position 0.5s ease;
   text-align: center;
   min-width: 180px;
 }
@@ -20,7 +45,7 @@
 .cta-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 16px rgba($black, 0.3);
-  background: lighten($cta-blue, 5%);
+  background-position: 100% 50%;
 }
 
 .cta-button__text {
