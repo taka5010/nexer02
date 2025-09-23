@@ -14,7 +14,8 @@
   }
 }
 .mv-under.mv-under--psychological {
-  background-image: url(../images/common/fv_bg-sp.png);
+  background-image: url(../images/common/psychological_fv-pc.jpg);
+  background-position: 65% -90px;
   @include mq("md") {
     background-image: url(../images/common/psychological_fv-pc.jpg);
   }
