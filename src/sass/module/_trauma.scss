@@ -13,4 +13,12 @@
   margin: 0 auto;
 }
 
+.trauma__button {
+  justify-content: center;
+  @include mq("md") {
+    margin-top: rem(60);
+    justify-content: flex-end;
+  }
+}
+
 
