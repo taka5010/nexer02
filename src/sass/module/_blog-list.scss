@@ -43,7 +43,7 @@
 .blog-list__items {
   margin-top: rem(30);
   @include mq(md){
-    margin-top: rem(60);
+    margin-top: rem(0);
   }
 }
 
@@ -92,7 +92,6 @@
 
 
 .blog-list__item-title {
-  margin-top: rem(12);
   font-size: rem(16);
   line-height: 1.6;
   font-weight: $medium;

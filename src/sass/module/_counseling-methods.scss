@@ -16,6 +16,14 @@
   width: 100%;
   @include mq(md){
       padding: 0 rem(25);
-      max-width: rem(1200);
+      max-width: rem(1130);
   }
+}
+
+.counseling-methods .section-title__en {
+font-size: rem(38);
+}
+
+.counseling-methods .section-title__ja {
+padding-top: rem(0);
 }
