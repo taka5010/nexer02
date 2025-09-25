@@ -3,7 +3,9 @@
 .trauma {
   padding: rem(80) 0;
   @include mq("md") {
-    padding: rem(120) 0;
+    padding: rem(190) 0;
+    padding-top: 130px;
+    padding-bottom: 130px;
   }
 }
 
@@ -18,6 +20,7 @@
   justify-content: center;
   @include mq("md") {
     justify-content: flex-end;
+    margin-top: rem(60);
   }
 }
 

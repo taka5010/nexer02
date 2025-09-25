@@ -30,9 +30,9 @@
   align-items: center;
   justify-content: center;
   @include mq("md") {
-    margin-top: rem(60);
+    margin-top: rem(80);
     flex-direction: row;
-    gap: rem(22);
+    gap: rem(40);
   }
 }
 
@@ -50,7 +50,7 @@
     flex-wrap: wrap;
     justify-content: center;
     column-gap: rem(22);
-    row-gap: rem(22);
+    row-gap: rem(40);
   }
 
   .worries__items > * {

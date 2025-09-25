@@ -30,7 +30,7 @@
 .content01__image {
   width: 100%;
   @include mq(md){
-    transform: translateY(-60px) translateX(70px);
+    transform: translateY(-60px) translateX(0px);
     max-width: rem(480);
   }
 }
@@ -44,8 +44,9 @@
   @include mq(md){
     width: 88%;
       margin-top: 0;
-      margin-left: rem(-50);
-      padding: rem(50) rem(130);
+      margin-left: rem(-110);
+      padding: rem(44) rem(130);
+      // background-color: blueviolet;
   }
 }
 
@@ -78,7 +79,6 @@
   font-size: rem(28);
   font-weight: $bold;
   color: $primary-01;
-  letter-spacing: 0.04em;
   text-align: center;
   @include mq("md") {
     font-size: rem(36);
@@ -110,7 +110,7 @@
 
 .content01__text {
   font-size: rem(16);
-  line-height: 2;
+  line-height: 1.6;
   color: $text-black;
   margin-top: rem(20);
   @include mq("md") {
