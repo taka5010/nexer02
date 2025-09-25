@@ -409,6 +409,52 @@
         </div>
       </div>
     </section>
+    <section class="price" aria-labelledby="price-title">
+      <div class="price__inner">
+        <h2 id="price-title" class="price__title">料金</h2>
+    
+        <table class="price__table">
+          <!-- 3列を固定（面接区分 / 面接方法 / 料金）-->
+          <colgroup>
+            <col class="price__col1">
+            <col class="price__col2">
+            <col class="price__col3">
+          </colgroup>
+    
+          <thead>
+            <tr>
+              <!-- PCでは非表示にする（列は残す）-->
+              <th scope="col" class="price__col--menu"><span class="u-visually-hidden">面接区分</span></th>
+              <th scope="col" class="price__col--method">面接方法</th>
+              <th scope="col" class="price__col--fee">料金</th>
+            </tr>
+          </thead>
+    
+          <tbody>
+            <tr>
+              <th scope="row">初回面接</th>
+              <td data-label="面接方法">対面・電話・Teams</td>
+              <td data-label="料金"><span class="price__amount">8,800円</span> <span class="price__unit">／ 50分</span></td>
+            </tr>
+            <tr>
+              <th scope="row">継続面接</th>
+              <td data-label="面接方法">対面・電話・Teams</td>
+              <td data-label="料金"><span class="price__amount">13,200円</span> <span class="price__unit">／ 50分</span></td>
+            </tr>
+            <tr>
+              <th scope="row">カップル面接</th>
+              <td data-label="面接方法">対面のみ</td>
+              <td data-label="料金"><span class="price__amount">16,500円</span> <span class="price__unit">／ 50分</span></td>
+            </tr>
+            <tr>
+              <th scope="row">家族面接</th>
+              <td data-label="面接方法">対面のみ</td>
+              <td data-label="料金"><span class="price__amount">22,000円</span> <span class="price__unit">／ 50分</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
     <section class="faq">
       <div class="faq__inner inner">
         <h2 class="faq__title section-title">
