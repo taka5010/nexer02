@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.price-info {
+  max-width: rem(600);
+  margin: 0 auto;
+  padding: rem(40) 0;
+  color: $text-black;
+  background-color: $text-white;
+  @include mq(md) {
+    max-width: rem(1080);
+    padding-top: rem(40);
+    padding-bottom: rem(40);
+    padding-right: rem(180);
+    padding-left: rem(180);
+    margin-top: rem(80);
+  }
+}
+
+.price-info__header {
+  text-align: center;
+}
+
+.price-info__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: 8px;
+  margin: 0 auto;
+}
+
+.price-info__description {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.price-info__methods {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  margin-top: rem(20);
+
+}
+
+.price-info__method {
+  background-color: $bg-01;
+  padding: rem(20);
+  flex: 1 1 320px;
+  box-sizing: border-box;
+  max-width: rem(350);
+}
+.price-info__method-title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $primary-01;
+  padding-bottom: rem(5);
+}
+
+.price-info__method--post .price-info__method-title {
+  color: $primary-02;
+  border-bottom: 1px solid $primary-02;
+}
+
+.price-info__method--bank .price-info__method-title {
+  color: $primary-03;
+  border-bottom: 1px solid $primary-03;
+}
+
+
+
+.price-info__method-body {
+  font-size: rem(16);
+  line-height: 1.6;
+  margin-top: rem(10);
+}
+
+.price-info__method-text  {
+  font-size: rem(16);
+  line-height: 1.6;
+}
+
+
+

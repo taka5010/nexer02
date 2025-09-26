@@ -1,129 +1,211 @@
 @use "global" as *;
-
-
-/* ================
-   Price (mobile-first)
-   ================ */
-   :root{
-    --price-accent:#2D9DD6;
-    --price-accent-2:#38CDC3;
-    --price-text:#1f2a37;
-    --price-muted:#6b7280;
-    --price-border:#e5eef5;
-    --price-dash:rgba(45,157,214,.45);
-    --price-bg-soft:linear-gradient(135deg, rgba(45,157,214,.06), rgba(56,205,195,.06));
-  }
-  
-  .price{ background:var(--price-bg-soft); padding:40px 16px; }
-  .price__inner{ max-width:1120px; margin:0 auto; }
-  .price__title{
-    font-size:clamp(22px,3.2vw,28px); font-weight:700; color:var(--price-accent);
-    text-align:center; letter-spacing:.08em; margin-bottom:20px;
-  }
-  
-  .price__table{
-    width:100%;
-    border-collapse:collapse;
-    background:transparent;
-      border:1px solid var(--price-border);
-    border-radius:14px; 
-    overflow:hidden; 
-  }
-
-  .price__table thead th,
-  .price__table tbody th,
-  .price__table tbody td{
-  background:#fff;
-}
-  
-  /* colgroup（任意・見た目の安全網） */
-  .price__col1{ width:28%; }
-  .price__col2{ width:36%; }
-  .price__col3{ width:36%; }
-  
-  /* スマホ：theadは非表示、カード風 */
-  .price__table thead{ display:none; }
-  
-  .price__table tbody tr{
-    display:grid; grid-template-columns:1fr; gap:6px;
-    padding:18px 16px; border-top:1px solid var(--price-border);
-  }
-  .price__table tbody tr:first-child{ border-top:none; }
-  
-  .price__table tbody th[scope="row"]{
-    font-size:20px; line-height:1.3; color:var(--price-accent); font-weight:800;
-  }
-  .price__table td{ font-size:16px; color:var(--price-text); }
-  .price__table td::before{
-    content:attr(data-label); display:block; font-size:12px; letter-spacing:.06em;
-    color:var(--price-muted); margin-bottom:2px;
-  }
-  .price__amount{ font-weight:800; font-size:20px; }
-  .price__unit{ color:var(--price-muted); font-size:14px; margin-left:4px; }
-  
-  /* スクリーンリーダーのみ表示 */
-  .u-visually-hidden{
-    position:absolute!important; width:1px; height:1px; margin:-1px; padding:0; border:0;
-    clip:rect(0 0 0 0); clip-path:inset(50%); overflow:hidden;
-  }
-
-  
-  
-  /* ================
-     ≥768px でテーブル風
-     ================ */
-     @media (min-width:768px){
-      .price{ padding:64px 20px; }
-      .price__title{ margin-bottom:28px; }
-    
-      .price__table thead{ display:table-header-group; }
-      .price__table thead th{
-        background:#fff; color:var(--price-accent); font-weight:800; font-size:20px;
-        text-align:center; padding:22px 16px; border-bottom:1px solid var(--price-border);
-      }
-    
-      /* ★ ヘッダー左セルは列を残したまま非表示にする（display:none は使わない） */
-      /* .price__table thead th.price__col--menu{ display:none; } ←使わない。CSSでは // コメント不可 */
-      .price__table thead th.price__col--menu{
-        visibility:hidden;
-        background:transparent !important;  /* ★これが肝 */
-        border:none !important;
-        padding:0 !important;
-        height:0; line-height:0; font-size:0;
-      }
-    
-      .price__table tbody tr{ display:table-row; padding:0; }
-      .price__table tbody th[scope="row"],
-      .price__table td{
-        display:table-cell; vertical-align:middle; padding:24px 20px;
-        border-bottom:1px solid var(--price-border); font-size:18px;
-      }
-      .price__table tbody th[scope="row"]{
-        text-align:center; font-size:22px; letter-spacing:.08em;
-      }
-      .price__table td::before{ content:none; }
-    
-      /* ★ 点線は thead には付けない。tbody のみで制御（ズレ防止） */
-      .price__table tbody th[scope="row"]{
-        border-right:2px dashed var(--price-dash);
-      }
-    
-      .price__amount{ font-size:22px; }
-      .price__unit{ font-size:15px; }
+ 
+  .price {
+    background: linear-gradient(135deg, rgba(45, 157, 214, .06), rgba(56, 205, 195, .06));
+    // padding: 40px 16px;
+    padding-top: rem(80);
+    padding-bottom: rem(80);
+    @include mq("md") {
+      padding: 64px 20px;
+      padding-top: rem(130);
+      padding-bottom: rem(130);
     }
-    
-    @media (min-width:768px){
-      /* 左端（面接区分列）の右側に点線 */
-      .price__table tbody th[scope="row"] {
-        border-right: 2px dashed var(--price-dash);
-      }
-    
-      .price__table tbody td:nth-child(3){
-        border-left: 2px dashed var(--price-dash);
-      }
-      .price__table thead th.price__col--method{
-        border-right: 2px dashed var(--price-dash);
-      }
-    }
-    
+  }
   
+  .price__inner {
+    max-width: 1120px;
+    margin: 0 auto;
+  }
+  
+  .price__title {
+    font-size: clamp(22px, 3.2vw, 28px);
+    font-weight: 700;
+    color: #2D9DD6;
+    text-align: center;
+    letter-spacing: .08em;
+    margin-bottom: 20px;
+  
+    @include mq("md") {
+      margin-bottom: 28px;
+    }
+  }
+  
+  .price__table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: rem(16);
+    margin-top: rem(40);
+    @include mq("md") {
+      font-size: rem(18);
+      border-collapse: collapse;
+      border-radius: 14px;
+      overflow: hidden;
+      background: transparent;
+      margin-top: rem(60);
+    }
+  }
+  
+  .price__table thead {
+    display: none;
+  
+    @include mq("md") {
+      display: table-header-group;
+    }
+  }
+  
+  .price__table thead th {
+    @include mq("md") {
+      background: #fff;
+      color: $primary-01;
+      font-weight: 800;
+      font-size: 20px;
+      text-align: center;
+      padding: 22px 16px;
+      border-bottom: 1px solid $line-02;
+    }
+  }
+  
+  .price__table thead th.price__col--menu {
+    @include mq("md") {
+      visibility: hidden;
+      background: transparent !important;
+      border: none !important;
+      padding: 0 !important;
+      height: 0;
+      line-height: 0;
+      font-size: 0;
+    }
+  }
+  
+  .price__table thead th.price__col--method {
+    @include mq("md") {
+      border-right: 2px dashed rgba(45, 157, 214, .45);
+    }
+  }
+  
+  .price__table tbody tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: rem(30);
+    padding: rem(40);
+    background: #fff;
+    border: 1px solid #e5eef5;
+    border-radius: 14px;
+    text-align: center;
+    max-width: rem(400);
+    margin: 0 auto 14px;
+    margin-top: rem(20);
+    @include mq("md") {
+      display: table-row;
+      margin: 0;
+      padding: 0;
+      background: transparent;
+      border: 0;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+
+  .price__table tbody tr:first-child {
+    margin-top: rem(40);
+  }
+  
+  .price__table tbody tr:last-child {
+    margin-bottom: 0;
+  }
+  
+  .price__table tbody th[scope="row"] {
+    font-weight: $bold;
+    color: $primary-01;
+    background: transparent;
+    font-size: rem(22);
+    
+    @include mq("md") {
+      border-bottom: 1px solid $line-02;
+      display: table-cell;
+      vertical-align: middle;
+      text-align: center;
+      border-right: 2px dashed $line-02;
+      background: #fff;
+    }
+  }
+  
+  .price__table td {
+    font-size: 16px;
+    color: #1f2a37;
+    background: transparent;
+  
+    @include mq("md") {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 24px 20px;
+      border-bottom: 1px solid $line-02;
+      font-size: 18px;
+      background: #fff;
+    }
+  }
+  
+  .price__table td:nth-child(3) {
+    @include mq("md") {
+      border-left: 2px dashed $line-02;
+    }
+  }
+  
+  .price__table td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: rem(18);
+    color: #6b7280;
+  
+    @include mq("md") {
+      content: none;
+    }
+  }
+
+  .price__table tbody th.price__th--blue {
+    color: $primary-03;
+  }
+
+  
+  .price__col1 {
+    @include mq("md") {
+      width: 28%;
+    }
+  }
+  
+  .price__col2 {
+    @include mq("md") {
+      width: 36%;
+    }
+  }
+  
+  .price__col3 {
+    @include mq("md") {
+      width: 36%;
+    }
+  }
+
+  .price__table-text {
+    font-size: rem(14);
+    color: $text-black;
+    text-align: right;
+  }
+
+  .price__text-wrapper {
+    margin-top: rem(20);
+  }
+
+  .price__text {
+    font-size: rem(14);
+    color: $text-black;
+    line-height: 1.6;
+  }
+
+  .price__button-wrapper .section-button{
+    margin-top: rem(40);
+    justify-content: center;
+  }

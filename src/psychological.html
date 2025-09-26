@@ -410,49 +410,102 @@
       </div>
     </section>
     <section class="price" aria-labelledby="price-title">
-      <div class="price__inner">
-        <h2 id="price-title" class="price__title">料金</h2>
-    
-        <table class="price__table">
-          <!-- 3列を固定（面接区分 / 面接方法 / 料金）-->
-          <colgroup>
-            <col class="price__col1">
-            <col class="price__col2">
-            <col class="price__col3">
-          </colgroup>
-    
-          <thead>
-            <tr>
-              <!-- PCでは非表示にする（列は残す）-->
-              <th scope="col" class="price__col--menu"><span class="u-visually-hidden">面接区分</span></th>
-              <th scope="col" class="price__col--method">面接方法</th>
-              <th scope="col" class="price__col--fee">料金</th>
-            </tr>
-          </thead>
-    
-          <tbody>
-            <tr>
-              <th scope="row">初回面接</th>
-              <td data-label="面接方法">対面・電話・Teams</td>
-              <td data-label="料金"><span class="price__amount">8,800円</span> <span class="price__unit">／ 50分</span></td>
-            </tr>
-            <tr>
-              <th scope="row">継続面接</th>
-              <td data-label="面接方法">対面・電話・Teams</td>
-              <td data-label="料金"><span class="price__amount">13,200円</span> <span class="price__unit">／ 50分</span></td>
-            </tr>
-            <tr>
-              <th scope="row">カップル面接</th>
-              <td data-label="面接方法">対面のみ</td>
-              <td data-label="料金"><span class="price__amount">16,500円</span> <span class="price__unit">／ 50分</span></td>
-            </tr>
-            <tr>
-              <th scope="row">家族面接</th>
-              <td data-label="面接方法">対面のみ</td>
-              <td data-label="料金"><span class="price__amount">22,000円</span> <span class="price__unit">／ 50分</span></td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="price__inner inner">
+        <h2 class="section-title content03__header">
+          <p class="section-title__en">price</p>
+          <p class="section-title__ja">料金案内</p>
+        </h2>
+        <div class="price__table-wrapper">
+          <table class="price__table">
+            <!-- 3列を固定（面接区分 / 面接方法 / 料金）-->
+            <colgroup>
+              <col class="price__col1">
+              <col class="price__col2">
+              <col class="price__col3">
+            </colgroup>
+      
+            <thead>
+              <tr>
+                <!-- PCでは非表示にする（列は残す）-->
+                <th scope="col" class="price__col--menu"><span class="u-visually-hidden">面接区分</span></th>
+                <th scope="col" class="price__col--method">面接方法</th>
+                <th scope="col" class="price__col--fee">料金</th>
+              </tr>
+            </thead>
+      
+            <tbody>
+              <tr>
+                <th scope="row">初回面接</th>
+                <td data-label="面接方法">対面・電話・Teams</td>
+                <td data-label="料金"><span class="price__amount">8,800円</span> <span class="price__unit">／ 50分</span></td>
+              </tr>
+              <tr>
+                <th scope="row" class="price__th--blue">継続面接</th>
+                <td data-label="面接方法">対面・電話・Teams</td>
+                <td data-label="料金"><span class="price__amount">13,200円</span> <span class="price__unit">／ 50分</span></td>
+              </tr>
+              <tr>
+                <th scope="row">カップル面接</th>
+                <td data-label="面接方法">対面のみ</td>
+                <td data-label="料金"><span class="price__amount">16,500円</span> <span class="price__unit">／ 50分</span></td>
+              </tr>
+              <tr>
+                <th scope="row" class="price__th--blue">家族面接</th>
+                <td data-label="面接方法">対面のみ</td>
+                <td data-label="料金"><span class="price__amount">22,000円</span> <span class="price__unit">／ 50分</span></td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="price__table-text">(※上記金額は全て10％消費税込になっております。)</p>
+        </div>
+        <div class="price__text-wrapper">
+          <p class="price__text">※大嶋信頼(おおしま のぶより)のカウンセリングについてはお問い合わせください。</p>
+          <p class="price__text">※電話相談・オンライン相談については、相談日前日までにお振込みください。</p>
+          <p class="price__text">※ご予約の変更・キャンセルは、予約日の3日前（日曜、祝日等弊社休業日を除く）の18時までにお電話にてご連絡ください。<br>
+            期日経過後は、キャンセル料として、ご相談料金と同額を請求させていただきます。</p>
+          <p class="price__text">※カウンセリングを受けた後の料金の未払いおよび返還請求については応じられません。</p>
+          <p class="price__text">※ご予約の前に利用規約を必ずお読みください。</p>
+        </div>
+        <div class="price__button-wrapper">
+          <a href="#" class="section-button">
+            <div class="section-button__wrapper">
+              <span class="section-button__text">インサイト・カウンセリング利用規約</span>
+              <div class="section-button__icon button-icon--blue">
+                <span class="arrow-white"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="price__info price-info">
+          <div class="price-info__header">
+            <h2 class="price-info__title section-title02">
+              <p class="section-title02__text">電話・オンライン相談の料金のお支払いについて</p>
+            </h2>
+          </div>
+          <p class="price-info__description">
+            電話相談・オンライン相談の場合は、前日までのお振込をお願い致します。<br>
+            なお、振込手数料はお客様のご負担となります。
+          </p>
+          <div class="price-info__methods">
+            <div class="price-info__method price-info__method--post">
+              <div class="price-info__method-title">郵便振替</div>
+              <div class="price-info__method-body">
+                <p class="price-info__method-text">10190-6338721</p>
+                <p class="price-info__method-text">株式会社インサイト・カウンセリング</p>
+              </div>
+            </div>
+            <div class="price-info__method price-info__method--bank">
+              <div class="price-info__method-title">銀行振込</div>
+              <div class="price-info__method-body">
+                <p class="price-info__method-text">三菱ＵＦＪ銀行　新橋支店</p>
+                <p class="price-info__method-text">（普通）4920311</p>
+                <p class="price-info__method-text">株式会社インサイト　カウンセリング</p>
+                <p class="price-info__method-text">代表取締役　大嶋信頼（オオシマ ノブヨリ）</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </section>
     <section class="faq">
