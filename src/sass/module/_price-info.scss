@@ -6,6 +6,8 @@
   padding: rem(40) 0;
   color: $text-black;
   background-color: $text-white;
+  margin-top: rem(40);
+  padding-bottom: rem(0);
   @include mq(md) {
     max-width: rem(1080);
     padding-top: rem(40);
@@ -42,9 +44,12 @@
 .price-info__methods {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 0px;
   justify-content: space-between;
   margin-top: rem(20);
+  @include mq(md) {
+    gap: rem(20);
+  }
 
 }
 
@@ -53,7 +58,10 @@
   padding: rem(20);
   flex: 1 1 320px;
   box-sizing: border-box;
-  max-width: rem(350);
+  width: 100%;
+  @include mq(md) {
+    max-width: rem(350);
+  }
 }
 .price-info__method-title {
   font-size: rem(20);
@@ -63,8 +71,8 @@
 }
 
 .price-info__method--post .price-info__method-title {
-  color: $primary-02;
-  border-bottom: 1px solid $primary-02;
+  color: $primary-01;
+  border-bottom: 1px solid $primary-01;
 }
 
 .price-info__method--bank .price-info__method-title {
