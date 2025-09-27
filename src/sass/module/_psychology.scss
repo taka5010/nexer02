@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.psychology {
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding: rem(130) 0;
+  }
+}
+

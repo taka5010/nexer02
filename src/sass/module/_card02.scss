@@ -11,9 +11,12 @@
   position: relative;
   width: 100%;
   padding-top: 117.68%; /* 高さ406 ÷ 幅345 × 100 ≒ 117.68% */
-  // background-image: url("../images/common/psychological__img01.jpg");
   background-size: cover;
   background-position: center;
+}
+
+.worries--trauma .card02__image {
+  padding-top: calc(485 / 520 * 100%); /* 高さ406 ÷ 幅345 × 100 ≒ 117.68% */
 }
 
 .card02__image.psychological__image--01 {
@@ -36,6 +39,22 @@
   background-image: url("../images/common/psychological__img05.jpg");
 }
 
+.card02__image.trauma__image--01 {
+  background-image: url("../images/common/trauma_img01.jpg");
+}
+
+.trauma__image--02 {
+  background-image: url("../images/common/trauma_img02.jpg");
+}
+
+.card02__image.trauma__image--03 {
+  background-image: url("../images/common/trauma_img03.jpg");
+}
+
+.card02__image.trauma__image--04 {
+  background-image: url("../images/common/trauma_img04.jpg");
+}
+
 .card02__content {
   position: absolute;
   bottom: 0;
@@ -49,6 +68,9 @@
   box-sizing: border-box;
   text-align: center;
   justify-content: flex-start;
+  @include mq("md") {
+    text-align: left;
+  }
 }
 
 .card02__title {

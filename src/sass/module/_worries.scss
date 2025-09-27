@@ -41,21 +41,36 @@
   grid-template-columns: 1fr; /* SP: 1列 */
   gap: rem(20);
   justify-items: center;
+  @include mq("md") {
+    // display: flex;
+    // flex-wrap: wrap;
+    justify-content: center;
+    column-gap: rem(22);
+    row-gap: rem(40);
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
-@include mq("md") {
-  /* PCはラップするフレックスで中央揃え */
-  .worries__items {
+.worries--psychological .worries__items {
+  @include mq("md") {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     column-gap: rem(22);
     row-gap: rem(40);
   }
-
-  .worries__items > * {
+}
+.worries--psychological .worries__items > *  {
+  @include mq("md") {
     flex: 0 1 calc((100% - (rem(22) * 2)) / 3); /* 3列ベース */
     max-width: calc((100% - (rem(22) * 2)) / 3);
+  }
+}
+
+.worries--trauma .card02 {
+
+  @include mq("md") {
+    max-width: rem(520);
   }
 }
 

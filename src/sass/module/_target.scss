@@ -1,0 +1,22 @@
+@use "global" as *;
+
+
+.target {
+  padding: rem(80) 0;
+  @include mq("md") {
+    padding: rem(130) 0;
+  }
+} 
+
+.target__text {
+  font-size: rem(16);
+  line-height: 1.6;
+  margin-top: rem(60);
+  text-align: center;
+  @include mq("md") {
+    font-size: rem(16);
+    margin-top: rem(80);
+  }
+}
+
+

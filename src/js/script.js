@@ -83,7 +83,7 @@ jQuery(function ($) {
     });
 
     // カード02の高さを揃える
-    function equalizeHeights() {
+    function equalizeCard02Heights() {
         var $contents = $('.card02__content');
         var maxHeight = 0;
         $contents.css('height', 'auto');
@@ -92,14 +92,14 @@ jQuery(function ($) {
             if (h > maxHeight) maxHeight = h;
         });
         $contents.css('height', maxHeight);
-        }
-        equalizeHeights();
-        $(window).on('resize', function() {
-        equalizeHeights();
-        });
+    }
+    equalizeCard02Heights();
+    $(window).on('resize', function() {
+        equalizeCard02Heights();
+    });
 
     // カード03の高さを揃える
-    function equalizeHeights() {
+    function equalizeCard03Heights() {
         var $contents = $('.card03__content');
         var maxHeight = 0;
         $contents.css('height', 'auto');
@@ -108,11 +108,11 @@ jQuery(function ($) {
             if (h > maxHeight) maxHeight = h;
         });
         $contents.css('height', maxHeight);
-        }
-        equalizeHeights();
-        $(window).on('resize', function() {
-        equalizeHeights();
-        });
+    }
+    equalizeCard03Heights();
+    $(window).on('resize', function() {
+        equalizeCard03Heights();
+    });
 });
 
 

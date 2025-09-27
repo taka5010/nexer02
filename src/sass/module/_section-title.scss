@@ -20,7 +20,7 @@
   position: relative;
   display: inline-block;
   @include mq("md") {
-    font-size: rem(36);
+    font-size: rem(38);
     letter-spacing: 0.05em;
   }
 }

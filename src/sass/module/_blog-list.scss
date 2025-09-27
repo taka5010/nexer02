@@ -1,13 +1,40 @@
 @use "global" as *;
 
 
+// .blog-list {
+//   padding-top: rem(80);
+//   padding-bottom: rem(80);
+//   // background-image: url(../images/common/blog-list_bg.jpg);
+//   // background-position: center;
+//   // background-repeat: no-repeat;
+//   // background-size: cover;
+//   @include mq(md){
+//     padding-top: rem(130);
+//     padding-bottom: rem(130);
+//   }
+// }
+
+// .blog-list__inner {
+//   margin: auto;
+//   padding: 0 rem(20);
+//   max-width: rem(600);
+//   width: 100%;
+//   background-image: url(../images/common/blog-list_bg.jpg);
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   @include mq(md){
+//       padding: 0 rem(25);
+//       max-width: rem(1000);
+//   }
+// }
+
+//test start
 .blog-list {
+  position: relative;
   padding-top: rem(80);
   padding-bottom: rem(80);
-  background-image: url(../images/common/blog-list_bg.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   @include mq(md){
     padding-top: rem(130);
     padding-bottom: rem(130);
@@ -15,15 +42,52 @@
 }
 
 .blog-list__inner {
-  margin: auto;
-  padding: 0 rem(20);
-  max-width: rem(600);
-  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: rem(80) rem(20);
   @include mq(md){
-      padding: 0 rem(25);
-      max-width: rem(1000);
+    padding: rem(130) 0;
   }
 }
+
+.blog-list__inner.inner {
+  @include mq(md){
+   max-width: initial;
+  }
+}
+
+.blog-list__inner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 50vw); /* 左端を画面端に合わせる */
+  right: rem(20);            /* ← ★ 右端を常に50px内側で止める */
+  background-image: url(../images/common/blog-list_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
+  pointer-events: none;
+  @include mq(md){
+    right: rem(50);
+  }
+}
+
+.blog-list__text {
+  font-size: rem(16);
+  line-height: 1.6;
+  margin-top: rem(15);
+  text-align: center;
+  @include mq(md){
+    font-size: rem(16);
+    margin-top: rem(60);
+  }
+}
+
+
+//test
 
 .blog-list__title.section-title02::before {
   display: none;
@@ -41,9 +105,15 @@
 }
 
 .blog-list__items {
+  padding-right: rem(20);
   margin-top: rem(30);
+  max-width: rem(600);
+  width: 100%;
+  margin: 0 auto;
   @include mq(md){
     margin-top: rem(0);
+    max-width: rem(1000);
+    padding-right: rem(50);
   }
 }
 
