@@ -56,9 +56,12 @@
   }
 }
 
-// .blog-list__item + .blog-list__item {
-//   margin-top: rem(30);
-// }
+.blog-list__item + .blog-list__item {
+  margin-top: rem(20);
+  @include mq(md){
+    margin-top: rem(0);
+  }
+}
 
 .blog-list__item a {
   display: flex;

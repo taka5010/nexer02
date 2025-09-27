@@ -10,6 +10,7 @@
 
   @include mq("sm") {
     padding: rem(80) 0 rem(60);
+    background-image: url(../images/common/footer_bg-pc.png);
   }
 }
 

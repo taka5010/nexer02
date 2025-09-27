@@ -16,14 +16,12 @@
     flex-direction: row;
     gap: rem(30);
     text-align: left;
-    padding-top: rem(34);
+    padding-top: rem(30);
     padding-right: rem(88);
-    padding-bottom: rem(34);
+    padding-bottom: rem(30);
     padding-left: rem(100);
   }
 }
-
-
 
 .voice-card__avatar {
   width: rem(80);
@@ -39,7 +37,6 @@
     height: rem(100);
   }
 }
-
 
 .voice-card__avatar img {
   width: 100%;
@@ -70,9 +67,10 @@
 }
 
 .voice-card__text {
-  margin-top: rem(10);
-  padding: rem(10);
+  margin-top: rem(5);
+  padding: rem(0);
   border-radius: rem(8);
+  text-align: left;
   @include mq(md) {
     border: none;
     border-radius: 0;
@@ -82,17 +80,16 @@
 .voice-card__text p{
   margin: 0;
   font-size: rem(16);
-  line-height: 2.4;
+  line-height: 1.6;
   padding: 0 0 2px;
   color: $text-black;
   background-image: url("data:image/svg+xml;utf8,\
-<svg xmlns='http://www.w3.org/2000/svg' width='8' height='24' viewBox='0 0 8 24' preserveAspectRatio='none'>\
-  <line x1='0' y1='23.5' x2='8' y2='23.5' stroke='%23#{str-slice(inspect($line-02), 2)}' stroke-width='1' stroke-dasharray='6 6' stroke-linecap='butt'/>\
+<svg xmlns='http://www.w3.org/2000/svg' width='8' height='16' viewBox='0 0 8 16' preserveAspectRatio='none'>\
+  <line x1='0' y1='15.5' x2='8' y2='15.5' stroke='%23#{str-slice(inspect($line-02), 2)}' stroke-width='1' stroke-dasharray='6 6' stroke-linecap='butt'/>\
 </svg>");
   background-repeat: repeat;
-  background-size: 8px 2.4em;
+  background-size: 8px 1.6em;
   background-position: left top;
-  // color: $line-02;
 }
 
 

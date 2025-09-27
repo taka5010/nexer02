@@ -1,0 +1,17 @@
+@use "global" as *;
+
+.other-services {
+  padding-top: rem(80);
+  padding-bottom: rem(110);
+  @include mq("md") {
+    padding-top: rem(130);
+    padding-bottom: rem(180);
+  }
+}
+
+.other-services__cards {
+margin-top: rem(40);
+  @include mq("md") {
+margin-top: rem(60);
+  }
+}
