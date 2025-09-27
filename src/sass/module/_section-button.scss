@@ -29,11 +29,13 @@
 //   width: 100%;
 // }
 
-.counseling__card:hover .section-button__wrapper::after {
+.card04:hover .section-button__wrapper::after,
+.card03:hover .section-button__wrapper::after {
   width: 100%;
 }
 
-.counseling__card:hover .section-button__icon {
+.card04:hover .section-button__icon,
+.card03:hover .section-button__icon {
   background-color: $primary-02;
 }
 
@@ -90,8 +92,9 @@
 }
 
 .section-button__wrapper:hover .section-button__text::after,
-.counseling__card:hover .section-button__text::after,
-.blog-list__item:hover .section-button__text::after {
+.card04:hover .section-button__text::after,
+.blog-list__item:hover .section-button__text::after,
+.card03:hover .section-button__text::after{
   width: 100%;
 }
 

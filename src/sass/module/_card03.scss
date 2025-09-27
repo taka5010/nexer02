@@ -10,18 +10,17 @@
 .card03__image {
   position: relative;
   width: 100%;
-  padding-top: 117.68%; /* 高さ406 ÷ 幅345 × 100 ≒ 117.68% */
-  // background-image: url("../images/common/psychological__img01.jpg");
+  padding-top: calc(589 / 520 * 100%); /* 高さ589 ÷ 幅520 × 100 ≒ 117.68% */
   background-size: cover;
   background-position: center;
 }
 
-.card03__image.psychological__image--01 {
-  background-image: url("../images/common/psychological__img01.jpg");
+.card03__image.other-services__image--01 {
+  background-image: url("../images/common/other-services_img01.jpg");
 }
 
-.card03__image.psychological__image--02 {
-  background-image: url("../images/common/psychological__img02.jpg");
+.card03__image.other-services__image--02 {
+  background-image: url("../images/common/other-services_img02.jpg");
 }
 
 .card03__content {
@@ -32,7 +31,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: baseline;
   padding: rem(20) rem(15);
   box-sizing: border-box;
   text-align: center;
@@ -40,18 +39,95 @@
 }
 
 .card03__title {
-  font-size: rem(24);
+  font-size: rem(20);
   font-weight: $bold;
-  color: $primary-02;
-  margin-bottom: 8px;
+  color: $primary-01;
+  position: relative;
   line-height: 1.6;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.card03__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: rem(60);
+  height: rem(1);
+  background-color: #248CC0;
+  margin-left: rem(8);
+  @include mq("md") {
+    width: rem(100);
+  }
 }
 
 .card03__text {
   font-size: rem(16);
+  line-height: 1.6;
+  color: $text-black;
+  margin-top: rem(15);
+  flex-grow: 1;
+  text-align: left;
+  @include mq("md") {
+    font-size: rem(16);
+  }
+}
+
+.card03__text + .card03__text {
+  margin-top: rem(0);
+}
+
+.card03__button {
+  justify-content: flex-end;
+  transition: opacity 0.3s ease;
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.card03__button:hover {
+  opacity: 0.8;
+}
+
+
+.card03__button-text {
+  font-size: rem(16);
+  font-weight: $regular;
   color: $text-black;
   line-height: 1.6;
-  margin-top: rem(15);
+  @include mq("md") {
+    font-size: rem(16);
+    line-height: 1.6;
+  }
+}
+
+.card03__button-icon {
+  width: rem(32);
+  height: rem(32);
+  background-color: $primary-01;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.card03__button-icon .arrow-white {
+  display: inline-block;
+  width: rem(10);
+  height: rem(12);
+  background: #ffffff;
+  clip-path: polygon(0 0, 0 100%, 100% 50%);
+}
+
+.card03__button:hover .card03__button-icon {
+  background-color: darken($primary-01, 10%);
+}
+
+.card03__button.section-button {
+  width: 100%;
 }
 
 
