@@ -18,8 +18,18 @@
   background-position: 65% -90px;
   @include mq("md") {
     background-image: url(../images/common/psychological_fv-pc.jpg);
+    background-position: left -90px;
   }
 }
+
+.mv-under.mv-under--trauma {
+  background-image: url(../images/common/trauma_fv-pc.jpg);
+  background-position: 65% -90px;
+  @include mq("md") {
+    background-image: url(../images/common/trauma-fv_img.png);
+  }
+}
+
 
 
 
@@ -80,6 +90,7 @@
   font-weight: $medium;
   letter-spacing: 0.03em;
   font-family: $en-font-family;
+  text-transform: uppercase;
   @include mq("md") {
     font-size: rem(18);
   }
