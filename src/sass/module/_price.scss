@@ -2,7 +2,6 @@
  
   .price {
     background: linear-gradient(135deg, rgba(45, 157, 214, .06), rgba(56, 205, 195, .06));
-    // padding: 40px 16px;
     padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
@@ -48,6 +47,13 @@
       margin-top: rem(60);
     }
   }
+
+  .price__table-wrapper {
+    @include mq("md") {
+    max-width: 890px;
+    margin: 0 auto;
+    }
+}
   
   .price__table thead {
     display: none;
@@ -62,9 +68,9 @@
       background: #fff;
       color: $primary-01;
       font-weight: 800;
-      font-size: 20px;
+      font-size: rem(16);
       text-align: center;
-      padding: 22px 16px;
+      padding: rem(25) rem(16);
       border-bottom: 1px solid $line-02;
     }
   }
@@ -123,7 +129,6 @@
     color: $primary-01;
     background: transparent;
     font-size: rem(22);
-    
     @include mq("md") {
       border-bottom: 1px solid $line-02;
       display: table-cell;
@@ -131,20 +136,19 @@
       text-align: center;
       border-right: 2px dashed $line-02;
       background: #fff;
+      font-size: rem(16);
     }
   }
   
   .price__table td {
-    font-size: 16px;
+    font-size: rem(16);
     color: #1f2a37;
     background: transparent;
-  
     @include mq("md") {
       display: table-cell;
       vertical-align: middle;
-      padding: 24px 20px;
+      padding: rem(25) rem(20);
       border-bottom: 1px solid $line-02;
-      font-size: 18px;
       background: #fff;
     }
   }
@@ -173,19 +177,19 @@
   
   .price__col1 {
     @include mq("md") {
-      width: 28%;
+      width: 23%;
     }
   }
   
   .price__col2 {
     @include mq("md") {
-      width: 36%;
+      width: 38.5%;
     }
   }
   
   .price__col3 {
     @include mq("md") {
-      width: 36%;
+      width: 38.5%;
     }
   }
 
@@ -193,10 +197,16 @@
     font-size: rem(14);
     color: $text-black;
     text-align: right;
+    margin-top: rem(10);
   }
 
   .price__text-wrapper {
     margin-top: rem(20);
+    @include mq("md") {
+      max-width: 890px;
+      margin-right: auto;
+      margin-left: auto;
+      }
   }
 
   .price__text {

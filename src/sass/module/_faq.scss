@@ -2,7 +2,12 @@
 
 .faq {
   padding: rem(80) 0;
-  // background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+  @include mq(md) {
+    padding: rem(130) 0;
+  }
+}
+
+.faq.faq--top {
   position: relative;
   background-image: url(../images/common/bg_faq-sp.png);
   background-position: top;
@@ -10,7 +15,6 @@
   background-size: contain;
   @include mq(md) {
     background-image: url(../images/common/faq_bg-pc.png);
-    padding: rem(130) 0;
   }
 }
 

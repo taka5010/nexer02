@@ -3,9 +3,45 @@
 .counseling-methods {
   padding-top: rem(80);
   padding-bottom: rem(80);
+  position: relative;
   @include mq(md){
     padding-top: rem(130);
     padding-bottom: rem(130);
+  }
+}
+
+.counseling-methods::before {
+  content: "";
+  position: absolute;
+  background-position: left top;
+  background-size: contain;
+  top: rem(100);
+  left: 0;
+  background-image: url(../images/common/section_bg-left.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  @include mq(md){
+  top: rem(-180);
+  background-position: left center;
+  background-size: 70%;
+}
+}
+.counseling-methods::after {
+  content: "";
+  position: absolute;
+  background-image: url(../images/common/section_bg-right.png);
+  height: 100%;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  left: 0;
+  width: 100%;
+  background-size: contain;
+  bottom: 0;
+  @include mq(md){
+    background-size: 70%;
+    bottom: rem(-270);
   }
 }
 

@@ -31,13 +31,29 @@
   margin: 0 auto;
 }
 
+.price-info__title .section-title02__text {
+  font-size: rem(20);
+  font-weight: $bold;
+  text-align: center;
+  display: inline-block;
+  padding-bottom: rem(8);
+  margin: 0 auto;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.price-info__title.section-title02::before{
+  bottom: rem(10);
+}
+
 .price-info__description {
   text-align: center;
   font-size: 16px;
   line-height: 1.6;
   margin-top: rem(40);
   @include mq(md) {
-    margin-top: rem(60);
+    margin-top: rem(30);
   }
 }
 

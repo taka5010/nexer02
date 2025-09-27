@@ -56,10 +56,9 @@
 }
 
 .counseling-card__title {
-  font-size: rem(22);
+  font-size: rem(20);
   font-weight: $bold;
   color: $primary-01;
-  // margin-bottom: rem(15);
   position: relative;
   line-height: 1.6;
   @include mq("md") {
@@ -89,6 +88,10 @@
   @include mq("md") {
     font-size: rem(16);
   }
+}
+
+.counseling-card__text + .counseling-card__text {
+  margin-top: rem(0);
 }
 
 .counseling-card__button {
