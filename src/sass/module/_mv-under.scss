@@ -30,6 +30,15 @@
   }
 }
 
+.mv-under.mv-under--faq {
+  background-image: url(../images/common/mv-fap_img.png);
+  background-position: 60% -65px;
+  @include mq("md") {
+    background-image: url(../images/common/mv-fap_img.png);
+  }
+}
+
+
 
 
 

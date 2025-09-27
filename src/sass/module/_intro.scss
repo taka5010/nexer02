@@ -1,29 +1,5 @@
 @use "global" as *;
 
-// .intro {
-//   background-image: url(../images/common/intro_bg.jpg);
-//   background-size: contain;
-//   background-position: right 200px;
-//   background-repeat: no-repeat;
-//   height: 100vh;
-//   width: 100%;
-//   @include mq("md") {
-//     background-image: url(../images/common/intro_bg.jpg);
-//   }
-// position: relative;
-// }
-
-// .intro::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   right: 0;
-//   bottom: -50px; /* 下に伸ばす量 */
-//   height: 50px;
-//   background: inherit; /* 親と同じ背景を引き継ぐ */
-//   background-position: bottom center;
-// }
-
 .intro {
   position: relative;
   // height: 100vh;
