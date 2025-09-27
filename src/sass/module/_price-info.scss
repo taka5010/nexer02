@@ -8,6 +8,9 @@
   background-color: $text-white;
   margin-top: rem(40);
   padding-bottom: rem(0);
+  padding-left: rem(20px);
+  padding-right: rem(20px);
+  padding-bottom: rem(30px);
   @include mq(md) {
     max-width: rem(1080);
     padding-top: rem(40);

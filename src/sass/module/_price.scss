@@ -1,7 +1,7 @@
 @use "global" as *;
  
   .price {
-    background: linear-gradient(135deg, rgba(45, 157, 214, .06), rgba(56, 205, 195, .06));
+    position: relative;
     padding-top: rem(80);
     padding-bottom: rem(80);
     @include mq("md") {
@@ -12,10 +12,36 @@
   }
   
   .price__inner {
-    max-width: 1120px;
     margin: 0 auto;
   }
-  
+
+  .price__inner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: calc(50% - 50vw);
+    left: rem(20);
+    background-image: url(../images/common/price_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -1;
+    pointer-events: none;
+    @include mq(md){
+      left: rem(50);
+    }
+  }
+
+  .price__inner.inner {
+    padding-left: rem(30);
+    padding-right: rem(30);
+    @include mq(md){
+      max-width: initial;
+      padding-left: rem(50);
+    }
+  }
+
   .price__title {
     font-size: clamp(22px, 3.2vw, 28px);
     font-weight: 700;
