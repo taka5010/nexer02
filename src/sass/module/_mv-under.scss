@@ -46,6 +46,14 @@
   }
 }
 
+.mv-under.mv-under--company {
+  background-image: url(../images/common/campany_mv.png);
+  background-position: 60% -65px;
+  @include mq("md") {
+
+  }
+}
+
 
 
 

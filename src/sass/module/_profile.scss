@@ -1,0 +1,87 @@
+@use "global" as *;
+
+
+.profile {
+  background-image: url(../images/common/company_profile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: rem(20) rem(25);
+  @include mq(md) {
+padding: rem(30) rem(35);
+  }
+}
+
+.profile__header.section-title {
+  font-size: rem(20);
+  font-weight: 700;
+  color: $primary-01;
+  @include mq(md) {
+    font-size: rem(24);
+  }
+}
+
+.profile__inner {
+  max-width: rem(960);
+  margin-left: auto;
+  margin-right: auto;
+
+  @include mq(md) {
+    max-width: rem(1120);
+  }
+}
+
+.profile__title {
+
+  margin-top: 0;
+
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+.profile__title {
+  font-size: rem(20);
+  font-weight: $bold;
+  color: $primary-01;
+  position: relative;
+  line-height: 1.6;
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.profile__title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: rem(60);
+  height: rem(1);
+  background-color: #248CC0;
+  margin-left: rem(8);
+  @include mq("md") {
+    width: rem(100);
+  }
+}
+
+.profile__text-wrapper {
+  margin-top: rem(40);
+  @include mq(md) {
+    margin-top: rem(60);
+  }
+}
+
+.profile__text {
+  font-size: rem(16);
+  line-height: 2.4;
+  padding-left: rem(4);
+  background-image: url("data:image/svg+xml;utf8,\
+<svg xmlns='http://www.w3.org/2000/svg' width='8' height='24' viewBox='0 0 8 24' preserveAspectRatio='none'>\
+  <line x1='0' y1='23.5' x2='8' y2='23.5' stroke='%23#{str-slice(inspect($line-02), 2)}' stroke-width='1' stroke-dasharray='6 6' stroke-linecap='butt'/>\
+</svg>");
+  background-repeat: repeat;
+  background-size: 8px 2.4em;
+  background-position: left top;
+}
+
+
