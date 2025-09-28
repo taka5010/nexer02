@@ -50,7 +50,8 @@
   }
 }
 
-.worries--psychological .worries__items {
+.worries--psychological .worries__items,
+.worries--hypnosis-script .worries__items {
   @include mq("md") {
     display: flex;
     flex-wrap: wrap;
@@ -59,7 +60,8 @@
     row-gap: rem(40);
   }
 }
-.worries--psychological .worries__items > *  {
+.worries--psychological .worries__items > * ,
+.worries--hypnosis-script .worries__items > *  {
   @include mq("md") {
     flex: 0 1 calc((100% - (rem(22) * 2)) / 3); /* 3列ベース */
     max-width: calc((100% - (rem(22) * 2)) / 3);
@@ -70,6 +72,17 @@
 
   @include mq("md") {
     max-width: rem(520);
+  }
+}
+
+.worries__text {
+  font-size: rem(16);
+  color: $text-black;
+  line-height: 1.6;
+  margin-top: rem(40);
+  text-align: center;
+  @include mq("md") {
+    margin-top: rem(60);
   }
 }
 
