@@ -2,6 +2,10 @@
 
 .content01 {
   overflow-x: hidden;
+   @include mq("md") {
+    // background-position: right 100px;
+
+   }
 }
 
 .content01__inner.inner {
@@ -40,7 +44,11 @@
   padding: rem(30) rem(20);
   position: relative;
   width: 100%;
-  background: linear-gradient(135deg, rgba(56, 205, 195, 0.08), rgba(45, 157, 214, 0.08));
+  background-image: url(../images/common/content01_bg.png);
+  background-repeat: no-repeat;
+  background-size: 110%;
+  background-position: top;
+  z-index: -1;
   @include mq(md){
     width: 88%;
       margin-top: 0;
@@ -118,6 +126,11 @@
   }
 }
 
+.content01__text-blue {
+  color: $primary-01;
+  font-weight: $bold;
+}
+
 .content01__text + .content01__text {
   margin-top: rem(0);
   }
@@ -136,6 +149,23 @@
       width: rem(80);
       height: rem(1);
     }
+}
+
+.content01__discription {
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(40);
+  }
+}
+
+.content01__discription-text {
+  font-size: rem(14);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.content01__discription-text + .content01__discription-text {
+  margin-top: rem(10);
 }
 
 

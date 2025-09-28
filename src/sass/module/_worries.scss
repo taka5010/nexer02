@@ -22,27 +22,27 @@
 }
 
 .worries__items {
-  margin-top: rem(40);
+
   display: flex;
   flex-direction: column;
-  gap: rem(20);
   align-items: center;
   justify-content: center;
   @include mq("md") {
-    margin-top: rem(80);
+    margin-top: rem(60);
     flex-direction: row;
     gap: rem(40);
   }
 }
 
 .worries__items {
+  margin-top: rem(40);
   display: grid;
   grid-template-columns: 1fr; /* SP: 1列 */
   gap: rem(20);
   justify-items: center;
   @include mq("md") {
-    // display: flex;
-    // flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     column-gap: rem(22);
     row-gap: rem(40);
@@ -79,10 +79,15 @@
   font-size: rem(16);
   color: $text-black;
   line-height: 1.6;
-  margin-top: rem(40);
+  margin-top: rem(60);
   text-align: center;
   @include mq("md") {
-    margin-top: rem(60);
+    margin-top: rem(80);
   }
 }
+
+.worries--hypnosis-script .card02__title {
+  text-align: center;
+}
+
 

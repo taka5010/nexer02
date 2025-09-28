@@ -43,6 +43,10 @@ position: relative;
   }
 }
 
+.flow--hypnosis-script.flow::after {
+display: none;
+}
+
 .flow__inner.inner {
   margin: auto;
   padding: 0 rem(20);

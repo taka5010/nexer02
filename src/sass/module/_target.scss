@@ -19,4 +19,24 @@
   }
 }
 
+.target__discription {
+  margin-top: rem(40);
+  @include mq("md") {
+    margin-top: rem(60);
+  }
+}
+
+.target__discription-text {
+  font-size: rem(16);
+  line-height: 1.6;
+  text-align: center;
+}
+
+.target .content01__layout {
+  margin-top: rem(100);
+  @include mq("md") {
+    margin-top: rem(120);
+  }
+}
+
 
