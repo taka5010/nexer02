@@ -2,11 +2,31 @@
 
 
 .company-message {
+  position: relative;
   padding: rem(80) 0;
   @include mq(md) {
     padding: rem(130) 0;
   }
+}
 
+.company-message::before {
+  content: "";
+  position: absolute;
+  background-position: left top;
+  background-size: contain;
+  top: rem(100);
+  left: 0;
+  // background-image: url(../images/common/section_bg-left.png);
+  background-image: url(../images/common/left_bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  @include mq(md){
+  top: rem(-180);
+  background-position: left center;
+  background-size: 70%;
+}
 }
 
 .company-message__inner.inner {
@@ -51,13 +71,9 @@
   max-width: rem(600);
   margin: 0 auto;
   @include mq("md") {
-   max-width: rem(540);
-   margin-top: rem(60);
+    max-width: rem(540);
+    margin-top: rem(60);
   }
-}
-
-.company-message__title {
-
 }
 
 .company-message__title {
@@ -73,9 +89,6 @@
   }
 }
 
-// .company-message__title-text {
-//   position: relative;
-// }
 .company-message__title::before {
   position: absolute;
   bottom: rem(-5);
@@ -98,8 +111,6 @@
   }
 }
 
-
-
 .company-message__text {
   font-size: rem(16);
   line-height: 1.6;
@@ -109,18 +120,13 @@
   margin-top: rem(20);
 }
 
-
 .company-message__profile {
-
+  margin-top: rem(20);
+  @include mq(md) {
+    margin-top: rem(40);
+  }
 }
 
-.profile {
-
-}
-
-.profile__header {
-
-}
 
 
 

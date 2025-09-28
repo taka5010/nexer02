@@ -1,0 +1,29 @@
+@use "global" as *;
+
+
+
+.our-office {
+  position: relative;
+  padding: rem(80) 0;
+  @include mq(md) {
+    padding: rem(130) 0;
+  }
+}
+
+.our-office::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  // left: calc(50% - 50vw);
+  // right: rem(20);
+  background-image: url(../images/common/blog-list_bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  z-index: -1;
+  pointer-events: none;
+  @include mq(md){
+    // right: rem(50);
+  }
+}
