@@ -2,12 +2,12 @@
 
 .blog-list {
   position: relative;
-  padding-top: rem(80);
-  padding-bottom: rem(80);
+  // padding-top: rem(80);
+  // padding-bottom: rem(80);
 
   @include mq(md){
-    padding-top: rem(130);
-    padding-bottom: rem(130);
+    // padding-top: rem(130);
+    // padding-bottom: rem(130);
   }
 }
 
