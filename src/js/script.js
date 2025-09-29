@@ -115,27 +115,57 @@ jQuery(function ($) {
     });
 
     // 会社内観・外観のスライダー
-    var service_swiper = new Swiper(".js-service-swiper", {
-        loop: true,
-        speed: 2000,
-        slidesPerView: 3,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2000,
-            disableOnInteraction: false,
-        },
-        breakpoints: {
-            768: {
-                slidesPerView: 3,
-            }
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-    });
+    // var service_swiper = new Swiper(".js-service-swiper", {
+    //     loop: true,
+    //     speed: 2000,
+    //     slidesPerView: 3,
+    //     centeredSlides: true,
+    //     // autoplay: {
+    //     //     delay: 2000,
+    //     //     disableOnInteraction: false,
+    //     // },
+    //     breakpoints: {
+    //         768: {
+    //             slidesPerView: 3,
+    //         }
+    //     },
+    //     pagination: {
+    //         el: ".swiper-pagination",
+    //         type: "fraction",
+    //         clickable: true,
+    //     },
+    //     navigation: {
+    //         nextEl: '.nav--next',
+    //         prevEl: '.nav--prev',
+    //       },
+    // });
+const swiper = new Swiper('.js-service-swiper', {
+  loop: true,
+  slidesPerView: 3,
+  navigation: {
+    nextEl: '.nav--next',
+    prevEl: '.nav--prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    type: 'fraction',
+    formatFractionCurrent: function (number) {
+      return number.toString().padStart(2, '0'); // 01 などに整形
+    },
+    formatFractionTotal: function (number) {
+      return number.toString().padStart(2, '0'); // 06 などに整形
+    },
+    renderFraction: function (currentClass, totalClass) {
+      // デフォルトは `${current} / ${total}`
+      // → スラッシュを消してカスタムHTMLにする
+      return `<span class="${currentClass}"></span><span class="fraction-separator">—</span><span class="${totalClass}"></span>`;
+    },
+  },
+});
+
 });
 
 
+  
 
 
