@@ -303,15 +303,18 @@
               <div class="swiper-pagination"></div>
               <div class="service-swiper__nav">
                 <button class="nav nav--prev" aria-label="前へ">
-                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                     <circle cx="25.5" cy="25" r="25" fill="white"/>
-                    <path d="M20.5 25L28 30.1962L28 19.8038L20.5 25Z" fill="#33B5E1"/>
+                    <!-- ▶︎（右向き） -->
+                    <path d="M20.5 25L28 30.1962V19.8038L20.5 25Z" fill="#33B5E1"/>
                   </svg>
                 </button>
+                <!-- 右矢印＝next（▶︎） -->
                 <button class="nav nav--next" aria-label="次へ">
-                  <svg width="51" height="50" viewBox="0 0 51 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="25" cy="25" r="25" transform="matrix(-1 0 0 1 50.5 0)" fill="white"/>
-                    <path d="M30.5 25L23 30.1962L23 19.8038L30.5 25Z" fill="#33B5E1"/>
+                  <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <circle cx="25.5" cy="25" r="25" fill="white"/>
+                    <!-- ◀︎（左向き） -->
+                    <path d="M30.5 25L23 30.1962V19.8038L30.5 25Z" fill="#33B5E1"/>
                   </svg>
                 </button>
               </div>
@@ -320,6 +323,163 @@
         </div>
       </div>
     </section>
+    <!-- テスト -->
+    <section class="history">
+      <div class="history__inner">
+        <h2 class="company-profile__title section-title">
+          <p class="section-title__en">company</p>
+          <p class="section-title__ja">会社概要</p>
+        </h2>
+        <div class="history__content">
+          <div><span></span>
+            <div><span></span><span></span><span></span></div>
+          </div>
+          <div class="history__item">
+            <div class="history__year">
+              <div class=""><span>2003年</span></div>
+            </div>
+            <ul class="history__lists">
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">4<span>月</span></dt>
+                  <dd class="history__text">東京都目黒区に株式会社インサイト・カウンセリング（資本金1000万円）を設立。<br>
+                    心理カウンセリング業を始める。</dd>
+                </dl>
+              </li>
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">10<span>月</span></dt>
+                  <dd class="history__text">EAP（Employee Assistance Program）社員のためのメンタルサポートプログラム開始。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="history__item">
+            <div class="history__year">
+              <div class=""><span>2004年</span></div>
+            </div>
+            <ul class="history__lists">
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">6<span>月</span></dt>
+                  <dd class="history__text">東京都港区東新橋2丁目16番1号に移転。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="history__item">
+            <div class="history__year">
+              <div class=""><span>2006年</span></div>
+            </div>
+            <ul class="history__lists">
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">2<span>月</span></dt>
+                  <dd class="history__text">独自の電子ペンカウンセリングシステム開発・導入。</dd>
+                </dl>
+              </li>
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">4<span>月</span></dt>
+                  <dd class="history__text">高齢者と家族のためのシニアカウンセリング開始。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="history__item">
+            <div class="history__year">
+              <div class=""><span>2011年</span></div>
+            </div>
+            <ul class="history__lists">
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">3<span>月</span></dt>
+                  <dd class="history__text">訪問カウンセリング及びEAP事業を廃止。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div class="history__item">
+            <div class="history__year">
+              <div class=""><span>2013年</span></div>
+            </div>
+            <ul class="history__lists">
+              <li class="history__list">
+                <dl class="history__row">
+                  <dt class="history__month">11<span>月</span></dt>
+                  <dd class="history__text">東京都港区東新橋2丁目16番3号カーザベルソーレに移転。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <!-- <div>
+            <div>
+              <div><span></span><span>2004</span></div>
+            </div>
+            <ul>
+              <li>
+                <dl>
+                  <dt>6月</dt>
+                  <dd>東京都港区東新橋2丁目16番1号に移転。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div><span></span><span>2006</span></div>
+            </div>
+            <ul>
+              <li>
+                <dl>
+                  <dt>2月</dt>
+                  <dd>独自の電子ペンカウンセリングシステム開発・導入。</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>4月</dt>
+                  <dd>高齢者と家族のためのシニアカウンセリング開始。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div><span></span><span>2011</span></div>
+            </div>
+            <ul>
+              <li>
+                <dl>
+                  <dt>3月</dt>
+                  <dd>訪問カウンセリング及びEAP事業を廃止。</dd>
+                </dl>
+              </li>
+              <li>
+                <dl>
+                  <dt>5月</dt>
+                  <dd>植物肉製造開発事業を開始</dd>
+                </dl>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <div>
+              <div><span></span><span>2013</span></div>
+            </div>
+            <ul>
+              <li>
+                <dl>
+                  <dt>11月</dt>
+                  <dd>東京都港区東新橋2丁目16番3号カーザベルソーレに移転。</dd>
+                </dl>
+              </li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </section>
+    
 
 
 <!-- 

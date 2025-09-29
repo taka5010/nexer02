@@ -118,22 +118,28 @@ jQuery(function ($) {
     var service_swiper = new Swiper(".js-service-swiper", {
         loop: true,
         speed: 2000,
-        slidesPerView: 3,
         centeredSlides: true,
+        slidesPerView: 1.5,     // 中央1枚＋左右チラ見せ
+        spaceBetween: 24,
         breakpoints: {
-          768: { slidesPerView: 3 }
+          768: {
+            slidesPerView: 1.8, // PCは少し広め
+            spaceBetween: 40
+          }
         },
+        // 端での見切れ対策（この2つは安定していた設定）
+        loopAdditionalSlides: 2,
+        // ※ ここから下は以前うまく動いていたまま
         pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
+          el: ".swiper-pagination",
+          type: "fraction",
+          renderFraction: function (currentClass, totalClass) {
             return (
-            '<span class="' + currentClass + '"></span>' +
-            '<span class="fraction-separator">—</span>' +   // 好きな区切り
-            '<span class="' + totalClass + '"></span>'
+              '<span class="' + currentClass + '"></span>' +
+              '<span class="fraction-separator">—</span>' +
+              '<span class="' + totalClass + '"></span>'
             );
           },
-          // 表示を 01 のようにゼロ埋めしたい場合
           formatFractionCurrent: n => String(n).padStart(2, '0'),
           formatFractionTotal:   n => String(n).padStart(2, '0'),
         },
@@ -142,6 +148,8 @@ jQuery(function ($) {
           prevEl: '.nav--prev',
         },
       });
+      
+      
 });
 
 
