@@ -115,57 +115,33 @@ jQuery(function ($) {
     });
 
     // 会社内観・外観のスライダー
-    // var service_swiper = new Swiper(".js-service-swiper", {
-    //     loop: true,
-    //     speed: 2000,
-    //     slidesPerView: 3,
-    //     centeredSlides: true,
-    //     // autoplay: {
-    //     //     delay: 2000,
-    //     //     disableOnInteraction: false,
-    //     // },
-    //     breakpoints: {
-    //         768: {
-    //             slidesPerView: 3,
-    //         }
-    //     },
-    //     pagination: {
-    //         el: ".swiper-pagination",
-    //         type: "fraction",
-    //         clickable: true,
-    //     },
-    //     navigation: {
-    //         nextEl: '.nav--next',
-    //         prevEl: '.nav--prev',
-    //       },
-    // });
-const swiper = new Swiper('.js-service-swiper', {
-  loop: true,
-  slidesPerView: 3,
-  navigation: {
-    nextEl: '.nav--next',
-    prevEl: '.nav--prev',
-  },
-  pagination: {
-    el: '.swiper-pagination',
-    type: 'fraction',
-    formatFractionCurrent: function (number) {
-      return number.toString().padStart(2, '0'); // 01 などに整形
-    },
-    formatFractionTotal: function (number) {
-      return number.toString().padStart(2, '0'); // 06 などに整形
-    },
-    renderFraction: function (currentClass, totalClass) {
-      // デフォルトは `${current} / ${total}`
-      // → スラッシュを消してカスタムHTMLにする
-      return `<span class="${currentClass}"></span><span class="fraction-separator">—</span><span class="${totalClass}"></span>`;
-    },
-  },
+    var service_swiper = new Swiper(".js-service-swiper", {
+        loop: true,
+        speed: 2000,
+        slidesPerView: 3,
+        centeredSlides: true,
+        breakpoints: {
+          768: { slidesPerView: 3 }
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+        renderFraction: function (currentClass, totalClass) {
+            return (
+            '<span class="' + currentClass + '"></span>' +
+            '<span class="fraction-separator">—</span>' +   // 好きな区切り
+            '<span class="' + totalClass + '"></span>'
+            );
+          },
+          // 表示を 01 のようにゼロ埋めしたい場合
+          formatFractionCurrent: n => String(n).padStart(2, '0'),
+          formatFractionTotal:   n => String(n).padStart(2, '0'),
+        },
+        navigation: {
+          nextEl: '.nav--next',
+          prevEl: '.nav--prev',
+        },
+      });
 });
-
-});
-
-
-  
 
 

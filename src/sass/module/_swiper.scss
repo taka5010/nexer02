@@ -1,165 +1,72 @@
 @use "global" as *;
 
-/* ========== 既存ベース ========== */
+/* ========== Layout ========== */
 .service__inner {
   margin: auto;
   padding: 0 rem(20);
   max-width: rem(600);
   width: 100%;
-}
-@include mq(md){
-  .service__inner {
+
+  @include mq(md) {
     padding: 0 rem(25);
     max-width: rem(1200);
   }
 }
 
-.service-swiper { position: relative; }
+.service-swiper {
+  position: relative;
+}
 
+/* ========== Slides（中央拡大：速度は1sのまま） ========== */
 .service-swiper .swiper-slide {
   transform: scale(.7);
-  transition: 1s;
+  transition: transform 1s;
 }
-.service-swiper .swiper-slide-active { transform: scale(1); }
+.service-swiper .swiper-slide-active {
+  transform: scale(1);
+}
 
+/* 画像 */
 .service-swiper .service-swiper img {
   width: 100%;
-  aspect-ratio: 300/180;
+  aspect-ratio: 300 / 180;
   object-fit: cover;
 }
 
-/* 既定では下に出したい指定（後半で打ち消します） */
-.service-swiper .swiper-pagination { bottom: rem(-48); }
+/* 既定では下に出す指定（後でcontrols側で上書き） */
+.service-swiper .swiper-pagination {
+  bottom: rem(-48);
+}
 
+/* bullets使用時の見た目（任意） */
 .service-swiper .swiper-pagination .swiper-pagination-bullet {
   border: 1px solid #333;
   background: #fff9ee;
 }
 
-/* 位置基準：スライダー本体（必要なら） */
-.js-service-swiper { position: relative; }
-
-:root {
-  --nav-size: 96px;
-  --nav-gap-side: 1.5rem;
-  --nav-shadow: drop-shadow(0 10px 30px rgba(0,0,0,.08));
+/* ========== Controls（ページネーション＋ナビを横並び） ========== */
+.service-swiper__controls {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center; /* 右寄せにしたい場合は flex-end */
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
 }
 
-/* 旧：絶対配置で左右に出すスタイル（今回は使わないが念のため残す） */
-.js-service-swiper .nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  width: var(--nav-size);
-  height: var(--nav-size);
-  border: none;
-  background: transparent;
-  display: grid;
-  place-items: center;
-  cursor: pointer;
-  transition: transform .15s ease, opacity .2s ease;
-}
-.js-service-swiper .nav--prev { left: var(--nav-gap-side); }
-.js-service-swiper .nav--next { right: var(--nav-gap-side); }
-.js-service-swiper .nav:hover { transform: translateY(-50%) scale(1.04); }
-.js-service-swiper .nav:focus-visible {
-  outline: 3px solid rgba(41,171,226,.35);
-  outline-offset: 2px;
-}
-.js-service-swiper .nav svg {
-  width: 100%;
-  height: auto;
-  filter: var(--nav-shadow);
-  display: block;
-}
-.js-service-swiper .nav.swiper-button-disabled {
-  opacity: .35;
-  cursor: default;
-  pointer-events: none;
+/* Swiper既定のabsoluteを解除して横並びに参加させる */
+.service-swiper__controls .swiper-pagination {
+  position: static !important;
+  bottom: auto !important;
+  left: auto !important;
+  right: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  transform: none !important;
+  text-align: left; /* 好みで */
 }
 
-@media (max-width: 767px) {
-  :root { --nav-size: 68px; --nav-gap-side: .75rem; }
-}
-
-/* ========== ★ここから“横並び化”の上書き ========== */
-/* ページネーション＋ボタンの横並び */
-.service-swiper__controls{
-  display:flex;
-  justify-content:center;   /* 全体を中央に */
-  align-items:center;
-  gap:1.5rem;               /* ページネーションとボタンの間隔 */
-  margin-top:2rem
-}
-
-/* ===== 横並び用：controls全体 ===== */
-.service-swiper__controls{
-  display:flex !important;
-  flex-wrap:nowrap !important;
-  justify-content:center !important;   /* PCで右寄せにしたいなら flex-end に */
-  align-items:center !important;
-  gap:1.5rem !important;
-  margin-top:2rem !important;
-}
-
-/* ===== Swiperのabsolute等を完全解除（fractionでも bulletsでもOK） ===== */
-.service-swiper__controls .swiper-pagination{
-  position:static !important;
-  bottom:auto !important;
-  left:auto !important;
-  right:auto !important;
-  width:auto !important;
-  margin:0 !important;
-  transform:none !important;
-  text-align:left !important; /* 好みで */
-}
-
-/* fraction の既定 width:100% を打ち消し＆横並びに自然参加 */
-.service-swiper__controls .swiper-pagination.swiper-pagination-fraction{
-  display:inline-flex !important;
-  align-items:center !important;
-  gap:.75rem !important;
-  width:auto !important;
-  font-feature-settings:"tnum";
-}
-
-/* 01 — 06 風の横棒（任意） */
-.service-swiper__controls .swiper-pagination-current::after{
-  content:"—";
-  margin-left:.75rem;
-  margin-right:.75rem;
-}
-
-/* ===== ナビ（左右ボタン）を“static”に固定 ===== */
-.service-swiper__nav{
-  display:flex !important;
-  gap:1rem !important;
-}
-.service-swiper__nav .nav{
-  position:static !important;     /* ← ここがキモ。以前のabsoluteを上書き */
-  transform:none !important;
-  width:auto !important;
-  height:auto !important;
-  background:transparent !important;
-  cursor:pointer;
-}
-.service-swiper__nav .nav svg{
-  width:51px !important;
-  height:50px !important;
-  filter: drop-shadow(0 10px 30px rgba(0,0,0,.08));
-}
-
-/* ===== 既存の“絶対配置ナビ”を一括で封印（保険） ===== */
-.js-service-swiper .nav{
-  position:static !important;
-  transform:none !important;
-  left:auto !important;
-  right:auto !important;
-  top:auto !important;
-}
-
-/* fractionのスラッシュを消して「01 — 06」にする */
+/* fraction体裁（01 — 06など） */
 .service-swiper__controls .swiper-pagination.swiper-pagination-fraction {
   display: inline-flex !important;
   align-items: center !important;
@@ -168,137 +75,27 @@
   font-feature-settings: "tnum";
 }
 
-/* 現在値と全体数の間に横棒を入れる */
-.service-swiper__controls .swiper-pagination-current::after {
-  content: "—"; /* ← スラッシュを上書きして横棒 */
-  margin-left: .75rem;
-  margin-right: .75rem;
+/* JSのrenderFractionで差し込んだ区切りの余白 */
+.fraction-separator {
+  display: inline-block;
+  margin: 0 .75rem;
 }
 
-/* デフォルトのスラッシュを非表示 */
-.service-swiper__controls .swiper-pagination .swiper-pagination-total::before {
-  content: none !important;
+/* ナビ（左右ボタンを横並び） */
+.service-swiper__nav {
+  display: flex;
+  gap: 1rem;
 }
-
-// .service__inner {
-//   margin: auto;
-//   padding: 0 rem(20);
-//   max-width: rem(600);
-//   width: 100%;
-//   @include mq(md){
-//       padding: 0 rem(25);
-//       max-width: rem(1200);
-//   }
-// }
-
-// .service-swiper {
-//   position: relative;
-// }
-
-// .service-swiper .swiper-slide {
-//   transform: scale(.7);
-//   transition: 1s;
-// }
-
-// .service-swiper .swiper-slide-active {
-//   transform: scale(1);
-// }
-
-// .service-swiper .service-swiper img {
-//   width: 100%;
-//   aspect-ratio: 300/180;
-//   object-fit: cover;
-// }
-
-// .service-swiper .swiper-pagination {
-//   bottom: rem(-48);
-// }
-
-// .service-swiper .swiper-pagination .swiper-pagination-bullet {
-//   border: 1px solid #333;
-//   background: #fff9ee;
-// }
-
-
-// // ボタンの実装
-// /* 位置基準（←ここに追記） */
-// .js-service-swiper { position: relative; }
-
-// :root {
-//   --nav-size: 96px;              /* クリック目標の大きさ（ボタン） */
-//   --nav-gap-side: 1.5rem;        /* 画面端からの距離 */
-//   --nav-shadow: drop-shadow(0 10px 30px rgba(0,0,0,.08));
-// }
-
-// /* ボタン自体は透明。レイアウトとホバーのみ担当 */
-// .js-service-swiper .nav {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   z-index: 10;
-//   width: var(--nav-size);
-//   height: var(--nav-size);
-//   border: none;
-//   background: transparent;
-//   display: grid;
-//   place-items: center;
-//   cursor: pointer;
-//   transition: transform .15s ease, opacity .2s ease;
-// }
-
-// .js-service-swiper .nav--prev { left: var(--nav-gap-side); }
-// .js-service-swiper .nav--next { right: var(--nav-gap-side); }
-
-// .js-service-swiper .nav:hover { transform: translateY(-50%) scale(1.04); }
-// .js-service-swiper .nav:focus-visible {
-//   outline: 3px solid rgba(41,171,226,.35);
-//   outline-offset: 2px;
-// }
-
-// /* SVGはそのまま中央配置。影だけ付ける */
-// .js-service-swiper .nav svg {
-//   width: 100%;
-//   height: auto;
-//   filter: var(--nav-shadow);
-//   display: block;
-// }
-
-// /* Swiperの無効状態 */
-// .js-service-swiper .nav.swiper-button-disabled {
-//   opacity: .35;
-//   cursor: default;
-//   pointer-events: none;
-// }
-
-// /* スマホ調整 */
-// @media (max-width: 767px) {
-//   :root { --nav-size: 68px; --nav-gap-side: .75rem; }
-// }
-
-// .service-swiper__controls {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   gap: 1.5rem; /* ページネーションとボタンの間隔 */
-//   margin-top: 2rem; /* スライダー下との距離 */
-// }
-
-// .service-swiper__nav {
-//   display: flex;
-//   gap: 1rem;
-// }
-
-// .service-swiper__nav .nav {
-//   position: static; /* absolute解除 */
-//   transform: none;  /* translate解除 */
-//   width: auto;
-//   height: auto;
-//   background: transparent;
-//   cursor: pointer;
-// }
-
-// .service-swiper__nav .nav svg {
-//   width: 51px;
-//   height: 50px;
-//   filter: drop-shadow(0 10px 30px rgba(0,0,0,.08));
-// 
+.service-swiper__nav .nav {
+  position: static;  /* 絶対配置は使わない */
+  transform: none;
+  width: auto;
+  height: auto;
+  background: transparent;
+  cursor: pointer;
+}
+.service-swiper__nav .nav svg {
+  width: 51px;
+  height: 50px;
+  filter: drop-shadow(0 10px 30px rgba(0,0,0,.08));
+}
