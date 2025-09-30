@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.sidebar-category {
+  padding-bottom: rem(15);
+  @include mq("md") {
+    padding-bottom: rem(20);
+  }
+}
+
+.sidebar-category__list {
+  margin-top: rem(10);
+}
+
+.sidebar-category__item {
+  border-bottom: 1px dashed $line-02;
+}
+
+.sidebar-category__link {
+display: inline-block;
+position: relative;
+padding-top: rem(5);
+padding-bottom: rem(5);
+padding-left: rem(25);
+font-size: rem(14);
+}
+
+.sidebar-category__link::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: rem(20);
+  height: rem(1);
+  background-color: $primary-01;
+}
+

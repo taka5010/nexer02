@@ -1,0 +1,20 @@
+@use "global" as *;
+
+
+.archive {
+  // padding-top: rem(80);
+  // padding-bottom: rem(80);
+  // @include mq("md") {
+  //   padding-top: rem(130);
+  //   padding-bottom: rem(130);
+  // }
+}
+
+.archive__inner {
+  margin-right: rem(20);
+  width: inherit;
+  @include mq("md") {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

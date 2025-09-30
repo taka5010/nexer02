@@ -1,0 +1,120 @@
+@use "global" as *;
+
+.history {
+  position: relative;
+  padding: rem(80) 0;
+  @include mq(md) {
+    padding: rem(130) 0;
+  }
+}
+
+.history::before {
+  content: "";
+  position: absolute;
+  background-position: left top;
+  background-size: contain;
+  top: rem(100);
+  left: 0;
+  background-image: url(../images/common/left_bg.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  @include mq(md){
+  top: rem(-180);
+  background-position: left center;
+  background-size: 70%;
+}
+}
+
+// .history::before {
+//   content: '';
+//   display: block;
+//   width: rem(2);
+//   height: 100%;
+//   background-color: $line-02;
+// }
+
+.history__content {
+  max-width: rem(1130);
+  margin: 0 auto;
+  position: relative;
+  padding:0 rem(25);
+}
+
+.history__content::before {
+  content: '';
+  display: block;
+  width: rem(2);
+  height: 100%;
+  background-color: $line-02;
+  position: absolute;
+  left: rem(60);
+  top: 0;
+}
+
+.history__item {
+  display: flex;
+  flex-direction: column;
+  // gap: rem(80);
+  padding-bottom: rem(30);
+  @include mq(md) {
+    flex-direction: row;
+    gap: rem(80);
+  }
+}
+
+.history__item + .history__item {
+  padding-top: rem(30);
+}
+
+.history__year {
+  font-size: rem(24);
+  font-weight: $bold;
+  color: $primary-01;
+  white-space: nowrap;
+  position: relative;
+}
+.history__year span {
+ background-color: $text-white;
+ display: inline-block;
+}
+
+.history__lists {
+  padding-left: rem(50);
+  @include mq(md) {
+    margin-top: rem(20);
+    width: 100%;
+    padding-left: rem(0);
+  }
+
+}
+
+.history__list {
+  padding: rem(20);
+  border-bottom: 1px solid $line-02;
+}
+
+.history__row {
+  font-size: rem(16);
+  line-height: 1.6;
+  color: $text-black;
+  display: flex;
+  gap: rem(10);
+  align-items: anchor-center;
+
+
+}
+
+.history__month {
+  font-size: rem(22);
+}
+
+.history__month span {
+  font-size: rem(14);
+}
+
+
+.history__text {
+
+}

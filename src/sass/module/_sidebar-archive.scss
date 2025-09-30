@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.sidebar-archive {
+  padding-bottom: rem(15);
+  @include mq("md") {
+    padding-bottom: rem(20);
+  }
+}
+
+.sidebar-archive__list {
+  margin-top: rem(10);
+}
+
+.sidebar-archive__item {
+  border-bottom: 1px dashed $line-02;
+}
+
+.sidebar-archive__link {
+display: inline-block;
+position: relative;
+padding-top: rem(5);
+padding-bottom: rem(5);
+font-size: rem(14);
+}

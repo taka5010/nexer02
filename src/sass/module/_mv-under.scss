@@ -50,10 +50,15 @@
   background-image: url(../images/common/campany_mv.png);
   background-position: 60% -65px;
   @include mq("md") {
-
   }
 }
 
+.mv-under.mv-under--blog-items {
+  background-image: url(../images/common/blog_bg.png);
+  background-position: 60% -65px;
+  @include mq("md") {
+  }
+}
 
 
 

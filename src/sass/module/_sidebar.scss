@@ -1,0 +1,52 @@
+@use "global" as *;
+
+.sidebar {  
+  @include mq("md") {
+    max-width: rem(230);
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+}
+
+.sidebar__title {
+  font-size: rem(22);
+  font-weight: $medium;
+  color: $primary-01;
+  line-height: 1.6;
+  border-bottom: 1px solid $line-01;
+  padding-bottom: rem(10);
+}
+
+.sidebar__list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: rem(20);
+  @include mq("md") {
+    margin-top: rem(20);
+  }
+}
+
+.sidebar__item {
+  padding-top: rem(5);
+  padding-bottom: rem(5);
+  border-bottom: 1px solid $line-01;
+}
+
+.sidebar__link {
+  font-size: rem(16);
+}
+
+.sidebar__news {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
+
+.sidebar__archive {
+  margin-top: rem(30);
+  @include mq("md") {
+    margin-top: rem(50);
+  }
+}
