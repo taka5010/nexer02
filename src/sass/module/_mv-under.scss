@@ -67,6 +67,14 @@
   }
 }
 
+.mv-under.mv-under--online {
+  background-image: url(../images/common/online_fv.png);
+  background-position: 60% -65px;
+  @include mq("md") {
+  }
+}
+
+
 
 
 .mv-under__inner {
@@ -82,6 +90,7 @@
 }
 
 .mv-under__content {
+  text-align: left;
   @include mq("md") {
     margin-left: rem(100);
   }

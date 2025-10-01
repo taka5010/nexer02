@@ -15,7 +15,7 @@
   background-position: center;
 }
 
-.worries--trauma .card02__image {
+.worries--trauma .card02__image{
   padding-top: calc(485 / 520 * 100%); /* 高さ406 ÷ 幅345 × 100 ≒ 117.68% */
 }
 .worries--faq .card02__image {
@@ -128,7 +128,13 @@
   color: $text-black;
   line-height: 1.6;
   margin-top: rem(15);
+  margin-left: auto;
+  margin-right: auto;
 }
+
+.card02__text + .card02__text {
+  margin-top: rem(0);
+ }
 
 
 
