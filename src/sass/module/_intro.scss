@@ -2,8 +2,6 @@
 
 .intro {
   position: relative;
-  // height: 100vh;
-  // width: 100%;
   padding: rem(80) 0;
   @include mq("md") {
     padding: rem(130) 0;
@@ -85,6 +83,10 @@ margin-top: rem(40);
   @include mq("md") {
     font-size: rem(18);
   }
+}
+
+.intro__paragraph--fap {
+  margin-top: rem(16);
 }
 
 .intro__title-text {

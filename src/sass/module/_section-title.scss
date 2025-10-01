@@ -19,6 +19,7 @@
   line-height: 1.6;
   position: relative;
   display: inline-block;
+  text-transform: uppercase;
   @include mq("md") {
     font-size: rem(38);
     letter-spacing: 0.05em;
