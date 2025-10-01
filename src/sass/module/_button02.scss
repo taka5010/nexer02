@@ -1,0 +1,44 @@
+@use "global" as *;
+
+
+.button02 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: rem(16.5) rem(20) rem(16.5) rem(80);
+  background-color: $primary-03;
+  border-radius: rem(40);
+  color: #fff;
+  font-weight: $regular;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: rem(16);
+  line-height: 1.6;
+}
+
+.button02:hover {
+  background-color: #1C9BDB !important;
+}
+
+.button02__text {
+  white-space: nowrap;
+}
+
+.button02__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: rem(29);
+  height: rem(29);
+  margin-left: rem(40);
+  transition: transform 0.3s ease;
+}
+
+.button02__icon img {
+  width: 100%;
+}
+
+.button02:hover .button02__icon {
+  transform: translateX(rem(10)) !important;
+}

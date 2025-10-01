@@ -241,7 +241,40 @@
     line-height: 1.6;
   }
 
+  .price__content {
+    text-align: center;
+  }
+
+  .price__description-wrapper {
+    margin-top: rem(60);
+  }
+
+  .price__description {
+    font-size: rem(16);
+    line-height: 1.6;
+  }
+
+  .price__button {
+    margin-top: rem(40);
+  }
+
   .price__button-wrapper .section-button{
     margin-top: rem(40);
     justify-content: center;
   }
+
+  .price__info {
+    margin-top: rem(10);
+    font-size: rem(14);
+    line-height: 1.6;
+  }
+
+  .price__guide {
+    display: inline-block;
+    margin-top: rem(30);
+    font-size: rem(16);
+    line-height: 1.6;
+    border-bottom: 1px solid $line-01;
+  }
+
+

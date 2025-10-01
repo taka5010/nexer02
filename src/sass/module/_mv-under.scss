@@ -60,6 +60,12 @@
   }
 }
 
+.mv-under.mv-under--genesiswitch {
+  background-image: url(../images/common/geneswitct_fv.png);
+  background-position: 60% -65px;
+  @include mq("md") {
+  }
+}
 
 
 

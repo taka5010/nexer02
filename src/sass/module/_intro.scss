@@ -74,6 +74,19 @@ margin-top: rem(40);
 }
 }
 
+.intro__paragraph--sub {
+  font-size: rem(16);
+  line-height: 1.5;
+  font-weight: $bold;
+  letter-spacing: 0.03em;
+  font-family: $ja-font-family;
+  color:$text-black;
+  text-align: left;
+  @include mq("md") {
+    font-size: rem(18);
+  }
+}
+
 .intro__title-text {
   position: relative;
 }
