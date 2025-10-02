@@ -115,39 +115,52 @@ jQuery(function ($) {
     });
 
     // 会社内観・外観のスライダー
-    var service_swiper = new Swiper(".js-service-swiper", {
+    var service_swiper = new Swiper('.js-service-swiper', {
         loop: true,
         speed: 2000,
         centeredSlides: true,
-        slidesPerView: 1.5,     // 中央1枚＋左右チラ見せ
-        spaceBetween: 24,
+        slidesPerView: 'auto',   // CSSの .swiper-slide のwidthを採用
+        spaceBetween: 20,
+        initialSlide: 0,         // 1枚目を中央に
+        loopAdditionalSlides: 2, // ループ時のチラつき防止
         breakpoints: {
-        768: {
-            slidesPerView: 1.8, // PCは少し広め
-            spaceBetween: 40
-        }
+          768: {
+            spaceBetween: 30
+          }
         },
-        // 端での見切れ対策（この2つは安定していた設定）
-        loopAdditionalSlides: 2,
-        // ※ ここから下は以前うまく動いていたまま
+    
+        // ページネーション（01 — 06 の体裁）
         pagination: {
-        el: ".swiper-pagination",
-        type: "fraction",
-        renderFraction: function (currentClass, totalClass) {
+          el: '.service-swiper__controls .swiper-pagination',
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
             return (
-            '<span class="' + currentClass + '"></span>' +
-            '<span class="fraction-separator">—</span>' +
-            '<span class="' + totalClass + '"></span>'
+              '<span class="' + currentClass + '"></span>' +
+              '<span class="fraction-separator">—</span>' +
+              '<span class="' + totalClass + '"></span>'
             );
+          },
+          formatFractionCurrent: function (n) { return String(n).padStart(2, '0'); },
+          formatFractionTotal:   function (n) { return String(n).padStart(2, '0'); }
         },
-        formatFractionCurrent: n => String(n).padStart(2, '0'),
-        formatFractionTotal:   n => String(n).padStart(2, '0'),
-        },
+    
+        // ナビゲーション
         navigation: {
-        nextEl: '.nav--next',
-        prevEl: '.nav--prev',
+          nextEl: '.service-swiper__nav .nav--next',
+          prevEl: '.service-swiper__nav .nav--prev'
         },
-    });
+    
+        // 画面サイズ変更時に再計算
+        on: {
+          resize: function() {
+            this.update();
+          }
+        }
+      });
+
+
+      
+  
 });
 
 

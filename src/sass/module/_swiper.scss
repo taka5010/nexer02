@@ -17,9 +17,16 @@
   position: relative;
 }
 
+/* Swiper本体に右側だけ余白を付与（次スライドのチラ見せ用） */
+// .service-swiper .swiper {
+//   // padding-right: clamp(40px, 10vw, 160px);
+// }
+
 /* ========== Slides（中央拡大：速度は1sのまま） ========== */
 .service-swiper .swiper-slide {
-  transform: scale(.7);
+  width: 100vw; /* 中央スライドの幅を決める */
+  max-width: 720px;
+  transform: scale(0.847);
   transition: transform 1s;
 }
 .service-swiper .swiper-slide-active {
@@ -27,9 +34,9 @@
 }
 
 /* 画像 */
-.service-swiper .service-swiper img {
+.service-swiper .swiper-slide img {
   width: 100%;
-  aspect-ratio: 300 / 180;
+  aspect-ratio: 720 / 420;
   object-fit: cover;
 }
 
@@ -99,3 +106,9 @@
   height: 50px;
   filter: drop-shadow(0 10px 30px rgba(0,0,0,.08));
 }
+
+// .service__swiper.service-swiper {
+//   width: 100vw;
+//   margin: calc(50% - 50vw);
+// }
+
