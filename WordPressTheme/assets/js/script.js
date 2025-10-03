@@ -36,8 +36,8 @@ jQuery(function ($) {
   var $header = $(".header");
   var $hamburgerblack = $(".header__hamburger");
   var $telIcon = $(".contact-info__icon-img");
-  var originalIconSrc = "./assets/images/common/tel_icon.svg";
-  var scrolledIconSrc = "./assets/images/common/tel_icon-blue.svg";
+  var originalIconSrc = typeof THEME_VARS !== 'undefined' ? THEME_VARS.iconDefault : './assets/images/common/tel_icon.svg';
+  var scrolledIconSrc = typeof THEME_VARS !== 'undefined' ? THEME_VARS.iconScrolled : './assets/images/common/tel_icon-blue.svg';
   $(window).on("scroll", function () {
     var scrollTop = $(this).scrollTop();
     if (scrollTop > 100) {
