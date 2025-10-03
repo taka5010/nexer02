@@ -71,7 +71,7 @@
         <p class="section-title__en">COUNSELING</p>
         <p class="section-title__ja">インサイト・カウンセリングにご相談ください</p>
       </h2>
-      <div class="counseling__cards card04s">
+      <div class="counseling__cards card04-items">
         <a href="/psychological-counseling" class="counseling__card card04">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img01.jpg"
