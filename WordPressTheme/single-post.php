@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+
 <main class="main">
   <section class="mv-under mv-under--blog-items">
     <div class="mv-under__inner">
@@ -16,65 +17,65 @@
     </div>
   </section>
   <div class="blog-items--wrapper">
-    <section class="blog-items__archive archive">
-      <div class="archive__inner inner">
-        <div class="archive__cards cards06">
-          <?php if ( have_posts() ) : ?>
-          <?php while ( have_posts() ) : the_post(); ?>
-          <a href="<?php the_permalink(); ?>" class="archive__card card06">
-            <div class="card06__image">
-              <?php if ( has_post_thumbnail() ) : ?>
-              <?php
-      $thumb_id = get_post_thumbnail_id( get_the_ID() );
-      $alt = get_post_meta( $thumb_id, '_wp_attachment_image_alt', true );
-      if ( $alt === '' ) { $alt = get_the_title(); }
-      echo get_the_post_thumbnail(
-        get_the_ID(),
-        'medium_large', // 必要に応じてサイズ変更
-        [
-          'alt'      => esc_attr( $alt ),
-          'loading'  => 'lazy',
-          'decoding' => 'async',
-          'class'    => 'card06__thumb',
-        ]
-      );
-    ?>
-              <?php else : ?>
-              <img src="<?php echo esc_url( get_theme_file_uri('/assets/images/common/no_image.jpg') ); ?>"
-                alt="<?php echo esc_attr( get_the_title() ); ?>" loading="lazy" decoding="async" class="card06__thumb">
-              <?php endif; ?>
-            </div>
-            <div class="card06__item-content">
-              <div class="card06__item-meta">
-                <time class="card06__date" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>">
-                  <?php echo esc_html( get_the_date('Y.m.d') ); ?>
-                </time>
-                <span class="card06__category"><?php
-$cats = get_the_category();
-if ( ! empty( $cats ) ) {
-  echo esc_html( $cats[0]->name );
-}
-?></span>
-              </div>
-              <h3 class="card06__text"><?php echo get_the_title(); ?></h3>
-            </div>
+    <section class="blog-detail">
+      <div class="blog-detail__inner inner">
+        <?php
+        if ( have_posts() ) :
+          while ( have_posts() ) : the_post();
+            ?>
+        <div class="blog-detail__meta">
+          <time class="card06__date" datetime="<?php echo esc_attr( get_the_date( DATE_W3C ) ); ?>">
+            <?php echo esc_html( get_the_date('Y.m.d') ); ?>
+          </time>
+          <!-- <span class="blog-detail__category">カテゴリ</span> -->
+          <span class="blog-detail__category"><?php
+      $cats = get_the_category();
+      if ( ! empty( $cats ) ) {
+        echo esc_html( $cats[0]->name );
+      }
+      ?></span>
+        </div>
+        <div class="blog-detail__title">
+          <h1><?php the_title(); ?></h1>
+        </div>
+        <article <?php post_class(); ?>>
+          <div class="entry-content">
+            <?php the_content(); ?>
+          </div>
+        </article>
+        <?php
+          endwhile;
+      endif;
+      ?>
+      </div>
+      <div class="blog-detail__links page-links">
+        <?php
+$prev = get_previous_post();
+$prev_url = get_permalink($prev->ID);
+$next = get_next_post();
+$next_url = get_permalink($next->ID);
+?>
+
+        <div class="page-link__prev">
+          <?php if($prev) : ?>
+          <a href="<?php echo $prev_url; ?>">
+            <span class="page-link__prev--icon">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/prev-button_icon.svg" alt="前の記事へ">
+            </span>
+            <span class="page-link__prev--text">前の記事</span>
           </a>
-          <?php endwhile; ?>
-          <?php else : ?>
-          <p>投稿が見つかりませんでした。</p>
           <?php endif; ?>
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-            <h2 class="entry-title">
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </h2>
-            <div class="entry-meta">
-              <span class="date"><?php echo get_the_date(); ?></span>
-              <span class="author"><?php the_author(); ?></span>
-            </div>
-            <div class="entry-summary">
-              <?php the_excerpt(); ?>
-            </div>
-          </article>
+        </div>
+        <div class="page-link__archive"><a href="<?php echo home_url('/blog/'); ?>">一覧へ戻る</a></div>
+        <div class="page-link__next">
+          <?php if($next) : ?>
+          <a href="<?php echo $next_url; ?>">
+            <span class="page-link__next--text">次の記事</span>
+            <span class="page-link__next--icon">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/next-button_icon.svg" alt="次の記事へ">
+            </span>
+          </a>
+          <?php endif; ?>
         </div>
       </div>
     </section>

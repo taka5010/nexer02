@@ -94,6 +94,10 @@
     border-radius: rem(20);
     padding: rem(3) rem(5);
   }
-  
-  
-  
+
+  .blog-detail__links{
+    margin-top: rem(80);
+    @include mq("md") {
+      margin-top: rem(100);
+    }
+  }

@@ -30,7 +30,7 @@
         </div>
       </div>
       <div class="intro__image-wrapper">
-        <img class="intro__image" src="./assets/images/common/faq-intro_img.jpg"
+        <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-intro_img.jpg"
           alt="白地に小さな模様が入ったブラウスを着た女性が屋外でリラックスした表情" loading="lazy">
       </div>
     </div>
@@ -75,7 +75,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -89,7 +88,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -108,7 +107,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -137,7 +136,7 @@
       <ol class="counseling-methods__list content03__items">
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/faq_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img01.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -150,7 +149,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/faq_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img02.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -164,7 +163,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/faq_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img03.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -187,7 +186,7 @@
       <div class="counseling__cards card05-items">
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img04.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img04.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -200,7 +199,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img05.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img05.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -213,7 +212,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img06.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img06.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -224,50 +223,6 @@
             </p>
           </div>
         </div>
-        <!-- <div class="counseling__card card04">
-            <div class="card04__image">
-              <img src="./assets/images/common/counseling_img04.jpg" alt="心理カウンセリングのイメージ" loading="lazy">
-            </div>
-            <div class="card04__content">
-              <h3 class="card04__title">
-                催眠スクリプト
-              </h3>
-              <p class="card04__text">
-                催眠スクリプトは、夕暮れの湖畔や、風に揺れる鈴虫の声など、まったく関係のない物語を語りながら、あなたの無意識が自然と心の傷にアクセスし、それをそっと整理しはじめる——
-              </p>
-              <p class="card04__text">そんな、やさしく、強力な癒しの手法です。</p>
-              <div class="card04__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="counseling__card card04">
-            <div class="card04__image">
-              <img src="./assets/images/common/counseling_img04.jpg" alt="心理カウンセリングのイメージ" loading="lazy">
-            </div>
-            <div class="card04__content">
-              <h3 class="card04__title">
-                催眠スクリプト
-              </h3>
-              <p class="card04__text">
-                催眠スクリプトは、夕暮れの湖畔や、風に揺れる鈴虫の声など、まったく関係のない物語を語りながら、あなたの無意識が自然と心の傷にアクセスし、それをそっと整理しはじめる——
-              </p>
-              <p class="card04__text">そんな、やさしく、強力な癒しの手法です。</p>
-              <div class="card04__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
       </div>
     </div>
   </section>
@@ -280,7 +235,7 @@
       <ol class="flow__list content02__items">
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/fap-flow_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img01.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">初回カウンセリング</h3>
@@ -292,7 +247,7 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/fap-flow_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img02.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">FAP療法®セッションの開始</h3>
@@ -304,7 +259,7 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/fap-flow_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img03.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">効果の定着とアフターケア</h3>
@@ -442,7 +397,8 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>何回くらいのセッションで改善しますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に効果が現れます受けることで改善する可能性があります。</p>
+              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に効果が現れます受けることで改善する可能性があります。
+            </p>
           </div>
         </li>
       </ul>
@@ -465,7 +421,8 @@
       <div class="voice__cards voice-cards">
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman02.svg" alt="Aさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Aさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -479,7 +436,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-man01.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man01.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">

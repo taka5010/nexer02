@@ -33,7 +33,7 @@
         </div>
       </div>
       <div class="intro__image-wrapper">
-        <img class="intro__image" src="./assets/images/common/online_intro.jpg"
+        <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_intro.jpg"
           alt="白いトップスを着た女性が自然光の差し込む窓辺で穏やかな表情を浮かべている" loading="lazy">
       </div>
     </div>
@@ -48,7 +48,7 @@
       <ol class="counseling-methods__list content03__items">
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/online_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_img01.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -60,7 +60,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/online_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_img02.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -72,7 +72,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/online_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_img03.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -85,7 +85,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/online_img04.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_img04.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -97,7 +97,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/online_img05.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_img05.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -120,7 +120,7 @@
       <div class="counseling__cards card05-items">
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img10.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img10.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -133,7 +133,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img11.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img11.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -146,7 +146,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img12.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img12.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -170,7 +170,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -189,7 +189,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -217,7 +217,8 @@
       <ol class="flow__list content02__items">
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/online_flow01.jpg" alt="クリップボードにメモを取っている男性の手元のクローズアップ">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_flow01.jpg"
+              alt="クリップボードにメモを取っている男性の手元のクローズアップ">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">『緊張しちゃう人たち』を読む</h3>
@@ -229,7 +230,8 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/online_flow02.jpg" alt="森林の背景に、祈るような仕草で両手を合わせるイメージ写真">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/online_flow02.jpg"
+              alt="森林の背景に、祈るような仕草で両手を合わせるイメージ写真">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">オンライン講座『無意識の旅』サブスク登録</h3>
@@ -258,7 +260,8 @@
           <a href="#" class="button02">
             <span class="button02__text">無意識の旅</span>
             <span class="button02__icon">
-              <img src="./assets/images/common/button02_icon.svg" alt="アイコン" loading="lazy">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/button02_icon.svg" alt="アイコン"
+                loading="lazy">
             </span>
           </a>
         </div>
@@ -316,7 +319,8 @@
       <div class="voice__cards voice-cards">
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-man03.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man03.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -330,7 +334,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman02.svg" alt="Aさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Aさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -344,7 +349,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman01.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">

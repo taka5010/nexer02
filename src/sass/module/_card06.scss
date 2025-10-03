@@ -29,6 +29,9 @@
 .card06__image {
   width: 100%;
   overflow: hidden;
+  @include mq("md") {
+    max-height: rem(180);
+  }
 }
 
 .card06__image img {
@@ -36,6 +39,7 @@
   object-fit: cover;
   aspect-ratio: 260/180;
   transition: transform 0.3s ease;
+  height: inherit;
 }
 
 .card06:hover .card06__image img {

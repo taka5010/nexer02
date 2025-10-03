@@ -57,4 +57,25 @@ function my_theme_favicon_tag() {
   // favicon のパスをテーマから出力
   echo '<link rel="icon" href="' . esc_url( get_theme_file_uri('/assets/images/favicon.ico') ) . '">' . "\n";
 }
+
 add_action('wp_head', 'my_theme_favicon_tag');
+
+
+function my_setup() {
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'card06', 720, 420, true );
+
+	add_theme_support( 'automatic-feed-links' );
+	add_theme_support( 'title-tag' );
+	add_theme_support(
+		'html5',
+		[
+			'search-form',
+			'comment-form',
+			'comment-list',
+			'gallery',
+			'caption',
+		]
+	);
+}
+add_action( 'after_setup_theme', 'my_setup' );

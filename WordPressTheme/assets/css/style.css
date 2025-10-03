@@ -406,6 +406,10 @@ a {
 	padding: 0.1875rem 0.3125rem;
 }
 
+.blog-detail__links {
+	margin-top: 5rem;
+}
+
 .blog-items {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -1257,6 +1261,7 @@ a {
 .card06__image img {
 	-o-object-fit: cover;
 	aspect-ratio: 260/180;
+	height: inherit;
 	object-fit: cover;
 	transition: transform 0.3s ease;
 	width: 100%;
@@ -3322,6 +3327,74 @@ a {
 	z-index: -1;
 }
 
+.page-links {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.page-link__prev a {
+	-webkit-text-decoration: none;
+	align-items: center;
+	color: #333;
+	display: inline-flex;
+	font-size: 20px;
+	font-weight: 500;
+	gap: 12px; /* アイコンと文字の間隔 */
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+.blog-detail .page-link__prev--icon img {
+	align-items: center;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	flex-shrink: 0;
+	height: 2.0625rem;
+	justify-content: center;
+	margin-top: 0;
+	width: 2.0625rem;
+}
+
+.page-link__archive a {
+	color: #248CC0;
+}
+
+.page-link__next a {
+	-webkit-text-decoration: none;
+	align-items: center;
+	color: #333;
+	display: inline-flex;
+	font-size: 20px;
+	font-weight: 500;
+	gap: 12px; /* アイコンと文字の間隔 */
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+.page-link__prev--text,
+.page-link__next--text,
+.page-link__archive {
+	color: #333333;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.6;
+}
+
+.blog-detail .page-link__next--icon img {
+	align-items: center;
+	aspect-ratio: 1/1;
+	border-radius: 50%;
+	display: flex;
+	flex-shrink: 0;
+	height: 2.0625rem;
+	justify-content: center;
+	margin-top: 0;
+	width: 2.0625rem;
+}
+
 .price-info {
 	background-color: #FFFFFF;
 	color: #333333;
@@ -4465,6 +4538,10 @@ html {
 	margin-top: 0.9375rem;
 }
 
+.blog-detail__links {
+	margin-top: 6.25rem;
+}
+
 .blog-items {
 	padding-bottom: 8.125rem;
 	padding-top: 8.125rem;
@@ -4752,6 +4829,10 @@ html {
 .card06 {
 	flex: 1;
 	max-width: 16.25rem;
+}
+
+.card06__image {
+	max-height: 11.25rem;
 }
 
 .card06__content {

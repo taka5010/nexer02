@@ -34,7 +34,7 @@
         </div>
       </div>
       <div class="intro__image-wrapper">
-        <img class="intro__image" src="./assets/images/common/geneswitch_intro.jpg"
+        <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_intro.jpg"
           alt="白いトップスを着た女性が自然光の差し込む窓辺で穏やかな表情を浮かべている" loading="lazy">
       </div>
     </div>
@@ -49,7 +49,7 @@
       <ol class="counseling-methods__list content03__items">
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/geneswitch_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img01.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -62,7 +62,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/geneswitch_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img02.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -76,7 +76,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/geneswitch_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img03.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -99,7 +99,7 @@
       <div class="counseling__cards card05-items">
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img07.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img07.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -112,7 +112,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img08.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img08.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -125,7 +125,7 @@
         </div>
         <div class="counseling__card card05">
           <div class="card05__image">
-            <img src="./assets/images/common/target_img09.jpg" alt="" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img09.jpg" alt="" loading="lazy">
           </div>
           <div class="card05__content">
             <h3 class="card05__title">
@@ -149,7 +149,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -168,7 +168,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -196,7 +196,8 @@
       <ol class="flow__list content02__items">
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/geneswitch_flow01.jpg" alt="クリップボードにメモを取っている男性の手元のクローズアップ">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow01.jpg"
+              alt="クリップボードにメモを取っている男性の手元のクローズアップ">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">遺伝子コードを選ぶ</h3>
@@ -208,7 +209,8 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/geneswitch_flow02.jpg" alt="森林の背景に、祈るような仕草で両手を合わせるイメージ写真">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow02.jpg"
+              alt="森林の背景に、祈るような仕草で両手を合わせるイメージ写真">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">コードを唱える</h3>
@@ -220,7 +222,8 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/geneswitch_flow03.jpg" alt="グラスの水を手に持ち、微笑む女性の上半身のアップ">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow03.jpg"
+              alt="グラスの水を手に持ち、微笑む女性の上半身のアップ">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">実感する変化</h3>
@@ -250,7 +253,8 @@
           <a href="#" class="button02">
             <span class="button02__text">GeneSwitch&reg&reg;</span>
             <span class="button02__icon">
-              <img src="./assets/images/common/button02_icon.svg" alt="アイコン" loading="lazy">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/button02_icon.svg" alt="アイコン"
+                loading="lazy">
             </span>
           </a>
         </div>
@@ -289,7 +293,8 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>何回くらいのセッションで改善しますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に効果が現れます受けることで改善する可能性があります。</p>
+              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に効果が現れます受けることで改善する可能性があります。
+            </p>
           </div>
         </li>
       </ul>
@@ -312,7 +317,8 @@
       <div class="voice__cards voice-cards">
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-man01.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man01.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -327,7 +333,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman01.svg" alt="Aさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Aさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -341,7 +348,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman02.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -355,7 +363,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-man02.svg" alt="Aさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man02.svg" alt="Aさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">

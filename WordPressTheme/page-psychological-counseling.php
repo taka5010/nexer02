@@ -36,8 +36,8 @@
         </div>
       </div>
       <div class="intro__image-wrapper">
-        <img class="intro__image" src="./assets/images/common/psychological_intro.jpg" alt="カウンセリングを行う医師と相談者"
-          loading="lazy">
+        <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/psychological_intro.jpg"
+          alt="カウンセリングを行う医師と相談者" loading="lazy">
       </div>
     </div>
   </section>
@@ -95,7 +95,8 @@
     <div class="content01__inner inner">
       <div class="content01__layout">
         <div class="content01__image">
-          <img src="./assets/images/common/trauma_img.jpg" alt="カウンセリングの様子" loading="lazy">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/trauma_img.jpg" alt="カウンセリングの様子"
+            loading="lazy">
         </div>
         <div class="content01__content-bg">
           <div class="content01__content">
@@ -131,7 +132,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -150,7 +151,7 @@
         <li class="blog-list__item">
           <a href="#">
             <div class="blog-list__item-img">
-              <img src="./assets/images/common/blog-list__img.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
             </div>
             <div class="blog-list__item-content">
               <p class="blog-list__item-title">ブログのタイトルが入ります</p>
@@ -178,7 +179,7 @@
       <ol class="counseling-methods__list content03__items">
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/counseling-methods_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img01.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -191,7 +192,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/counseling-methods_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img02.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -204,7 +205,7 @@
         </li>
         <li class="content03__item">
           <div class="content03__item-img">
-            <img src="./assets/images/common/counseling-methods_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img03.jpg" alt="省略">
           </div>
           <div class="content03__item-text-wrap">
             <h3 class="content03__item-title content03__title">
@@ -228,7 +229,8 @@
       <div class="counseling__cards card04-items">
         <a href="/fap-therapy" class="counseling__card card04">
           <div class="card04__image">
-            <img src="./assets/images/common/counseling_img03.jpg" alt="心理カウンセリングのイメージ" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img03.jpg"
+              alt="心理カウンセリングのイメージ" loading="lazy">
           </div>
           <div class="card04__content">
             <h3 class="card04__title">
@@ -250,7 +252,8 @@
         </a>
         <a href="/hypnosis-script" class="counseling__card card04">
           <div class="card04__image">
-            <img src="./assets/images/common/counseling_img04.jpg" alt="心理カウンセリングのイメージ" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img04.jpg"
+              alt="心理カウンセリングのイメージ" loading="lazy">
           </div>
           <div class="card04__content">
             <h3 class="card04__title">
@@ -381,7 +384,7 @@
       <ol class="flow__list content02__items">
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/flow_img01.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img01.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">予約</h3>
@@ -394,7 +397,7 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/flow_img02.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img02.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">初回カウンセリング（50分）</h3>
@@ -407,7 +410,7 @@
         </li>
         <li class="content02__item">
           <div class="content02__item-img">
-            <img src="./assets/images/common/flow_img03.jpg" alt="省略">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img03.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
             <h3 class="content02__item-title">継続カウンセリング</h3>
@@ -478,7 +481,8 @@
       <div class="voice__cards voice-cards">
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman02.svg" alt="Aさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Aさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
@@ -493,7 +497,8 @@
         </div>
         <div class="voice__card voice-card">
           <div class="voice-card__avatar">
-            <img src="./assets/images/common/voice_icon-woman01.svg" alt="Bさん" loading="lazy">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Bさん"
+              loading="lazy">
           </div>
           <div class="voice-card__content">
             <div class="voice-card__profile">
