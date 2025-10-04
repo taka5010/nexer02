@@ -1,0 +1,36 @@
+@use "global" as *;
+
+.prev.page-numbers,
+.next.page-numbers {
+  width: rem(56);
+}
+
+.page-numbers {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $text-white;
+  height: 44px;
+  width: 44px;
+  color: $text-black;
+  font-weight: $medium;
+
+}
+
+span.page-numbers.current {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $primary-01;
+  height: 44px;
+  width: 44px;
+  border-radius: 25px;
+  color: $text-white;
+  font-size: rem(16);
+  font-weight: $medium;
+  line-height: 1.6;
+}
+
+.page-numbers .pgn__icon {
+  width: 56px;
+}

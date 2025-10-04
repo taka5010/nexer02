@@ -1,0 +1,9 @@
+@use "global" as *;
+
+
+.navigation.pagination .next .page-numbers {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4em;
+}
+

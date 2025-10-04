@@ -3261,6 +3261,14 @@ a {
 	margin-top: 0.625rem;
 }
 
+.nav-links {
+	text-align: center;
+}
+
+.nav-links--layout {
+	margin-top: 5rem;
+}
+
 .nav-list {
 	display: flex;
 	flex-wrap: wrap;
@@ -3298,6 +3306,12 @@ a {
 	position: relative;
 }
 
+.navigation.pagination .next .page-numbers {
+	align-items: center;
+	display: inline-flex;
+	gap: 0.4em;
+}
+
 .other-services {
 	padding-bottom: 6.875rem;
 	padding-top: 5rem;
@@ -3331,6 +3345,7 @@ a {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
+	padding: 0rem 0.9375rem;
 	width: 100%;
 }
 
@@ -3393,6 +3408,61 @@ a {
 	justify-content: center;
 	margin-top: 0;
 	width: 2.0625rem;
+}
+
+.prev.page-numbers,
+.next.page-numbers {
+	width: 3.5rem;
+}
+
+.page-numbers {
+	align-items: center;
+	background-color: #FFFFFF;
+	color: #333333;
+	display: inline-flex;
+	font-weight: 500;
+	height: 44px;
+	justify-content: center;
+	width: 44px;
+}
+
+span.page-numbers.current {
+	align-items: center;
+	background-color: #248CC0;
+	border-radius: 25px;
+	color: #FFFFFF;
+	display: inline-flex;
+	font-size: 1rem;
+	font-weight: 500;
+	height: 44px;
+	justify-content: center;
+	line-height: 1.6;
+	width: 44px;
+}
+
+.page-numbers .pgn__icon {
+	width: 56px;
+}
+
+.pgn__label {
+	color: #248CC0;
+	font-size: 1rem;
+	line-height: 1;
+}
+
+.pgn__icon {
+	display: inline-block;
+	height: auto;
+	width: 16px; /* アイコンサイズ調整 */
+}
+
+span.pgn__wrap {
+	align-items: center;
+	align-items: center;
+	display: inline-flex;
+	gap: 1rem;
+	max-width: 3.5rem;
+	width: 100%;
 }
 
 .price-info {
@@ -5778,6 +5848,10 @@ html {
 	font-size: 1.125rem;
 }
 
+.nav-links--layout {
+	margin-top: 6.25rem;
+}
+
 .nav-list {
 	flex-wrap: nowrap;
 	gap: 30px;
@@ -5803,6 +5877,10 @@ html {
 
 .our-office::before {
 	right: 3.125rem;
+}
+
+.page-links {
+	padding: 0rem 1.25rem;
 }
 
 .price-info {
