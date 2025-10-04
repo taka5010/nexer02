@@ -55,41 +55,41 @@
               <p class="card02__text">日常生活で感じるストレスや不安を減らし、心の平穏を取り戻します。</p>
             </div>
           </div>
-        </div>
-        <div class="card02">
-          <div class="card02__image psychological__image--02">
-            <div class="card02__content">
-              <p class="card02__title">人間関係の改善</p>
-              <p class="card02__text">職場や家庭、友人などとの関係で悩んでいる方へ、関係改善のためにサポートします。</p>
+
+          <div class="card02">
+            <div class="card02__image psychological__image--02">
+              <div class="card02__content">
+                <p class="card02__title">人間関係の改善</p>
+                <p class="card02__text">職場や家庭、友人などとの関係で悩んでいる方へ、関係改善のためにサポートします。</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card02">
-          <div class="card02__image psychological__image--03">
-            <div class="card02__content">
-              <p class="card02__title">自己理解と成長</p>
-              <p class="card02__text">自分の価値観や考え方を深く理解し、自己成長を促します。</p>
+          <div class="card02">
+            <div class="card02__image psychological__image--03">
+              <div class="card02__content">
+                <p class="card02__title">自己理解と成長</p>
+                <p class="card02__text">自分の価値観や考え方を深く理解し、自己成長を促します。</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card02">
-          <div class="card02__image psychological__image--04">
-            <div class="card02__content">
-              <p class="card02__title">心的外傷（トラウマ）のケア</p>
-              <p class="card02__text">過去の出来事やトラウマに起因する悩みを解消し、心の回復を支援します。</p>
+          <div class="card02">
+            <div class="card02__image psychological__image--04">
+              <div class="card02__content">
+                <p class="card02__title">心的外傷（トラウマ）のケア</p>
+                <p class="card02__text">過去の出来事やトラウマに起因する悩みを解消し、心の回復を支援します。</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="card02">
-          <div class="card02__image psychological__image--05">
-            <div class="card02__content">
-              <p class="card02__title">ライフスタイルの改善</p>
-              <p class="card02__text">仕事や家庭、人生の方向性に迷っている方などに対し、サポートを行います。</p>
+          <div class="card02">
+            <div class="card02__image psychological__image--05">
+              <div class="card02__content">
+                <p class="card02__title">ライフスタイルの改善</p>
+                <p class="card02__text">仕事や家庭、人生の方向性に迷っている方などに対し、サポートを行います。</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <section class="trauma content01">
     <div class="content01__inner inner">
