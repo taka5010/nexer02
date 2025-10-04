@@ -31,10 +31,9 @@
 }
 
 .mv-under.mv-under--faq {
-  background-image: url(../images/common/mv-fap_img.png);
+  background-image: url(../images/common/blog_bg.png);
   background-position: 60% -65px;
   @include mq("md") {
-    background-image: url(../images/common/mv-fap_img.png);
   }
 }
 
@@ -83,16 +82,18 @@
   // justify-content: center;
   align-items: center;
   height: inherit;
-  transform: translateY(-20px);
+
   @include mq("md") {
-    transform: translateY(100px);
+
   }
 }
 
 .mv-under__content {
   text-align: left;
+  transform: translateY(-20px);
   @include mq("md") {
     margin-left: rem(100);
+    transform: translateY(100px);
   }
 }
 

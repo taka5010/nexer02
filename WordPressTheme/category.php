@@ -15,6 +15,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('parts/breadcrumbs') ?>
   <div class="blog-items--wrapper">
     <section class="blog-items__archive archive">
       <div class="archive__inner inner">

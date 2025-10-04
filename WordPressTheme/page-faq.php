@@ -4,23 +4,20 @@
     <div class="mv-under__inner">
       <div class="mv-under__content">
         <p class="mv-under__maintitle">
-          FAP療法&reg;について
+          よくあるご質問
         </p>
         <div class="mv-under__subtitle-wrapper">
           <span class="mv-under__divider"></span>
           <p class="mv-under__subtitle">
-            about fap therapy
+            faq
           </p>
         </div>
       </div>
     </div>
   </section>
+  <?php get_template_part('parts/breadcrumbs') ?>
   <section class="faq">
     <div class="faq__inner inner">
-      <h2 class="faq__title section-title">
-        <p class="section-title__en">FAQ</p>
-        <p class="section-title__ja">よくあるご質問</p>
-      </h2>
       <ul class="faq__list faq-list">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングを受ける前に準備が必要ですか？</p>
@@ -50,7 +47,8 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>カウンセリングの内容は他の人に知られることはありませんか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>はい、カウンセリングで話された内容は厳密に守秘義務が適用されます。他の人に話すことはありませんので、安心してお話しいただけます。</p>
+              <span>A</span>はい、カウンセリングで話された内容は厳密に守秘義務が適用されます。他の人に話すことはありませんので、安心してお話しいただけます。
+            </p>
           </div>
         </li>
         <li class="faq-list__item">
@@ -65,14 +63,16 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>料金はどのように支払いますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>料金のお支払いは、セッションごとに現金またはクレジットカードでのお支払いもしくは振込が可能です。事前にお支払い方法を確認させていただきますので、ご安心ください。</p>
+              <span>A</span>料金のお支払いは、セッションごとに現金またはクレジットカードでのお支払いもしくは振込が可能です。事前にお支払い方法を確認させていただきますので、ご安心ください。
+            </p>
           </div>
         </li>
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question"><span>Q</span>カウンセリングはどのくらいの頻度で受けるべきですか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>カウンセリングの頻度は、あなたの状態やニーズに応じて調整できます。最初は週に1回程度で始め、その後、進捗に合わせて頻度を減らしていくことが一般的多いです。</p>
+              <span>A</span>カウンセリングの頻度は、あなたの状態やニーズに応じて調整できます。最初は週に1回程度で始め、その後、進捗に合わせて頻度を減らしていくことが一般的多いです。
+            </p>
           </div>
         </li>
         <li class="faq-list__item">
@@ -95,7 +95,8 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>予約変更やキャンセルは可能ですか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>はい、予約の変更やキャンセルは可能です。キャンセルポリシーについては、事前にご案内いたしますので、変更が必要な場合は早めにご連絡ください。</p>
+              <span>A</span>はい、予約の変更やキャンセルは可能です。キャンセルポリシーについては、事前にご案内いたしますので、変更が必要な場合は早めにご連絡ください。
+            </p>
           </div>
         </li>
       </ul>

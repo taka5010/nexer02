@@ -16,6 +16,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('parts/breadcrumbs') ?>
   <section class="intro">
     <div class="intro__inner inner">
       <div class="intro__text-block">

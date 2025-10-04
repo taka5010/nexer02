@@ -15,6 +15,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('parts/breadcrumbs') ?>
   <section class="intro intro--psychological">
     <div class="intro__inner inner">
       <div class="intro__text-block">

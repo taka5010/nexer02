@@ -1,0 +1,30 @@
+@use "global" as *;
+
+.breadcrumbs--wrapper {
+padding: 0 rem(50);
+display: flex;
+justify-content: left;
+}
+
+.breadcrumbs--inner {
+  margin-right: rem(20);
+  width: inherit;
+}
+
+.breadcrumbs__list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: rem(12);
+  font-weight: $regular;
+  font-family: $ja-font-family;
+  line-height: 1.5;
+}
+
+.breadcrumbs__list > li + li::before {
+  content: "ー";
+  margin: 0 .5em;
+  color: $line-01;
+}
