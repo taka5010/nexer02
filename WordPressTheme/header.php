@@ -44,7 +44,7 @@
                   role="menuitem">FAP療法®について</a>
               </li>
               <li class="dropdown__item" role="none">
-                <a class="dropdown__link" href="<?php echo esc_url( home_url( '/sleep-script/' ) ); ?>"
+                <a class="dropdown__link" href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>"
                   role="menuitem">催眠スクリプト</a>
               </li>
             </ul>
@@ -58,7 +58,7 @@
                   role="menuitem">GeneSwitch</a>
               </li>
               <li class="dropdown__item" role="none">
-                <a class="dropdown__link" href="<?php echo esc_url( home_url( '/unconscious-journey/' ) ); ?>"
+                <a class="dropdown__link" href="<?php echo esc_url( home_url( '/online-course/' ) ); ?>"
                   role="menuitem">無意識の旅オンライン講座</a>
               </li>
             </ul>
@@ -113,9 +113,9 @@
                 <button class="header-drawer__toggle js-drawer-toggle">心理カウンセリング</button>
                 <ul class="header-drawer__submenu">
                   <li class="header-drawer__submenu-item"><a
-                      href="<?php echo esc_url( home_url( '/fap/' ) ); ?>">FAP療法®について</a></li>
+                      href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a></li>
                   <li class="header-drawer__submenu-item"><a
-                      href="<?php echo esc_url( home_url( '/sleep-script/' ) ); ?>">催眠スクリプト</a></li>
+                      href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a></li>
                 </ul>
               </li>
 
@@ -123,9 +123,9 @@
                 <button class="header-drawer__toggle js-drawer-toggle">トラウマカウンセリング</button>
                 <ul class="header-drawer__submenu">
                   <li class="header-drawer__submenu-item"><a
-                      href="<?php echo esc_url( home_url( '/fap/' ) ); ?>">FAP療法®について</a></li>
+                      href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a></li>
                   <li class="header-drawer__submenu-item"><a
-                      href="<?php echo esc_url( home_url( '/sleep-script/' ) ); ?>">催眠スクリプト</a></li>
+                      href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a></li>
                 </ul>
               </li>
 
@@ -135,11 +135,11 @@
                   <li class="header-drawer__submenu-item"><a
                       href="<?php echo esc_url( home_url( '/geneswitch/' ) ); ?>">GeneSwitch</a></li>
                   <li class="header-drawer__submenu-item"><a
-                      href="<?php echo esc_url( home_url( '/unconscious-journey/' ) ); ?>">無意識の旅オンライン講座</a></li>
+                      href="<?php echo esc_url( home_url( '/online-course/' ) ); ?>">無意識の旅オンライン講座</a></li>
                 </ul>
               </li>
 
-              <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">ブログ</a></li>
+              <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/home/' ) ); ?>">ブログ</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">会社概要</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
 
