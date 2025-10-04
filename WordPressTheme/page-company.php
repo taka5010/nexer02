@@ -29,40 +29,22 @@
         </div>
         <div class="company-message__text-block">
           <h2 class="company-message__title">
-            テキストが入ります。テキストが入ります。<br>
-            テキストが入ります。テキストが入ります。
+            <?php echo nl2br(esc_html(get_field('message_title'))); ?>
           </h2>
           <div class="company-message__description">
             <p class="company-message__text">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+              <?php echo nl2br(esc_html(get_field('message_text'))); ?>
             </p>
-            <p class="company-message__text">
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
           </div>
         </div>
       </div>
       <div class="company-message__profile profile">
-        <h3 class="profile__header profile__title">代表・大嶋信頼(おおしま のぶより)プロフィール
+        <h3 class="profile__header profile__title">
+          <?php echo nl2br(esc_html(get_field('profile_title'))); ?>
         </h3>
         <div class="profile__text-wrapper">
           <p class="profile__text">
-            米国・私立アズベリー大学心理学部心理学科卒業。
-          </p>
-          <p class="profile__text">
-            アルコール依存症専門病院、周愛利田クリニックに勤務する傍ら東京都精神医学総合研究所の研修生として、また嗜癖問題臨床研究所付属原宿相談室非常勤職員として依存症に関する対応を学ぶ。
-          </p>
-          <p class="profile__text">
-            嗜癖問題臨床研究所付属原宿相談室室長を経て、株式会社アイエフエフ代表取締役として勤務。
-          </p>
-          <p class="profile__text">
-            現在株式会社インサイト・カウンセリング代表取締役。
-          </p>
-          <p class="profile__text">
-            ブリーフ・セラピーであるFAP療法（Free from Anxiety Program）を開発しトラウマのみならず幅広い症例のカウンセリングを行っている。
-          </p>
-          <p class="profile__text">
-            著書に、ベストセラーになった『「いつも誰かに振り回される」が一瞬で変わる方法』『「すぐ不安になってしまう」が一瞬で消える方法』（以上、すばる舎）
-            の他、『支配されちゃう人たち』『無意識さんの力で無敵に生きる』（以上、青山ライフ出版）、『催眠ガール』（清流出版）、『無意識さん、催眠を教えて』（光文社）、『無意識さんの力でぐっすり眠れる本』（ダイヤモンド社）、『脳を休めればすべてがうまく回りだす』（WAVE出版）など多数。
+            <?php echo nl2br(esc_html(get_field('profile_text'))); ?>
           </p>
         </div>
       </div>
