@@ -504,6 +504,7 @@ a {
 .blog-list__item-img img {
 	-o-object-fit: cover;
 	aspect-ratio: 360/230;
+	height: auto;
 	object-fit: cover;
 	width: 100%;
 }

@@ -123,54 +123,7 @@
       </div>
     </div>
   </section>
-  <section class="blog-list">
-    <div class="blog-list__inner">
-      <h2 class="blog-list__title section-title02">
-        <p class="section-title02__text">テキストが入ります</p>
-      </h2>
-      <p class="blog-list__text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-      <ul class="blog-list__items">
-        <li class="blog-list__item">
-          <a href="#">
-            <div class="blog-list__item-img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
-            </div>
-            <div class="blog-list__item-content">
-              <p class="blog-list__item-title">ブログのタイトルが入ります</p>
-              <p class="blog-list__item-text">ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。</p>
-              <div class="blog__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="blog-list__item">
-          <a href="#">
-            <div class="blog-list__item-img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
-            </div>
-            <div class="blog-list__item-content">
-              <p class="blog-list__item-title">ブログのタイトルが入ります</p>
-              <p class="blog-list__item-text">ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。</p>
-              <div class="blog__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <?php get_template_part('parts/blog-list') ?>
   <section class="counseling-methods">
     <div class="counseling-methods__inner">
       <h2 class="section-title content03__header">
@@ -517,19 +470,19 @@
 
     </div>
   </section>
-  <section class="other-services">
-    <div class="other-services__inner inner">
+  <section class="about-counseling">
+    <div class="about-counseling__inner inner">
       <h2 class="section-title content03__header">
-        <p class="section-title__en">other-services</p>
-        <p class="section-title__ja">その他のサービス</p>
+        <p class="section-title__en">about counseling</p>
+        <p class="section-title__ja">カウンセリングについて</p>
       </h2>
-      <div class="other-services__cards card04-items">
-        <a href="#" class="other-services__card card03">
-          <div class="card03__image other-services__image--01">
+      <div class="about-counseling__cards card04-items">
+        <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
+          class="about-counselings__card card03">
+          <div class="card03__image about-counseling__image--01">
             <div class="card03__content">
-              <h3 class="card03__title">GeneSwitch</h3>
-              <p class="card03__text">簡単な方法で、心身の不快感を軽減。</p>
-              <p class="card03__text"> 遺伝子コードを活用した新しいアプローチで、日々の悩みを解消しましょう。</p>
+              <h3 class="card03__title">心理カウンセリング</h3>
+              <p class="card03__text">幅広いこころの問題にお困りの方へ、お一人おひとりの状況に合わせて丁寧にお話をうかがいながら、こころの整理と回復をサポートさせていただきます。</p>
               <div class="card03__button section-button">
                 <div class="section-button__wrapper">
                   <span class="section-button__text">詳しく見る</span>
@@ -541,11 +494,11 @@
             </div>
           </div>
         </a>
-        <a href="#" class="other-services__card card03">
-          <div class="card03__image other-services__image--02">
+        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03">
+          <div class="card03__image about-counseling__image--02">
             <div class="card03__content">
-              <h3 class="card03__title">無意識の旅オンライン講座</h3>
-              <p class="card03__text">『無意識の旅』は、あなたにそっと寄り添う、“言葉を超えた癒し”の体験です</p>
+              <h3 class="card03__title">トラウマカウンセリング</h3>
+              <p class="card03__text">『過去の心的外傷（トラウマ）による不安や恐怖、フラッシュバックなどの症状を和らげ、心の回復を支援する専門的な心理療法を用いたカウンセリングです。</p>
               <div class="card03__button section-button">
                 <div class="section-button__wrapper">
                   <span class="section-button__text">詳しく見る</span>

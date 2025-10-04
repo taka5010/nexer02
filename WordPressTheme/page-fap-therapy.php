@@ -79,54 +79,7 @@
       </div>
     </div>
   </section>
-  <section class="blog-list">
-    <div class="blog-list__inner inner">
-      <h2 class="blog-list__title section-title02">
-        <p class="section-title02__text">テキストが入ります</p>
-      </h2>
-      <p class="blog-list__text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
-      <ul class="blog-list__items">
-        <li class="blog-list__item">
-          <a href="#">
-            <div class="blog-list__item-img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
-            </div>
-            <div class="blog-list__item-content">
-              <p class="blog-list__item-title">ブログのタイトルが入ります</p>
-              <p class="blog-list__item-text">ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。</p>
-              <div class="blog__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-        <li class="blog-list__item">
-          <a href="#">
-            <div class="blog-list__item-img">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/blog-list__img.jpg" alt="省略">
-            </div>
-            <div class="blog-list__item-content">
-              <p class="blog-list__item-title">ブログのタイトルが入ります</p>
-              <p class="blog-list__item-text">ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。ブログの抜粋文が入ります。</p>
-              <div class="blog__button section-button">
-                <div class="section-button__wrapper">
-                  <span class="section-button__text">詳しく見る</span>
-                  <div class="section-button__icon button-icon--blue">
-                    <span class="arrow-white"></span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </section>
+  <?php get_template_part('parts/blog-list') ?>
   <section class="counseling-points counseling-points--fap">
     <div class="counseling-points__inner inner">
       <h2 class="section-title02">
@@ -451,9 +404,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
   </section>
   <section class="about-counseling">
@@ -463,7 +414,8 @@
         <p class="section-title__ja">カウンセリングについて</p>
       </h2>
       <div class="about-counseling__cards card04-items">
-        <a href="#" class="about-counselings__card card03">
+        <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
+          class="about-counselings__card card03">
           <div class="card03__image about-counseling__image--01">
             <div class="card03__content">
               <h3 class="card03__title">心理カウンセリング</h3>
@@ -479,7 +431,7 @@
             </div>
           </div>
         </a>
-        <a href="#" class="about-counseling__card card03">
+        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03">
           <div class="card03__image about-counseling__image--02">
             <div class="card03__content">
               <h3 class="card03__title">トラウマカウンセリング</h3>
