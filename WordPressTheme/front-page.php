@@ -17,8 +17,10 @@
   </section>
   <section class="message">
     <div class="message__inner inner">
-      <div class="message__header">
-        <div class="message__image">
+      <div class="message__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
+        <div class="message__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <picture>
             <source media="(min-width: 768px)"
               srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/message_img-pc.jpg">
@@ -26,14 +28,18 @@
               loading="lazy">
           </picture>
         </div>
-        <h2 class="message__title section-title section-title--left">
+        <h2 class="message__title section-title section-title--left" data-aos="fade-up" data-aos-duration="1200"
+          data-aos-offset="220">
           <p class="section-title__en">MESSAGE</p>
           <p class="section-title__ja">メッセージ</p>
         </h2>
       </div>
       <div class="message__content">
-        <p class="message__heading">あなたは自分らしく生きていますか？</p>
-        <div class="message__text section-text">
+        <p class="message__heading" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">あなたは自分らしく生きていますか？
+        </p>
+        <div class="message__text section-text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <p>はじめまして。</p>
           <p>インサイト・カウンセリング代表の大嶋 信頼（おおしま のぶより）と申します。</p>
           <p>このたびは、当社のウェブサイトをご覧いただき、ありがとうございます。</p>
@@ -67,11 +73,13 @@
   </section>
   <section class="counseling">
     <div class="counseling__inner inner">
-      <h2 class="counseling__title section-title">
+      <h2 class="counseling__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">COUNSELING</p>
         <p class="section-title__ja">インサイト・カウンセリングにご相談ください</p>
       </h2>
-      <div class="counseling__cards card04-items">
+      <div class="counseling__cards card04-items" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <a href="/psychological-counseling" class="counseling__card card04">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img01.jpg"
@@ -167,11 +175,12 @@
   </section>
   <section class="blog">
     <div class="blog__inner inner">
-      <h2 class="blog__title section-title">
+      <h2 class="blog__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">BLOG</p>
         <p class="section-title__ja">お知らせ・最新情報</p>
       </h2>
-      <div class="blog__list">
+      <div class="blog__list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
         <a href="/blog/2025-08-01" class="blog__item">
           <div class="blog__item-content">
             <div class="blog__item-meta">
@@ -203,7 +212,8 @@
           <div class="blog__item-arrow arrow"></div>
         </a>
       </div>
-      <a href="#" class="blog__button section-button">
+      <a href="#" class="blog__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">詳しく見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -214,14 +224,17 @@
     </div>
   </section>
   <section class="counseling-examples">
-    <div class="counseling-examples__inner inner">
-      <h2 class="counseling-examples__title section-title">
+    <div class=" counseling-examples__inner inner">
+      <h2 class="counseling-examples__title section-title" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-offset="160" data-aos-delay="200">
         <p class="section-title__en">カウンセリングでの<br>ご相談内容の例</p>
       </h2>
-      <p class="counseling-examples__intro">
+      <p class="counseling-examples__intro" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         ご予約いただく多くの方が、心理カウンセリングは初めてのご利用です。<br>はじめての方でも安心してご相談いただけるよう、これまでに寄せられたご相談内容の一例をご紹介いたします。
       </p>
-      <div class="counseling-examples__list">
+      <div class="counseling-examples__list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="counseling-examples__item">
           <h3 class="counseling-examples__item-title">人間関係</h3>
           <ul class="counseling-examples__item-list">
@@ -234,7 +247,8 @@
             <li>一人になるのが不安で、人と距離を置けない</li>
           </ul>
         </div>
-        <div class="counseling-examples__item">
+        <div class="counseling-examples__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h3 class="counseling-examples__item-title">心の状態や感情</h3>
           <ul class="counseling-examples__item-list">
             <li>気分の落ち込みが続き、何もやる気が起きない</li>
@@ -246,7 +260,8 @@
             <li>「自分はダメな人間だ」と思い込んでしまう</li>
           </ul>
         </div>
-        <div class="counseling-examples__item">
+        <div class="counseling-examples__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h3 class="counseling-examples__item-title">ライフイベントや環境の変化</h3>
           <ul class="counseling-examples__item-list">
             <li>結婚・出産・育児など生活の変化に戸惑っている</li>
@@ -259,7 +274,8 @@
           </ul>
         </div>
       </div>
-      <a href="#" class="counseling-examples__button section-button">
+      <a href="#" class="counseling-examples__button section-button" data-aos="fade-up" data-aos-duration="1000"
+        data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">心理カウンセリングについて詳しく見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -271,11 +287,13 @@
   </section>
   <section class="faq faq--top">
     <div class="faq__inner inner">
-      <h2 class="faq__title section-title">
+      <h2 class="faq__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">FAQ</p>
         <p class="section-title__ja">よくあるご質問</p>
       </h2>
-      <ul class="faq__list faq-list">
+      <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングを受ける前に準備が必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">
@@ -301,7 +319,8 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button">
+      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -313,18 +332,21 @@
   </section>
   <section class="about">
     <div class="about__inner inner">
-      <h2 class="about__title section-title">
+      <h2 class="about__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">ABOUT</p>
         <p class="section-title__ja">会社概要</p>
       </h2>
 
       <div class="about__content">
         <div class="about__images">
-          <div class="about__main-image">
+          <div class="about__main-image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+            data-aos-delay="200">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="会社外観"
               loading="lazy">
           </div>
-          <div class="about__sub-images">
+          <div class="about__sub-images" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+            data-aos-delay="200">
             <div class="about__sub-image">
               <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="カウンセリングルーム"
                 loading="lazy">
@@ -335,7 +357,8 @@
             </div>
           </div>
         </div>
-        <div class="about__company-info">
+        <div class="about__company-info" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h3 class="about__company-name">株式会社インサイト・カウンセリング</h3>
           <div class="about__info-list">
             <div class="about__info-item">
@@ -356,13 +379,14 @@
             </div>
           </div>
         </div>
-        <div class="about__map">
+        <div class="about__map" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.648740125287!2d139.75460627592767!3d35.66102497259376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc164632c57%3A0xb4fe478f8c59181c!2z44CSMTA1LTAwMjEg5p2x5Lqs6YO95riv5Yy65p2x5paw5qmL77yS5LiB55uu77yR77yW4oiS77yTIOOCq-ODvOOCtuODmeODq-OCveODvOODrCA0Zg!5e0!3m2!1sja!2sjp!4v1758529098968!5m2!1sja!2sjp"
             width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        <div class="about__access-list-wrapper">
+        <div class="about__access-list-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h3 class="about__access-title">
             <img class="about__access-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/icon-map.svg"
               alt="アクセス">アクセス
@@ -378,7 +402,8 @@
           </div>
         </div>
       </div>
-      <a href="#" class="about__button section-button">
+      <a href="#" class="about__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">詳しく見る</span>
           <div class="section-button__icon button-icon--blue">
