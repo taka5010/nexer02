@@ -98,10 +98,10 @@
     <p class="section-title__en">our office</p>
     <p class="section-title__ja">会社内観・外観</p>
   </h2>
-  <div class="service">
-    <div class="service__inner">
-      <div class="service__swiper service-swiper">
-        <div class="swiper js-service-swiper">
+  <div class="office">
+    <div class="office__inner">
+      <div class="office__swiper office-swiper">
+        <div class="swiper js-office-swiper">
           <ul class="swiper-wrapper">
             <li class="swiper-slide">
               <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
@@ -127,9 +127,9 @@
       </div>
     </div>
   </div>
-  <div class="service-swiper__controls">
+  <div class="office-swiper__controls">
     <div class="swiper-pagination"></div>
-    <div class="service-swiper__nav">
+    <div class="office-swiper__nav">
       <button class="nav nav--prev" aria-label="前へ">
         <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <circle cx="25.5" cy="25" r="25" fill="white" />

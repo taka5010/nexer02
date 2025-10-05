@@ -115,7 +115,7 @@ jQuery(function ($) {
     });
 
     // 会社内観・外観のスライダー
-    var service_swiper = new Swiper(".js-service-swiper", {
+    var office_swiper = new Swiper(".js-office-swiper", {
         loop: true,
         speed: 2000,
         slidesPerView: 1,
@@ -135,7 +135,7 @@ jQuery(function ($) {
             prevEl: '.nav--prev',
           },
           pagination: {
-            el: '.service-swiper__controls .swiper-pagination',
+            el: '.office-swiper__controls .swiper-pagination',
             type: 'fraction',
             renderFraction: (currentClass, totalClass) => {
               return `

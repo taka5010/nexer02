@@ -4145,7 +4145,7 @@ span.pgn__wrap {
 
 /* ========== Layout ========== */
 
-.service__inner {
+.office__inner {
 	margin: auto;
 	max-width: 37.5rem;
 	padding: 0 1.25rem;
@@ -4154,16 +4154,16 @@ span.pgn__wrap {
 
 /* ========== Swiper Base ========== */
 
-.service-swiper {
+.office-swiper {
 	position: relative;
 }
 
-.service-swiper .swiper-slide,
-.service-swiper .swiper-slide-active {
+.office-swiper .swiper-slide,
+.office-swiper .swiper-slide-active {
 	transform-origin: bottom center;
 }
 
-.service-swiper .swiper-slide img {
+.office-swiper .swiper-slide img {
 	-o-object-fit: cover;
 	aspect-ratio: 720/420;
 	height: auto;
@@ -4171,20 +4171,31 @@ span.pgn__wrap {
 	width: 100%;
 }
 
+.office-swiper .swiper-slide {
+	transform: scale(0.8);
+	transform-origin: bottom center;
+	transition: 1s;
+}
+
+.office-swiper .swiper-slide-active {
+	max-width: 45rem;
+	transform: scale(1) translateY(15px);
+}
+
 /* ========== Pagination (共通) ========== */
 
-.service-swiper .swiper-pagination {
+.office-swiper .swiper-pagination {
 	bottom: -3rem;
 }
 
-.service-swiper .swiper-pagination .swiper-pagination-bullet {
+.office-swiper .swiper-pagination .swiper-pagination-bullet {
 	background: #fff9ee;
 	border: 1px solid #333;
 }
 
 /* ========== Controls（ページネーション＋ナビ横並び） ========== */
 
-.service-swiper__controls {
+.office-swiper__controls {
 	align-items: center;
 	display: flex;
 	flex-wrap: nowrap;
@@ -4195,7 +4206,7 @@ span.pgn__wrap {
 
 /* Swiper既定のabsoluteを解除して横並びに参加させる */
 
-.service-swiper__controls .swiper-pagination {
+.office-swiper__controls .swiper-pagination {
 	bottom: auto !important;
 	left: auto !important;
 	margin: 0 !important;
@@ -4205,20 +4216,20 @@ span.pgn__wrap {
 	width: auto !important;
 }
 
-.service-swiper__controls .swiper-pagination {
+.office-swiper__controls .swiper-pagination {
 	text-align: left; /* 好みで */
 }
 
 /* fraction体裁（01 — 06など） */
 
-.service-swiper__controls .swiper-pagination.swiper-pagination-fraction {
+.office-swiper__controls .swiper-pagination.swiper-pagination-fraction {
 	align-items: center !important;
 	display: inline-flex !important;
 	gap: 0.75rem !important;
 	width: auto !important;
 }
 
-.service-swiper__controls .swiper-pagination.swiper-pagination-fraction {
+.office-swiper__controls .swiper-pagination.swiper-pagination-fraction {
 	font-feature-settings: "tnum";
 }
 
@@ -4231,12 +4242,12 @@ span.pgn__wrap {
 
 /* ========== Navigation Buttons ========== */
 
-.service-swiper__nav {
+.office-swiper__nav {
 	display: flex;
 	gap: 1rem;
 }
 
-.service-swiper__nav .nav {
+.office-swiper__nav .nav {
 	background: transparent;
 	cursor: pointer;
 	height: auto;
@@ -4245,7 +4256,7 @@ span.pgn__wrap {
 	width: auto;
 }
 
-.service-swiper__nav .nav svg {
+.office-swiper__nav .nav svg {
 	filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.08));
 	height: 50px;
 	width: 51px;
@@ -4274,17 +4285,6 @@ span.pgn__wrap {
 
 .target .content01__layout {
 	margin-top: 6.25rem;
-}
-
-.service-swiper .swiper-slide {
-	transform: scale(0.8);
-	transform-origin: bottom center;
-	transition: 1s;
-}
-
-.service-swiper .swiper-slide-active {
-	max-width: 45rem;
-	transform: scale(1) translateY(15px);
 }
 
 .trauma {
@@ -6171,7 +6171,7 @@ html {
 	margin-top: 3.125rem;
 }
 
-.service__inner {
+.office__inner {
 	margin: 0 1.5625rem;
 	max-width: 86.875rem;
 	padding: 0 1.5625rem;
