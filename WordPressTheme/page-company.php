@@ -94,12 +94,12 @@
       </div>
     </div>
   </section>
-  <h2 class="our-office__title section-title">
-    <p class="section-title__en">our office</p>
-    <p class="section-title__ja">会社内観・外観</p>
-  </h2>
-  <div class="office">
+  <section class="office">
     <div class="office__inner">
+      <h2 class="our-office__title section-title">
+        <p class="section-title__en">our office</p>
+        <p class="section-title__ja">会社内観・外観</p>
+      </h2>
       <div class="office__swiper office-swiper">
         <div class="swiper js-office-swiper">
           <ul class="swiper-wrapper">
@@ -124,29 +124,26 @@
           </ul>
         </div>
         <div class="swiper-pagination"></div>
+        <div class="office-swiper__controls">
+          <div class="swiper-pagination"></div>
+          <div class="office-swiper__nav">
+            <button class="nav nav--prev" aria-label="前へ">
+              <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="25.5" cy="25" r="25" fill="white" />
+                <path d="M20.5 25L28 30.1962V19.8038L20.5 25Z" fill="#33B5E1" />
+              </svg>
+            </button>
+            <button class="nav nav--next" aria-label="次へ">
+              <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <circle cx="25.5" cy="25" r="25" fill="white" />
+                <path d="M30.5 25L23 30.1962V19.8038L30.5 25Z" fill="#33B5E1" />
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="office-swiper__controls">
-    <div class="swiper-pagination"></div>
-    <div class="office-swiper__nav">
-      <button class="nav nav--prev" aria-label="前へ">
-        <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="25.5" cy="25" r="25" fill="white" />
-
-          <path d="M20.5 25L28 30.1962V19.8038L20.5 25Z" fill="#33B5E1" />
-        </svg>
-      </button>
-      <button class="nav nav--next" aria-label="次へ">
-        <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <circle cx="25.5" cy="25" r="25" fill="white" />
-
-          <path d="M30.5 25L23 30.1962V19.8038L30.5 25Z" fill="#33B5E1" />
-        </svg>
-      </button>
-    </div>
-  </div>
-  <!-- テスト -->
+  </section>
   <section class="history">
     <div class="history__inner">
       <h2 class="company-profile__title section-title">

@@ -1414,6 +1414,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: 2.5rem;
+	margin-top: 2.5rem;
 }
 
 .company-message__img {
@@ -1495,11 +1496,19 @@ a {
 	width: 100%;
 }
 
+.company-profile__inner.inner {
+	margin-top: 2.5rem;
+}
+
 .company__inner {
 	max-width: 37.5rem;
 	padding-left: 1.25rem;
 	padding-right: 1.25rem;
 	width: 100%;
+}
+
+.company__profile {
+	margin-top: 2.5rem;
 }
 
 .contact-info {
@@ -2930,6 +2939,7 @@ a {
 
 .history__content {
 	margin: 0 auto;
+	margin-top: 2.5rem;
 	max-width: 70.625rem;
 	padding: 0 1.5625rem;
 	position: relative;
@@ -3344,6 +3354,26 @@ a {
 	align-items: center;
 	display: inline-flex;
 	gap: 0.4em;
+}
+
+.office {
+	padding: 5rem 0;
+	position: relative;
+}
+
+.office::before {
+	background-image: url(../images/common/blog-list_bg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	bottom: 0;
+	content: "";
+	left: calc(50% - 50vw);
+	pointer-events: none;
+	position: absolute;
+	right: 1.25rem;
+	top: 0;
+	z-index: -1;
 }
 
 .other-services {
@@ -4147,9 +4177,12 @@ span.pgn__wrap {
 
 .office__inner {
 	margin: auto;
-	max-width: 37.5rem;
 	padding: 0 1.25rem;
 	width: 100%;
+}
+
+.office__swiper {
+	margin-top: 2.5rem;
 }
 
 /* ========== Swiper Base ========== */
@@ -4201,7 +4234,7 @@ span.pgn__wrap {
 	flex-wrap: nowrap;
 	gap: 1.5rem;
 	justify-content: center; /* 右寄せにする場合は flex-end */
-	margin-top: 2rem;
+	margin-top: 1.25rem;
 }
 
 /* Swiper既定のabsoluteを解除して横並びに参加させる */
@@ -5003,6 +5036,7 @@ html {
 	align-items: center;
 	flex-direction: row;
 	gap: 3.75rem;
+	margin-top: 3.75rem;
 }
 
 .company-message__img {
@@ -5036,10 +5070,18 @@ html {
 	padding: 8.125rem 0;
 }
 
+.company-profile__inner.inner {
+	margin-top: 3.75rem;
+}
+
 .company__inner {
 	max-width: 75rem;
 	padding-left: 1.5625rem;
 	padding-right: 1.5625rem;
+}
+
+.company__profile {
+	margin-top: 3.75rem;
 }
 
 .contact-info {
@@ -5698,6 +5740,10 @@ html {
 	top: -11.25rem;
 }
 
+.history__content {
+	margin-top: 3.75rem;
+}
+
 .history__item {
 	flex-direction: row;
 	gap: 5rem;
@@ -5887,6 +5933,14 @@ html {
 
 .nav-list__link {
 	font-size: 0.875rem;
+}
+
+.office {
+	padding: 8.125rem 0;
+}
+
+.office::before {
+	transform: translateX(-30px);
 }
 
 .other-services {
@@ -6172,9 +6226,17 @@ html {
 }
 
 .office__inner {
-	margin: 0 1.5625rem;
-	max-width: 86.875rem;
-	padding: 0 1.5625rem;
+	margin: 0 0rem;
+	margin-top: 3.75rem;
+	padding: 0 50px;
+}
+
+.office__swiper {
+	margin-top: 3.75rem;
+}
+
+.office-swiper__controls {
+	margin-top: 2.5rem;
 }
 
 .target {
