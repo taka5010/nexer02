@@ -79,3 +79,9 @@ function my_setup() {
 	);
 }
 add_action( 'after_setup_theme', 'my_setup' );
+
+//固定ページ編集不可（ACF以外）
+function remove_page_editor() {
+  remove_post_type_support( 'page', 'editor' ); // 本文エディターを非表示
+}
+add_action( 'admin_init', 'remove_page_editor' );

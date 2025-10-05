@@ -1422,6 +1422,10 @@ a {
 	width: 100%;
 }
 
+.company-message__img img:not([alt]) {
+	filter: initial;
+}
+
 .company-message__img img {
 	-o-object-fit: cover;
 	aspect-ratio: 480/310;
@@ -4139,43 +4143,6 @@ span.pgn__wrap {
 	margin-top: 1.875rem;
 }
 
-/* ========== Layout ========== */
-
-.service__inner {
-	margin: auto;
-	max-width: 37.5rem;
-	padding: 0 1.25rem;
-	width: 100%;
-}
-
-.service-swiper {
-	position: relative;
-}
-
-/* Swiper本体に右側だけ余白を付与（次スライドのチラ見せ用） */
-
-/* ========== Slides（中央拡大：速度は1sのまま） ========== */
-
-.service-swiper .swiper-slide {
-	max-width: 720px;
-	transform: scale(0.847);
-	transition: transform 1s;
-	width: 100vw; /* 中央スライドの幅を決める */
-}
-
-.service-swiper .swiper-slide-active {
-	transform: scale(1);
-}
-
-/* 画像 */
-
-.service-swiper .swiper-slide img {
-	-o-object-fit: cover;
-	aspect-ratio: 720/420;
-	object-fit: cover;
-	width: 100%;
-}
-
 /* 既定では下に出す指定（後でcontrols側で上書き） */
 
 .service-swiper .swiper-pagination {
@@ -4281,6 +4248,41 @@ span.pgn__wrap {
 
 .target .content01__layout {
 	margin-top: 6.25rem;
+}
+
+.service__inner {
+	margin: auto;
+	max-width: 37.5rem;
+	padding: 0 1.25rem;
+	width: 100%;
+}
+
+.service-swiper {
+	position: relative;
+}
+
+.service-swiper .swiper-slide {
+	transform: scale(0.8);
+	transform-origin: bottom center;
+	transition: 1s;
+}
+
+.service-swiper .swiper-slide-active {
+	max-width: 45rem;
+	transform: scale(1) translateY(15px);
+}
+
+.service-swiper .swiper-slide,
+.service-swiper .swiper-slide-active {
+	transform-origin: bottom center;
+}
+
+.service-swiper .swiper-slide img {
+	-o-object-fit: cover;
+	aspect-ratio: 720/420;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
 }
 
 .trauma {
@@ -6167,11 +6169,6 @@ html {
 	margin-top: 3.125rem;
 }
 
-.service__inner {
-	max-width: 75rem;
-	padding: 0 1.5625rem;
-}
-
 .target {
 	padding: 8.125rem 0;
 }
@@ -6187,6 +6184,12 @@ html {
 
 .target .content01__layout {
 	margin-top: 7.5rem;
+}
+
+.service__inner {
+	margin: 0 1.5625rem;
+	max-width: 86.875rem;
+	padding: 0 1.5625rem;
 }
 
 .trauma {

@@ -20,12 +20,13 @@
     <div class="company-message__inner inner">
       <h2 class="company-message__header section-title">
         <p class="section-title__en">message</p>
-        <p class="section-title__ja">代表メッセージ</p>
+        <p class="section-title__ja"> <?php echo nl2br(esc_html(get_field('message_title'))); ?></p>
       </h2>
       <div class="company-message__content">
         <div class="company-message__img">
-          <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/company_message.jpg"
-            alt="白地に小さな模様が入ったブラウスを着た女性が屋外でリラックスした表情" loading="lazy">
+          <?php if( get_field('message_img') ): ?>
+          <img src="<?php the_field('message_img'); ?>" alt="男性" />
+          <?php endif; ?>
         </div>
         <div class="company-message__text-block">
           <h2 class="company-message__title">
@@ -93,62 +94,58 @@
       </div>
     </div>
   </section>
-  <section class="our-office">
-    <div class="our-office__inner inner">
-      <h2 class="our-office__title section-title">
-        <p class="section-title__en">our office</p>
-        <p class="section-title__ja">会社内観・外観</p>
-      </h2>
-    </div>
-    <div class="service">
-      <div class="service__inner">
-        <div class="service__swiper service-swiper">
-          <div class="swiper js-service-swiper">
-            <ul class="swiper-wrapper">
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
-              </li>
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="省略">
-              </li>
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
-              </li>
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
-              </li>
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="省略">
-              </li>
-              <li class="swiper-slide">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
-              </li>
-            </ul>
-          </div>
-          <div class="service-swiper__controls">
-            <div class="swiper-pagination"></div>
-            <div class="service-swiper__nav">
-              <button class="nav nav--prev" aria-label="前へ">
-                <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="25.5" cy="25" r="25" fill="white" />
-                  <!-- ▶︎（右向き） -->
-                  <path d="M20.5 25L28 30.1962V19.8038L20.5 25Z" fill="#33B5E1" />
-                </svg>
-              </button>
-              <!-- 右矢印＝next（▶︎） -->
-              <button class="nav nav--next" aria-label="次へ">
-                <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                  <circle cx="25.5" cy="25" r="25" fill="white" />
-                  <!-- ◀︎（左向き） -->
-                  <path d="M30.5 25L23 30.1962V19.8038L30.5 25Z" fill="#33B5E1" />
-                </svg>
-              </button>
-            </div>
-          </div>
+  <h2 class="our-office__title section-title">
+    <p class="section-title__en">our office</p>
+    <p class="section-title__ja">会社内観・外観</p>
+  </h2>
+  <div class="service">
+    <div class="service__inner">
+      <div class="service__swiper service-swiper">
+        <div class="swiper js-service-swiper">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
+            </li>
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="省略">
+            </li>
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
+            </li>
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
+            </li>
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="省略">
+            </li>
+            <li class="swiper-slide">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
+            </li>
+          </ul>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
-  </section>
+  </div>
+  <div class="service-swiper__controls">
+    <div class="swiper-pagination"></div>
+    <div class="service-swiper__nav">
+      <button class="nav nav--prev" aria-label="前へ">
+        <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="25.5" cy="25" r="25" fill="white" />
+
+          <path d="M20.5 25L28 30.1962V19.8038L20.5 25Z" fill="#33B5E1" />
+        </svg>
+      </button>
+      <button class="nav nav--next" aria-label="次へ">
+        <svg width="51" height="50" viewBox="0 0 51 50" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <circle cx="25.5" cy="25" r="25" fill="white" />
+
+          <path d="M30.5 25L23 30.1962V19.8038L30.5 25Z" fill="#33B5E1" />
+        </svg>
+      </button>
+    </div>
+  </div>
   <!-- テスト -->
   <section class="history">
     <div class="history__inner">

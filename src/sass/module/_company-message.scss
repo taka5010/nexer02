@@ -60,6 +60,10 @@
   }
 }
 
+.company-message__img img:not([alt]) {
+  filter: initial;
+}
+
 .company-message__img img {
   width: 100%;
   object-fit: cover;

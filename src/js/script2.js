@@ -115,40 +115,51 @@ jQuery(function ($) {
     });
 
     // 会社内観・外観のスライダー
-    var service_swiper = new Swiper(".js-service-swiper", {
+    var service_swiper = new Swiper('.js-service-swiper', {
         loop: true,
         speed: 2000,
-        slidesPerView: 1,
         centeredSlides: true,
-        // autoplay: {
-        //     delay: 2000,
-        //     disableOnInteraction: false,
-        // },
+        slidesPerView: 'auto',   // CSSの .swiper-slide のwidthを採用
+        slidesPerView: '1',   // CSSの .swiper-slide のwidthを採用
+        spaceBetween: 20,
+        initialSlide: 0,         // 1枚目を中央に
+        loopAdditionalSlides: 2, // ループ時のチラつき防止
         breakpoints: {
-            768: {
-                spaceBetween: 0,
-                slidesPerView: 1.8,
-            }
-        },
-        navigation: {
-            nextEl: '.nav--next',
-            prevEl: '.nav--prev',
-          },
-          pagination: {
-            el: '.service-swiper__controls .swiper-pagination',
-            type: 'fraction',
-            renderFraction: (currentClass, totalClass) => {
-              return `
-                <span class="${currentClass}"></span>
-                <span class="fraction-separator">—</span>
-                <span class="${totalClass}"></span>
-              `;
-            },
-            // 共通のゼロ埋め関数
-            formatFractionCurrent: n => n.toString().padStart(2, '0'),
-            formatFractionTotal: n => n.toString().padStart(2, '0')
+          768: {
+            spaceBetween: 30,
+            slidesPerView: '3',
           }
-    });
+        },
+    
+        // ページネーション（01 — 06 の体裁）
+        pagination: {
+          el: '.service-swiper__controls .swiper-pagination',
+          type: 'fraction',
+          renderFraction: function (currentClass, totalClass) {
+            return (
+              '<span class="' + currentClass + '"></span>' +
+              '<span class="fraction-separator">—</span>' +
+              '<span class="' + totalClass + '"></span>'
+            );
+          },
+          formatFractionCurrent: function (n) { return String(n).padStart(2, '0'); },
+          formatFractionTotal:   function (n) { return String(n).padStart(2, '0'); }
+        },
+    
+        // ナビゲーション
+        navigation: {
+          nextEl: '.service-swiper__nav .nav--next',
+          prevEl: '.service-swiper__nav .nav--prev'
+        },
+    
+        // 画面サイズ変更時に再計算
+        on: {
+          resize: function() {
+            this.update();
+          }
+        }
+      });
+
 });
 
 

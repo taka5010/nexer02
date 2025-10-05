@@ -1,6 +1,11 @@
 "use strict";
 
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 jQuery(function ($) {
+  var _Swiper;
   // ハンバーガー
   var $hamburger = $(".js-hamburger");
   var $drawer = $(".js-drawer");
@@ -117,38 +122,34 @@ jQuery(function ($) {
   });
 
   // 会社内観・外観のスライダー
-  var service_swiper = new Swiper(".js-service-swiper", {
+  var service_swiper = new Swiper('.js-service-swiper', (_Swiper = {
     loop: true,
     speed: 2000,
-    slidesPerView: 1,
     centeredSlides: true,
-    // autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    // },
-    breakpoints: {
-      768: {
-        spaceBetween: 0,
-        slidesPerView: 1.8
-      }
-    },
-    navigation: {
-      nextEl: '.nav--next',
-      prevEl: '.nav--prev'
-    },
-    pagination: {
-      el: '.service-swiper__controls .swiper-pagination',
-      type: 'fraction',
-      renderFraction: function renderFraction(currentClass, totalClass) {
-        return "\n                <span class=\"".concat(currentClass, "\"></span>\n                <span class=\"fraction-separator\">\u2014</span>\n                <span class=\"").concat(totalClass, "\"></span>\n              ");
-      },
-      // 共通のゼロ埋め関数
-      formatFractionCurrent: function formatFractionCurrent(n) {
-        return n.toString().padStart(2, '0');
-      },
-      formatFractionTotal: function formatFractionTotal(n) {
-        return n.toString().padStart(2, '0');
-      }
+    slidesPerView: 'auto'
+  }, _defineProperty(_Swiper, "slidesPerView", '1'), _defineProperty(_Swiper, "spaceBetween", 20), _defineProperty(_Swiper, "initialSlide", 0), _defineProperty(_Swiper, "loopAdditionalSlides", 2), _defineProperty(_Swiper, "breakpoints", {
+    768: {
+      spaceBetween: 30,
+      slidesPerView: '2'
     }
-  });
+  }), _defineProperty(_Swiper, "pagination", {
+    el: '.service-swiper__controls .swiper-pagination',
+    type: 'fraction',
+    renderFraction: function renderFraction(currentClass, totalClass) {
+      return '<span class="' + currentClass + '"></span>' + '<span class="fraction-separator">—</span>' + '<span class="' + totalClass + '"></span>';
+    },
+    formatFractionCurrent: function formatFractionCurrent(n) {
+      return String(n).padStart(2, '0');
+    },
+    formatFractionTotal: function formatFractionTotal(n) {
+      return String(n).padStart(2, '0');
+    }
+  }), _defineProperty(_Swiper, "navigation", {
+    nextEl: '.service-swiper__nav .nav--next',
+    prevEl: '.service-swiper__nav .nav--prev'
+  }), _defineProperty(_Swiper, "on", {
+    resize: function resize() {
+      this.update();
+    }
+  }), _Swiper));
 });
