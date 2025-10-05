@@ -4143,27 +4143,53 @@ span.pgn__wrap {
 	margin-top: 1.875rem;
 }
 
-/* 既定では下に出す指定（後でcontrols側で上書き） */
+/* ========== Layout ========== */
+
+.service__inner {
+	margin: auto;
+	max-width: 37.5rem;
+	padding: 0 1.25rem;
+	width: 100%;
+}
+
+/* ========== Swiper Base ========== */
+
+.service-swiper {
+	position: relative;
+}
+
+.service-swiper .swiper-slide,
+.service-swiper .swiper-slide-active {
+	transform-origin: bottom center;
+}
+
+.service-swiper .swiper-slide img {
+	-o-object-fit: cover;
+	aspect-ratio: 720/420;
+	height: auto;
+	object-fit: cover;
+	width: 100%;
+}
+
+/* ========== Pagination (共通) ========== */
 
 .service-swiper .swiper-pagination {
 	bottom: -3rem;
 }
-
-/* bullets使用時の見た目（任意） */
 
 .service-swiper .swiper-pagination .swiper-pagination-bullet {
 	background: #fff9ee;
 	border: 1px solid #333;
 }
 
-/* ========== Controls（ページネーション＋ナビを横並び） ========== */
+/* ========== Controls（ページネーション＋ナビ横並び） ========== */
 
 .service-swiper__controls {
 	align-items: center;
 	display: flex;
 	flex-wrap: nowrap;
 	gap: 1.5rem;
-	justify-content: center; /* 右寄せにしたい場合は flex-end */
+	justify-content: center; /* 右寄せにする場合は flex-end */
 	margin-top: 2rem;
 }
 
@@ -4203,7 +4229,7 @@ span.pgn__wrap {
 	margin: 0 0.75rem;
 }
 
-/* ナビ（左右ボタンを横並び） */
+/* ========== Navigation Buttons ========== */
 
 .service-swiper__nav {
 	display: flex;
@@ -4250,17 +4276,6 @@ span.pgn__wrap {
 	margin-top: 6.25rem;
 }
 
-.service__inner {
-	margin: auto;
-	max-width: 37.5rem;
-	padding: 0 1.25rem;
-	width: 100%;
-}
-
-.service-swiper {
-	position: relative;
-}
-
 .service-swiper .swiper-slide {
 	transform: scale(0.8);
 	transform-origin: bottom center;
@@ -4270,19 +4285,6 @@ span.pgn__wrap {
 .service-swiper .swiper-slide-active {
 	max-width: 45rem;
 	transform: scale(1) translateY(15px);
-}
-
-.service-swiper .swiper-slide,
-.service-swiper .swiper-slide-active {
-	transform-origin: bottom center;
-}
-
-.service-swiper .swiper-slide img {
-	-o-object-fit: cover;
-	aspect-ratio: 720/420;
-	height: auto;
-	object-fit: cover;
-	width: 100%;
 }
 
 .trauma {
@@ -6169,6 +6171,12 @@ html {
 	margin-top: 3.125rem;
 }
 
+.service__inner {
+	margin: 0 1.5625rem;
+	max-width: 86.875rem;
+	padding: 0 1.5625rem;
+}
+
 .target {
 	padding: 8.125rem 0;
 }
@@ -6184,12 +6192,6 @@ html {
 
 .target .content01__layout {
 	margin-top: 7.5rem;
-}
-
-.service__inner {
-	margin: 0 1.5625rem;
-	max-width: 86.875rem;
-	padding: 0 1.5625rem;
 }
 
 .trauma {
