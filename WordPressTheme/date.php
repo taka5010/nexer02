@@ -19,7 +19,8 @@
   <div class="blog-items--wrapper">
     <section class="blog-items__archive archive">
       <div class="archive__inner inner">
-        <div class="archive__cards cards06">
+        <div class="archive__cards cards06" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <?php if ( have_posts() ) : ?>
           <?php while ( have_posts() ) : the_post(); ?>
           <a href="<?php the_permalink(); ?>" class="archive__card card06">

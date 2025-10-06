@@ -18,7 +18,8 @@
   <?php get_template_part('parts/breadcrumbs') ?>
   <section class="intro">
     <div class="intro__inner inner">
-      <div class="intro__text-block">
+      <div class="intro__text-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <h2 class="intro__title">
           心の悩みを根本から解消。<br>
           FAP療法&reg;で過去の傷を癒し、<br>
@@ -30,7 +31,8 @@
           <p class="intro__paragraph intro__paragraph--fap">※FAP療法®は、㈱インサイト・カウンセリングの登録商標です。</p>
         </div>
       </div>
-      <div class="intro__image-wrapper">
+      <div class="intro__image-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq-intro_img.jpg"
           alt="白地に小さな模様が入ったブラウスを着た女性が屋外でリラックスした表情" loading="lazy">
       </div>
@@ -38,11 +40,12 @@
   </section>
   <section class="worries worries--trauma">
     <div class="worries__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">こんなお悩み・経験ありませんか？</p>
       </h2>
       <div class="worries__items card02-items">
-        <div class="card02">
+        <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card02__image fap__image--01">
             <div class="card02__content">
               <p class="card02__title">心の問題が繰り返し襲ってくる</p>
@@ -50,7 +53,7 @@
             </div>
           </div>
         </div>
-        <div class="card02">
+        <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card02__image fap__image--02">
             <div class="card02__content">
               <p class="card02__title">過去のトラウマから解放されたい</p>
@@ -59,7 +62,7 @@
             </div>
           </div>
         </div>
-        <div class="card02">
+        <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card02__image fap__image--03">
             <div class="card02__content">
               <p class="card02__title">強い不安やストレスに悩まされている</p>
@@ -67,7 +70,7 @@
             </div>
           </div>
         </div>
-        <div class="card02">
+        <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card02__image fap__image--04">
             <div class="card02__content">
               <p class="card02__title">心の整理がつかない</p>
@@ -82,13 +85,15 @@
   <?php get_template_part('parts/blog-list') ?>
   <section class="counseling-points counseling-points--fap">
     <div class="counseling-points__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">FAP療法&reg;<br>
           <span class="section-title02__text-blue">3</span>つのポイント
         </p>
       </h2>
       <ol class="counseling-methods__list content03__items">
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img01.jpg" alt="省略">
           </div>
@@ -101,7 +106,8 @@
             <p class="content03__text">自己意識の中で潜在的な感情や記憶にアプローチすることで、症状の根本的な解決を目指します。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img02.jpg" alt="省略">
           </div>
@@ -115,7 +121,8 @@
             <p class="content03__text">これにより、クライアントの症状に合わせた最適なアプローチが可能です。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_img03.jpg" alt="省略">
           </div>
@@ -133,12 +140,15 @@
   </section>
   <section class="target">
     <div class="target__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">対象となる方</p>
       </h2>
-      <p class="target__text">FAP療法&reg;は、以下の方々に特におすすめです</p>
+      <p class="target__text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
+        FAP療法&reg;は、以下の方々に特におすすめです</p>
       <div class="counseling__cards card05-items">
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img04.jpg" alt="" loading="lazy">
           </div>
@@ -151,7 +161,8 @@
             </p>
           </div>
         </div>
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img05.jpg" alt="" loading="lazy">
           </div>
@@ -164,7 +175,8 @@
             </p>
           </div>
         </div>
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img06.jpg" alt="" loading="lazy">
           </div>
@@ -182,12 +194,14 @@
   </section>
   <section class="flow">
     <div class="flow__inner inner">
-      <h2 class="section-title content02__header">
+      <h2 class="section-title content02__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">fap therapy flow</p>
         <p class="section-title__ja">FAPカウンセリングの流れ</p>
       </h2>
       <ol class="flow__list content02__items">
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img01.jpg" alt="省略">
           </div>
@@ -199,7 +213,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img02.jpg" alt="省略">
           </div>
@@ -211,7 +226,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/fap-flow_img03.jpg" alt="省略">
           </div>
@@ -228,12 +244,14 @@
   </section>
   <section class="price" aria-labelledby="price-title">
     <div class="price__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">price</p>
         <p class="section-title__ja">料金案内</p>
       </h2>
       <div class="price__table-wrapper">
-        <table class="price__table">
+        <table class="price__table" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <!-- 3列を固定（面接区分 / 面接方法 / 料金）-->
           <colgroup>
             <col class="price__col1">
@@ -275,7 +293,8 @@
         </table>
         <p class="price__table-text">(※上記金額は全て10％消費税込になっております。)</p>
       </div>
-      <div class="price__text-wrapper">
+      <div class="price__text-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="price__text">※大嶋信頼(おおしま のぶより)のカウンセリングについてはお問い合わせください。</p>
         <p class="price__text">※電話相談・オンライン相談については、相談日前日までにお振込みください。</p>
         <p class="price__text">※ご予約の変更・キャンセルは、予約日の3日前（日曜、祝日等弊社休業日を除く）の18時までにお電話にてご連絡ください。<br>
@@ -283,7 +302,8 @@
         <p class="price__text">※カウンセリングを受けた後の料金の未払いおよび返還請求については応じられません。</p>
         <p class="price__text">※ご予約の前に利用規約を必ずお読みください。</p>
       </div>
-      <div class="price__button-wrapper">
+      <div class="price__button-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <a href="#" class="section-button">
           <div class="section-button__wrapper">
             <span class="section-button__text">インサイト・カウンセリング利用規約</span>
@@ -294,16 +314,19 @@
         </a>
       </div>
       <div class="price__info price-info">
-        <div class="price-info__header">
+        <div class="price-info__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h2 class="price-info__title section-title02">
             <p class="section-title02__text">電話・オンライン相談の料金のお支払いについて</p>
           </h2>
         </div>
-        <p class="price-info__description">
+        <p class="price-info__description" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           電話相談・オンライン相談の場合は、前日までのお振込をお願い致します。<br>
           なお、振込手数料はお客様のご負担となります。
         </p>
-        <div class="price-info__methods">
+        <div class="price-info__methods" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="price-info__method price-info__method--post">
             <div class="price-info__method-title">郵便振替</div>
             <div class="price-info__method-body">
@@ -327,11 +350,13 @@
   </section>
   <section class="faq">
     <div class="faq__inner inner">
-      <h2 class="faq__title section-title">
+      <h2 class="faq__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">FAQ</p>
         <p class="section-title__ja">よくあるご質問</p>
       </h2>
-      <ul class="faq__list faq-list">
+      <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>FAP療法®はどんな療法ですか？</p>
           <div class="faq-list__item-answer-wrapper">
@@ -368,12 +393,14 @@
   </section>
   <section class="voice">
     <div class="voice__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">voice</p>
         <p class="section-title__ja">お客様の声</p>
       </h2>
       <div class="voice__cards voice-cards">
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Aさん"
               loading="lazy">
@@ -388,7 +415,8 @@
             </div>
           </div>
         </div>
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man01.svg" alt="Bさん"
               loading="lazy">
@@ -409,13 +437,15 @@
   </section>
   <section class="about-counseling">
     <div class="about-counseling__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">about counseling</p>
         <p class="section-title__ja">カウンセリングについて</p>
       </h2>
       <div class="about-counseling__cards card04-items">
         <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
-          class="about-counselings__card card03">
+          class="about-counselings__card card03" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card03__image about-counseling__image--01">
             <div class="card03__content">
               <h3 class="card03__title">心理カウンセリング</h3>
@@ -431,7 +461,8 @@
             </div>
           </div>
         </a>
-        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03">
+        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card03__image about-counseling__image--02">
             <div class="card03__content">
               <h3 class="card03__title">トラウマカウンセリング</h3>

@@ -1,9 +1,11 @@
 <section class="blog-list">
   <div class="blog-list__inner">
-    <h2 class="blog-list__title section-title02">
+    <h2 class="blog-list__title section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+      data-aos-delay="200">
       <p class="section-title02__text">テキストが入ります</p>
     </h2>
-    <p class="blog-list__text">テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
+    <p class="blog-list__text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
+      テキストが入りますテキストが入りますテキストが入りますテキストが入ります</p>
     <ul class="blog-list__items">
       <?php
       $args = array(
@@ -23,7 +25,8 @@
           // 抜粋（なければ本文から自動生成）
           $excerpt = get_the_excerpt();
       ?>
-      <li class="blog-list__item">
+      <li class="blog-list__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <a href="<?php the_permalink(); ?>" class="blog-list__link"
           aria-label="<?php echo esc_attr( get_the_title() ); ?>">
           <div class="blog-list__item-img">
