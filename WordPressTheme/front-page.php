@@ -17,9 +17,8 @@
   </section>
   <section class="message">
     <div class="message__inner inner">
-      <div class="message__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
-        <div class="message__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+      <div class="message__header">
+        <div class=" message__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
           <picture>
             <source media="(min-width: 768px)"
@@ -78,9 +77,9 @@
         <p class="section-title__en">COUNSELING</p>
         <p class="section-title__ja">インサイト・カウンセリングにご相談ください</p>
       </h2>
-      <div class="counseling__cards card04-items" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
-        <a href="/psychological-counseling" class="counseling__card card04">
+      <div class="counseling__cards card04-items" data-aos="fade-up">
+        <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img01.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -102,7 +101,8 @@
             </div>
           </div>
         </a>
-        <a href="/trauma-counseling" class="counseling__card card04">
+        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img02.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -124,7 +124,8 @@
             </div>
           </div>
         </a>
-        <a href="/fap-therapy" class="counseling__card card04">
+        <a href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img03.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -147,7 +148,8 @@
             </div>
           </div>
         </a>
-        <a href="/hypnosis-script" class="counseling__card card04">
+        <a href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img04.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -180,40 +182,66 @@
         <p class="section-title__en">BLOG</p>
         <p class="section-title__ja">お知らせ・最新情報</p>
       </h2>
+
+      <?php
+    // 最新3件の投稿を取得（固定表示は無視・ページネーション最適化）
+    $blog_query = new WP_Query([
+      'post_type'           => 'post',
+      'posts_per_page'      => 3,
+      'ignore_sticky_posts' => true,
+      'no_found_rows'       => true,
+    ]);
+    ?>
+
       <div class="blog__list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
-        <a href="/blog/2025-08-01" class="blog__item">
+        <?php if ( $blog_query->have_posts() ) : ?>
+        <?php while ( $blog_query->have_posts() ) : $blog_query->the_post(); ?>
+        <?php
+            // 日付
+            $date_iso = get_the_date('c');
+            $date_txt = get_the_date('Y.m.d');
+
+            // カテゴリ（最初の1件を表示）
+            $cat_label = '';
+            $cats = get_the_terms( get_the_ID(), 'category' );
+            if ( $cats && ! is_wp_error( $cats ) ) {
+              $cat_label = $cats[0]->name;
+            }
+          ?>
+        <a href="<?php echo esc_url( get_permalink() ); ?>" class="blog__item">
           <div class="blog__item-content">
             <div class="blog__item-meta">
-              <time class="blog__date">2025.08.01</time>
-              <span class="blog__category">カテゴリ</span>
+              <time class="blog__date" datetime="<?php echo esc_attr( $date_iso ); ?>">
+                <?php echo esc_html( $date_txt ); ?>
+              </time>
+              <?php if ( $cat_label ) : ?>
+              <span class="blog__category"><?php echo esc_html( $cat_label ); ?></span>
+              <?php endif; ?>
             </div>
-            <h3 class="blog__item-title">ブログのタイトルが入ります。ブログのタイトルが入ります。</h3>
+            <h3 class="blog__item-title"><?php echo esc_html( get_the_title() ); ?></h3>
           </div>
           <div class="blog__item-arrow arrow"></div>
         </a>
-        <a href="/blog/2025-07-15" class="blog__item">
-          <div class="blog__item-content">
-            <div class="blog__item-meta">
-              <time class="blog__date">2025.08.01</time>
-              <span class="blog__category">カテゴリ</span>
-            </div>
-            <h3 class="blog__item-title">ブログのタイトルが入ります。ブログのタイトルが入ります。</h3>
-          </div>
-          <div class="blog__item-arrow arrow"></div>
-        </a>
-        <a href="/blog/2025-06-30" class="blog__item">
-          <div class="blog__item-content">
-            <div class="blog__item-meta">
-              <time class="blog__date">2025.08.01</time>
-              <span class="blog__category">カテゴリ</span>
-            </div>
-            <h3 class="blog__item-title">ブログのタイトルが入ります。ブログのタイトルが入ります。</h3>
-          </div>
-          <div class="blog__item-arrow arrow"></div>
-        </a>
+        <?php endwhile; wp_reset_postdata(); ?>
+        <?php else : ?>
+        <!-- 投稿が無い場合のフォールバック（任意で調整） -->
+        <p class="blog__empty">現在、投稿はありません。</p>
+        <?php endif; ?>
       </div>
-      <a href="#" class="blog__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
+
+      <?php
+      // 「詳しく見る」= ブログ一覧への動的リンク
+      $blog_archive_url = '';
+      $page_for_posts_id = (int) get_option( 'page_for_posts' );
+      if ( $page_for_posts_id ) {
+        $blog_archive_url = get_permalink( $page_for_posts_id );
+      } else {
+        // 投稿タイプアーカイブ（テーマ設定により存在しない場合もあるため上の分岐を優先）
+        $blog_archive_url = get_post_type_archive_link( 'post' );
+      }
+    ?>
+      <a href="<?php echo esc_url( $blog_archive_url ); ?>" class="blog__button section-button" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">詳しく見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -223,6 +251,7 @@
       </a>
     </div>
   </section>
+
   <section class="counseling-examples">
     <div class=" counseling-examples__inner inner">
       <h2 class="counseling-examples__title section-title" data-aos="fade-up" data-aos-duration="1000"
@@ -233,9 +262,9 @@
         data-aos-delay="200">
         ご予約いただく多くの方が、心理カウンセリングは初めてのご利用です。<br>はじめての方でも安心してご相談いただけるよう、これまでに寄せられたご相談内容の一例をご紹介いたします。
       </p>
-      <div class="counseling-examples__list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
-        <div class="counseling-examples__item">
+      <div class="counseling-examples__list">
+        <div class="counseling-examples__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h3 class="counseling-examples__item-title">人間関係</h3>
           <ul class="counseling-examples__item-list">
             <li>職場の上司・同僚とうまくいかず、ストレスを感じている</li>
@@ -274,7 +303,8 @@
           </ul>
         </div>
       </div>
-      <a href="#" class="counseling-examples__button section-button" data-aos="fade-up" data-aos-duration="1000"
+      <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
+        class="counseling-examples__button section-button" data-aos="fade-up" data-aos-duration="1000"
         data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">心理カウンセリングについて詳しく見る</span>
@@ -319,8 +349,8 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
+      <a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>" class="faq__button section-button" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -402,8 +432,8 @@
           </div>
         </div>
       </div>
-      <a href="#" class="about__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
+      <a href="<?php echo esc_url( home_url( '/company/' ) ); ?>" class="about__button section-button"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">詳しく見る</span>
           <div class="section-button__icon button-icon--blue">
