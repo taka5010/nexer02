@@ -21,7 +21,7 @@
       <h2 class="company-message__header section-title" data-aos="fade-up" data-aos-duration="1000"
         data-aos-offset="160" data-aos-delay="200">
         <p class="section-title__en">message</p>
-        <p class="section-title__ja"> <?php echo nl2br(esc_html(get_field('message_title'))); ?></p>
+        <p class="section-title__ja">代表メッセージ</p>
       </h2>
       <div class="company-message__content">
         <div class="company-message__img" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"

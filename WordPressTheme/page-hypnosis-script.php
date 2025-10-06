@@ -15,6 +15,7 @@
       </div>
     </div>
   </section>
+  <?php get_template_part('parts/breadcrumbs') ?>
   <section class="intro intro--hypnosis-script">
     <div class="intro__inner inner">
       <div class="intro__text-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
@@ -189,7 +190,7 @@
       <div class="content01__layout" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">
         <div class="content01__image">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/trauma_img.jpg" alt="カウンセリングの様子"
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img13.jpg" alt="カウンセリングの様子"
             loading="lazy">
         </div>
         <div class="content01__content-bg">

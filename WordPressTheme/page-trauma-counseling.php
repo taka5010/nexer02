@@ -420,7 +420,7 @@
           <div class="content02__item-body">
             <h3 class="content02__item-title">予約</h3>
             <div class="content02__item-text-wrap">
-              <p class="content02__item-text">まずはお電話にて、曜日時間帯等のご希望をお伺いします。</p>
+              <p class="content02__item-text">トラウマカウンセリングは、事前に予約をお願いしています。まずはお電話にて、曜日時間帯等のご希望をお伺いします。</p>
               <p class="content02__item-text">初めての方でも丁寧にご説明いたしますので、安心してご利用いただけます。</p>
               <p class="content02__item-text">TEL：03-3433-2721</p>
             </div>
@@ -432,11 +432,11 @@
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img02.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
-            <h3 class="content02__item-title">初回カウンセリング（50分）</h3>
+            <h3 class="content02__item-title">カウンセリング</h3>
             <div class="content02__item-text-wrap">
-              <p class="content02__item-text">初回カウンセリングでは、あなたが抱えている悩みや問題についてお話しいただきます。</p>
-              <p class="content02__item-text">カウンセラーがあなたの背景や状況を理解し、今後のカウンセリングの進め方を共有します。</p>
-              <p class="content02__item-text">初回セッション後に、治療目標や課題が明確になります。</p>
+              <p class="content02__item-text">対面・電話・オンラインにてカウンセリングを行います。</p>
+              <p class="content02__item-text">トラウマの内容に応じて、カウンセラーによる専門的な手法で癒しのプロセスを進めます。</p>
+              <p class="content02__item-text">過去の出来事と向き合いながら、心の傷を少しずつ解消します。</p>
             </div>
           </div>
         </li>
@@ -446,11 +446,10 @@
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img03.jpg" alt="省略">
           </div>
           <div class="content02__item-body">
-            <h3 class="content02__item-title">継続カウンセリング</h3>
+            <h3 class="content02__item-title">アフターケア</h3>
             <div class="content02__item-text-wrap">
-              <p class="content02__item-text">問題の本質を見つけ、解決策を考えながらカウンセリングを進めていきます。</p>
-              <p class="content02__item-text">セッションごとに進捗を確認し、必要に応じて治療法やアプローチを調整します。</p>
-              <p class="content02__item-text">途中で気になる点があれば、カウンセラーに相談しながら進めていきます。</p>
+              <p class="content02__item-text">カウンセリング後も、必要に応じてアフターケアや次回のセッションを提供します。</p>
+              <p class="content02__item-text">ご質問や不安な点があれば、いつでもサポートいたします。</p>
             </div>
           </div>
         </li>

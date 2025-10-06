@@ -55,7 +55,7 @@
     display: grid;
     gap: rem(0);
     justify-items: start;
-    max-width: remU(283);
+    max-width: rem(283);
   }
 }
 
@@ -75,6 +75,11 @@
     margin: 0;
     max-width: rem(250);
   }
+}
+
+.footer__logo a {
+  display: block;
+  width: 100%;
 }
 
 .footer__logo img {

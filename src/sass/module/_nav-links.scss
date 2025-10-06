@@ -1,7 +1,11 @@
 @use "global" as *;
 
 .nav-links {
+  margin-top: rem(80);
   text-align: center;
+  @include mq(md){
+  margin-top: rem(100);
+  }
 }
 
 .nav-links--layout {

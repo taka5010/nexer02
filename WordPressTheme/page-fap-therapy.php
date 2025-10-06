@@ -28,7 +28,6 @@
         <div class="intro__description">
           <p class="intro__paragraph">FAP療法&reg;（Free from Anxiety
             Program）は、PTSDや恐怖症、強迫性障害、依存症的欲求など、幅広い心の問題を根本的に解決するための新しい心理療法です。</p>
-          <p class="intro__paragraph intro__paragraph--fap">※FAP療法®は、㈱インサイト・カウンセリングの登録商標です。</p>
         </div>
       </div>
       <div class="intro__image-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
@@ -57,8 +56,7 @@
           <div class="card02__image fap__image--02">
             <div class="card02__content">
               <p class="card02__title">過去のトラウマから解放されたい</p>
-              <p class="card02__text">過去の出来事や心的外傷が今の自分に影響していると感じている。</p>
-              <p class="card02__text">どうしてもその影響から抜け出せない。</p>
+              <p class="card02__text">過去の出来事や心的外傷が今の自分に影響していると感じている。どうしてもその影響から抜け出せない。</p>
             </div>
           </div>
         </div>
@@ -74,8 +72,7 @@
           <div class="card02__image fap__image--04">
             <div class="card02__content">
               <p class="card02__title">心の整理がつかない</p>
-              <p class="card02__text">感情や思考が整理できず、どこから手をつけていいか分からない。</p>
-              <p class="card02__text">FAP療法®なら解決への糸口が見つかるかもしれません。</p>
+              <p class="card02__text">感情や思考が整理できず、どこから手をつけていいか分からない。FAP療法®なら解決への糸口が見つかるかもしれません。</p>
             </div>
           </div>
         </div>
@@ -171,7 +168,7 @@
               強い不安や恐怖症がある方
             </h3>
             <p class="card05__text">
-              特定の不安や恐怖に悩んでいる方。。
+              特定の不安や恐怖に悩んでいる方。
             </p>
           </div>
         </div>
@@ -381,8 +378,8 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
+      <a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>" class="faq__button section-button" data-aos="fade-up"
+        data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">

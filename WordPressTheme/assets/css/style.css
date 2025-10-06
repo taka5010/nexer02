@@ -852,6 +852,7 @@ a {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 0.9375rem;
+	text-align: left;
 }
 
 .card02__text + .card02__text {
@@ -2042,6 +2043,10 @@ a {
 	padding-top: 0rem;
 }
 
+.counseling-methods__list .content03__title--en {
+	text-transform: capitalize;
+}
+
 .counseling-points {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -2084,6 +2089,10 @@ a {
 
 .counseling-points__list {
 	margin-top: 3.75rem;
+}
+
+.counseling-points__list .content03__title--en {
+	text-transform: capitalize;
 }
 
 .counseling {
@@ -2478,6 +2487,11 @@ a {
 	text-align: center;
 	width: 100%;
 	z-index: 2;
+}
+
+.footer__logo a {
+	display: block;
+	width: 100%;
 }
 
 .footer__logo img {
@@ -3332,6 +3346,7 @@ a {
 }
 
 .nav-links {
+	margin-top: 5rem;
 	text-align: center;
 }
 
@@ -5552,7 +5567,7 @@ html {
 	gap: 0rem;
 	grid-area: left-content;
 	justify-items: start;
-	max-width: remU(283);
+	max-width: 17.6875rem;
 }
 
 .footer__logo {
@@ -5944,6 +5959,10 @@ html {
 
 .mv__subtitle {
 	font-size: 1.125rem;
+}
+
+.nav-links {
+	margin-top: 6.25rem;
 }
 
 .nav-links--layout {

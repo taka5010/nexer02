@@ -200,8 +200,8 @@
         <p class="section-title__ja">カウンセリングの提供方法</p>
       </h2>
       <div class="counseling__cards card04-items">
-        <a href="/fap-therapy" class="counseling__card card04" data-aos="fade-up" data-aos-duration="1000"
-          data-aos-offset="160" data-aos-delay="200">
+        <a href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img03.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -224,8 +224,8 @@
             </div>
           </div>
         </a>
-        <a href="/hypnosis-script" class="counseling__card card04" data-aos="fade-up" data-aos-duration="1000"
-          data-aos-offset="160" data-aos-delay="200">
+        <a href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>" class="counseling__card card04"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img04.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -447,8 +447,8 @@
         </li>
       </ul>
       <div class="faq__button-wrapper">
-        <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
+        <a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>" class="faq__button section-button" data-aos="fade-up"
+          data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="section-button__wrapper">
             <span class="section-button__text">一覧を見る</span>
             <div class="section-button__icon button-icon--blue">
@@ -486,7 +486,7 @@
         <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
           <div class="voice-card__avatar">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Bさん"
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man01.svg" alt="Bさん"
               loading="lazy">
           </div>
           <div class="voice-card__content">
