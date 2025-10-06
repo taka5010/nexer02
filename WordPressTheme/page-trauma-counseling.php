@@ -587,14 +587,15 @@
             <p class="content01__text">
               お一人おひとりの状況に合わせて丁寧にお話をうかがいながら、こころの整理と回復をサポートさせていただきます。
             </p>
-            <div class="trauma__button section-button">
+            <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
+              class="trauma__button section-button">
               <div class="section-button__wrapper">
                 <span class="section-button__text">詳しく見る</span>
                 <div class="section-button__icon button-icon--blue">
                   <span class="arrow-white"></span>
                 </div>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

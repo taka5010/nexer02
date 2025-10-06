@@ -103,52 +103,55 @@
         data-aos-delay="200">
         <p class="section-title02__text">対象となる方</p>
       </h2>
-      <p class="target__text">GeneSwitch&reg;は、以下の方々に特におすすめです</p>
-      <div class="counseling__cards card05-items">
-        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
-          <div class="card05__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img07.jpg" alt="" loading="lazy">
+      <div class="target__text-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
+        <p class="target__text">
+          GeneSwitch&reg;は、以下の方々に特におすすめです</p>
+        <div class="counseling__cards card05-items">
+          <div class=" counseling__card card05">
+            <div class="card05__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img07.jpg" alt=""
+                loading="lazy">
+            </div>
+            <div class="card05__content">
+              <h3 class="card05__title">
+                心身の不快感に悩む方
+              </h3>
+              <p class="card05__text">
+                怒りや不快感、ストレスが溜まりやすい方。遺伝子コードで軽減したい方。
+              </p>
+            </div>
           </div>
-          <div class="card05__content">
-            <h3 class="card05__title">
-              心身の不快感に悩む方
-            </h3>
-            <p class="card05__text">
-              怒りや不快感、ストレスが溜まりやすい方。遺伝子コードで軽減したい方。
-            </p>
+          <div class="counseling__card card05" data-aos="fade-up">
+            <div class="card05__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img08.jpg" alt=""
+                loading="lazy">
+            </div>
+            <div class="card05__content">
+              <h3 class="card05__title">
+                自己改善を試みている方
+              </h3>
+              <p class="card05__text">
+                自分の悩みや不安を改善したいと思っている方。簡単に実践できる方法を求めている方。
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
-          <div class="card05__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img08.jpg" alt="" loading="lazy">
-          </div>
-          <div class="card05__content">
-            <h3 class="card05__title">
-              自己改善を試みている方
-            </h3>
-            <p class="card05__text">
-              自分の悩みや不安を改善したいと思っている方。簡単に実践できる方法を求めている方。
-            </p>
-          </div>
-        </div>
-        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
-          <div class="card05__image">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img09.jpg" alt="" loading="lazy">
-          </div>
-          <div class="card05__content">
-            <h3 class="card05__title">
-              忙しい方
-            </h3>
-            <p class="card05__text">
-              専門家に頼らず、手軽にできる方法で心のケアをしたい方。
-            </p>
+          <div class="counseling__card card05" data-aos="fade-up">
+            <div class="card05__image">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img09.jpg" alt=""
+                loading="lazy">
+            </div>
+            <div class="card05__content">
+              <h3 class="card05__title">
+                忙しい方
+              </h3>
+              <p class="card05__text">
+                専門家に頼らず、手軽にできる方法で心のケアをしたい方。
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </section>
   <?php get_template_part('parts/blog-list') ?>
   <section class="flow">
