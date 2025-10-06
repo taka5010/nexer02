@@ -14,21 +14,6 @@
   transition: opacity 0.3s ease;
 }
 
-// .section-button__wrapper::after {
-//   content: "";
-//   position: absolute;
-//   bottom: rem(-4);
-//   left: 0;
-//   width: 0;
-//   height: rem(2);
-//   background-color: $primary-01;
-//   transition: width 0.3s ease;
-// }
-
-// .section-button__wrapper:hover::after {
-//   width: 100%;
-// }
-
 .card04:hover .section-button__wrapper::after,
 .card03:hover .section-button__wrapper::after {
   width: 100%;
@@ -96,6 +81,13 @@
 .blog-list__item:hover .section-button__text::after,
 .card03:hover .section-button__text::after{
   width: 100%;
+}
+
+.section-button::before,
+.section-button::after,
+.section-button__icon::before,
+.section-button__icon::after {
+  pointer-events: none;
 }
 
 

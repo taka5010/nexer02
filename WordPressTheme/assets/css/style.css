@@ -1686,6 +1686,32 @@ a {
 	margin-top: 0.625rem;
 }
 
+.content01__layout {
+	position: relative;
+}
+
+.content01__image {
+	position: relative;
+	z-index: 1;
+}
+
+.content01__content-bg {
+	position: relative;
+	z-index: 2;
+}
+
+.content01__content-bg::before,
+.content01__content-bg::after,
+.content01__image::before,
+.content01__image::after {
+	pointer-events: none;
+}
+
+.content01__content {
+	position: relative;
+	z-index: 10; /* ←ここ重要！ */
+}
+
 .content02__header .section-title__en {
 	font-size: 1.875rem;
 	text-transform: uppercase;
@@ -3957,6 +3983,13 @@ span.pgn__wrap {
 .blog-list__item:hover .section-button__text::after,
 .card03:hover .section-button__text::after {
 	width: 100%;
+}
+
+.section-button::before,
+.section-button::after,
+.section-button__icon::before,
+.section-button__icon::after {
+	pointer-events: none;
 }
 
 .section-text {

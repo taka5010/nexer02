@@ -118,8 +118,7 @@
               data-aos-delay="200">
               安心できる環境で、カウンセラーとともに少しずつ向き合うことで、自己理解を深め、人生をもう一度、自分の手に取り戻していきます。
             </p>
-            <div class="trauma__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-              data-aos-delay="200">
+            <div class="trauma__button section-button">
               <div class="section-button__wrapper">
                 <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>"
                   class="faq__button section-button">
@@ -447,16 +446,17 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
-        <div class="section-button__wrapper">
-          <span class="section-button__text">一覧を見る</span>
-          <div class="section-button__icon button-icon--blue">
-            <span class="arrow-white"></span>
+      <div class="faq__button-wrapper">
+        <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
+          <div class="section-button__wrapper">
+            <span class="section-button__text">一覧を見る</span>
+            <div class="section-button__icon button-icon--blue">
+              <span class="arrow-white"></span>
+            </div>
           </div>
-        </div>
-      </a>
-    </div>
+        </a>
+      </div>
   </section>
   <section class="voice">
     <div class="voice__inner inner">
