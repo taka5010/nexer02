@@ -18,7 +18,8 @@
   <?php get_template_part('parts/breadcrumbs') ?>
   <section class="faq">
     <div class="faq__inner inner">
-      <ul class="faq__list faq-list">
+      <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングを受ける前に準備が必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">

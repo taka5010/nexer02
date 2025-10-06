@@ -55,7 +55,6 @@
       </div>
     </div>
   </section>
-
   <section class="company-profile">
     <div class="company-profile__inner inner">
       <h2 class="company-profile__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
@@ -162,9 +161,6 @@
         <p class="section-title__ja">沿革</p>
       </h2>
       <div class="history__content">
-        <div><span></span>
-          <div><span></span><span></span><span></span></div>
-        </div>
         <div class="history__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
           <div class="history__year">

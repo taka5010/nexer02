@@ -381,7 +381,8 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button">
+      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">

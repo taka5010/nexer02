@@ -20,12 +20,13 @@
   <section class="intro">
     <div class="intro__inner inner">
       <div class="intro__text-block">
-        <h2 class="intro__title">
+        <h2 class="intro__title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           簡単な方法で、心身の不快感を軽減。<br>
           遺伝子コードを活用した新しいアプローチ<br>
           <span class="intro__title-text">で、日々</span>の悩みを解消しましょう。
         </h2>
-        <div class="intro__description">
+        <div class="intro__description" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <p class="intro__paragraph">「なぜあの人にイライラするのか？」</p>
           <p class="intro__paragraph">「本当はこうしたいのに、できないのはなぜ？」</p>
           <p class="intro__paragraph">そんな心のモヤモヤや不快感の背後には、実は、“ある遺伝子がオンになっている”ことが関係しているかもしれません。</p>
@@ -34,7 +35,8 @@
           <p class="intro__paragraph">ただある「言葉」を静かに唱えるだけで、自分の中の“不要な遺伝子スイッチ”がオフになり、不快な感情や悩みが自然と和らいでいく感覚を、ぜひ体験してみてください。</p>
         </div>
       </div>
-      <div class="intro__image-wrapper">
+      <div class="intro__image-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_intro.jpg"
           alt="白いトップスを着た女性が自然光の差し込む窓辺で穏やかな表情を浮かべている" loading="lazy">
       </div>
@@ -42,13 +44,15 @@
   </section>
   <section class="counseling-points counseling-points--geneswitch">
     <div class="counseling-points__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">“無意識のスイッチ”切り替え法<br>
           <span class="section-title02__text-blue">3</span>つのポイント
         </p>
       </h2>
       <ol class="counseling-methods__list content03__items">
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img01.jpg" alt="省略">
           </div>
@@ -61,7 +65,8 @@
             <p class="content03__text">この方法で遺伝子のスイッチを操作することで、過剰なストレスや不安を軽減し、心身のバランスを取り戻すことを目指します。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img02.jpg" alt="省略">
           </div>
@@ -75,7 +80,8 @@
             <p class="content03__text">専門家に頼らず、自分のペースで問題解消ができる手軽さが魅力です。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_img03.jpg" alt="省略">
           </div>
@@ -93,12 +99,14 @@
   </section>
   <section class="target">
     <div class="target__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">対象となる方</p>
       </h2>
       <p class="target__text">GeneSwitch&reg;は、以下の方々に特におすすめです</p>
       <div class="counseling__cards card05-items">
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img07.jpg" alt="" loading="lazy">
           </div>
@@ -111,7 +119,8 @@
             </p>
           </div>
         </div>
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img08.jpg" alt="" loading="lazy">
           </div>
@@ -124,7 +133,8 @@
             </p>
           </div>
         </div>
-        <div class="counseling__card card05">
+        <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card05__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/target_img09.jpg" alt="" loading="lazy">
           </div>
@@ -143,12 +153,14 @@
   <?php get_template_part('parts/blog-list') ?>
   <section class="flow">
     <div class="flow__inner inner">
-      <h2 class="section-title content02__header">
+      <h2 class="section-title content02__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">service flow</p>
         <p class="section-title__ja">サービスの流れ</p>
       </h2>
       <ol class="flow__list content02__items">
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow01.jpg"
               alt="クリップボードにメモを取っている男性の手元のクローズアップ">
@@ -161,7 +173,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow02.jpg"
               alt="森林の背景に、祈るような仕草で両手を合わせるイメージ写真">
@@ -174,7 +187,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/geneswitch_flow03.jpg"
               alt="グラスの水を手に持ち、微笑む女性の上半身のアップ">
@@ -192,30 +206,34 @@
   </section>
   <section class="price" aria-labelledby="price-title">
     <div class="price__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">price</p>
         <p class="section-title__ja">料金案内</p>
       </h2>
-      <div class="price__content">
+      <div class="price__content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="price__description-wrapper">
           <p class="price__description">GeneSwitch®は今日からあなたの心強い味方。</p>
           <p class="price__description">気になっていることや症状を選ぶだけでおすすめコードが出てきます。</p>
           <p class="price__description">あなたは『〇〇の還元』を7回唱えるだけ。</p>
           <p class="price__description">あなた自身の中に眠る、本来の安らぎと力を、もう一度感じてみませんか？</p>
         </div>
-        <div class="price__button">
+        <div class="price__button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <a href="#" class="button02">
-            <span class="button02__text">GeneSwitch&reg&reg;</span>
+            <span class="button02__text">GeneSwitch&reg;</span>
             <span class="button02__icon">
               <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/button02_icon.svg" alt="アイコン"
                 loading="lazy">
             </span>
           </a>
         </div>
-        <div class="price__info">
+        <div class="price__info" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <p>GeneSwitch&reg;定期課金制：月額495円</p>
         </div>
-        <div class="price__guide">
+        <div class="price__guide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <a href="#">ご利用ガイド</a>
         </div>
       </div>
@@ -223,11 +241,13 @@
   </section>
   <section class="faq">
     <div class="faq__inner inner">
-      <h2 class="faq__title section-title">
+      <h2 class="faq__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">FAQ</p>
         <p class="section-title__ja">よくあるご質問</p>
       </h2>
-      <ul class="faq__list faq-list">
+      <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>FAP療法®はどんな療法ですか？</p>
           <div class="faq-list__item-answer-wrapper">
@@ -252,7 +272,7 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button">
+      <a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>" class="faq__button section-button">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -264,12 +284,14 @@
   </section>
   <section class="voice">
     <div class="voice__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">voice</p>
         <p class="section-title__ja">お客様の声</p>
       </h2>
       <div class="voice__cards voice-cards">
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man01.svg" alt="Bさん"
               loading="lazy">
@@ -285,7 +307,8 @@
             </div>
           </div>
         </div>
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Aさん"
               loading="lazy">
@@ -300,7 +323,8 @@
             </div>
           </div>
         </div>
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Bさん"
               loading="lazy">
@@ -315,7 +339,8 @@
             </div>
           </div>
         </div>
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-man02.svg" alt="Aさん"
               loading="lazy">
@@ -325,27 +350,29 @@
               <span class="voice-card__name">Aさん</span>
               <span class="voice-card__age">(50代・男性)</span>
             </div>
-            <div class="voice-card__text">
+            <div class="voice-card__text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+              data-aos-delay="200">
               <p>
                 暗い気持ちがマシになったら良いなと思い、唱えてみました。少し気分転換になったと思います。それよりも腰痛や肩の痛みが和らいだので、絶望感が身体の痛みになっているのかなと新しい発見でした。他の遺伝子コードも試してみます。
               </p>
             </div>
           </div>
         </div>
-
-
       </div>
 
     </div>
   </section>
   <section class="about-counseling">
     <div class="about-counseling__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">about counseling</p>
         <p class="section-title__ja">カウンセリングについて</p>
       </h2>
       <div class="about-counseling__cards card04-items">
-        <a href="#" class="about-counselings__card card03">
+        <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
+          class="about-counselings__card card03" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card03__image about-counseling__image--01">
             <div class="card03__content">
               <h3 class="card03__title">心理カウンセリング</h3>
@@ -361,12 +388,14 @@
             </div>
           </div>
         </a>
-        <a href="#" class="about-counseling__card card03">
+        <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03"
+          data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card03__image about-counseling__image--02">
             <div class="card03__content">
               <h3 class="card03__title">トラウマカウンセリング</h3>
               <p class="card03__text">『過去の心的外傷（トラウマ）による不安や恐怖、フラッシュバックなどの症状を和らげ、心の回復を支援する専門的な心理療法を用いたカウンセリングです。</p>
-              <div class="card03__button section-button">
+              <div class="card03__button section-button" data-aos="fade-up" data-aos-duration="1000"
+                data-aos-offset="160" data-aos-delay="200">
                 <div class="section-button__wrapper">
                   <span class="section-button__text">詳しく見る</span>
                   <div class="section-button__icon button-icon--blue">
@@ -380,7 +409,5 @@
       </div>
     </div>
   </section>
-
 </main>
-
 <?php get_footer(); ?>

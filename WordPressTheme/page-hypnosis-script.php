@@ -18,13 +18,15 @@
   <?php get_template_part('parts/breadcrumbs') ?>
   <section class="intro intro--psychological">
     <div class="intro__inner inner">
-      <div class="intro__text-block">
+      <div class="intro__text-block" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <h2 class="intro__title">
           心の健康を取り戻すための第一歩。<br>
           専門家によるカウンセリングで、<br>
           <span class="intro__title-text">あなたの</span>悩みを解消します。
         </h2>
-        <div class="intro__description">
+        <div class="intro__description" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <p class="intro__paragraph">
             心理カウンセリングは、心の悩みやストレスを和らげ、心のバランスを取り戻すためのサポートを提供します。
           </p>
@@ -36,7 +38,8 @@
           </p>
         </div>
       </div>
-      <div class="intro__image-wrapper">
+      <div class="intro__image-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <img class="intro__image" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/psychological_intro.jpg"
           alt="カウンセリングを行う医師と相談者" loading="lazy">
       </div>
@@ -44,12 +47,13 @@
   </section>
   <section class="worries worries--psychological">
     <div class="worries__inner inner">
-      <h2 class="section-title02">
+      <h2 class="section-title02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title02__text">心理カウンセリングの目的は、<br>
           以下のような悩みを解決することです</p>
       </h2>
       <div class="worries__items card02-items">
-        <div class="card02">
+        <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
           <div class="card02__image psychological__image--01">
             <div class="card02__content">
               <p class="card02__title">ストレスや不安の軽減</p>
@@ -57,7 +61,7 @@
             </div>
           </div>
 
-          <div class="card02">
+          <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
             <div class="card02__image psychological__image--02">
               <div class="card02__content">
                 <p class="card02__title">人間関係の改善</p>
@@ -65,7 +69,7 @@
               </div>
             </div>
           </div>
-          <div class="card02">
+          <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
             <div class="card02__image psychological__image--03">
               <div class="card02__content">
                 <p class="card02__title">自己理解と成長</p>
@@ -73,7 +77,7 @@
               </div>
             </div>
           </div>
-          <div class="card02">
+          <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
             <div class="card02__image psychological__image--04">
               <div class="card02__content">
                 <p class="card02__title">心的外傷（トラウマ）のケア</p>
@@ -81,7 +85,7 @@
               </div>
             </div>
           </div>
-          <div class="card02">
+          <div class="card02" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
             <div class="card02__image psychological__image--05">
               <div class="card02__content">
                 <p class="card02__title">ライフスタイルの改善</p>
@@ -95,13 +99,15 @@
   <section class="trauma content01">
     <div class="content01__inner inner">
       <div class="content01__layout">
-        <div class="content01__image">
+        <div class="content01__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/trauma_img.jpg" alt="カウンセリングの様子"
             loading="lazy">
         </div>
         <div class="content01__content-bg">
           <div class="content01__content">
-            <h2 class="content01__title content01__title content01__title--left">
+            <h2 class="content01__title content01__title content01__title--left" data-aos="fade-up"
+              data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
               <p class="content01__title-text">トラウマカウンセリング</p>
             </h2>
             <p class="content01__text">
@@ -110,7 +116,8 @@
             <p class="content01__text">
               安心できる環境で、カウンセラーとともに少しずつ向き合うことで、自己理解を深め、人生をもう一度、自分の手に取り戻していきます。
             </p>
-            <div class="trauma__button section-button">
+            <div class="trauma__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+              data-aos-delay="200">
               <div class="section-button__wrapper">
                 <span class="section-button__text">詳しく見る</span>
                 <div class="section-button__icon button-icon--blue">
@@ -126,12 +133,14 @@
   <?php get_template_part('parts/blog-list') ?>
   <section class="counseling-methods">
     <div class="counseling-methods__inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">counseling methods</p>
         <p class="section-title__ja">カウンセリングの提供方法</p>
       </h2>
       <ol class="counseling-methods__list content03__items">
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img01.jpg" alt="省略">
           </div>
@@ -144,7 +153,8 @@
               忙しくて外出できない方や、プライバシーを守りながら相談したい方に最適なサービスです。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img02.jpg" alt="省略">
           </div>
@@ -157,7 +167,8 @@
               電話カウンセリングは、ご自宅や安心できる場所からリラックスしてお話しいただけるのが特長です。<br>対面と同様に、経験豊富なカウンセラーがあなたのお気持ちを丁寧に受けとめ、心に寄り添います。</p>
           </div>
         </li>
-        <li class="content03__item">
+        <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content03__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling-methods_img03.jpg" alt="省略">
           </div>
@@ -176,12 +187,14 @@
   </section>
   <section class="counseling-approaches">
     <div class="counseling-approaches__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">counseling approaches</p>
         <p class="section-title__ja">カウンセリングの提供方法</p>
       </h2>
       <div class="counseling__cards card04-items">
-        <a href="/fap-therapy" class="counseling__card card04">
+        <a href="/fap-therapy" class="counseling__card card04" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img03.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -204,7 +217,8 @@
             </div>
           </div>
         </a>
-        <a href="/hypnosis-script" class="counseling__card card04">
+        <a href="/hypnosis-script" class="counseling__card card04" data-aos="fade-up" data-aos-duration="1000"
+          data-aos-offset="160" data-aos-delay="200">
           <div class="card04__image">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/counseling_img04.jpg"
               alt="心理カウンセリングのイメージ" loading="lazy">
@@ -232,12 +246,14 @@
   </section>
   <section class="price" aria-labelledby="price-title">
     <div class="price__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">price</p>
         <p class="section-title__ja">料金案内</p>
       </h2>
       <div class="price__table-wrapper">
-        <table class="price__table">
+        <table class="price__table" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <!-- 3列を固定（面接区分 / 面接方法 / 料金）-->
           <colgroup>
             <col class="price__col1">
@@ -277,9 +293,11 @@
             </tr>
           </tbody>
         </table>
-        <p class="price__table-text">(※上記金額は全て10％消費税込になっております。)</p>
+        <p class="price__table-text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">(※上記金額は全て10％消費税込になっております。)</p>
       </div>
-      <div class="price__text-wrapper">
+      <div class="price__text-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="price__text">※大嶋信頼(おおしま のぶより)のカウンセリングについてはお問い合わせください。</p>
         <p class="price__text">※電話相談・オンライン相談については、相談日前日までにお振込みください。</p>
         <p class="price__text">※ご予約の変更・キャンセルは、予約日の3日前（日曜、祝日等弊社休業日を除く）の18時までにお電話にてご連絡ください。<br>
@@ -287,7 +305,8 @@
         <p class="price__text">※カウンセリングを受けた後の料金の未払いおよび返還請求については応じられません。</p>
         <p class="price__text">※ご予約の前に利用規約を必ずお読みください。</p>
       </div>
-      <div class="price__button-wrapper">
+      <div class="price__button-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <a href="#" class="section-button">
           <div class="section-button__wrapper">
             <span class="section-button__text">インサイト・カウンセリング利用規約</span>
@@ -298,24 +317,28 @@
         </a>
       </div>
       <div class="price__info price-info">
-        <div class="price-info__header">
+        <div class="price-info__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <h2 class="price-info__title section-title02">
             <p class="section-title02__text">電話・オンライン相談の料金のお支払いについて</p>
           </h2>
         </div>
-        <p class="price-info__description">
+        <p class="price-info__description" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           電話相談・オンライン相談の場合は、前日までのお振込をお願い致します。<br>
           なお、振込手数料はお客様のご負担となります。
         </p>
         <div class="price-info__methods">
-          <div class="price-info__method price-info__method--post">
+          <div class="price-info__method price-info__method--post" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-offset="160" data-aos-delay="200">
             <div class="price-info__method-title">郵便振替</div>
             <div class="price-info__method-body">
               <p class="price-info__method-text">10190-6338721</p>
               <p class="price-info__method-text">株式会社インサイト・カウンセリング</p>
             </div>
           </div>
-          <div class="price-info__method price-info__method--bank">
+          <div class="price-info__method price-info__method--bank" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-offset="160" data-aos-delay="200">
             <div class="price-info__method-title">銀行振込</div>
             <div class="price-info__method-body">
               <p class="price-info__method-text">三菱ＵＦＪ銀行　新橋支店</p>
@@ -331,12 +354,14 @@
   </section>
   <section class="flow">
     <div class="flow__inner inner">
-      <h2 class="section-title content02__header">
+      <h2 class="section-title content02__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">flow</p>
         <p class="section-title__ja">カウンセリングの流れ</p>
       </h2>
       <ol class="flow__list content02__items">
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img01.jpg" alt="省略">
           </div>
@@ -349,7 +374,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img02.jpg" alt="省略">
           </div>
@@ -362,7 +388,8 @@
             </div>
           </div>
         </li>
-        <li class="content02__item">
+        <li class="content02__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="content02__item-img">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/flow_img03.jpg" alt="省略">
           </div>
@@ -380,11 +407,13 @@
   </section>
   <section class="faq">
     <div class="faq__inner inner">
-      <h2 class="faq__title section-title">
+      <h2 class="faq__title section-title" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">FAQ</p>
         <p class="section-title__ja">よくあるご質問</p>
       </h2>
-      <ul class="faq__list faq-list">
+      <ul class="faq__list faq-list" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングに予約は必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">
@@ -416,7 +445,8 @@
           </div>
         </li>
       </ul>
-      <a href="#" class="faq__button section-button">
+      <a href="#" class="faq__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <div class="section-button__wrapper">
           <span class="section-button__text">一覧を見る</span>
           <div class="section-button__icon button-icon--blue">
@@ -428,12 +458,14 @@
   </section>
   <section class="voice">
     <div class="voice__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">voice</p>
         <p class="section-title__ja">お客様の声</p>
       </h2>
       <div class="voice__cards voice-cards">
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman02.svg" alt="Aさん"
               loading="lazy">
@@ -449,7 +481,8 @@
             </div>
           </div>
         </div>
-        <div class="voice__card voice-card">
+        <div class="voice__card voice-card" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="voice-card__avatar">
             <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_icon-woman01.svg" alt="Bさん"
               loading="lazy">
@@ -472,13 +505,15 @@
   </section>
   <section class="about-counseling">
     <div class="about-counseling__inner inner">
-      <h2 class="section-title content03__header">
+      <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
         <p class="section-title__en">about counseling</p>
         <p class="section-title__ja">カウンセリングについて</p>
       </h2>
       <div class="about-counseling__cards card04-items">
         <a href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>"
-          class="about-counselings__card card03">
+          class="about-counselings__card card03" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <div class="card03__image about-counseling__image--01">
             <div class="card03__content">
               <h3 class="card03__title">心理カウンセリング</h3>
@@ -495,7 +530,8 @@
           </div>
         </a>
         <a href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>" class="about-counseling__card card03">
-          <div class="card03__image about-counseling__image--02">
+          <div class="card03__image about-counseling__image--02" data-aos="fade-up" data-aos-duration="1000"
+            data-aos-offset="160" data-aos-delay="200">
             <div class="card03__content">
               <h3 class="card03__title">トラウマカウンセリング</h3>
               <p class="card03__text">『過去の心的外傷（トラウマ）による不安や恐怖、フラッシュバックなどの症状を和らげ、心の回復を支援する専門的な心理療法を用いたカウンセリングです。</p>

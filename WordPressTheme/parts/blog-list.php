@@ -54,7 +54,8 @@
               <?php echo esc_html( wp_trim_words( $excerpt, 80, '…' ) ); ?>
             </p>
 
-            <div class="blog__button section-button">
+            <div class="blog__button section-button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+              data-aos-delay="200">
               <div class="section-button__wrapper">
                 <span class="section-button__text">詳しく見る</span>
                 <div class="section-button__icon button-icon--blue">
