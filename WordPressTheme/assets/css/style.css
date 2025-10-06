@@ -4481,14 +4481,6 @@ span.pgn__wrap {
 
 @media screen and (min-width: 768px) {
 
-.u-desktop {
-	display: block;
-}
-
-.u-mobile {
-	display: none;
-}
-
 html {
 	font-size: 1.4814814815vw;
 }
@@ -6370,6 +6362,18 @@ html {
 
 html {
 	font-size: 16px;
+}
+
+}
+
+@media screen and (min-width: 1240px) {
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
 }
 
 }

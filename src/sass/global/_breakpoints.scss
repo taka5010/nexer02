@@ -14,7 +14,7 @@ $mediaquerys: (
   $breakpoints: (
     sm: 600,
     md: 768,
-    lg: 1024,
+    lg: 1240,
     xl: 1440,
   );
 
@@ -29,7 +29,7 @@ $mediaquerys: (
 } @else {
   $breakpoints: (
     xl: 1440,
-    lg: 1023,
+    lg: 1240,
     md: 767,
     sm: 600,
   );
@@ -55,14 +55,14 @@ $mediaquerys: (
   //pcで表示
   .u-desktop {
     display: none;
-    @include mq("md") {
+    @include mq("lg") {
       display: block;
     }
   }
 
   //モバイルのみ表示
   .u-mobile {
-    @include mq("md") {
+    @include mq("lg") {
       display: none;
     }
   }
@@ -70,7 +70,7 @@ $mediaquerys: (
   //pcで表示
   .u-desktop {
     display: block;
-    @include mq("md") {
+    @include mq("lg") {
       display: none;
     }
   }
