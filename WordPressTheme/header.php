@@ -139,7 +139,7 @@
                 </ul>
               </li>
 
-              <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/home/' ) ); ?>">ブログ</a></li>
+              <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">ブログ</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">会社概要</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>
 

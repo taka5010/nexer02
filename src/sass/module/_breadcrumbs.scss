@@ -1,9 +1,11 @@
 @use "global" as *;
 
 .breadcrumbs--wrapper {
-padding: 0 rem(50);
-display: flex;
-justify-content: left;
+  display: flex;
+  justify-content: left;
+  @include mq(md){
+  padding: 0 rem(50);
+}
 }
 
 .breadcrumbs--inner {
