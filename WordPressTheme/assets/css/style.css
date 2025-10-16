@@ -336,6 +336,11 @@ a {
 	width: inherit;
 }
 
+html,
+body {
+	overflow-x: clip; /* 対応外ブラウザは overflow-x: hidden; にフォールバック */
+}
+
 .blog-detail h1 {
 	color: #248CC0;
 	font-size: 1.625rem;
@@ -1595,10 +1600,10 @@ a {
 }
 
 .content01__content-bg {
-	background-image: url(../images/common/content01_bg.png);
+	background-image: url(../images/common/content01_bg.jpg);
 	background-position: top;
 	background-repeat: no-repeat;
-	background-size: 110%;
+	background-size: cover;
 	margin: -1.875rem auto 0;
 	padding: 1.875rem 1.25rem;
 	position: relative;
@@ -1693,11 +1698,6 @@ a {
 .content01__image {
 	position: relative;
 	z-index: 1;
-}
-
-.content01__content-bg {
-	position: relative;
-	z-index: 2;
 }
 
 .content01__content-bg::before,
@@ -2042,10 +2042,6 @@ a {
 	padding-top: 0rem;
 }
 
-.counseling-methods__list .content03__title--en {
-	text-transform: capitalize;
-}
-
 .counseling-points {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -2187,12 +2183,22 @@ a {
 	color: #333333;
 	display: none;
 	left: 50%;
+	margin-top: 0.75rem;
 	min-width: 220px;
 	padding: 10px 0;
 	position: absolute;
-	top: calc(100% + 10px);
+	top: 100%;
 	transform: translateX(-50%);
 	z-index: 1000;
+}
+
+.dropdown::before {
+	content: "";
+	height: 12px;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: -12px;
 }
 
 .dropdown__item {
@@ -2253,21 +2259,10 @@ a {
 
 .faq.faq--top {
 	background-image: url(../images/common/bg_faq-sp.png);
-	background-position: top;
+	background-position: right 0px;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 65%;
 	position: relative;
-}
-
-.faq::before {
-	background-image: radial-gradient(circle at 20% 30%, rgba(255, 255, 255, 0.3) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(255, 255, 255, 0.2) 0%, transparent 50%);
-	bottom: 0;
-	content: "";
-	left: 0;
-	pointer-events: none;
-	position: absolute;
-	right: 0;
-	top: 0;
 }
 
 .faq__inner.inner {
@@ -2815,7 +2810,8 @@ a {
 }
 
 .header-nav__item--has-submenu:hover .dropdown,
-.header-nav__item--has-submenu:focus-within .dropdown {
+.header-nav__item--has-submenu:focus-within .dropdown,
+.header-nav__item--has-submenu .dropdown:hover {
 	display: block;
 }
 
@@ -3224,7 +3220,9 @@ a {
 }
 
 .mv-under.mv-under--faq {
-	background-image: url(../images/common/blog_bg.png);
+	background-image: url(../images/common/fap-fv.jpg); /* フォールバック */
+	background-image: -webkit-image-set(url(../images/common/fap-fv.webp) type("image/webp") 1x, url(../images/common/fap-fv.jpg) type("image/jpeg") 1x);
+	background-image: image-set(url(../images/common/fap-fv.webp) type("image/webp") 1x, url(../images/common/fap-fv.jpg) type("image/jpeg") 1x);
 	background-position: 60% -65px;
 }
 
@@ -5168,7 +5166,7 @@ html {
 
 .content01__inner.inner {
 	margin-left: auto;
-	margin-right: 50px;
+	margin-right: auto;
 	max-width: 75.625rem;
 	padding: 0;
 }
@@ -5176,6 +5174,7 @@ html {
 .content01__layout {
 	flex-direction: row;
 	gap: 2.5rem;
+	transform: translateX(50px);
 }
 
 .content01__image {
@@ -5185,8 +5184,8 @@ html {
 
 .content01__content-bg {
 	margin-left: -6.875rem;
-	margin-top: 0;
-	padding: 2.75rem 8.125rem;
+	margin-top: 0rem;
+	padding: 3.125rem 8.125rem;
 	width: 88%;
 }
 

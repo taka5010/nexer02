@@ -1,0 +1,8 @@
+@use "global" as *;
+
+
+html, body {
+  overflow-x: clip; /* 対応外ブラウザは overflow-x: hidden; にフォールバック */
+}
+
+

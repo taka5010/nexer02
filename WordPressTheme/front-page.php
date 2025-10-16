@@ -328,7 +328,7 @@
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングを受ける前に準備が必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>カウンセリングを受ける前に特別な準備は必要ありません。リラックスしてお越しいただければ大丈夫です。ただし、心の中で話したいことや悩みを整理しておくと、カウンセリングがスムーズに進みます。
+              <span>A</span>カウンセリングを受ける前に特別な準備は必要ありません。リラックスしてお越しいただければ大丈夫です。
             </p>
           </div>
         </li>
@@ -336,7 +336,7 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>どれくらいの期間、カウンセリングを受ける必要がありますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>カウンセリングの期間は、あなたの状態や問題の内容や、進行具合によって異なります。短期間で改善が見込まれる場合もありますし、時間をかけてじっくりと取り組むことが必要な場合もあります。目安として、1ヶ月〜3ヶ月ほど継続して受ける方が多いですが、個別に相談しながら決めていきます。
+              <span>A</span>カウンセリングの期間は、あなたの状態や問題の内容、進行具合によって異なります。短期間で改善が見込まれる場合もありますし、時間をかけてじっくりと取り組むことが必要な場合もあります。個別に相談しながら決めていきます。
             </p>
           </div>
         </li>

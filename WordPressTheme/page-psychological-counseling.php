@@ -98,10 +98,10 @@
   </section>
   <section class="trauma content01">
     <div class="content01__inner inner">
-      <div class="content01__layout">
-        <div class="content01__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
-          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/trauma_img.jpg" alt="カウンセリングの様子"
+      <div class="content01__layout" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
+        <div class="content01__image">
+          <img src=" <?php echo get_theme_file_uri(); ?>/assets/images/common/trauma_img.jpg" alt="カウンセリングの様子"
             loading="lazy">
         </div>
         <div class="content01__content-bg">
@@ -311,7 +311,7 @@
       </div>
       <div class="price__button-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">
-        <a href="#" class="section-button">
+        <a href="<?php echo get_theme_file_uri(); ?>/assets/pdf/terms-and-agreements.pdf" class="section-button">
           <div class="section-button__wrapper">
             <span class="section-button__text">インサイト・カウンセリング利用規約</span>
             <div class="section-button__icon button-icon--blue">
@@ -369,9 +369,8 @@
           <div class="content02__item-body">
             <h3 class="content02__item-title">予約</h3>
             <div class="content02__item-text-wrap">
-              <p class="content02__item-text">まずはお電話にて、曜日時間帯等のご希望をお伺いします。</p>
-              <p class="content02__item-text">初めての方でも丁寧にご説明いたしますので、安心してご利用いただけます。</p>
-              <p class="content02__item-text">TEL：03-3433-2721</p>
+              <p class="content02__item-text">まずは、お電話にてご予約を承ります。</p>
+              <p class="content02__item-text">初めての方には、カウンセリングを受ける目的やご希望をお伺いし、カウンセリングの流れ等ご説明いたします。</p>
             </div>
           </div>
         </li>

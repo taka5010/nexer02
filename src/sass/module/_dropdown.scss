@@ -4,7 +4,9 @@
   display: none;
   position: absolute;
   left: 50%;
-  top: calc(100% + 10px);
+  // top: calc(100% + 10px);
+  top: 100%;
+  margin-top: rem(12);
   transform: translateX(-50%);
   min-width: 220px;
   background: rgba($white, 0.95);
@@ -14,6 +16,15 @@
   padding: 10px 0;
   z-index: 1000;
   backdrop-filter: blur(6px);
+}
+
+.dropdown::before {
+  content: '';
+  position: absolute;
+  top: -12px;      // ← margin-top と同じ値
+  left: 0;
+  right: 0;
+  height: 12px;    // ← 同上
 }
 
 .dropdown__item {

@@ -334,7 +334,7 @@
       </div>
       <div class="price__button-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">
-        <a href="#" class="section-button">
+        <a href="<?php echo get_theme_file_uri(); ?>/assets/pdf/terms-and-agreements.pdf" class="section-button">
           <div class="section-button__wrapper">
             <span class="section-button__text">インサイト・カウンセリング利用規約</span>
             <div class="section-button__icon button-icon--blue">
