@@ -50,7 +50,7 @@
           <span class="section-title02__text-blue">5</span>つのポイント
         </p>
       </h2>
-      <ol class="counseling-methods__list content03__items">
+      <ol class="counseling-points__list content03__items">
         <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
           <div class="content03__item-img">
@@ -193,7 +193,7 @@
             <h3 class="content02__item-title">『緊張しちゃう人たち』を読む</h3>
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">無料のブログ『緊張しちゃう人たち』を読む</p>
-              <p class="content02__item-text">https://insight-fap.jugem.jp/</p>
+              <p class="content02__item-text"><a href="https://insight-fap.jugem.jp/" target="_blank" rel="nofollow">https://insight-fap.jugem.jp/</p>
             </div>
           </div>
         </li>
@@ -207,7 +207,7 @@
             <h3 class="content02__item-title">オンライン講座『無意識の旅』サブスク登録</h3>
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">無意識や催眠についてもっと知りたい方、体験したい方は、オンライン講座『無意識の旅』のサブスクリプションに申し込むだけ</p>
-              <p class="content02__item-text">https://m2191204.jn.megadoga.com/</p>
+              <p class="content02__item-text"><a href="https://m2191204.jn.megadoga.com/" target="_blank" rel="nofollow">https://m2191204.jn.megadoga.com/</a></p>
               <p class="content02__item-text">※会員限定の感謝祭（不定期開催）にも参加できます</p>
             </div>
           </div>
@@ -229,7 +229,7 @@
         </div>
         <div class="price__button" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
-          <a href="#" class="button02">
+          <a href="https://m2191204.jn.megadoga.com/" class="button02" target="_blank" rel="noopener noreferrer">
             <span class="button02__text">無意識の旅</span>
             <span class="button02__icon">
               <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/button02_icon.svg" alt="アイコン"
@@ -242,7 +242,7 @@
         </div>
         <div class="price__guide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
-          <a href="#">ご利用ガイド</a>
+          <a href="https://m2191204.jn.megadoga.com/pages/GUIDE" target="_blank" rel="nofollow">ご利用ガイド</a>
         </div>
       </div>
     </div>

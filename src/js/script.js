@@ -133,169 +133,69 @@ jQuery(function ($) {
         navigation: {
             nextEl: '.nav--next',
             prevEl: '.nav--prev',
-          },
-          pagination: {
-            el: '.office-swiper__controls .swiper-pagination',
-            type: 'fraction',
-            renderFraction: (currentClass, totalClass) => {
-              return `
-                <span class="${currentClass}"></span>
-                <span class="fraction-separator">—</span>
-                <span class="${totalClass}"></span>
-              `;
             },
-            // 共通のゼロ埋め関数
-            formatFractionCurrent: n => n.toString().padStart(2, '0'),
-            formatFractionTotal: n => n.toString().padStart(2, '0')
-          }
+            pagination: {
+                el: '.office-swiper__controls .swiper-pagination',
+                type: 'fraction',
+                renderFraction: (currentClass, totalClass) => {
+                return `
+                    <span class="${currentClass}"></span>
+                    <span class="fraction-separator">—</span>
+                    <span class="${totalClass}"></span>
+                `;
+                },
+                // 共通のゼロ埋め関数
+                formatFractionCurrent: n => n.toString().padStart(2, '0'),
+                formatFractionTotal: n => n.toString().padStart(2, '0')
+            }
     });
 
-// AOS
-/* === AOS一括付与：ユーティリティ関数（オプション形式）=== */
-// function addAOS($targets, {
-//     effect = 'fade-up',
-//     duration = 1200,
-//     offset = 220,
-//     baseDelay = 0,
-//     step = 0
-//   } = {}) {
-//     $targets.each(function (i) {
-//       const $t = $(this);
-//       // 既に手書きの data-aos があれば尊重（上書きしない）
-//       if (!$t.attr('data-aos'))           $t.attr('data-aos', effect);
-//       if (!$t.attr('data-aos-duration'))  $t.attr('data-aos-duration', String(duration));
-//       if (!$t.attr('data-aos-offset'))    $t.attr('data-aos-offset', String(offset));
-//       // 段差
-//       $t.attr('data-aos-delay', String(baseDelay + i * step));
-//     });
-//   }
-  
-//   /* === トップページ等のセクション（message / counseling / blog / counseling-examples / faq / about）=== */
-//   // message
-//   addAOS($('.message .message__header .message__image'));
-//   addAOS($('.message .message__header .section-title'));
-//   addAOS($('.message .message__heading'));
-//   addAOS($('.message .message__text > p'),                 { baseDelay: 0,   step: 80 });
-//   addAOS($('.message .message__item-list li'),             { baseDelay: 200, step: 60 });
-  
-//   // counseling
-//   addAOS($('.counseling .counseling__title'));
-//   addAOS($('.counseling .card04'),                         { baseDelay: 0,   step: 120 });
-  
-//   // blog
-//   addAOS($('.blog .blog__title'));
-//   addAOS($('.blog .blog__list .blog__item'),               { baseDelay: 0,   step: 100 });
-  
-//   // counseling-examples
-//   addAOS($('.counseling-examples .counseling-examples__title'));
-//   addAOS($('.counseling-examples .counseling-examples__intro'));
-//   addAOS($('.counseling-examples .counseling-examples__item'), { baseDelay: 0, step: 120 });
-//   $('.counseling-examples .counseling-examples__item-list').each(function () {
-//     addAOS($(this).children('li'),                         { baseDelay: 200, step: 60 });
-//   });
-  
-//   // faq
-//   addAOS($('.faq .faq__title'));
-//   addAOS($('.faq .faq-list__item'),                        { baseDelay: 0,   step: 120 });
-  
-//   // about
-//   addAOS($('.about .about__title'));
-//   addAOS($('.about .about__main-image img'));
-//   addAOS($('.about .about__sub-image img'),                { baseDelay: 150, step: 120 });
-//   addAOS($('.about .about__company-info, .about .about__map, .about .about__access-list-wrapper'),
-//                                                          { baseDelay: 200, step: 120 });
-//   addAOS($('.about .about__button'));
-  
-//   /* === ブログ一覧ページ（mv-under / パンくず / カード / ページネーション / サイドバー）=== */
-//   // ヒーロー（mv-under）
-//   addAOS($('.mv-under .mv-under__maintitle'));
-//   addAOS($('.mv-under .mv-under__subtitle-wrapper, .mv-under .mv-under__divider, .mv-under .mv-under__subtitle'),
-//                                                        { baseDelay: 120, step: 60 });
-  
-//   // パンくず
-//   addAOS($('.breadcrumbs, .breadcrumbs *'),           { baseDelay: 0, step: 30, duration: 900, offset: 160 });
-  
-//   // アーカイブカード群
-//   addAOS($('.archive__inner > .section-title, .archive__inner > .archive__heading'));
-//   addAOS($('.cards06 .card06'),                        { baseDelay: 0, step: 100, duration: 1000 });
-//   $('.cards06 .card06').each(function () {
-//     addAOS($(this).find('.card06__image'),            { baseDelay: 0,   duration: 1000 });
-//     addAOS($(this).find('.card06__item-meta'),        { baseDelay: 120, duration: 900  });
-//     addAOS($(this).find('.card06__text'),             { baseDelay: 200, duration: 900  });
-//   });
-  
-//   // ページネーション
-//   addAOS($('.navigation.pagination, .nav-links, .nav-links *'),
-//                                                        { baseDelay: 0, step: 40, duration: 800, offset: 160 });
-  
-// // サイドバー
-// addAOS($('.sidebar, .sidebar *'),                    { baseDelay: 0, step: 40, duration: 900, offset: 160 });
+    // 沿革の縦線の高さを設定
+    $('.history__year').each(function() {
+        const $el = $(this);
+        const height = $el.outerHeight();
+        const total = height + 30;
+        $el.css('--line-height', total + 'px');
+    });
 
-// // ヒーロー（mv-under--company）
-// addAOS($('.mv-under--company .mv-under__maintitle'));
-// addAOS($('.mv-under--company .mv-under__subtitle-wrapper, .mv-under--company .mv-under__divider, .mv-under--company .mv-under__subtitle'),
-//                                                      { baseDelay: 120, step: 60 });
+    // ページトップボタン
+    const $pageTopButton = $('#pageTopButton');
+    const $ctaElement = $('.cta');
+    const scrollThreshold = 400;
+    let isVisible = false;
 
-// // パンくず（共通パーツ想定）
-// addAOS($('.breadcrumbs, .breadcrumbs *'),           { baseDelay: 0, step: 30, duration: 900, offset: 160 });
+    if ($pageTopButton.length && $ctaElement.length) {
+        // スクロールイベント
+        $(window).on('scroll', function() {
+        const scrollY = $(window).scrollTop();
 
-// /* ----- company-message ----- */
-// addAOS($('.company-message .section-title'));       // セクション見出し
-// // コンテンツ左右：画像→テキストの順で段差
-// addAOS($('.company-message .company-message__img'),        { baseDelay: 0 });
-// addAOS($('.company-message .company-message__text-block'), { baseDelay: 150 });
+        if (scrollY > scrollThreshold && !isVisible) {
+            $pageTopButton.addClass('is-visible');
+            $ctaElement.addClass('has-page-top');
+            isVisible = true;
+        } else if (scrollY <= scrollThreshold && isVisible) {
+            $pageTopButton.removeClass('is-visible');
+            $ctaElement.removeClass('has-page-top');
+            isVisible = false;
+        }
+        });
 
-// // テキスト詳細（見出し→本文）
-// addAOS($('.company-message .company-message__title'));     // 小見出し
-// // 本文段落を波状に（p が複数想定なら）
-// addAOS($('.company-message .company-message__description .company-message__text'),
-//                                                      { baseDelay: 150, step: 60 });
+        // クリックでページトップへ
+        $pageTopButton.on('click', function() {
+        $('html, body').animate({ scrollTop: 0 }, 500); // 0.5秒で上へ
+        });
 
-// // プロフィールブロック
-// addAOS($('.company-message__profile .profile__title'));
-// addAOS($('.company-message__profile .profile__text-wrapper, .company-message__profile .profile__text'),
-//                                                      { baseDelay: 120, step: 60 });
-
-// /* ----- company-profile（会社情報） ----- */
-// addAOS($('.company-profile .company-profile__title'));     // セクション見出し
-// // 各行を波状に
-// addAOS($('.company-profile .company-info__list'),          { baseDelay: 0, step: 80 });
-// // ラベル→値の順で軽く段差
-// $('.company-profile .company-info__list').each(function(){
-//   addAOS($(this).find('.company-info__term'),              { baseDelay: 0 });
-//   addAOS($(this).find('.company-info__description'),       { baseDelay: 100 });
-// });
-// // Google Map
-// addAOS($('.company-profile .company-info__map, .company-profile .company-info__map iframe'),
-//                                                      { baseDelay: 200 });
-
-// /* ----- office（スライダー） ----- */
-// addAOS($('.office .section-title'));                       // セクション見出し
-// addAOS($('.office .office__swiper'));                      // コンテナ
-// // スライドを波状に（見せ場）
-// addAOS($('.office .swiper .swiper-slide'),                 { baseDelay: 0, step: 120, duration: 1000 });
-// // 操作UI
-// addAOS($('.office .office-swiper__controls, .office .office-swiper__nav .nav'),
-//                                                      { baseDelay: 150, step: 80, duration: 900 });
-
-// /* ----- history（沿革） ----- */
-// addAOS($('.history .section-title'));                      // セクション見出し
-// // 年ブロックごとに波状
-// addAOS($('.history .history__item'),                       { baseDelay: 0, step: 150 });
-// // 各年ブロック内：年→リスト（行）をさらに段差
-// $('.history .history__item').each(function(){
-//   addAOS($(this).find('.history__year'),                   { baseDelay: 0,   duration: 1000 });
-//   addAOS($(this).find('.history__lists .history__list'),   { baseDelay: 120, step: 80, duration: 900 });
-//   // 行の中の「月→本文」も軽く段差
-//   $(this).find('.history__row').each(function(){
-//     addAOS($(this).find('.history__month'),                { baseDelay: 0 });
-//     addAOS($(this).find('.history__text'),                 { baseDelay: 80 });
-//   });
-
-
-
-
-// });
-
+        // キーボードアクセシビリティ
+        $pageTopButton.on('keydown', function(e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+            e.preventDefault();
+            $('html, body').animate({ scrollTop: 0 }, 500);
+        }
+        });
+    }
 });
+
+
+
+
 

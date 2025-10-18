@@ -371,6 +371,7 @@
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">まずは、お電話にてご予約を承ります。</p>
               <p class="content02__item-text">初めての方には、カウンセリングを受ける目的やご希望をお伺いし、カウンセリングの流れ等ご説明いたします。</p>
+              <p class="content02__item-text">TEL：<a href="tel:0334332721" class="tel-link">03-3433-2721</a></p>
             </div>
           </div>
         </li>
@@ -417,22 +418,23 @@
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングに予約は必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">
-            <p class="faq-list__item-answer"><span>A</span>はい、予約制となっております。事前にオンラインまたはお電話でご予約をお願いします。</p>
+            <p class="faq-list__item-answer"><span>A</span>はい、予約制となっております。事前に<a href="tel:03-3433-2721" class="tel-link"
+                style="text-decoration:underline;">お電話</a>でご予約をお願いします。</p>
           </div>
         </li>
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question"><span>Q</span>初回カウンセリングはどのように進行しますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>初回カウンセリングでは、まずはお話をお聞きし、あなたの悩みや目標を明確にします。<br>その後、今後のカウンセリングの進め方を提案させていただきます。あなたが抱えている悩みや問題について自由にお話しいただけますが、初回カウンセリングではカウンセリングの方針を立てるために、家族関係や生育歴について詳細をうかがいます。カウンセラーが質問いたしますので、お話できる範囲でお答えください。
+              <span>A</span>あなたが抱えている悩みや問題について自由にお話しいただけますが、初回カウンセリングではカウンセリングの方針を立てるために、家族関係や生育歴について詳細をうかがいます。カウンセラーが質問いたしますので、お話できる範囲でお答えください。
             </p>
           </div>
         </li>
         <li class="faq-list__item">
-          <p class="faq-list__item-question js-faq-question"><span>Q</span>どのくらいの頻度でカウンセリングを受ければ効果がありますかるべきですか？</p>
+          <p class="faq-list__item-question js-faq-question"><span>Q</span>どのくらいの頻度でカウンセリングを受けるべきですか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>個人差がありますが、1週間〜2週間に1回の頻度で受けていただくのが一般的です。最初の数回で効果を感じることが多いですが、継続的に受けることで更に深い理解が得られます。状態やニーズによって個人差がありますので、初回面接時にカウンセラーにご相談ください。最初は週に1回程度で始め、その後、進捗に合わせて頻度を減らしていく方が多いです。
+              <span>A</span>状態やニーズによって個人差がありますので、初回面接時にカウンセラーにご相談ください。最初は週に1回程度で始め、その後、進捗に合わせて頻度を減らしていく方が多いです。
             </p>
           </div>
         </li>
@@ -440,7 +442,7 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>子どもや家族のカウンセリングもできますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>はい、家族や子どものカウンセリングも行っています。<br>お子様には特別なアプローチを使用し、家族全体でのコミュニケーション改善にも力を入れています。はい。当社では、家族やお子様を対象にしたカウンセリングも行っています。
+              <span>A</span>はい。当社では、家族やお子様を対象にしたカウンセリングも行っています。
             </p>
           </div>
         </li>

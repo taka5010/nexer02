@@ -6,3 +6,12 @@ html, body {
 }
 
 
+.tel-link {
+  @include mq("md") {
+  pointer-events: none; /* クリック無効 */
+    cursor: default;
+  }
+}
+
+
+

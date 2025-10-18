@@ -37,6 +37,7 @@ position: relative;
   width: 100%;
   background-size: contain;
   bottom: 0;
+  z-index: -1;
   @include mq(md){
     background-size: 70%;
     bottom: rem(-270);

@@ -357,15 +357,15 @@
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>FAP療法®はどんな療法ですか？</p>
           <div class="faq-list__item-answer-wrapper">
-            <p class="faq-list__item-answer"><span>A</span>（Free from Anxiety
-              Program）は、1999年大嶋信頼らにより発見され、2001年に体系化された心理療法です。開発当初より、PTSDの諸症状の改善や恐怖症の克服、パニック障害や強迫性障害、依存症的欲求などの幅広い問題に対して劇的な改善を示していました。現在に至るまで毎年、手法のバージョンアップを重ねてきています。
-            </p>
+            <p class="faq-list__item-answer"><span>A</span><i style="font-style:normal;"><ruby>FAP<rt>エフエイピー</rt></ruby>（Free from Anxiety
+              Program）は、1999年大嶋信頼らにより発見され、2001年に体系化された心理療法です。開発当初より、PTSDの諸症状の改善や恐怖症の克服、パニック障害や強迫性障害、依存症的欲求などの幅広い問題に対して劇的な改善を示していました。現在に至るまで毎年、手法のバージョンアップを重ねてきています。</i>
+            </i>
           </div>
         </li>
         <li class="faq-list__item">
-          <p class="faq-list__item-question js-faq-question"><span>Q</span>FAP療法®はどのような症状に効果がありますかが対象ですか？</p>
+          <p class="faq-list__item-question js-faq-question"><span>Q</span>FAP療法®はどのような症状が対象ですか？</p>
           <div class="faq-list__item-answer-wrapper">
-            <p class="faq-list__item-answer"><span>A</span>心的外傷（PTSD）、恐怖症、パニック障害、強迫性障害など、心に関連する多様な症状に効果がありますが対象になります。
+            <p class="faq-list__item-answer"><span>A</span>心的外傷（PTSD）、恐怖症、パニック障害、強迫性障害など、心に関連する多様な症状が対象になります。
             </p>
           </div>
         </li>
@@ -373,7 +373,7 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>何回くらいのセッションで改善しますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に効果が現れます受けることで改善する可能性があります。
+              <span>A</span>個人差がありますが、多くのクライアントは数回のセッションでも改善を実感しています。深刻な症状の場合でも、継続的に受けることで改善する可能性があります。
             </p>
           </div>
         </li>

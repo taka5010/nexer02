@@ -1,14 +1,25 @@
-<div class="cta">
-  <a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="cta-button">
-    <span class="cta-button__text">お問合せ・ご予約はこちら</span>
-    <span class="cta-button__icon-wrapper">
-      <span class="cta-button__icon">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/tel_icon.svg" alt="phone"
-          class="cta-button__icon-img">
+<div class="cta__wrapper">
+  <div class="cta">
+    <a href="tel:0334332721" class="cta-button tel-link">
+      <span class=" cta-button__text">お問合せ・ご予約はこちら</span>
+      <span class="cta-button__icon-wrapper">
+        <span class="cta-button__icon">
+          <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/tel_icon.svg" alt="phone"
+            class="cta-button__icon-img">
+        </span>
+        <span class="cta-button__phone">03-3433-2721</span>
       </span>
-      <span class="cta-button__phone">03-3433-2721</span>
+    </a>
+  </div>
+  <button class="page-top-button" id="pageTopButton" aria-label="ページトップへ戻る">
+    <span class="page-top-button__icon">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7 14L12 9L17 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round" />
+      </svg>
     </span>
-  </a>
+    <span class="page-top-button__text">TOP</span>
+  </button>
 </div>
 
 <footer class="footer">

@@ -55,7 +55,7 @@
             <ul class="dropdown" id="submenu-counseling3" role="menu" aria-label="その他のサービスメニュー">
               <li class="dropdown__item" role="none">
                 <a class="dropdown__link" href="<?php echo esc_url( home_url( '/geneswitch/' ) ); ?>"
-                  role="menuitem">GeneSwitch</a>
+                  role="menuitem">GeneSwitch®</a>
               </li>
               <li class="dropdown__item" role="none">
                 <a class="dropdown__link" href="<?php echo esc_url( home_url( '/online-course/' ) ); ?>"

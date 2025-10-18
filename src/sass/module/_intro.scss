@@ -62,6 +62,7 @@
   color:$primary-01;
   @include mq("md") {
     font-size: rem(30);
+    white-space: nowrap;
   }
 }
 

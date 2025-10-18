@@ -30,27 +30,27 @@
   }
 }
 
-// .mv-under.mv-under--faq {
-//   background-image: url(../images/common/fap-fv.jpg);
-//   background-position: 60% -65px;
-//   @include mq("md") {
-//   }
-// }
-
 .mv-under.mv-under--faq {
-  background-image: url(../images/common/fap-fv.jpg); /* フォールバック */
-  background-image: -webkit-image-set(
-    url(../images/common/fap-fv.webp) type("image/webp") 1x,
-    url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
-  );
-  background-image: image-set(
-    url(../images/common/fap-fv.webp) type("image/webp") 1x,
-    url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
-  );
+  background-image: url(../images/common/fv-fap__bg.png);
   background-position: 60% -65px;
   @include mq("md") {
   }
 }
+
+// .mv-under.mv-under--faq {
+//   background-image: url(../images/common/fap-fv.jpg); /* フォールバック */
+//   background-image: -webkit-image-set(
+//     url(../images/common/fap-fv.webp) type("image/webp") 1x,
+//     url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
+//   );
+//   background-image: image-set(
+//     url(../images/common/fap-fv.webp) type("image/webp") 1x,
+//     url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
+//   );
+//   background-position: 60% -65px;
+//   @include mq("md") {
+//   }
+// }
 
 .mv-under.mv-under--hypnosis-script {
   background-image: url(../images/common/hypnosis-script_fv.png);
@@ -89,8 +89,6 @@
 }
 
 
-
-
 .mv-under__inner {
   margin: 0 auto;
   display: flex;
@@ -106,11 +104,26 @@
 .mv-under__content {
   text-align: left;
   transform: translateY(-20px) translateX(15px);
+  position: relative;
   @include mq("md") {
     margin-left: rem(100);
     transform: translateY(100px);
   }
 }
+
+// .mv-under__content::before {
+//   content: "";
+//   background-image: url(../images/common/fv-title--bg.jpg);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+// }
+
 
 .mv-under__maintitle {
   color: $primary-01;

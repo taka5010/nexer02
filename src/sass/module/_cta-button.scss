@@ -13,6 +13,21 @@
   box-shadow: 0 rem(-4) rem(20) rgba(0, 0, 0, 0.1);
 }
 
+.cta__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: rem(20);
+ @include mq("md") {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  gap: rem(20);
+ }
+}
+
 @include mq("md") {
   .cta {
     bottom: rem(24);
@@ -24,6 +39,13 @@
     backdrop-filter: none;
     box-shadow: none;
     text-align: right;
+    transition: right 0.3s ease;
+  }
+}
+
+.cta.has-page-top {
+  @include mq("md") {
+    right: rem(120);
   }
 }
 

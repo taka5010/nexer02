@@ -422,7 +422,7 @@
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">トラウマカウンセリングは、事前に予約をお願いしています。まずはお電話にて、曜日時間帯等のご希望をお伺いします。</p>
               <p class="content02__item-text">初めての方でも丁寧にご説明いたしますので、安心してご利用いただけます。</p>
-              <p class="content02__item-text">TEL：03-3433-2721</p>
+              <p class="content02__item-text">TEL：<a href="tel:0334332721" class="tel-link">03-3433-2721</a></p>
             </div>
           </div>
         </li>

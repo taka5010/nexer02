@@ -336,12 +336,12 @@
           <p class="faq-list__item-question js-faq-question"><span>Q</span>どれくらいの期間、カウンセリングを受ける必要がありますか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
-              <span>A</span>カウンセリングの期間は、あなたの状態や問題の内容、進行具合によって異なります。短期間で改善が見込まれる場合もありますし、時間をかけてじっくりと取り組むことが必要な場合もあります。個別に相談しながら決めていきます。
+              <span>A</span>カウンセリングの期間は、あなたの状態や問題の内容や、進行具合によって異なります。短期間で改善が見込まれる場合もありますし、時間をかけてじっくりと取り組むことが必要な場合もあります。個別に相談しながら決めていきます。
             </p>
           </div>
         </li>
         <li class="faq-list__item">
-          <p class="faq-list__item-question js-faq-question"><span>Q</span>カカウンセリングの内容は他の人に知られることはありませんか？</p>
+          <p class="faq-list__item-question js-faq-question"><span>Q</span>カウンセリングの内容は他の人に知られることはありませんか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer">
               <span>A</span>はい、カウンセリングで話された内容は厳密に守秘義務が適用されます。他の人に話すことはありませんので、安心してお話しいただけます。

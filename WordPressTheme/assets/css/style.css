@@ -175,7 +175,10 @@ a {
 }
 
 .about__images {
+	align-items: center;
+	justify-items: center;
 	margin-top: 2.5rem;
+	place-items: center;
 }
 
 .about__main-image img {
@@ -1860,7 +1863,7 @@ body {
 	line-height: 1.6;
 	padding-left: 6.25rem;
 	position: relative;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .content03__title--en::before {
@@ -2042,6 +2045,10 @@ body {
 	padding-top: 0rem;
 }
 
+.counseling-methods__list .content03__title--en {
+	text-transform: uppercase;
+}
+
 .counseling-points {
 	padding-bottom: 5rem;
 	padding-top: 5rem;
@@ -2086,10 +2093,6 @@ body {
 	margin-top: 3.75rem;
 }
 
-.counseling-points__list .content03__title--en {
-	text-transform: capitalize;
-}
-
 .counseling {
 	background-color: #fff;
 	padding-bottom: 5rem;
@@ -2122,6 +2125,14 @@ body {
 	right: 0;
 	text-align: center;
 	z-index: 1000;
+}
+
+.cta__wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	justify-content: center;
 }
 
 .cta-button {
@@ -2421,6 +2432,7 @@ body {
 	left: 0;
 	position: absolute;
 	width: 100%;
+	z-index: -1;
 }
 
 .flow--hypnosis-script.flow::after {
@@ -2980,17 +2992,6 @@ body {
 	position: relative;
 }
 
-.history__content::before {
-	background-color: #BCCDD5;
-	content: "";
-	display: block;
-	height: 100%;
-	left: 3.75rem;
-	position: absolute;
-	top: 0;
-	width: 0.125rem;
-}
-
 .history__item {
 	display: flex;
 	flex-direction: column;
@@ -3009,8 +3010,19 @@ body {
 	white-space: nowrap;
 }
 
+.history__year::after {
+	background-color: #BCCDD5;
+	content: "";
+	height: 0px;
+	height: var(--line-height, 0px);
+	left: 50%;
+	position: absolute;
+	transform: translateX(-50%);
+	width: 2px;
+	z-index: 0;
+}
+
 .history__year span {
-	background-color: #FFFFFF;
 	display: inline-block;
 }
 
@@ -3220,9 +3232,7 @@ body {
 }
 
 .mv-under.mv-under--faq {
-	background-image: url(../images/common/fap-fv.jpg); /* フォールバック */
-	background-image: -webkit-image-set(url(../images/common/fap-fv.webp) type("image/webp") 1x, url(../images/common/fap-fv.jpg) type("image/jpeg") 1x);
-	background-image: image-set(url(../images/common/fap-fv.webp) type("image/webp") 1x, url(../images/common/fap-fv.jpg) type("image/jpeg") 1x);
+	background-image: url(../images/common/fv-fap__bg.png);
 	background-position: 60% -65px;
 }
 
@@ -3259,6 +3269,7 @@ body {
 }
 
 .mv-under__content {
+	position: relative;
 	text-align: left;
 	transform: translateY(-20px) translateX(15px);
 }
@@ -3544,6 +3555,61 @@ span.page-numbers.current {
 
 .page-numbers .pgn__icon {
 	width: 56px;
+}
+
+.page-top-button {
+	align-items: center;
+	background: linear-gradient(135deg, #2D9DD6 0%, #38CDC3 100%);
+	border: none;
+	border-radius: 50%;
+	bottom: 6.25rem;
+	box-shadow: 0 4px 12px rgba(17, 17, 17, 0.2);
+	color: #FFFFFF;
+	cursor: pointer;
+	display: none;
+	flex-direction: column;
+	height: 3.75rem;
+	justify-content: center;
+	opacity: 0;
+	position: fixed;
+	right: 1.5rem;
+	transform: translateY(20px);
+	transition: all 0.3s ease;
+	width: 3.75rem;
+	z-index: 1001;
+}
+
+.page-top-button.is-visible {
+	display: flex;
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.page-top-button:hover {
+	background: linear-gradient(135deg, #38CDC3 0%, #2D9DD6 100%);
+	box-shadow: 0 6px 16px rgba(17, 17, 17, 0.3);
+	transform: translateY(-2px);
+}
+
+.page-top-button:active {
+	transform: translateY(0);
+}
+
+.page-top-button__icon {
+	display: block;
+	margin-bottom: 0.125rem;
+}
+
+.page-top-button__text {
+	font-size: 0.625rem;
+	font-weight: 500;
+	line-height: 1;
+}
+
+/* アニメーション用のキーフレーム */
+
+.page-top-button.is-visible {
+	animation: fadeInUp 0.3s ease-out;
 }
 
 .pgn__label {
@@ -4685,6 +4751,11 @@ html {
 	margin-right: auto;
 }
 
+.tel-link {
+	cursor: default;
+	pointer-events: none; /* クリック無効 */
+}
+
 .blog-detail__inner {
 	max-width: 51.25rem;
 }
@@ -5447,6 +5518,14 @@ html {
 	margin-top: 2.5rem;
 }
 
+.cta__wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: row;
+	gap: 1.25rem;
+	justify-content: flex-end;
+}
+
 .cta {
 	-webkit-backdrop-filter: none;
 	backdrop-filter: none;
@@ -5457,7 +5536,12 @@ html {
 	padding: 0;
 	right: 1.5rem;
 	text-align: right;
+	transition: right 0.3s ease;
 	width: auto;
+}
+
+.cta.has-page-top {
+	right: 7.5rem;
 }
 
 .cta-button {
@@ -5823,6 +5907,7 @@ html {
 
 .intro__title {
 	font-size: 1.875rem;
+	white-space: nowrap;
 }
 
 .intro__description {
@@ -6008,6 +6093,25 @@ html {
 
 .page-links {
 	padding: 0rem 1.25rem;
+}
+
+.page-top-button {
+	bottom: 1.5rem;
+}
+
+.page-top-button {
+	bottom: 2rem;
+	height: 4.375rem;
+	right: 2rem;
+	width: 4.375rem;
+}
+
+.page-top-button__text {
+	font-size: 0.75rem;
+}
+
+.page-top-button__icon {
+	margin-bottom: 0.25rem;
 }
 
 .price-info {
@@ -6500,6 +6604,20 @@ html {
 
 100% {
 	transform: translate(-50%, 0) rotate(0);
+}
+
+}
+
+@keyframes fadeInUp {
+
+from {
+	opacity: 0;
+	transform: translateY(20px);
+}
+
+to {
+	opacity: 1;
+	transform: translateY(0);
 }
 
 }
