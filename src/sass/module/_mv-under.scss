@@ -23,11 +23,11 @@
 }
 
 .mv-under.mv-under--trauma {
-  background-image: url(../images/common/trauma-fv_img.png);
+  background-image: image-set(
+    url("../images/common/mv_trauma.webp") type("image/webp"),
+    url("../images/common/mv_trauma.jpg") type("image/jpeg")
+  );
   background-position: 60% -65px;
-  @include mq("md") {
-    background-image: url(../images/common/trauma-fv_img.png);
-  }
 }
 
 .mv-under.mv-under--faq {
@@ -36,21 +36,6 @@
   @include mq("md") {
   }
 }
-
-// .mv-under.mv-under--faq {
-//   background-image: url(../images/common/fap-fv.jpg); /* フォールバック */
-//   background-image: -webkit-image-set(
-//     url(../images/common/fap-fv.webp) type("image/webp") 1x,
-//     url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
-//   );
-//   background-image: image-set(
-//     url(../images/common/fap-fv.webp) type("image/webp") 1x,
-//     url(../images/common/fap-fv.jpg) type("image/jpeg") 1x
-//   );
-//   background-position: 60% -65px;
-//   @include mq("md") {
-//   }
-// }
 
 .mv-under.mv-under--hypnosis-script {
   background-image: url(../images/common/hypnosis-script_fv.png);

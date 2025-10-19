@@ -3227,7 +3227,8 @@ body {
 }
 
 .mv-under.mv-under--trauma {
-	background-image: url(../images/common/trauma-fv_img.png);
+	background-image: -webkit-image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
 	background-position: 60% -65px;
 }
 
@@ -3308,8 +3309,8 @@ body {
 }
 
 .mv {
-	background-image: -webkit-image-set(url("../images/common/fv_bg-sp.webp") type("image/webp"), url("../images/common/fv_bg-sp.jpg") type("image/jpeg"));
-	background-image: image-set(url("../images/common/fv_bg-sp.webp") type("image/webp"), url("../images/common/fv_bg-sp.jpg") type("image/jpeg"));
+	background-image: -webkit-image-set(url("../images/common/mv_top-sp.webp") type("image/webp"), url("../images/common/mv_top-sp.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_top-sp.webp") type("image/webp"), url("../images/common/mv_top-sp.jpg") type("image/jpeg"));
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -6002,10 +6003,6 @@ html {
 .mv-under.mv-under--psychological {
 	background-image: url(../images/common/psychological_fv-pc.jpg);
 	background-position: left -90px;
-}
-
-.mv-under.mv-under--trauma {
-	background-image: url(../images/common/trauma-fv_img.png);
 }
 
 .mv-under__content {
