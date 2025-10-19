@@ -41,8 +41,15 @@
   background-image: url(../images/common/hypnosis-script_fv.png);
   background-position: 60% -65px;
   @include mq("md") {
-
   }
+}
+
+.mv-under.mv-under--hypnosis-script {
+  background-image: image-set(
+    url("../images/common/mv-hypnosis.webp") type("image/webp"),
+    url("../images/common/mv-hypnosis.jpg") type("image/jpeg")
+  );
+  background-position: 60% -65px;
 }
 
 .mv-under.mv-under--company {
@@ -60,10 +67,11 @@
 }
 
 .mv-under.mv-under--genesiswitch {
-  background-image: url(../images/common/geneswitct_fv.png);
+  background-image: image-set(
+    url("../images/common/mv_geneswitch.webp") type("image/webp"),
+    url("../images/common/mv_geneswitch.jpg") type("image/jpeg")
+  );
   background-position: 60% -65px;
-  @include mq("md") {
-  }
 }
 
 .mv-under.mv-under--online {
