@@ -2,16 +2,31 @@
 
 
 .blog {
-  background-image: url(../images/common/blog_bg-sp.jpg);
-  background-position: rem(-20) center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  position: relative;
   margin-inline: auto;
   padding-top: rem(80);
   padding-bottom: rem(80);
   @include mq("md") {
     margin-top: rem(10);
-    background-position: rem(-50) center;
+  }
+}
+
+.blog::before {
+  content: "";
+  background-image: url(../images/common/blog_bg-sp.jpg);
+  background-position: rem(-20) center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  @include mq("md") {
+    background-image: url(../images/common/blog_bg-pc.jpg);
+    background-position: right;
+    background-size: cover;
+    transform: translateX(-50px);
   }
 }
 

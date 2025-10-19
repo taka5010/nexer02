@@ -539,14 +539,24 @@ body {
 }
 
 .blog {
-	background-image: url(../images/common/blog_bg-sp.jpg);
-	background-position: -1.25rem center;
-	background-repeat: no-repeat;
-	background-size: cover;
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 5rem;
 	padding-top: 5rem;
+	position: relative;
+}
+
+.blog::before {
+	background-image: url(../images/common/blog_bg-sp.jpg);
+	background-position: -1.25rem center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .blog__inner.inner {
@@ -2269,7 +2279,7 @@ body {
 }
 
 .faq.faq--top {
-	background-image: url(../images/common/bg_faq-sp.png);
+	background-image: url(../images/common/section_bg-right-sp.jpg);
 	background-position: right 0px;
 	background-repeat: no-repeat;
 	background-size: 65%;
@@ -4883,8 +4893,14 @@ html {
 }
 
 .blog {
-	background-position: -3.125rem center;
 	margin-top: 0.625rem;
+}
+
+.blog::before {
+	background-image: url(../images/common/blog_bg-pc.jpg);
+	background-position: right;
+	background-size: cover;
+	transform: translateX(-50px);
 }
 
 .blog__inner.inner {
@@ -5574,7 +5590,7 @@ html {
 }
 
 .faq.faq--top {
-	background-image: url(../images/common/faq_bg-pc.png);
+	background-image: url(../images/common/section_bg-right.jpg);
 }
 
 .faq__inner.inner {
@@ -5941,7 +5957,7 @@ html {
 }
 
 .message {
-	background-image: url(../images/common/bg_message-pc.jpg);
+	background-image: url(../images/common/section_bg-right--strong.jpg);
 	background-position: right 5rem;
 	background-size: 60%;
 	margin-top: 5.625rem;

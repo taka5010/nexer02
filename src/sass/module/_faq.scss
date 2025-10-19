@@ -9,12 +9,12 @@
 
 .faq.faq--top {
   position: relative;
-  background-image: url(../images/common/bg_faq-sp.png);
+  background-image: url(../images/common/section_bg-right-sp.jpg);
   background-position: right 0px;
   background-repeat: no-repeat;
   background-size: 65%;
   @include mq(md) {
-    background-image: url(../images/common/faq_bg-pc.png);
+    background-image: url(../images/common/section_bg-right.jpg);
   }
 }
 
