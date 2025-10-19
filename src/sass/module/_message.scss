@@ -17,6 +17,24 @@
   }
 }
 
+.message::before {
+  background-image: url(../images/common/section_bg-sp-message.jpg);
+  background-position: left 75%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 100%;
+  left: 0;
+  padding: rem(80) 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  @include mq(md) {
+    padding: rem(120) 0;
+    display: none;
+  }
+}
+
 .message__inner.inner {
   @include mq("md") {
     display: flex;
@@ -101,6 +119,7 @@
   padding: 0;
   margin: 0;
   margin-top: rem(20);
+  position: relative;
   @include mq("md") {
     margin-top: rem(20);
   }

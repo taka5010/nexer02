@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 <main class="main">
-  <section class="mv-under mv-under--faq">
+  <section class="mv-under mv-under--fap">
     <div class="mv-under__inner">
       <div class="mv-under__content">
         <p class="mv-under__maintitle">
@@ -357,9 +357,10 @@
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>FAP療法®はどんな療法ですか？</p>
           <div class="faq-list__item-answer-wrapper">
-            <p class="faq-list__item-answer"><span>A</span><i style="font-style:normal;"><ruby>FAP<rt>エフエイピー</rt></ruby>（Free from Anxiety
-              Program）は、1999年大嶋信頼らにより発見され、2001年に体系化された心理療法です。開発当初より、PTSDの諸症状の改善や恐怖症の克服、パニック障害や強迫性障害、依存症的欲求などの幅広い問題に対して劇的な改善を示していました。現在に至るまで毎年、手法のバージョンアップを重ねてきています。</i>
-            </i>
+            <p class="faq-list__item-answer"><span>A</span><i style="font-style:normal;"><ruby>FAP<rt>エフエイピー</rt>
+                  </ruby>（Free from Anxiety
+                Program）は、1999年大嶋信頼らにより発見され、2001年に体系化された心理療法です。開発当初より、PTSDの諸症状の改善や恐怖症の克服、パニック障害や強迫性障害、依存症的欲求などの幅広い問題に対して劇的な改善を示していました。現在に至るまで毎年、手法のバージョンアップを重ねてきています。</i>
+              </i>
           </div>
         </li>
         <li class="faq-list__item">

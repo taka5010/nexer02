@@ -30,6 +30,14 @@
   background-position: 60% -65px;
 }
 
+.mv-under.mv-under--fap {
+  background-image: image-set(
+    url("../images/common/mv_fap.webp") type("image/webp"),
+    url("../images/common/mv_fap.jpg") type("image/jpeg")
+  );
+  background-position: 60% -65px;
+}
+
 .mv-under.mv-under--faq {
   background-image: url(../images/common/fv-fap__bg.png);
   background-position: 60% -65px;

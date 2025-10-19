@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .footer {
-  background-image: url(../images/common/footer_bg-sp.png);
+  background-image: url(../images/common/footer_bg-sp.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
   @include mq("sm") {
     padding: rem(130) 0 rem(60);
-    background-image: url(../images/common/footer_bg-pc.png);
+    background-image: url(../images/common/footer_bg-pc.jpg);
   }
 }
 

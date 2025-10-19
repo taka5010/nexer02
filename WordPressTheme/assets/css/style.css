@@ -155,7 +155,7 @@ a {
 }
 
 .about {
-	background-image: url(../images/common/about_bg-sp.png);
+	background-image: url(../images/common/section_bg-left-sp);
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1409,7 +1409,7 @@ body {
 }
 
 .company-message::before {
-	background-image: url(../images/common/left_bg.png);
+	background-image: url(../images/common/section_bg-left.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1502,7 +1502,7 @@ body {
 }
 
 .company-profile::after {
-	background-image: url(../images/common/section_bg-right.png);
+	background-image: url(../images/common/section_bg-right.jpg);
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -1512,6 +1512,7 @@ body {
 	left: 0;
 	position: absolute;
 	width: 100%;
+	z-index: -1;
 }
 
 .company-profile__inner.inner {
@@ -2014,7 +2015,7 @@ body {
 }
 
 .counseling-methods::before {
-	background-image: url(../images/common/section_bg-left.png);
+	background-image: url(../images/common/section_bg-left.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2028,7 +2029,7 @@ body {
 }
 
 .counseling-methods::after {
-	background-image: url(../images/common/section_bg-right.png);
+	background-image: url(../images/common/section_bg-right.jpg);
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2038,6 +2039,7 @@ body {
 	left: 0;
 	position: absolute;
 	width: 100%;
+	z-index: -1;
 }
 
 .counseling-methods__inner {
@@ -2073,7 +2075,7 @@ body {
 }
 
 .counseling-points::before {
-	background-image: url(../images/common/section_bg-left.png);
+	background-image: url(../images/common/section_bg-left.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2087,7 +2089,7 @@ body {
 }
 
 .counseling-points::after {
-	background-image: url(../images/common/section_bg-right.png);
+	background-image: url(../images/common/section_bg-right.jpg);
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2097,6 +2099,7 @@ body {
 	left: 0;
 	position: absolute;
 	width: 100%;
+	z-index: -1;
 }
 
 .counseling-points__list {
@@ -2418,7 +2421,7 @@ body {
 }
 
 .flow::before {
-	background-image: url(../images/common/section_bg-left.png);
+	background-image: url(../images/common/section_bg-left.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2431,8 +2434,8 @@ body {
 	z-index: -1;
 }
 
-.flow::after {
-	background-image: url(../images/common/section_bg-right.png);
+.flow--bg::after {
+	background-image: url(../images/common/section_bg-right.jpg);
 	background-position: right bottom;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -2465,7 +2468,7 @@ body {
 }
 
 .footer {
-	background-image: url(../images/common/footer_bg-sp.png);
+	background-image: url(../images/common/footer_bg-sp.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -2657,17 +2660,21 @@ body {
 }
 
 .header-drawer {
-	background-color: rgba(242, 251, 255, 0.8);
-	background-color: rgb(242, 251, 255);
+	background-image: url(../images/common/header__drawer_img.jpg);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
 	display: none;
 	height: 100vh;
 	left: 0;
 	overflow-y: scroll;
 	padding-top: 6.875rem;
 	position: absolute;
+	position: absolute;
 	scrollbar-width: none;
 	top: 0;
 	width: 100%;
+	z-index: -1;
 }
 
 .header-drawer::-webkit-scrollbar {
@@ -2981,7 +2988,7 @@ body {
 }
 
 .history::before {
-	background-image: url(../images/common/left_bg.png);
+	background-image: url(../images/common/section_bg-left.jpg);
 	background-position: left top;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -3076,7 +3083,7 @@ body {
 }
 
 .intro::before {
-	background-image: url(../images/common/section_bg-right.png);
+	background-image: url(../images/common/section_bg-right--strong.jpg);
 	background-position: right 240px;
 	background-repeat: no-repeat;
 	background-repeat: no-repeat;
@@ -3160,6 +3167,20 @@ body {
 	position: relative;
 }
 
+.message::before {
+	background-image: url(../images/common/section_bg-sp-message.jpg);
+	background-position: left 75%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	height: 100%;
+	left: 0;
+	padding: 5rem 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
 .message__title {
 	margin-top: 2.5rem;
 }
@@ -3189,6 +3210,7 @@ body {
 	margin: 0;
 	margin-top: 1.25rem;
 	padding: 0;
+	position: relative;
 }
 
 .message__item-list li {
@@ -3240,6 +3262,12 @@ body {
 .mv-under.mv-under--trauma {
 	background-image: -webkit-image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
+	background-position: 60% -65px;
+}
+
+.mv-under.mv-under--fap {
+	background-image: -webkit-image-set(url("../images/common/mv_fap.webp") type("image/webp"), url("../images/common/mv_fap.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_fap.webp") type("image/webp"), url("../images/common/mv_fap.jpg") type("image/jpeg"));
 	background-position: 60% -65px;
 }
 
@@ -3433,7 +3461,7 @@ body {
 }
 
 .office::before {
-	background-image: url(../images/common/blog-list_bg.jpg);
+	background-image: url(../images/common/office-bg.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -4593,7 +4621,7 @@ span.pgn__wrap {
 @media screen and (min-width: 600px) {
 
 .footer {
-	background-image: url(../images/common/footer_bg-pc.png);
+	background-image: url(../images/common/footer_bg-pc.jpg);
 	padding: 8.125rem 0 3.75rem;
 }
 
@@ -4628,8 +4656,7 @@ html {
 }
 
 .about {
-	background-image: url(../images/common/about_bg-pc.png);
-	margin-top: 7.5rem;
+	background-image: url(../images/common/section_bg-left.jpg);
 	padding: 7.5rem 0;
 }
 
@@ -5650,7 +5677,7 @@ html {
 	top: -11.25rem;
 }
 
-.flow::after {
+.flow--bg::after {
 	background-size: 70%;
 	bottom: -16.875rem;
 }
@@ -5962,6 +5989,11 @@ html {
 	background-size: 60%;
 	margin-top: 5.625rem;
 	padding-bottom: 8.125rem;
+}
+
+.message::before {
+	display: none;
+	padding: 7.5rem 0;
 }
 
 .message__inner.inner {

@@ -404,7 +404,7 @@
 
     </div>
   </section>
-  <section class="flow">
+  <section class="flow flow--bg">
     <div class="flow__inner inner">
       <h2 class="section-title content02__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">

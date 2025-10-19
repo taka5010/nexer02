@@ -2,14 +2,13 @@
 
 .about {
   padding: rem(80) 0;
-  background-image: url(../images/common/about_bg-sp.png);
+  background-image: url(../images/common/section_bg-left-sp);
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
   @include mq(md) {
-    margin-top: rem(120);
     padding: rem(120) 0;
-    background-image: url(../images/common/about_bg-pc.png);
+    background-image: url(../images/common/section_bg-left.jpg);
   }
 }
 
