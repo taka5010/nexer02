@@ -53,10 +53,11 @@
 }
 
 .mv-under.mv-under--company {
-  background-image: url(../images/common/campany_mv.png);
+  background-image: image-set(
+    url("../images/common/mv_company.webp") type("image/webp"),
+    url("../images/common/mv_company.jpg") type("image/jpeg")
+  );
   background-position: 60% -65px;
-  @include mq("md") {
-  }
 }
 
 .mv-under.mv-under--blog-items {
@@ -75,10 +76,11 @@
 }
 
 .mv-under.mv-under--online {
-  background-image: url(../images/common/online_fv.png);
+  background-image: image-set(
+    url("../images/common/mv_online.webp") type("image/webp"),
+    url("../images/common/mv_online.jpg") type("image/jpeg")
+  );
   background-position: 60% -65px;
-  @include mq("md") {
-  }
 }
 
 

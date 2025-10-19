@@ -1,14 +1,15 @@
 @use "global" as *;
 
 .message {
+  position: relative;
   margin-top: rem(60);
-  background-image: url(../images/common/message_bg-sp.png);
-  background-position: top;
+  padding-bottom: rem(80);
+  background-image: url(../images/common/message_bg-sp.jpg);
+  background-position: right 10%;
   background-repeat: no-repeat;
   background-size: contain;
-  padding-bottom: rem(80);
   @include mq("md") {
-    background-image: url(../images/common/bg_message-pc.png);
+    background-image: url(../images/common/bg_message-pc.jpg);
     margin-top: rem(90);
     padding-bottom: rem(130);
     background-position: right rem(80);

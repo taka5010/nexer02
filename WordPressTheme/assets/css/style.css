@@ -3141,12 +3141,13 @@ body {
 }
 
 .message {
-	background-image: url(../images/common/message_bg-sp.png);
-	background-position: top;
+	background-image: url(../images/common/message_bg-sp.jpg);
+	background-position: right 10%;
 	background-repeat: no-repeat;
 	background-size: contain;
 	margin-top: 3.75rem;
 	padding-bottom: 5rem;
+	position: relative;
 }
 
 .message__title {
@@ -3249,7 +3250,8 @@ body {
 }
 
 .mv-under.mv-under--company {
-	background-image: url(../images/common/campany_mv.png);
+	background-image: -webkit-image-set(url("../images/common/mv_company.webp") type("image/webp"), url("../images/common/mv_company.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_company.webp") type("image/webp"), url("../images/common/mv_company.jpg") type("image/jpeg"));
 	background-position: 60% -65px;
 }
 
@@ -3265,7 +3267,8 @@ body {
 }
 
 .mv-under.mv-under--online {
-	background-image: url(../images/common/online_fv.png);
+	background-image: -webkit-image-set(url("../images/common/mv_online.webp") type("image/webp"), url("../images/common/mv_online.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_online.webp") type("image/webp"), url("../images/common/mv_online.jpg") type("image/jpeg"));
 	background-position: 60% -65px;
 }
 
@@ -5938,7 +5941,7 @@ html {
 }
 
 .message {
-	background-image: url(../images/common/bg_message-pc.png);
+	background-image: url(../images/common/bg_message-pc.jpg);
 	background-position: right 5rem;
 	background-size: 60%;
 	margin-top: 5.625rem;
