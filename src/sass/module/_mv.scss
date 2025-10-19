@@ -1,7 +1,25 @@
 @use "global" as *;
 
+// .mv {
+//   background-image: url(../images/common/fv_bg-sp.png);
+//   background-size: cover;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   height: 100vh;
+//   width: 100%;
+//   color: #ffffff;
+//   text-align: center;
+//   @include mq("md") {
+//     background-image: url(../images/common/fv_bg-pc.png);
+//     background-position: top;
+//   }
+// }
+
 .mv {
-  background-image: url(../images/common/fv_bg-sp.png);
+  background-image: image-set(
+    url("../images/common/fv_bg-sp.webp") type("image/webp"),
+    url("../images/common/fv_bg-sp.jpg") type("image/jpeg")
+  );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -9,8 +27,12 @@
   width: 100%;
   color: #ffffff;
   text-align: center;
+
   @include mq("md") {
-    background-image: url(../images/common/fv_bg-pc.png);
+    background-image: image-set(
+      url("../images/common/mv_top-pc.webp") type("image/webp"),
+      url("../images/common/mv_top-pc.jpg") type("image/jpeg")
+    );
     background-position: top;
   }
 }
