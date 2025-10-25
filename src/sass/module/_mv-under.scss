@@ -13,13 +13,13 @@
     height: 85vh;
   }
 }
+
 .mv-under.mv-under--psychological {
-  background-image: url(../images/common/psychological_fv-pc.jpg);
-  background-position: 65% -90px;
-  @include mq("md") {
-    background-image: url(../images/common/psychological_fv-pc.jpg);
-    background-position: left -90px;
-  }
+  background-image: image-set(
+    url("../images/common/psychological_fv-pc.webp") type("image/webp"),
+    url("../images/common/psychological_fv-pc.jpg") type("image/jpeg")
+  );
+  background-position: 60% -65px;
 }
 
 .mv-under.mv-under--trauma {

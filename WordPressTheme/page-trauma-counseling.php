@@ -116,6 +116,7 @@
               <p class="content03__title--ja">安全な環境で癒しのプロセス</p>
             </h3>
             <p class="content03__text">カウンセリングの場は安全で安心できる空間で、感情を整理しながらトラウマを克服する手助けを行います。</p>
+            <p class="content03__text">カウンセリングを行う個室は、防音ドアをはじめ、壁や天井も防音仕様となっておりますので、安心してお話いただけます。</p>
           </div>
         </li>
         <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
@@ -193,7 +194,7 @@
     <div class="counseling-methods__inner inner">
       <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">
-        <p class="section-title__en">counseling methods</p>
+        <p class="section-title__en">counseling delivery methods</p>
         <p class="section-title__ja">カウンセリングの提供方法</p>
       </h2>
       <ol class="counseling-methods__list content03__items">
@@ -208,7 +209,9 @@
               <p class="content03__title--ja">オンラインカウンセリング</p>
             </h3>
             <p class="content03__text">オンラインカウンセリングは、インターネットを通じて、自宅やオフィスから簡単に受けられるカウンセリングサービスです。<br>
-              忙しくて外出できない方や、プライバシーを守りながら相談したい方に最適なサービスです。</p>
+              忙しくて外出できない方や、プライバシーを守りながら相談したい方に最適なサービスです。<br>
+              カウンセリングは、マイクロソフトのMicrosoft Teamsのアプリケーションを利用して行います。
+            </p>
           </div>
         </li>
         <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
@@ -237,7 +240,8 @@
             </h3>
             <p class="content03__text">対面カウンセリングは、カウンセラーと顔を合わせて、心の悩みや問題にじっくりと向き合うセッションです。<br>
               リアルな対話で、より深い理解とサポートを受けることができます。<br>
-              安心して話せる空間で、心のケアを始めましょう。</p>
+              安心して話せる空間で、心のケアを始めましょう。<br>
+              カウンセリングを行う個室は、防音ドアをはじめ、壁や天井も防音仕様となっておりますので、安心してお話いただけます。</p>
           </div>
         </li>
       </ol>
@@ -247,8 +251,8 @@
     <div class="counseling-approaches__inner inner">
       <h2 class="section-title content03__header" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
         data-aos-delay="200">
-        <p class="section-title__en">counseling approaches</p>
-        <p class="section-title__ja">カウンセリングの手法</p>
+        <p class="section-title__en">counseling techniques</p>
+        <p class="section-title__ja">カウンセリング技法</p>
       </h2>
       <div class="counseling__cards card04-items">
         <a href="/fap-therapy" class="counseling__card card04" data-aos="fade-up" data-aos-duration="1000"

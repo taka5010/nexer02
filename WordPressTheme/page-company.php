@@ -91,14 +91,29 @@
           <dd class="company-info__description">1000万円</dd>
         </dl>
       </div>
-      <div class="company-info__map" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-        data-aos-delay="200">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.648740125287!2d139.75460627592767!3d35.66102497259376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc164632c57%3A0xb4fe478f8c59181c!2z44CSMTA1LTAwMjEg5p2x5Lqs6YO95riv5Yy65p2x5paw5qmL77yS5LiB55uu77yR77yW4oiS77yTIOOCq-ODvOOCtuODmeODq-OCveODvOODrCA0Zg!5e0!3m2!1sja!2sjp!4v1758529098968!5m2!1sja!2sjp"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <div class="company-info__map-wrapper">
+        <div class="about__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.648740125287!2d139.75460627592767!3d35.66102497259376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bc164632c57%3A0xb4fe478f8c59181c!2z44CSMTA1LTAwMjEg5p2x5Lqs6YO95riv5Yy65p2x5paw5qmL77yS5LiB55uu77yR77yW4oiS77yTIOOCq-ODvOOCtuODmeODq-OCveODvOODrCA0Zg!5e0!3m2!1sja!2sjp!4v1758529098968!5m2!1sja!2sjp"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="about__access-list-wrapper">
+          <h3 class="about__access-title">
+            <img class="about__access-icon" src="<?php echo get_theme_file_uri(); ?>/assets/images/common/icon-map.svg"
+              alt="アクセス">アクセス
+          </h3>
+          <div class="about__access-list">
+            <ul>
+              <li>JR新橋駅、浜松町駅から徒歩8分</li>
+              <li>ゆりかもめ汐留駅から徒歩5分</li>
+              <li>都営大江戸線 汐留駅から徒歩7分</li>
+              <li>都営浅草線 大門駅から徒歩8分</li>
+              <li>都営三田線 御成門駅から徒歩9分</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
   </section>
   <section class="office">
     <div class="office__inner">
