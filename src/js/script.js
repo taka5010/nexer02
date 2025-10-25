@@ -117,13 +117,9 @@ jQuery(function ($) {
     // 会社内観・外観のスライダー
     var office_swiper = new Swiper(".js-office-swiper", {
         loop: true,
-        speed: 2000,
+        speed: 1400,
         slidesPerView: 1,
         centeredSlides: true,
-        // autoplay: {
-        //     delay: 2000,
-        //     disableOnInteraction: false,
-        // },
         breakpoints: {
             768: {
                 spaceBetween: 0,
@@ -133,30 +129,39 @@ jQuery(function ($) {
         navigation: {
             nextEl: '.nav--next',
             prevEl: '.nav--prev',
-            },
-            pagination: {
-                el: '.office-swiper__controls .swiper-pagination',
-                type: 'fraction',
-                renderFraction: (currentClass, totalClass) => {
+        },
+        pagination: {
+            el: '.office-swiper__controls .swiper-pagination',
+            type: 'fraction',
+            renderFraction: (currentClass, totalClass) => {
                 return `
                     <span class="${currentClass}"></span>
                     <span class="fraction-separator">—</span>
                     <span class="${totalClass}"></span>
                 `;
-                },
-                // 共通のゼロ埋め関数
-                formatFractionCurrent: n => n.toString().padStart(2, '0'),
-                formatFractionTotal: n => n.toString().padStart(2, '0')
-            }
+            },
+            formatFractionCurrent: n => n.toString().padStart(2, '0'),
+            formatFractionTotal: n => n.toString().padStart(2, '0')
+        }
     });
 
     // 沿革の縦線の高さを設定
-    $('.history__year').each(function() {
-        const $el = $(this);
-        const height = $el.outerHeight();
-        const total = height + 30;
-        $el.css('--line-height', total + 'px');
-    });
+    function setHistoryLines() {
+    $('.history__year span').each(function () {
+        const $yearSpan = $(this);
+        const $item = $yearSpan.closest('.history__item');
+        const $lists = $item.find('.history__lists');
+        const listsHeight = $lists.outerHeight() || 0;
+        const offset = 45;
+        $yearSpan[0].style.setProperty('--line-height', (listsHeight + offset) + 'px');
+        });
+    }
+    function debounce(fn, wait) {
+        let t; return function(){ clearTimeout(t); t = setTimeout(fn, wait); };
+    }
+    $(document).ready(setHistoryLines);
+    $(window).on('load', setHistoryLines);
+    $(window).on('resize', debounce(setHistoryLines, 150));
 
     // ページトップボタン
     const $pageTopButton = $('#pageTopButton');
