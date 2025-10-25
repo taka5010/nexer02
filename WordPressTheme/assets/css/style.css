@@ -3027,20 +3027,22 @@ body {
 	white-space: nowrap;
 }
 
-.history__year::after {
+.history__year span {
+	display: inline-block;
+	position: relative;
+}
+
+.history__year span::after {
 	background-color: #BCCDD5;
 	content: "";
 	height: 0px;
 	height: var(--line-height, 0px);
 	left: 50%;
 	position: absolute;
+	top: 100%;
 	transform: translateX(-50%);
 	width: 2px;
 	z-index: 0;
-}
-
-.history__year span {
-	display: inline-block;
 }
 
 .history__lists {
@@ -4368,11 +4370,10 @@ span.pgn__wrap {
 .office-swiper .swiper-slide {
 	transform: scale(0.8);
 	transform-origin: bottom center;
-	transition: 1s;
+	transition: transform 1.2s ease;
 }
 
 .office-swiper .swiper-slide-active {
-	max-width: 45rem;
 	transform: scale(1) translateY(15px);
 }
 

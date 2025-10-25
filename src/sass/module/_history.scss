@@ -38,21 +38,9 @@
   }
 }
 
-// .history__content::before {
-//   content: '';
-//   display: block;
-//   width: rem(2);
-//   height: 100%;
-//   background-color: $line-02;
-//   position: absolute;
-//   left: rem(60);
-//   top: 0;
-// }
-
 .history__item {
   display: flex;
   flex-direction: column;
-  // gap: rem(80);
   padding-bottom: rem(30);
   @include mq(md) {
     flex-direction: row;
@@ -72,19 +60,21 @@
   position: relative;
 }
 
-.history__year::after {
+.history__year span {
+ display: inline-block;
+ position: relative;
+}
+
+.history__year span::after {
   content: '';
   position: absolute;
   left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
   width: 2px;
   height: var(--line-height, 0px);
   background-color: $line-02;
-  transform: translateX(-50%);
   z-index: 0;
-}
-
-.history__year span {
- display: inline-block;
 }
 
 .history__lists {
@@ -120,5 +110,7 @@
 .history__month span {
   font-size: rem(14);
 }
+
+
 
 
