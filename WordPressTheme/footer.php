@@ -34,10 +34,11 @@
       </div>
 
       <div class="footer__social-icons">
-        <a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="footer__icon-link">
+        <a href="https://x.com/FAP2721" target="_blank" rel="noopener noreferrer" class="footer__icon-link">
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/icon_x.svg" alt="Xのアイコン" loading="lazy">
         </a>
-        <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" class="footer__icon-link">
+        <a href="https://www.youtube.com/@InsightCounselingCorp" target="_blank" rel="noopener noreferrer"
+          class="footer__icon-link">
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/icon_youtube.svg" alt="YouTubeのアイコン"
             loading="lazy">
         </a>

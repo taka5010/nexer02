@@ -126,8 +126,8 @@
         data-aos-delay="200">
         <p class="section-title02__text">対象となる方</p>
       </h2>
-      <p class="target__text">ブログ『緊張しちゃう人たち』では書けなかったこと、<br>
-        繊細すぎて表現できなかった“核心”の部分までお届けします。</p>
+      <p class="target__text" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
+        「無意識の旅オンライン講座」は、以下の方々に特におすすめです。</p>
       <div class="counseling__cards card05-items">
         <div class="counseling__card card05" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
@@ -193,7 +193,8 @@
             <h3 class="content02__item-title">『緊張しちゃう人たち』を読む</h3>
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">無料のブログ『緊張しちゃう人たち』を読む</p>
-              <p class="content02__item-text"><a href="https://insight-fap.jugem.jp/" target="_blank" rel="nofollow">https://insight-fap.jugem.jp/</p>
+              <p class="content02__item-text"><a href="https://insight-fap.jugem.jp/" target="_blank"
+                  rel="nofollow">https://insight-fap.jugem.jp/</p>
             </div>
           </div>
         </li>
@@ -207,7 +208,8 @@
             <h3 class="content02__item-title">オンライン講座『無意識の旅』サブスク登録</h3>
             <div class="content02__item-text-wrap">
               <p class="content02__item-text">無意識や催眠についてもっと知りたい方、体験したい方は、オンライン講座『無意識の旅』のサブスクリプションに申し込むだけ</p>
-              <p class="content02__item-text"><a href="https://m2191204.jn.megadoga.com/" target="_blank" rel="nofollow">https://m2191204.jn.megadoga.com/</a></p>
+              <p class="content02__item-text"><a href="https://m2191204.jn.megadoga.com/" target="_blank"
+                  rel="nofollow">https://m2191204.jn.megadoga.com/</a></p>
               <p class="content02__item-text">※会員限定の感謝祭（不定期開催）にも参加できます</p>
             </div>
           </div>
@@ -223,7 +225,8 @@
         <p class="section-title__ja">料金案内</p>
       </h2>
       <div class="price__content">
-        <div class="price__description-wrapper">
+        <div class="price__description-wrapper" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+          data-aos-delay="200">
           <p class="price__description">『無意識の旅』は、どこにいてもスマホやパソコンでご視聴いただけます。</p>
           <p class="price__description">毎日の生活の中で、あなたの無意識を整えるひとときを取り入れてみませんか？</p>
         </div>
@@ -238,7 +241,7 @@
           </a>
         </div>
         <div class="price__info" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
-          <p>定期課金制：月額1,100円</p>
+          <p>無意識の旅 サブスクリプション<br>定期課金制：月額1,100円</p>
         </div>
         <div class="price__guide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">

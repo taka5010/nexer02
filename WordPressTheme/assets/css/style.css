@@ -2492,11 +2492,7 @@ body {
 }
 
 .footer__inner {
-	grid-gap: 0.8125rem;
 	align-items: center;
-	display: grid;
-	gap: 0.8125rem;
-	grid-template-rows: auto auto auto auto auto;
 	justify-items: center;
 	margin: 0 auto;
 	max-width: 23.4375rem;
@@ -2586,6 +2582,7 @@ body {
 	line-height: 1.6;
 	margin: 0;
 	text-align: left;
+	white-space: nowrap;
 }
 
 .footer__nav {
@@ -2623,7 +2620,7 @@ body {
 	display: block;
 	font-family: "Zen Kaku Gothic New", sans-serif;
 	font-size: 1rem;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 1.6;
 	padding-bottom: 0.5rem;
 	padding-top: 0.4375rem;
@@ -3274,41 +3271,37 @@ body {
 .mv-under.mv-under--psychological {
 	background-image: -webkit-image-set(url("../images/common/psychological_fv-pc.webp") type("image/webp"), url("../images/common/psychological_fv-pc.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/psychological_fv-pc.webp") type("image/webp"), url("../images/common/psychological_fv-pc.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--trauma {
 	background-image: -webkit-image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_trauma.webp") type("image/webp"), url("../images/common/mv_trauma.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--fap {
 	background-image: -webkit-image-set(url("../images/common/mv_fap.webp") type("image/webp"), url("../images/common/mv_fap.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_fap.webp") type("image/webp"), url("../images/common/mv_fap.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--faq {
-	background-image: url(../images/common/fv-fap__bg.png);
-	background-position: 60% -65px;
-}
-
-.mv-under.mv-under--hypnosis-script {
-	background-image: url(../images/common/hypnosis-script_fv.png);
-	background-position: 60% -65px;
+	background-image: -webkit-image-set(url("../images/common/mv_faq.webp") type("image/webp"), url("../images/common/mv_faq.jpg") type("image/jpeg"));
+	background-image: image-set(url("../images/common/mv_faq.webp") type("image/webp"), url("../images/common/mv_faq.jpg") type("image/jpeg"));
+	background-position: center;
 }
 
 .mv-under.mv-under--hypnosis-script {
 	background-image: -webkit-image-set(url("../images/common/mv-hypnosis.webp") type("image/webp"), url("../images/common/mv-hypnosis.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv-hypnosis.webp") type("image/webp"), url("../images/common/mv-hypnosis.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--company {
 	background-image: -webkit-image-set(url("../images/common/mv_company.webp") type("image/webp"), url("../images/common/mv_company.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_company.webp") type("image/webp"), url("../images/common/mv_company.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--blog-items {
@@ -3319,13 +3312,13 @@ body {
 .mv-under.mv-under--genesiswitch {
 	background-image: -webkit-image-set(url("../images/common/mv_geneswitch.webp") type("image/webp"), url("../images/common/mv_geneswitch.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_geneswitch.webp") type("image/webp"), url("../images/common/mv_geneswitch.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under.mv-under--online {
 	background-image: -webkit-image-set(url("../images/common/mv_online.webp") type("image/webp"), url("../images/common/mv_online.jpg") type("image/jpeg"));
 	background-image: image-set(url("../images/common/mv_online.webp") type("image/webp"), url("../images/common/mv_online.jpg") type("image/jpeg"));
-	background-position: 60% -65px;
+	background-position: center;
 }
 
 .mv-under__inner {
@@ -5714,7 +5707,9 @@ html {
 }
 
 .footer__inner {
+	grid-gap: 2.5rem;
 	align-items: start;
+	display: grid;
 	gap: 2.5rem;
 	grid-template-areas: "left-content nav" "copyright copyright";
 	grid-template-columns: 1fr 1fr;

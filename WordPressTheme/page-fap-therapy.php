@@ -26,7 +26,7 @@
           <span class="intro__title-text">新しい自分</span>に出会いましょう
         </h2>
         <div class="intro__description">
-          <p class="intro__paragraph">FAP療法&reg;（Free from Anxiety
+          <p class="intro__paragraph"><ruby>FAP<rt>エフエイピー</rt></ruby>療法&reg;（Free from Anxiety
             Program）は、PTSDや恐怖症、強迫性障害、依存症的欲求など、幅広い心の問題を根本的に解決するための新しい心理療法です。</p>
         </div>
       </div>
@@ -205,8 +205,9 @@
           <div class="content02__item-body">
             <h3 class="content02__item-title">初回カウンセリング</h3>
             <div class="content02__item-text-wrap">
-              <p class="content02__item-text">初回カウンセリングでは、クライアントのお悩みを詳細にお伺いし、FAP療法®が適しているかどうかを確認します。</p>
-              <p class="content02__item-text">症状や過去の経緯に基づいて、最適な治療プランを提案します。</p>
+              <p class="content02__item-text">
+                初回カウンセリングでは、クライアントのお悩みを詳細にお伺いし、FAP療法®が適しているかどうかを確認します。これまでの経緯、成育歴や家族関係等、クライアントの背景や状況を理解した上で、最適なカウンセリングプランをご提案する為の情報を頂くお時間になります。
+              </p>
             </div>
           </div>
         </li>
@@ -358,7 +359,7 @@
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>FAP療法®はどんな療法ですか？</p>
           <div class="faq-list__item-answer-wrapper">
             <p class="faq-list__item-answer"><span>A</span><i style="font-style:normal;"><ruby>FAP<rt>エフエイピー</rt>
-                  </ruby>（Free from Anxiety
+                </ruby>（Free from Anxiety
                 Program）は、1999年大嶋信頼らにより発見され、2001年に体系化された心理療法です。開発当初より、PTSDの諸症状の改善や恐怖症の克服、パニック障害や強迫性障害、依存症的欲求などの幅広い問題に対して劇的な改善を示していました。現在に至るまで毎年、手法のバージョンアップを重ねてきています。</i>
               </i>
           </div>

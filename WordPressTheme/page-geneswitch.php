@@ -91,7 +91,7 @@
               <p class="content03__title--ja">日常生活に溶け込む新習慣</p>
             </h3>
             <p class="content03__text">遺伝子コードを使ったこの方法は、日常生活に自然に取り入れることができ、症状が軽減されることを実感できます。</p>
-            <p class="content03__text">難しい知識や特別な準備は必要なく、誰でも簡単に始められます。</p>
+            <p class="content03__text">難しい知識や特別な準備は必要なく、インターネット環境があれば、誰でも簡単に始められます。</p>
           </div>
         </li>
       </ol>
@@ -233,11 +233,11 @@
           </a>
         </div>
         <div class="price__info" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160" data-aos-delay="200">
-          <p>GeneSwitch&reg;定期課金制：月額495円</p>
+          <p>GeneSwitch&reg;サブスクリプション<br>定期課金制：月額495円</p>
         </div>
         <div class="price__guide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
-          <a href="#">ご利用ガイド</a>
+          <a href="https://geneswitch.jp/genetic-code/beginner ">ご利用ガイド</a>
         </div>
       </div>
     </div>
