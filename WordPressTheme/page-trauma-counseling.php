@@ -573,15 +573,14 @@
   </section>
   <section class="psychology content01">
     <div class="content01__inner inner">
-      <div class="content01__layout">
-        <div class="content01__image" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-          data-aos-delay="200">
+      <div class="content01__layout" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
+        data-aos-delay="200">
+        <div class="content01__image">
           <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/psychology_img.jpg" alt="カウンセリングの様子"
             loading="lazy">
         </div>
         <div class="content01__content-bg">
-          <div class="content01__content" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
-            data-aos-delay="200">
+          <div class="content01__content">
             <h2 class="content01__title content01__title content01__title--left">
               <p class="content01__title-text">心理カウンセリング</p>
             </h2>

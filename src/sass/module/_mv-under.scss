@@ -19,8 +19,10 @@
     url("../images/common/psychological_fv-pc.webp") type("image/webp"),
     url("../images/common/psychological_fv-pc.jpg") type("image/jpeg")
   );
-  // background-position: 60% -65px;
-  background-position: center;
+  background-position: 60% -65px;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--trauma {
@@ -28,7 +30,10 @@
     url("../images/common/mv_trauma.webp") type("image/webp"),
     url("../images/common/mv_trauma.jpg") type("image/jpeg")
   );
-  background-position: center;
+  background-position: 60% -65px;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--fap {
@@ -44,15 +49,21 @@
     url("../images/common/mv_faq.webp") type("image/webp"),
     url("../images/common/mv_faq.jpg") type("image/jpeg")
   );
-  background-position: center;
+  background-position: 63% center;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--hypnosis-script {
+  background-position: 90% -65px;
   background-image: image-set(
     url("../images/common/mv-hypnosis.webp") type("image/webp"),
     url("../images/common/mv-hypnosis.jpg") type("image/jpeg")
   );
-  background-position: center;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--company {
@@ -60,7 +71,10 @@
     url("../images/common/mv_company.webp") type("image/webp"),
     url("../images/common/mv_company.jpg") type("image/jpeg")
   );
-  background-position: center;
+  background-position: 55% center;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--blog-items {
@@ -75,7 +89,10 @@
     url("../images/common/mv_geneswitch.webp") type("image/webp"),
     url("../images/common/mv_geneswitch.jpg") type("image/jpeg")
   );
-  background-position: center;
+  background-position: 63% center;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 .mv-under.mv-under--online {
@@ -83,7 +100,10 @@
     url("../images/common/mv_online.webp") type("image/webp"),
     url("../images/common/mv_online.jpg") type("image/jpeg")
   );
-  background-position: center;
+  background-position: 57% center;
+  @include mq("md") {
+    background-position: center;
+  }
 }
 
 

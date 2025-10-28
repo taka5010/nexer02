@@ -88,7 +88,7 @@
           <span class="section-title02__text-blue">3</span>つのポイント
         </p>
       </h2>
-      <ol class="counseling-methods__list content03__items">
+      <ol class="counseling-points__list content03__items">
         <li class="content03__item" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
           <div class="content03__item-img">

@@ -423,8 +423,10 @@
         <li class="faq-list__item">
           <p class="faq-list__item-question js-faq-question is-open"><span>Q</span>カウンセリングに予約は必要ですか？</p>
           <div class="faq-list__item-answer-wrapper">
-            <p class="faq-list__item-answer"><span>A</span>はい、予約制となっております。事前に<a href="tel:03-3433-2721" class="tel-link"
-                style="text-decoration:underline;">お電話</a>でご予約をお願いします。</p>
+            <div class="faq-list__item-answer"><span>A</span>
+              <p>はい、予約制となっております。事前に<a href="tel:03-3433-2721" class="tel-link"
+                  style="text-decoration:underline;">お電話</a>でご予約をお願いします。</p>
+            </div>
           </div>
         </li>
         <li class="faq-list__item">

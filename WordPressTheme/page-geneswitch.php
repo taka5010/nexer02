@@ -30,7 +30,7 @@
           <p class="intro__paragraph">「なぜあの人にイライラするのか？」</p>
           <p class="intro__paragraph">「本当はこうしたいのに、できないのはなぜ？」</p>
           <p class="intro__paragraph">そんな心のモヤモヤや不快感の背後には、実は、“ある遺伝子がオンになっている”ことが関係しているかもしれません。</p>
-          <p class="intro__paragraph">本サイトで紹介するのは、近年注目されている「エピジェネティクス」の知識（or理論）を取り入れた、これまでにないユニークなセルフケアの手法です。</p>
+          <p class="intro__paragraph">本サイトで紹介するのは、近年注目されている「エピジェネティクス」の知識や理論を取り入れた、これまでにないユニークなセルフケアの手法です。</p>
           <p class="intro__paragraph">専門的な知識も訓練も必要ありません。</p>
           <p class="intro__paragraph">ただある「言葉」を静かに唱えるだけで、自分の中の“不要な遺伝子スイッチ”がオフになり、不快な感情や悩みが自然と和らいでいく感覚を、ぜひ体験してみてください。</p>
         </div>
@@ -237,7 +237,7 @@
         </div>
         <div class="price__guide" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
-          <a href="https://geneswitch.jp/genetic-code/beginner ">ご利用ガイド</a>
+          <a href="https://geneswitch.jp/genetic-code/beginner" target="_blank" rel="noopener noreferrer">ご利用ガイド</a>
         </div>
       </div>
     </div>

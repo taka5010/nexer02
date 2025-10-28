@@ -51,7 +51,7 @@
           </li>
 
           <li class="header-nav__item header-nav__item--has-submenu">
-            <a href="<?php echo esc_url( home_url( '/other-service/' ) ); ?>" class="header-nav__link">その他のサービス</a>
+            <a class="header-nav__link">その他のサービス</a>
             <ul class="dropdown" id="submenu-counseling3" role="menu" aria-label="その他のサービスメニュー">
               <li class="dropdown__item" role="none">
                 <a class="dropdown__link" href="<?php echo esc_url( home_url( '/geneswitch/' ) ); ?>"

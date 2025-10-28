@@ -49,21 +49,36 @@ function my_theme_enqueue_assets() {
 
   // メインCSS（更新日時でキャッシュバスティング）
   $css_rel = '/assets/css/style.css';
-  $css_ver = file_exists(get_theme_file_path($css_rel)) ? filemtime(get_theme_file_path($css_rel)) : null;
+  $css_abs = get_theme_file_path($css_rel);
+  $css_ver = file_exists($css_abs) ? filemtime($css_abs) : null;
   wp_enqueue_style(
     'theme-style',
     get_theme_file_uri($css_rel),
-    ['swiper','aos-css'], // AOSのスタイルが先にあると安心
+    ['swiper','aos-css'],
     $css_ver
   );
 
+  // ★ 追加：n_style.css（メインの後に読み込みたいので依存を theme-style に）
+  $n_css_rel = '/assets/css/n_style.css';
+  $n_css_abs = get_theme_file_path($n_css_rel);
+  if ( file_exists($n_css_abs) ) {
+    $n_css_ver = filemtime($n_css_abs);
+    wp_enqueue_style(
+      'theme-n-style',
+      get_theme_file_uri($n_css_rel),
+      ['theme-style'],   // ← 読み込み順を保証（style.css の後）
+      $n_css_ver
+    );
+  }
+
   // メインJS（SwiperとAOSを依存に）
   $js_rel = '/assets/js/script.js';
-  $js_ver = file_exists(get_theme_file_path($js_rel)) ? filemtime(get_theme_file_path($js_rel)) : null;
+  $js_abs = get_theme_file_path($js_rel);
+  $js_ver = file_exists($js_abs) ? filemtime($js_abs) : null;
   wp_enqueue_script(
     'theme-script',
     get_theme_file_uri($js_rel),
-    ['jquery','swiper','aos'], // ← AOSを依存に追加
+    ['jquery','swiper','aos'],
     $js_ver,
     true
   );
@@ -74,13 +89,13 @@ function my_theme_enqueue_assets() {
     'iconScrolled' => get_theme_file_uri('/assets/images/common/tel_icon-blue.svg'),
   ]);
 
-  // JS無効環境で要素を非表示にしないためのnoscript（任意）
-  // AOSはJSが無いとopacity:0のままになりがちなので保険
+  // JS無効環境でAOS要素を見せる保険
   add_action('wp_head', function () {
     echo '<noscript><style>[data-aos]{opacity:1 !important; transform:none !important;}</style></noscript>' . "\n";
   });
 }
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_assets');
+
 
 function my_theme_favicon_tag() {
   // favicon のパスをテーマから出力

@@ -23,7 +23,7 @@
         <h2 class="intro__title">
           忙しい日々の中で、<br>
           ふと「自分の本当の気持ちがわからない」と<br>
-          <span class="intro__title-text">感じること</span>はありませんか？。
+          <span class="intro__title-text">感じること</span>はありませんか？
         </h2>
         <div class="intro__description" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="160"
           data-aos-delay="200">
