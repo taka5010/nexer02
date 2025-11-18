@@ -2701,6 +2701,7 @@ body {
 
 .header-drawer__item {
 	border-bottom: solid 1px #BCCDD5;
+	position: relative;
 }
 
 .header-drawer__item a {
@@ -2717,46 +2718,6 @@ body {
 	text-transform: uppercase;
 }
 
-.header-drawer__toggle {
-	background: none;
-	border: none;
-	color: #333333;
-	cursor: pointer;
-	font-size: 0.9375rem;
-	font-weight: bold;
-	line-height: 1;
-	padding-bottom: 1.125rem;
-	padding-left: 0rem;
-	padding-top: 1.5625rem;
-	position: relative;
-	text-align: left;
-	text-transform: uppercase;
-	width: 100%;
-}
-
-.header-drawer__toggle::after {
-	border: 2px solid currentColor;
-	border-bottom: 0;
-	border-left: 0;
-	box-sizing: border-box;
-	color: #248CC0;
-	content: "";
-	display: inline-block;
-	height: 0.4375rem;
-	line-height: 1;
-	position: absolute;
-	right: 0.625rem;
-	top: 50%;
-	transform: translateY(-50%) rotate(135deg);
-	transition: transform 0.3s ease;
-	vertical-align: middle;
-	width: 0.4375rem;
-}
-
-.header-drawer__toggle.open::after {
-	transform: translateY(-50%) rotate(315deg);
-}
-
 .header-drawer__submenu {
 	list-style: none;
 	margin: 0;
@@ -2765,21 +2726,27 @@ body {
 	overflow: hidden;
 	padding: 0;
 	transform: translateY(-10px);
-	transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-drawer__submenu:not(.open) {
-	transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-	transition-delay: 0s;
+	transition: max-height 1.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1), transform 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-drawer__submenu.open {
 	margin-top: -0.375rem;
-	max-height: 200px;
+	max-height: 200px; /* または JSでscrollHeightをセット */
 	opacity: 1;
 	padding-bottom: 0.625rem;
 	transform: translateY(0);
 }
+
+/* 閉じる時のトランジション調整 */
+
+.header-drawer__submenu:not(.open) {
+	transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+	transition-delay: 0s;
+}
+
+/* ===============================
+   Submenu アイテム
+   =============================== */
 
 .header-drawer__submenu-item {
 	opacity: 0;
@@ -2802,10 +2769,14 @@ body {
 	width: 7px;
 }
 
+/* 開いた時のフェードイン */
+
 .header-drawer__submenu.open .header-drawer__submenu-item {
 	opacity: 1;
 	transform: translateY(0);
 }
+
+/* フェードイン順序 */
 
 .header-drawer__submenu.open .header-drawer__submenu-item:nth-child(1) {
 	transition-delay: 0.2s;
@@ -2815,6 +2786,8 @@ body {
 	transition-delay: 0.3s;
 }
 
+/* 閉じるとき（逆順） */
+
 .header-drawer__submenu:not(.open) .header-drawer__submenu-item:nth-child(2) {
 	transition-delay: 0s;
 }
@@ -2823,23 +2796,95 @@ body {
 	transition-delay: 0.05s;
 }
 
+/* サブメニュー内リンク */
+
 .header-drawer__submenu-item a {
 	-webkit-text-decoration: none;
 	color: #333333;
 	display: block;
 	font-size: 0.875rem;
 	font-weight: normal;
-	padding: 12px 0;
 	padding: 0.5625rem 0;
 	text-align: left;
 	text-decoration: none;
-	text-transform: none;
 	transition: all 0.5s ease;
 }
 
 .header-drawer__submenu-item a:hover {
 	background-color: rgba(255, 255, 255, 0.3);
 	transform: translateX(5px);
+}
+
+/* ===============================
+   メインリンク ＆ 矢印ボタン
+   =============================== */
+
+.header-drawer__link {
+	-webkit-text-decoration: none;
+	color: #333333;
+	display: block;
+	font-size: 0.9375rem;
+	font-weight: bold;
+	line-height: 1;
+	padding-bottom: 1.125rem;
+	padding-right: 2.75rem; /* 右側はcaretスペース */
+	padding-top: 1.5625rem;
+	position: relative;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.header-drawer__caret {
+	background: transparent;
+	border: 0;
+	cursor: pointer;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 2.75rem;
+}
+
+.header-drawer__caret::before {
+	border: 2px solid #248CC0;
+	border-bottom: 0;
+	border-left: 0;
+	box-sizing: border-box;
+	content: "";
+	height: 0.4375rem;
+	position: absolute;
+	right: 1rem;
+	top: 2.1875rem;
+	transform: translateY(-50%) rotate(135deg);
+	transition: transform 0.3s ease;
+	width: 0.4375rem;
+}
+
+/* 矢印回転（open時） */
+
+.header-drawer__caret.open::before {
+	transform: translateY(-50%) rotate(315deg);
+}
+
+/* ===============================
+   スクリーンリーダー用
+   =============================== */
+
+.visually-hidden {
+	position: absolute !important;
+}
+
+.visually-hidden {
+	clip: rect(0, 0, 0, 0);
+	border: 0;
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	white-space: nowrap;
+	width: 1px;
 }
 
 .header.is-scrolled .header-nav__link {
@@ -4370,7 +4415,7 @@ span.pgn__wrap {
 
 .office-swiper .swiper-slide img {
 	-o-object-fit: cover;
-	aspect-ratio: 720/420;
+	aspect-ratio: 720/480;
 	height: auto;
 	object-fit: cover;
 	width: 100%;
@@ -4383,7 +4428,7 @@ span.pgn__wrap {
 }
 
 .office-swiper .swiper-slide-active {
-	transform: scale(1) translateY(15px);
+	transform: scale(1);
 }
 
 /* ========== Pagination (共通) ========== */
@@ -4489,6 +4534,16 @@ span.pgn__wrap {
 
 .target .content01__layout {
 	margin-top: 6.25rem;
+}
+
+ul.wp-block-list {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+ol.wp-block-list {
+	list-style: decimal;
+	padding-left: 20px;
 }
 
 .trauma {
@@ -4626,6 +4681,16 @@ span.pgn__wrap {
 
 .worries--hypnosis-script .card02__title {
 	text-align: center;
+}
+
+ul.wp-block-list {
+	list-style: disc;
+	padding-left: 20px;
+}
+
+ol.wp-block-list {
+	list-style: decimal;
+	padding-left: 20px;
 }
 
 @media screen and (min-width: 600px) {
@@ -6484,6 +6549,11 @@ html {
 
 .office__swiper {
 	margin-top: 3.75rem;
+}
+
+.office-swiper .swiper-slide img {
+	margin: 0 auto;
+	max-width: 45rem;
 }
 
 .office-swiper__controls {

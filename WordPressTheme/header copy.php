@@ -110,57 +110,35 @@
             <ul class="header-drawer__list">
 
               <li class="header-drawer__item header-drawer__item--has-submenu">
-                <a class="header-drawer__link"
-                  href="<?php echo esc_url( home_url( '/psychological-counseling/' ) ); ?>">
-                  心理カウンセリング
-                </a>
-                <button type="button" class="header-drawer__caret js-drawer-caret" id="caret-counseling1"
-                  aria-expanded="false" aria-controls="submenu-counseling1">
-                  <span class="visually-hidden">サブメニューを開閉</span>
-                </button>
-                <ul class="header-drawer__submenu" id="submenu-counseling1" aria-labelledby="caret-counseling1">
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a>
-                  </li>
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a>
-                  </li>
+                <button class="header-drawer__toggle js-drawer-toggle">心理カウンセリング</button>
+                <ul class="header-drawer__submenu">
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a></li>
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a></li>
                 </ul>
               </li>
+
               <li class="header-drawer__item header-drawer__item--has-submenu">
-                <a class="header-drawer__link" href="<?php echo esc_url( home_url( '/trauma-counseling/' ) ); ?>">
-                  トラウマカウンセリング
-                </a>
-                <button type="button" class="header-drawer__caret js-drawer-caret" id="caret-counseling1"
-                  aria-expanded="false" aria-controls="submenu-counseling1">
-                  <span class="visually-hidden">サブメニューを開閉</span>
-                </button>
-                <ul class="header-drawer__submenu" id="submenu-counseling1" aria-labelledby="caret-counseling1">
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a>
-                  </li>
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a>
-                  </li>
+                <button class="header-drawer__toggle js-drawer-toggle">トラウマカウンセリング</button>
+                <ul class="header-drawer__submenu">
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/fap-therapy/' ) ); ?>">FAP療法®について</a></li>
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/hypnosis-script/' ) ); ?>">催眠スクリプト</a></li>
                 </ul>
               </li>
+
               <li class="header-drawer__item header-drawer__item--has-submenu">
-                <a class="header-drawer__link">
-                  その他のサービス
-                </a>
-                <button type=" button" class="header-drawer__caret js-drawer-caret" id="caret-counseling1"
-                  aria-expanded="false" aria-controls="submenu-counseling1">
-                  <span class="visually-hidden">サブメニューを開閉</span>
-                </button>
-                <ul class="header-drawer__submenu" id="submenu-counseling1" aria-labelledby="caret-counseling1">
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/geneswitch/' ) ); ?>">GeneSwitch</a>
-                  </li>
-                  <li class="header-drawer__submenu-item">
-                    <a href="<?php echo esc_url( home_url( '/online-course/' ) ); ?>">無意識の旅オンライン講座</a>
-                  </li>
+                <button class="header-drawer__toggle js-drawer-toggle">その他のサービス</button>
+                <ul class="header-drawer__submenu">
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/geneswitch/' ) ); ?>">GeneSwitch</a></li>
+                  <li class="header-drawer__submenu-item"><a
+                      href="<?php echo esc_url( home_url( '/online-course/' ) ); ?>">無意識の旅オンライン講座</a></li>
                 </ul>
               </li>
+
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/blog/' ) ); ?>">ブログ</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/company/' ) ); ?>">会社概要</a></li>
               <li class="header-drawer__item"><a href="<?php echo esc_url( home_url( '/faq/' ) ); ?>">よくあるご質問</a></li>

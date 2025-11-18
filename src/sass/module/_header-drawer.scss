@@ -1,175 +1,150 @@
 @use "global" as *;
 
 
-.header-drawer-list {
-  list-style: none;
-}
+// /* ===============================
+//    Drawer 本体
+//    =============================== */
+//    .header-drawer {
+//     padding-top: rem(110);
+//     display: none;
+//     position: fixed;
+//     inset: 0;
+//     height: 100vh;
+//     overflow-y: auto;
+//     scrollbar-width: none;
+//     background: url(../images/common/header__drawer_img.jpg) left top / cover no-repeat;
+//     z-index: 9999;
+//   }
+//   .header-drawer.is-open { display: block; }
+//   .header-drawer::-webkit-scrollbar { display: none; }
+  
+//   /* ===============================
+//      List / Item
+//      =============================== */
+//   .header-drawer__list { list-style: none; margin: 0; padding: 0; }
+//   .header-drawer__item { position: relative; border-bottom: 1px solid $line-02; }
+  
+//   /* ===============================
+//      タイトルリンク（行全体）
+//      =============================== */
+//   .header-drawer__link,
+//   .header-drawer__item > a {
+//     display: block;
+//     width: 100%;
+//     padding: rem(25) rem(44) rem(18) 0; /* 右44pxは caret */
+//     font-size: rem(15);
+//     font-weight: bold;
+//     line-height: 1;
+//     color: $text-black;
+//     text-align: left;
+//     text-transform: uppercase;
+//     text-decoration: none;
+//     position: relative;
+//     z-index: 1;
+//   }
+  
+//   /* ===============================
+//      Caret（矢印ボタン：右端重ね）
+//      ※ “open” クラス連動で回転（aria版は削除）
+//      =============================== */
+//   .header-drawer__caret {
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     width: rem(44);
+//     height: 100%;
+//     background: transparent;
+//     border: 0;
+//     cursor: pointer;
+//     z-index: 2;
+//   }
+//   .header-drawer__caret::before {
+//     content: '';
+//     position: absolute;
+//     right: rem(16);
+//     top: 50%;
+//     width: rem(7);
+//     height: rem(7);
+//     border: 2px solid $primary-01;
+//     border-left: 0;
+//     border-bottom: 0;
+//     transform: translateY(-50%) rotate(135deg);
+//     transition: transform .3s ease;
+//     box-sizing: border-box;
+//   }
+//   .header-drawer__caret.open::before {
+//     transform: translateY(-50%) rotate(315deg);
+//   }
+  
+//   /* ===============================
+//      Submenu（アコーディオン本体）
+//      ※ 一本化：opacity/transform を使うならここで、max-heightは固定でOK
+//      =============================== */
+//   .header-drawer__submenu {
+//     list-style: none;
+//     margin: 0;
+//     padding: 0;
+//     display: block;              /* display:none は使わない */
+//     max-height: 0;
+//     overflow: hidden;
+//     opacity: 0;
+//     transform: translateY(-10px);
+//     transition: max-height .4s ease, opacity .3s ease, transform .3s ease;
+//     will-change: max-height, opacity, transform;
+//   }
+//   .header-drawer__submenu.open {
+//     max-height: 1000px;          /* 必須：固定上限。中身が多いなら値を大きめに */
+//     opacity: 1;
+//     transform: translateY(0);
+//     margin-top: rem(-6);
+//     padding-bottom: rem(10);
+//   }
+  
+//   /* ===============================
+//      Submenu アイテム
+//      =============================== */
+//   .header-drawer__submenu-item {
+//     position: relative;
+//     padding-left: rem(40);
+//     opacity: 0;
+//     transform: translateY(-5px);
+//     transition:
+//       opacity .5s cubic-bezier(0.4, 0, 0.2, 1),
+//       transform .5s cubic-bezier(0.4, 0, 0.2, 1);
+//     transition-delay: 0s;
+//   }
+//   .header-drawer__submenu-item::before {
+//     content: '';
+//     position: absolute;
+//     left: rem(20);
+//     top: 50%;
+//     transform: translateY(-50%);
+//     width: 7px; height: 7px;
+//     background-color: #75B0CE;
+//     border-radius: 50%;
+//   }
+//   .header-drawer__submenu.open .header-drawer__submenu-item {
+//     opacity: 1; transform: translateY(0);
+//   }
+//   .header-drawer__submenu.open .header-drawer__submenu-item:nth-child(1) { transition-delay: .2s; }
+//   .header-drawer__submenu.open .header-drawer__submenu-item:nth-child(2) { transition-delay: .3s; }
+  
+//   /* Submenu 内リンク */
+//   .header-drawer__submenu-item a {
+//     display: block;
+//     padding: rem(9) 0;
+//     font-size: rem(14);
+//     font-weight: normal;
+//     text-transform: none;
+//     color: $text-black;
+//     text-decoration: none;
+//     text-align: left;
+//     transition: transform .3s ease, background-color .3s ease;
+//   }
+//   .header-drawer__submenu-item a:hover {
+//     background-color: rgba(255, 255, 255, .3);
+//     transform: translateX(5px);
+//   }
+  
 
-.header-drawer {
-  padding-top: rem(110);
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scrollbar-width: none;
-  position: absolute;
-  background-position: left top;
-  background-size: cover;
-  background-image: url(../images/common/header__drawer_img.jpg);
-  background-repeat: no-repeat;
-  z-index: -1;
-}
 
-.header-drawer::-webkit-scrollbar {
-  display: none;
-}
-
-.header-drawer__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header-drawer__item {
-  border-bottom: solid 1px $line-02;
-}
-
-.header-drawer__item a {
-  padding-top: rem(25);
-  padding-bottom: rem(18);
-  display: block;
-  font-weight: bold;
-  line-height: 1;
-  color: $text-black;
-  text-align: left;
-  font-size: rem(15);
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.header-drawer__toggle {
-  width: 100%;
-  padding-top: rem(25);
-  padding-bottom: rem(18);
-  padding-left: rem(0);
-  background: none;
-  border: none;
-  font-size: rem(15);
-  font-weight: bold;
-  line-height: 1;
-  color: $text-black;
-  text-align: left;
-  text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-}
-
-.header-drawer__toggle::after {
-  content: '';
-  position: absolute;
-  right: rem(10);
-  top: 50%;
-  display: inline-block;
-  vertical-align: middle;
-  color: $primary-01;
-  line-height: 1;
-  width: rem(7);
-  height: rem(7);
-  border: 2px solid currentColor;
-  border-left: 0;
-  border-bottom: 0;
-  box-sizing: border-box;
-  transform: translateY(-50%) rotate(135deg);
-  transition: transform 0.3s ease;
-}
-.header-drawer__toggle.open::after {
-  transform: translateY(-50%) rotate(315deg);
-}
-
-.header-drawer__submenu {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: all 1.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-drawer__submenu:not(.open) {
-  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-}
-
-.header-drawer__submenu.open {
-  max-height: 200px;
-  opacity: 1;
-  transform: translateY(0);
-  margin-top: rem(-6);
-  padding-bottom: rem(10);
-}
-
-.header-drawer__submenu-item {
-  opacity: 0;
-  transform: translateY(-5px);
-  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s;
-  position: relative;
-  padding-left: rem(40);
-}
-
-.header-drawer__submenu-item::before {
-  content: '';
-  position: absolute;
-  left: rem(20);
-  top: 50%;
-  transform: translateY(-50%);
-  width: 7px;
-  height: 7px;
-  background-color: #75B0CE;
-  border-radius: 50%;
-}
-
-.header-drawer__submenu.open .header-drawer__submenu-item {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.header-drawer__submenu.open .header-drawer__submenu-item:nth-child(1) {
-  transition-delay: 0.2s;
-}
-
-.header-drawer__submenu.open .header-drawer__submenu-item:nth-child(2) {
-  transition-delay: 0.3s;
-}
-
-// 閉じる時の遅延設定（逆順で消える）
-.header-drawer__submenu:not(.open) .header-drawer__submenu-item:nth-child(2) {
-  transition-delay: 0s;
-}
-
-.header-drawer__submenu:not(.open) .header-drawer__submenu-item:nth-child(1) {
-  transition-delay: 0.05s;
-}
-
-.header-drawer__submenu-item a {
-  padding: 12px 0;
-  padding: rem(9) 0;
-  font-size: rem(14);
-  font-weight: normal;
-  text-transform: none;
-  color: $text-black;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  transition: all 0.5s ease;
-}
-
-.header-drawer__submenu-item a:hover {
-  background-color: rgba(255, 255, 255, 0.3);
-  transform: translateX(5px);
-}

@@ -21,7 +21,15 @@ jQuery(function ($) {
     });
 
     // ドロワーのメニュー内のアコーディオンメニュー
-    $(".header-drawer__toggle").on("click", function() {
+    // $(".header-drawer__toggle").on("click", function() {
+    //     const $this = $(this);
+    //     const $submenu = $this.next(".header-drawer__submenu");
+    //     $this.toggleClass("open");
+    //     if ($submenu.length) {
+    //         $submenu.toggleClass("open");
+    //     }
+    // });
+    $(".js-drawer-caret").on("click", function() {
         const $this = $(this);
         const $submenu = $this.next(".header-drawer__submenu");
         $this.toggleClass("open");
@@ -122,8 +130,9 @@ jQuery(function ($) {
         centeredSlides: true,
         breakpoints: {
             768: {
-                spaceBetween: 0,
                 slidesPerView: 1.8,
+                spaceBetween: 0,
+
             }
         },
         navigation: {
@@ -198,8 +207,14 @@ jQuery(function ($) {
         }
         });
     }
+
 });
 
+
+
+  
+  
+  
 
 
 

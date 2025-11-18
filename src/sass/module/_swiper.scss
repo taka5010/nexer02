@@ -36,22 +36,15 @@
 .office-swiper .swiper-slide img {
   width: 100%;
   height: auto;
-  aspect-ratio: 720 / 420;
+  aspect-ratio: 720 / 480;
   object-fit: cover;
+  @include mq(md) {
+    max-width: rem(720);
+    margin: 0 auto;
+
+  }
 }
 
-// .office-swiper .swiper-slide {
-//   transform: scale(.8);
-//   transition: 1s;
-//   transform-origin: bottom center;
-
-//   // max-width: rem(610.3);
-// }
-
-// .office-swiper .swiper-slide-active {
-//   transform: scale(1) translateY(15px);
-//   max-width: rem(720);
-// }
 .office-swiper .swiper-slide {
   transform: scale(0.8);
   transform-origin: bottom center;
@@ -59,7 +52,7 @@
 }
 
 .office-swiper .swiper-slide-active {
-  transform: scale(1) translateY(15px);
+  transform: scale(1);
 }
 
 

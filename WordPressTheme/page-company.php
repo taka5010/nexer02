@@ -136,13 +136,10 @@
               <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
             </li>
             <li class="swiper-slide">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img01.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img04.jpg" alt="省略">
             </li>
             <li class="swiper-slide">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img02.jpg" alt="省略">
-            </li>
-            <li class="swiper-slide">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img03.jpg" alt="省略">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img05.jpg" alt="省略">
             </li>
           </ul>
         </div>
